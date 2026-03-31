@@ -1,0 +1,468 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Ostéologie des membres - Anatomie</title>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="../styles.css">
+</head>
+<body>
+  <div class="app">
+    <aside class="sidebar">
+      <div class="sidebar-header">
+        <h1>🦴 Anatomie</h1>
+        <p>Cours PASS/LAS - Tours</p>
+      </div>
+      <div class="sidebar-search">
+        <input type="text" data-search placeholder="Rechercher... (Ctrl+K)" />
+      </div>
+      <nav class="sidebar-nav">
+        <div class="nav-group">
+          <div class="nav-group-title">Accueil</div>
+          <div class="nav-group-items">
+            <a href="../index.html" class="nav-item">🏠 Vue d'ensemble</a>
+          </div>
+        </div>
+        <div class="nav-group">
+          <div class="nav-group-title">Ostéologie (Destrieux)</div>
+          <div class="nav-group-items">
+            <a href="osteologie-membres.html" class="nav-item active">Ostéologie des membres</a>
+            <a href="squelette-axial.html" class="nav-item">Squelette axial</a>
+          </div>
+        </div>
+      </nav>
+    </aside>
+
+    <main class="main">
+      <header class="header">
+        <div class="breadcrumb">
+          <a href="../index.html">Accueil</a> / Ostéologie des membres
+        </div>
+        <div class="header-actions">
+          <button class="btn-icon" onclick="expandAllAccordions()">⊞</button>
+          <button class="btn-icon" onclick="collapseAllAccordions()">⊟</button>
+          <button class="btn-icon" id="theme-toggle">◐</button>
+        </div>
+      </header>
+
+      <div class="content">
+        <h1>💪 Ostéologie des membres</h1>
+        <p><strong>Pr. Destrieux</strong> — Poly spé n°1 — Tutorat Santé de Tours 2025</p>
+
+        <div class="toc">
+          <div class="toc-title">📑 Sommaire</div>
+          <ul class="toc-list">
+            <li><a href="#avantbras">I. Avant-bras (Radius & Ulna)</a></li>
+            <li><a href="#main">II. Poignet et main</a></li>
+            <li><a href="#coxal">III. Os coxal</a></li>
+            <li><a href="#femur">IV. Fémur et patella</a></li>
+            <li><a href="#jambe">V. Jambe (Tibia & Fibula)</a></li>
+            <li><a href="#pied">VI. Pied</a></li>
+          </ul>
+        </div>
+
+        <h2 style="background: var(--primary); color: white; padding: 1rem; border-radius: 8px;">MEMBRE SUPÉRIEUR</h2>
+
+        <!-- AVANT-BRAS -->
+        <section id="avantbras">
+          <h2>I. Avant-bras — Radius et Ulna</h2>
+          
+          <p>Deux os reliés par la <span class="term">membrane interosseuse</span>. Leur incurvation permet la <strong>pronosupination</strong>.</p>
+
+          <div class="box box-clinical">
+            <div class="box-title">⚕️ Fractures de l'avant-bras</div>
+            <p>Lors du traitement, il est indispensable de <strong>respecter les courbures</strong> pour ne pas limiter la pronosupination.</p>
+          </div>
+
+          <div class="accordion">
+            <div class="accordion-item open">
+              <div class="accordion-header">A) Radius (latéral)</div>
+              <div class="accordion-content">
+                <div class="accordion-body">
+                  <h4>1. Épiphyse proximale</h4>
+                  <ul>
+                    <li><span class="term">Tête radiale</span> :
+                      <ul>
+                        <li><strong>Fossette articulaire</strong> (face sup.) : cupule → s'articule avec le capitulum</li>
+                        <li><strong>Circonférence articulaire</strong> : → art. radio-ulnaire proximale</li>
+                      </ul>
+                    </li>
+                    <li><span class="term">Col radial</span> : zone rétrécie</li>
+                    <li><span class="term">Tubérosité bicipitale</span> : regarde médialement → <strong>insertion du biceps brachial</strong></li>
+                  </ul>
+                  
+                  <h4>2. Diaphyse</h4>
+                  <p>Triangulaire. 3 bords (antérieur, postérieur, interosseux) et 3 faces.</p>
+                  
+                  <h4>3. Épiphyse distale (quadrangulaire)</h4>
+                  <ul>
+                    <li><strong>Face latérale</strong> : <span class="term">processus styloïde radial</span> (palpable)</li>
+                    <li><strong>Face médiale</strong> : incisure ulnaire → art. radio-ulnaire distale</li>
+                    <li><strong>Face inférieure</strong> : s'articule avec scaphoïde (lat.) et lunatum (méd.)</li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+
+            <div class="accordion-item open">
+              <div class="accordion-header">B) Ulna (médial)</div>
+              <div class="accordion-content">
+                <div class="accordion-body">
+                  <h4>1. Épiphyse proximale</h4>
+                  <ul>
+                    <li><span class="term">Olécrâne</span> : dorsal, insertion du triceps</li>
+                    <li><span class="term">Processus coronoïde</span> : ventral, porte l'<strong>incisure radiale</strong></li>
+                    <li><span class="term">Incisure trochléaire</span> : surface en poulie → s'articule avec la trochlée humérale</li>
+                  </ul>
+                  
+                  <h4>2. Épiphyse distale</h4>
+                  <ul>
+                    <li><span class="term">Tête ulnaire</span> : circonférence articulaire</li>
+                    <li><span class="term">Processus styloïde ulnaire</span> : dorso-médial</li>
+                  </ul>
+                  
+                  <div class="box box-nb">
+                    <div class="box-title">📝 Position des styloïdes</div>
+                    <p>Le styloïde <strong>radial descend plus bas</strong> que l'ulnaire. Si ce décalage disparaît → suspecter fracture.</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="table-wrapper">
+            <table>
+              <thead>
+                <tr><th>Articulation</th><th>RADIUS</th><th>ULNA</th></tr>
+              </thead>
+              <tbody>
+                <tr><td><strong>Proximale</strong></td><td>Circonférence articulaire (tête)</td><td>Incisure radiale (coronoïde)</td></tr>
+                <tr><td><strong>Distale</strong></td><td>Incisure ulnaire</td><td>Circonférence articulaire (tête)</td></tr>
+              </tbody>
+            </table>
+          </div>
+        </section>
+
+        <!-- MAIN -->
+        <section id="main">
+          <h2>II. Poignet et main</h2>
+
+          <div class="accordion">
+            <div class="accordion-item open">
+              <div class="accordion-header">A) Carpe (8 os en 2 rangées)</div>
+              <div class="accordion-content">
+                <div class="accordion-body">
+                  <h4>Rangée proximale (lat → méd)</h4>
+                  <p><strong>Scaphoïde</strong> (tubercule) → <strong>Lunatum</strong> → <strong>Triquetrum</strong> → <strong>Pisiforme</strong></p>
+                  
+                  <h4>Rangée distale (lat → méd)</h4>
+                  <p><strong>Trapèze</strong> (tubercule) → <strong>Trapézoïde</strong> → <strong>Capitatum</strong> (volumineux) → <strong>Hamatum</strong> (hamulus)</p>
+                  
+                  <div class="box box-mnemonic">
+                    <div class="box-title">💡 Mnémotechnique</div>
+                    <p><strong>« Scaphe Lit Tri Pis, Tra Tra Ca Ha »</strong></p>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="accordion-item open">
+              <div class="accordion-header">B) Canal carpien</div>
+              <div class="accordion-content">
+                <div class="accordion-body">
+                  <p>Gouttière fermée par le <span class="term">rétinaculum des fléchisseurs</span>.</p>
+                  
+                  <h4>Insertions du rétinaculum (4 points)</h4>
+                  <ul>
+                    <li>Tubercule du scaphoïde</li>
+                    <li>Tubercule du trapèze</li>
+                    <li>Hamulus de l'hamatum</li>
+                    <li>Pisiforme</li>
+                  </ul>
+                  
+                  <h4>Contenu</h4>
+                  <ul>
+                    <li>Tendons fléchisseurs + gaines synoviales</li>
+                    <li><strong>Nerf médian</strong></li>
+                  </ul>
+                  
+                  <div class="box box-clinical">
+                    <div class="box-title">⚕️ Syndrome du canal carpien</div>
+                    <p>Compression du nerf médian → paresthésies des 3 premiers doigts ± déficit d'opposition du pouce. Traitement : infiltrations ou incision du rétinaculum.</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="accordion-item">
+              <div class="accordion-header">C) Métacarpe et phalanges</div>
+              <div class="accordion-content">
+                <div class="accordion-body">
+                  <p><strong>5 métacarpiens</strong> : base, corps, tête.</p>
+                  <p><strong>Phalanges</strong> : Pouce = 2 | Doigts II-V = 3</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <h2 style="background: var(--primary); color: white; padding: 1rem; border-radius: 8px; margin-top: 2rem;">MEMBRE INFÉRIEUR</h2>
+
+        <!-- OS COXAL -->
+        <section id="coxal">
+          <h2>III. Os coxal</h2>
+          
+          <p>Fusion de <strong>3 os primitifs</strong> au niveau de l'acétabulum :</p>
+          <ul>
+            <li><strong>Ilium</strong> : supérieur</li>
+            <li><strong>Ischium</strong> : postéro-inférieur</li>
+            <li><strong>Pubis</strong> : antéro-inférieur</li>
+          </ul>
+
+          <div class="accordion">
+            <div class="accordion-item open">
+              <div class="accordion-header">A) Face latérale</div>
+              <div class="accordion-content">
+                <div class="accordion-body">
+                  <h4>Acétabulum</h4>
+                  <ul>
+                    <li><span class="term">Surface semi-lunaire</span> : articulaire (cartilage) → tête fémorale</li>
+                    <li><span class="term">Fosse acétabulaire</span> : non-articulaire, insertion ligament tête fémorale</li>
+                    <li><span class="term">Limbus</span> : rebord osseux</li>
+                  </ul>
+                  
+                  <h4>Les 4 épines iliaques</h4>
+                  <div class="table-wrapper">
+                    <table>
+                      <thead><tr><th>Épine</th><th>Position</th><th>Insertions</th></tr></thead>
+                      <tbody>
+                        <tr><td><strong>EIAS</strong></td><td>Antéro-supérieure</td><td>Ligament inguinal, sartorius</td></tr>
+                        <tr><td><strong>EIAI</strong></td><td>Antéro-inférieure</td><td>Droit fémoral</td></tr>
+                        <tr><td><strong>EIPS</strong></td><td>Postéro-supérieure</td><td>Ligaments</td></tr>
+                        <tr><td><strong>EIPI</strong></td><td>Postéro-inférieure</td><td>-</td></tr>
+                      </tbody>
+                    </table>
+                  </div>
+                  
+                  <h4>Autres structures</h4>
+                  <ul>
+                    <li><span class="term">Grande incisure ischiatique</span> : passage du piriforme, nerf sciatique</li>
+                    <li><span class="term">Épine ischiatique</span> : sépare grande/petite incisure</li>
+                    <li><span class="term">Tubérosité ischiatique</span> : insertion ischio-jambiers, appui assis</li>
+                    <li><span class="term">Foramen obturé</span> : fermé par membrane obturatrice</li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+
+            <div class="accordion-item">
+              <div class="accordion-header">B) Face médiale</div>
+              <div class="accordion-content">
+                <div class="accordion-body">
+                  <h4>Ligne arquée (divise la face)</h4>
+                  <ul>
+                    <li><strong>Au-dessus</strong> : fosse iliaque (muscle iliaque), surface auriculaire (sacrum)</li>
+                    <li><strong>Au-dessous</strong> : surface quadrilatère (obturateur interne), foramen obturé</li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <!-- FÉMUR -->
+        <section id="femur">
+          <h2>IV. Fémur et patella</h2>
+
+          <div class="accordion">
+            <div class="accordion-item open">
+              <div class="accordion-header">A) Épiphyse proximale du fémur</div>
+              <div class="accordion-content">
+                <div class="accordion-body">
+                  <ul>
+                    <li><span class="term">Tête fémorale</span> : sphère <strong>25 mm</strong> de rayon, fovea capitis (ligament)</li>
+                    <li><span class="term">Col anatomique</span> :
+                      <ul>
+                        <li><strong>Angle d'inclinaison</strong> : ~<strong>125°</strong></li>
+                        <li><strong>Angle de déclinaison</strong> : ~<strong>15°</strong></li>
+                      </ul>
+                    </li>
+                    <li><span class="term">Grand trochanter</span> : latéral</li>
+                    <li><span class="term">Petit trochanter</span> : postéro-médial</li>
+                    <li><span class="term">Col chirurgical</span> : zone de transition épiphyse/diaphyse</li>
+                  </ul>
+                  
+                  <div class="box box-clinical">
+                    <div class="box-title">⚕️ Fractures du col fémoral</div>
+                    <div class="table-wrapper">
+                      <table>
+                        <thead><tr><th></th><th>Col anatomique</th><th>Col chirurgical</th></tr></thead>
+                        <tbody>
+                          <tr><td><strong>Type</strong></td><td>ARTICULAIRE</td><td>EXTRA-ARTICULAIRE</td></tr>
+                          <tr><td><strong>Traitement</strong></td><td><strong>Prothèse</strong></td><td><strong>Ostéosynthèse</strong></td></tr>
+                        </tbody>
+                      </table>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="accordion-item">
+              <div class="accordion-header">B) Diaphyse et épiphyse distale</div>
+              <div class="accordion-content">
+                <div class="accordion-body">
+                  <h4>Diaphyse</h4>
+                  <p><span class="term">Ligne âpre</span> : bord postérieur, insertion muscles de la cuisse.</p>
+                  
+                  <h4>Épiphyse distale</h4>
+                  <ul>
+                    <li><strong>Condyles fémoraux</strong> (méd. et lat.) → s'articulent avec tibia</li>
+                    <li><strong>Surface patellaire</strong> (ventrale) : facette latérale plus large</li>
+                    <li><strong>Fosse intercondylaire</strong> (dorsale) : ligaments croisés</li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+
+            <div class="accordion-item">
+              <div class="accordion-header">C) Patella</div>
+              <div class="accordion-content">
+                <div class="accordion-body">
+                  <p>Os <span class="term">sésamoïde</span> dans l'appareil du quadriceps. Base (crâniale), apex (caudal). Très exposée aux traumatismes.</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <!-- JAMBE -->
+        <section id="jambe">
+          <h2>V. Jambe — Tibia et Fibula</h2>
+
+          <div class="accordion">
+            <div class="accordion-item open">
+              <div class="accordion-header">A) Tibia (médial, volumineux)</div>
+              <div class="accordion-content">
+                <div class="accordion-body">
+                  <h4>Épiphyse proximale</h4>
+                  <ul>
+                    <li><strong>Condyles tibiaux</strong> + surfaces articulaires → condyles fémoraux</li>
+                    <li><strong>Aire intercondylaire</strong> : ligaments croisés</li>
+                    <li><strong>Tubérosité tibiale</strong> : appareil extenseur du genou</li>
+                  </ul>
+                  
+                  <h4>Diaphyse</h4>
+                  <p>Bord antérieur palpable ("crête tibiale"). Ligne du soléaire (face post.).</p>
+                  
+                  <h4>Épiphyse distale</h4>
+                  <ul>
+                    <li><span class="term">Malléole médiale</span></li>
+                    <li>Surface articulaire tibiale inférieure → talus</li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+
+            <div class="accordion-item open">
+              <div class="accordion-header">B) Fibula (latéral, grêle)</div>
+              <div class="accordion-content">
+                <div class="accordion-body">
+                  <ul>
+                    <li><strong>Tête fibulaire</strong> : s'articule avec tibia (PAS avec fémur)</li>
+                    <li><strong>Malléole latérale</strong> : descend <strong>plus bas</strong> que la médiale</li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+
+            <div class="accordion-item">
+              <div class="accordion-header">C) Pince tibio-fibulaire</div>
+              <div class="accordion-content">
+                <div class="accordion-body">
+                  <p>Les malléoles forment une <span class="term">pince</span> recevant le talus → <strong>articulation talo-crurale</strong> (cheville).</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <!-- PIED -->
+        <section id="pied">
+          <h2>VI. Pied</h2>
+
+          <div class="accordion">
+            <div class="accordion-item open">
+              <div class="accordion-header">A) Tarse (7 os)</div>
+              <div class="accordion-content">
+                <div class="accordion-body">
+                  <h4>Tarse postérieur</h4>
+                  <ul>
+                    <li><span class="term">Talus</span> : trochlée (→ tibia), tête (→ naviculaire)</li>
+                    <li><span class="term">Calcanéus</span> : tubérosité = tendon d'Achille + appui postérieur</li>
+                  </ul>
+                  
+                  <h4>Tarse antérieur</h4>
+                  <p><strong>Cuboïde</strong> | <strong>Naviculaire</strong> | <strong>3 Cunéiformes</strong> (méd., interméd., lat.)</p>
+                </div>
+              </div>
+            </div>
+
+            <div class="accordion-item open">
+              <div class="accordion-header">B) Voûte plantaire (3 arches)</div>
+              <div class="accordion-content">
+                <div class="accordion-body">
+                  <p><strong>3 points d'appui</strong> : tubérosité calcanéenne + têtes M1 et M5</p>
+                  
+                  <div class="table-wrapper">
+                    <table>
+                      <thead><tr><th>Arche</th><th>Situation</th><th>Hauteur</th></tr></thead>
+                      <tbody>
+                        <tr><td><strong>Médiale</strong></td><td>M1 ↔ Calcanéus</td><td>Haute (séparée du sol)</td></tr>
+                        <tr><td><strong>Latérale</strong></td><td>M5 ↔ Calcanéus</td><td>Basse (touche le sol)</td></tr>
+                        <tr><td><strong>Antérieure</strong></td><td>M1 ↔ M5</td><td>Transversale</td></tr>
+                      </tbody>
+                    </table>
+                  </div>
+                  
+                  <div class="box box-clinical">
+                    <div class="box-title">⚕️ Pied plat</div>
+                    <p>Effondrement de la voûte → douleurs à la marche.</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <!-- TABLEAUX RÉCAP -->
+        <section id="tableaux">
+          <h2>Tableaux récapitulatifs</h2>
+          
+          <h3>Insertions musculaires</h3>
+          <div class="table-wrapper">
+            <table>
+              <thead><tr><th>Structure</th><th>Muscle</th></tr></thead>
+              <tbody>
+                <tr><td>Tubérosité bicipitale (radius)</td><td>Biceps brachial</td></tr>
+                <tr><td>Olécrâne (ulna)</td><td>Triceps brachial</td></tr>
+                <tr><td>Fosse iliaque</td><td>Muscle iliaque</td></tr>
+                <tr><td>Face glutéale</td><td>Muscles glutéaux</td></tr>
+                <tr><td>Tubérosité ischiatique</td><td>Ischio-jambiers</td></tr>
+                <tr><td>Ligne âpre (fémur)</td><td>Muscles de la cuisse</td></tr>
+                <tr><td>Tubérosité tibiale</td><td>Quadriceps</td></tr>
+                <tr><td>Tubérosité calcanéenne</td><td>Triceps sural</td></tr>
+              </tbody>
+            </table>
+          </div>
+        </section>
+
+      </div>
+    </main>
+  </div>
+
+  <button class="menu-toggle" onclick="document.querySelector('.sidebar').classList.toggle('open')">☰</button>
+  <script src="../app.js"></script>
+</body>
+</html>

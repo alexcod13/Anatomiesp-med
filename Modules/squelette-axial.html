@@ -1,0 +1,500 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Squelette axial - Anatomie</title>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="../styles.css">
+</head>
+<body>
+  <div class="app">
+    <aside class="sidebar">
+      <div class="sidebar-header">
+        <h1>🦴 Anatomie</h1>
+        <p>Cours PASS/LAS - Tours</p>
+      </div>
+      <nav class="sidebar-nav">
+        <div class="nav-group">
+          <div class="nav-group-title">Accueil</div>
+          <div class="nav-group-items">
+            <a href="../index.html" class="nav-item">🏠 Vue d'ensemble</a>
+          </div>
+        </div>
+        <div class="nav-group">
+          <div class="nav-group-title">Ostéologie</div>
+          <div class="nav-group-items">
+            <a href="osteologie-membres.html" class="nav-item">Ostéologie des membres</a>
+            <a href="squelette-axial.html" class="nav-item active">Squelette axial</a>
+          </div>
+        </div>
+      </nav>
+    </aside>
+
+    <main class="main">
+      <header class="header">
+        <div class="breadcrumb">
+          <a href="../index.html">Accueil</a> / Squelette axial
+        </div>
+        <div class="header-actions">
+          <button class="btn-icon" onclick="expandAllAccordions()">⊞</button>
+          <button class="btn-icon" onclick="collapseAllAccordions()">⊟</button>
+          <button class="btn-icon" id="theme-toggle">◐</button>
+        </div>
+      </header>
+
+      <div class="content">
+        <h1>🦴 Squelette axial</h1>
+        <p><strong>Pr. Destrieux</strong> — Poly spé n°2 — Tutorat Santé de Tours 2025</p>
+
+        <div class="toc">
+          <div class="toc-title">📑 Sommaire</div>
+          <ul class="toc-list">
+            <li><a href="#vertebre">I. Vertèbre fondamentale</a></li>
+            <li><a href="#disque">II. Disque intervertébral</a></li>
+            <li><a href="#nerfs">III. Nerfs rachidiens</a></li>
+            <li><a href="#sacrum">IV. Sacrum</a></li>
+            <li><a href="#cervical">V. Rachis cervical (C1-C2)</a></li>
+            <li><a href="#hernie">VI. Hernies discales</a></li>
+            <li><a href="#thorax">VII. Cage thoracique</a></li>
+          </ul>
+        </div>
+
+        <!-- SECTION I - VERTÈBRE -->
+        <section id="vertebre">
+          <h2>I. Vertèbre fondamentale</h2>
+
+          <div class="accordion">
+            <div class="accordion-item open">
+              <div class="accordion-header">A) Constitution générale</div>
+              <div class="accordion-content">
+                <div class="accordion-body">
+                  <ul>
+                    <li><span class="term">Corps vertébral</span> : partie antérieure, cylindrique, supporte le poids</li>
+                    <li><span class="term">Arc vertébral</span> : partie postérieure, forme le foramen vertébral</li>
+                    <li><span class="term">Pédicules</span> : relient le corps à l'arc</li>
+                    <li><span class="term">Lames</span> : parties postérieures de l'arc</li>
+                    <li><span class="term">Processus épineux</span> : projection postérieure médiane</li>
+                    <li><span class="term">Processus transverses</span> : projections latérales</li>
+                    <li><span class="term">Processus articulaires</span> : supérieurs et inférieurs (4 par vertèbre)</li>
+                  </ul>
+                  
+                  <p><strong>Foramen vertébral</strong> : l'empilement forme le <span class="term">canal vertébral</span> → contient le fourreau dural.</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <!-- SECTION II - DISQUE -->
+        <section id="disque">
+          <h2>II. Disque intervertébral</h2>
+
+          <div class="accordion">
+            <div class="accordion-item open">
+              <div class="accordion-header">A) Structure</div>
+              <div class="accordion-content">
+                <div class="accordion-body">
+                  <ul>
+                    <li><span class="term">Noyau pulpeux</span> (nucleus pulposus) : centre gélatineux, 80% d'eau, amortisseur</li>
+                    <li><span class="term">Anneau fibreux</span> (annulus fibrosus) : lamelles concentriques de fibrocartilage</li>
+                  </ul>
+                  
+                  <div class="box box-nb">
+                    <div class="box-title">📝 Variation de taille</div>
+                    <p>Le disque se comprime dans la journée (perte de quelques cm) et se regonfle la nuit (noyau pulpeux se réhydrate).</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="accordion-item">
+              <div class="accordion-header">B) Systèmes de protection du rachis</div>
+              <div class="accordion-content">
+                <div class="accordion-body">
+                  <div class="table-wrapper">
+                    <table>
+                      <thead>
+                        <tr><th>Structure</th><th>Type</th><th>Rôle</th></tr>
+                      </thead>
+                      <tbody>
+                        <tr><td>Disque intervertébral</td><td>Passif</td><td>Amortisseur en avant</td></tr>
+                        <tr><td>Ligaments inter-épineux</td><td>Passif</td><td>Limitent la flexion (ressort)</td></tr>
+                        <tr><td>Muscles vertébraux</td><td><strong>Actif</strong></td><td>Soulagent le corps vertébral</td></tr>
+                      </tbody>
+                    </table>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <!-- SECTION III - NERFS RACHIDIENS -->
+        <section id="nerfs">
+          <h2>III. Nerfs rachidiens</h2>
+
+          <div class="accordion">
+            <div class="accordion-item open">
+              <div class="accordion-header">A) Foramen intervertébral</div>
+              <div class="accordion-content">
+                <div class="accordion-body">
+                  <p>Le <span class="term">foramen intervertébral</span> est limité par :</p>
+                  <ul>
+                    <li><strong>Haut/bas</strong> : pédicules des vertèbres sus et sous-jacentes</li>
+                    <li><strong>Arrière</strong> : processus articulaires</li>
+                    <li><strong>Avant</strong> : corps vertébral (haut) + disque intervertébral (bas)</li>
+                  </ul>
+                  <p>→ Passage des <strong>nerfs rachidiens</strong></p>
+                  
+                  <div class="box box-clinical">
+                    <div class="box-title">⚕️ Sténose foraminale</div>
+                    <p>Espace limité et inextensible → toute réduction (hernie, arthrose) comprime les nerfs.</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="accordion-item open">
+              <div class="accordion-header">B) Nomenclature des nerfs rachidiens</div>
+              <div class="accordion-content">
+                <div class="accordion-body">
+                  <div class="table-wrapper">
+                    <table>
+                      <thead>
+                        <tr><th>Niveau</th><th>Règle</th><th>Exemple</th></tr>
+                      </thead>
+                      <tbody>
+                        <tr>
+                          <td><strong>Cervical</strong> (C1-C7)</td>
+                          <td>Nerf = vertèbre <strong>SOUS-JACENTE</strong></td>
+                          <td>Entre C5-C6 → nerf <strong>C6</strong></td>
+                        </tr>
+                        <tr>
+                          <td><strong>Jonction C7-T1</strong></td>
+                          <td>Nerf <strong>C8</strong> (pas de vertèbre C8)</td>
+                          <td>Entre C7-T1 → nerf <strong>C8</strong></td>
+                        </tr>
+                        <tr>
+                          <td><strong>Thoracique, Lombaire, Sacré</strong></td>
+                          <td>Nerf = vertèbre <strong>SUS-JACENTE</strong></td>
+                          <td>Entre L4-L5 → nerf <strong>L4</strong></td>
+                        </tr>
+                      </tbody>
+                    </table>
+                  </div>
+                  
+                  <div class="box box-nb">
+                    <div class="box-title">📝 NB</div>
+                    <p>Il y a <strong>8 paires de nerfs cervicaux</strong> mais seulement <strong>7 vertèbres cervicales</strong>.</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <!-- SECTION IV - SACRUM -->
+        <section id="sacrum">
+          <h2>IV. Sacrum</h2>
+
+          <div class="accordion">
+            <div class="accordion-item open">
+              <div class="accordion-header">A) Constitution</div>
+              <div class="accordion-content">
+                <div class="accordion-body">
+                  <p>Fusion des <strong>5 pièces sacrées</strong> (S1-S5). Forme triangulaire/pyramidale, concave vers l'avant.</p>
+                  
+                  <ul>
+                    <li><span class="term">Promontoire sacré</span> : plateau de S1, réniforme, s'articule avec L5</li>
+                    <li><span class="term">Crête sacrée médiane</span> : reliquat des processus épineux</li>
+                    <li><span class="term">Ailes sacrées</span> : latérales</li>
+                    <li><span class="term">Surfaces auriculaires</span> : articulation avec l'os coxal</li>
+                    <li><span class="term">Foramens sacrés</span> : sortie des nerfs sacrés (équivalent des foramens intervertébraux)</li>
+                    <li><span class="term">Coccyx</span> : appendu au sacrum, ébauches vertébrales résiduelles</li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+
+            <div class="accordion-item open">
+              <div class="accordion-header">B) Contraintes à la jonction L5-S1</div>
+              <div class="accordion-content">
+                <div class="accordion-body">
+                  <p>Le poids du corps s'applique sur L5-S1 (S1 est pentu) → tendance au <strong>glissement de L5 vers l'avant</strong>.</p>
+                  
+                  <p>Décomposition des forces :</p>
+                  <ul>
+                    <li><strong>F1</strong> : perpendiculaire au plateau S1 → contraintes sur le sacrum</li>
+                    <li><strong>F2</strong> : parallèle au plateau S1 → composante <strong>luxante</strong> (glissement)</li>
+                  </ul>
+                  
+                  <p>Les <strong>processus articulaires</strong> forment un système d'accrochage en arrière pour éviter le glissement.</p>
+                  <p>L'<span class="term">isthme</span> (entre les processus articulaires) est une zone fragile.</p>
+                  
+                  <div class="box box-clinical">
+                    <div class="box-title">⚕️ Spondylolisthésis (lyse isthmique)</div>
+                    <p><strong>Fracture de l'isthme</strong> → L5 glisse en avant avec le disque → lombalgies + compression nerveuse.<br>
+                    <strong>Traitement</strong> : arthrodèse (ostéosynthèse par vis/plaques).</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <!-- SECTION V - RACHIS CERVICAL -->
+        <section id="cervical">
+          <h2>V. Rachis cervical — C1 (Atlas) et C2 (Axis)</h2>
+
+          <div class="box box-mnemonic">
+            <div class="box-title">💡 Mnémotechnique</div>
+            <p><strong>Atlas</strong> arrive en premier dans le dictionnaire → <strong>C1</strong><br>
+            <strong>Axis</strong> arrive en second → <strong>C2</strong><br>
+            Atlas = le géant qui porte le monde sur ses épaules (C1 porte le crâne).</p>
+          </div>
+
+          <div class="accordion">
+            <div class="accordion-item open">
+              <div class="accordion-header">A) C2 — Axis</div>
+              <div class="accordion-content">
+                <div class="accordion-body">
+                  <ul>
+                    <li><span class="term">Processus odontoïde</span> (dent) : expansion volumineuse du corps de C2, sert de <strong>pivot pour la ROTATION</strong></li>
+                    <li>Foramens transversaires : passage des artères vertébrales</li>
+                    <li>Processus épineux volumineux</li>
+                    <li>Processus articulaires supérieurs : déjetés vers l'avant, s'articulent avec C1</li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+
+            <div class="accordion-item open">
+              <div class="accordion-header">B) C1 — Atlas</div>
+              <div class="accordion-content">
+                <div class="accordion-body">
+                  <p>Anneau qui se positionne autour du processus odontoïde.</p>
+                  
+                  <ul>
+                    <li><span class="term">Masses latérales</span> :
+                      <ul>
+                        <li>Face sup. : s'articule avec les <strong>condyles occipitaux</strong> → FLEXION/EXTENSION</li>
+                        <li>Face inf. : s'articule avec C2 → ROTATION</li>
+                      </ul>
+                    </li>
+                    <li>Arc antérieur : entoure le processus odontoïde</li>
+                    <li>Arc postérieur (plus large)</li>
+                    <li>Foramens transversaires : artères vertébrales</li>
+                  </ul>
+                  
+                  <div class="box box-nb">
+                    <div class="box-title">📝 NB</div>
+                    <p>C1 n'a <strong>PAS de processus épineux</strong> ni de corps vertébral classique.</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="accordion-item">
+              <div class="accordion-header">C) Articulations et mouvements</div>
+              <div class="accordion-content">
+                <div class="accordion-body">
+                  <div class="table-wrapper">
+                    <table>
+                      <thead>
+                        <tr><th>Articulation</th><th>Mouvement</th></tr>
+                      </thead>
+                      <tbody>
+                        <tr><td><strong>Occipito-C1</strong></td><td>Flexion / Extension de la tête</td></tr>
+                        <tr><td><strong>C1-C2</strong></td><td>Rotation de la tête</td></tr>
+                      </tbody>
+                    </table>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="accordion-item">
+              <div class="accordion-header">D) Artère vertébrale</div>
+              <div class="accordion-content">
+                <div class="accordion-body">
+                  <ul>
+                    <li>Naît de l'artère <strong>subclavière</strong></li>
+                    <li>Monte dans les foramens transversaires (à partir de C6)</li>
+                    <li>Fait <strong>2 boucles</strong> au niveau cervical haut :
+                      <ul>
+                        <li>Boucle C1-C2 : flexibilité pour la rotation</li>
+                        <li>Boucle occipito-C1 : flexibilité pour la flexion/extension</li>
+                      </ul>
+                    </li>
+                    <li>Entre dans le crâne → vascularise fosse postérieure, cervelet, tronc cérébral</li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <!-- SECTION VI - HERNIE -->
+        <section id="hernie">
+          <h2>VI. Hernies discales lombaires</h2>
+
+          <div class="accordion">
+            <div class="accordion-item open">
+              <div class="accordion-header">A) Mécanisme</div>
+              <div class="accordion-content">
+                <div class="accordion-body">
+                  <p>Usure/fissure de l'anneau fibreux → le <strong>noyau pulpeux s'échappe</strong> postérieurement → compression nerveuse.</p>
+                  
+                  <div class="box box-clinical">
+                    <div class="box-title">⚕️ Syndrome de la queue de cheval</div>
+                    <p>Compression complète du fourreau dural (tous les nerfs de l'étage) → <strong>paraplégie</strong>. Urgence chirurgicale.</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="accordion-item open">
+              <div class="accordion-header">B) Deux types de hernies</div>
+              <div class="accordion-content">
+                <div class="accordion-body">
+                  <h4>1. Hernie FORAMINALE</h4>
+                  <p>Comprime le nerf <strong>sortant par le foramen</strong> (= nerf de la vertèbre sus-jacente).</p>
+                  
+                  <h4>2. Hernie POSTÉRO-LATÉRALE</h4>
+                  <p>Plus médiale, comprime le nerf <strong>naissant</strong> à ce niveau (= nerf de la vertèbre sous-jacente).</p>
+                </div>
+              </div>
+            </div>
+
+            <div class="accordion-item open">
+              <div class="accordion-header">C) Tableau : quel nerf pour quelle hernie ?</div>
+              <div class="accordion-content">
+                <div class="accordion-body">
+                  <div class="table-wrapper">
+                    <table>
+                      <thead>
+                        <tr><th>Niveau discal</th><th>Hernie FORAMINALE</th><th>Hernie POSTÉRO-LATÉRALE</th></tr>
+                      </thead>
+                      <tbody>
+                        <tr><td><strong>L4-L5</strong></td><td>Nerf L4</td><td>Nerf L5</td></tr>
+                        <tr><td><strong>L5-S1</strong></td><td>Nerf L5</td><td>Nerf S1</td></tr>
+                      </tbody>
+                    </table>
+                  </div>
+                  
+                  <div class="box box-recap">
+                    <div class="box-title">📋 Topographie des douleurs</div>
+                    <div class="table-wrapper">
+                      <table>
+                        <thead>
+                          <tr><th>Nerf atteint</th><th>Douleur</th><th>Nom</th></tr>
+                        </thead>
+                        <tbody>
+                          <tr><td><strong>L4</strong></td><td>Face <strong>antérieure</strong> de la cuisse</td><td><strong>Cruralgie</strong></td></tr>
+                          <tr><td><strong>L5</strong></td><td>Face post. cuisse → face ant. jambe → dos du pied → gros orteil</td><td><strong>Sciatique L5</strong></td></tr>
+                          <tr><td><strong>S1</strong></td><td>Face post. cuisse → face post. mollet → plante du pied → 5e orteil</td><td><strong>Sciatique S1</strong></td></tr>
+                        </tbody>
+                      </table>
+                    </div>
+                  </div>
+                  
+                  <div class="box box-nb">
+                    <div class="box-title">📝 À retenir</div>
+                    <p>Une <strong>sciatique L5</strong> peut être due à :<br>
+                    - Hernie <strong>postéro-latérale L4-L5</strong><br>
+                    - Hernie <strong>foraminale L5-S1</strong></p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <!-- SECTION VII - THORAX -->
+        <section id="thorax">
+          <h2>VII. Cage thoracique</h2>
+
+          <p>Armature rigide assurant : <strong>protection des organes</strong> + <strong>respiration</strong> (mouvements du diaphragme).</p>
+
+          <div class="accordion">
+            <div class="accordion-item open">
+              <div class="accordion-header">A) Sternum</div>
+              <div class="accordion-content">
+                <div class="accordion-body">
+                  <p>Os plat, 3 parties de haut en bas :</p>
+                  <ul>
+                    <li><span class="term">Manubrium</span> (1/3 sup.) : incisure jugulaire, incisures claviculaires, incisures costales 1-2</li>
+                    <li><span class="term">Corps</span> (2/3 inf.) : incisures costales 2-7</li>
+                    <li><span class="term">Processus xiphoïde</span></li>
+                  </ul>
+                  
+                  <h4>Repères vertébraux</h4>
+                  <div class="table-wrapper">
+                    <table>
+                      <thead>
+                        <tr><th>Repère sternal</th><th>Vertèbre</th></tr>
+                      </thead>
+                      <tbody>
+                        <tr><td>Incisure jugulaire</td><td><strong>T2</strong></td></tr>
+                        <tr><td>Angle sternal (manubrium/corps)</td><td><strong>T4</strong></td></tr>
+                        <tr><td>Processus xiphoïde</td><td><strong>T10</strong></td></tr>
+                      </tbody>
+                    </table>
+                  </div>
+                  
+                  <div class="box box-clinical">
+                    <div class="box-title">⚕️ Ponction sternale</div>
+                    <p>Prélèvement de moelle osseuse (os spongieux) pour étude des lignées sanguines.</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="accordion-item open">
+              <div class="accordion-header">B) Côtes</div>
+              <div class="accordion-content">
+                <div class="accordion-body">
+                  <h4>Structure d'une côte</h4>
+                  <ul>
+                    <li><strong>Tête</strong> : 2 surfaces articulaires (vertèbres sus et sous-jacentes)</li>
+                    <li><strong>Col</strong> : rétréci</li>
+                    <li><strong>Tubercule</strong> : s'articule avec processus transverse</li>
+                    <li><strong>Corps</strong> : incurvé, concave médialement</li>
+                  </ul>
+                  
+                  <h4>Classification des côtes</h4>
+                  <div class="table-wrapper">
+                    <table>
+                      <thead>
+                        <tr><th>Type</th><th>Côtes</th><th>Caractéristique</th></tr>
+                      </thead>
+                      <tbody>
+                        <tr><td><strong>Vraies côtes</strong></td><td>1-7</td><td>Cartilage propre → sternum</td></tr>
+                        <tr><td><strong>Fausses côtes</strong></td><td>8-10</td><td>Cartilage commun avec côte 7</td></tr>
+                        <tr><td><strong>Côtes flottantes</strong></td><td>11-12</td><td>Pas de lien avec le sternum</td></tr>
+                      </tbody>
+                    </table>
+                  </div>
+                  
+                  <div class="box box-clinical">
+                    <div class="box-title">⚕️ Fractures de côtes</div>
+                    <ul>
+                      <li><strong>Isolée</strong> : douleur importante mais pas grave, antalgiques</li>
+                      <li><strong>Multiples</strong> : <span class="term">volet costal</span> → segment se sépare → respiration inefficace (respiration paradoxale)</li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+
+      </div>
+    </main>
+  </div>
+
+  <button class="menu-toggle" onclick="document.querySelector('.sidebar').classList.toggle('open')">☰</button>
+  <script src="../app.js"></script>
+</body>
+</html>

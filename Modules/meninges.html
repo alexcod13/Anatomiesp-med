@@ -1,0 +1,552 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Méninges - Anatomie</title>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="../styles.css">
+</head>
+<body>
+  <div class="app">
+    <aside class="sidebar">
+      <div class="sidebar-header">
+        <h1>🦴 Anatomie</h1>
+        <p>Cours PASS/LAS - Tours</p>
+      </div>
+      <nav class="sidebar-nav">
+        <div class="nav-group">
+          <div class="nav-group-title">Accueil</div>
+          <div class="nav-group-items">
+            <a href="../index.html" class="nav-item">🏠 Vue d'ensemble</a>
+          </div>
+        </div>
+        <div class="nav-group">
+          <div class="nav-group-title">Neuroanatomie</div>
+          <div class="nav-group-items">
+            <a href="meninges.html" class="nav-item active">Méninges</a>
+            <a href="sn-fonctionnel.html" class="nav-item">SN fonctionnel</a>
+            <a href="voies-visuelles.html" class="nav-item">Voies visuelles</a>
+          </div>
+        </div>
+      </nav>
+    </aside>
+
+    <main class="main">
+      <header class="header">
+        <div class="breadcrumb">
+          <a href="../index.html">Accueil</a> / Méninges du crâne et du rachis
+        </div>
+        <div class="header-actions">
+          <button class="btn-icon" onclick="expandAllAccordions()">⊞</button>
+          <button class="btn-icon" onclick="collapseAllAccordions()">⊟</button>
+          <button class="btn-icon" id="theme-toggle">◐</button>
+        </div>
+      </header>
+
+      <div class="content">
+        <h1>🧠 Méninges du crâne et du rachis</h1>
+        <p><strong>Pr. Destrieux</strong> — Poly spé n°7 — Tutorat Santé de Tours 2025</p>
+
+        <div class="toc">
+          <div class="toc-title">📑 Sommaire</div>
+          <ul class="toc-list">
+            <li><a href="#generalites">I. Généralités</a></li>
+            <li><a href="#espaces">II. Espaces méningés</a></li>
+            <li><a href="#duremere">III. Dure-mère crânienne</a></li>
+            <li><a href="#sinus">IV. Sinus veineux</a></li>
+            <li><a href="#caverneux">V. Sinus caverneux</a></li>
+            <li><a href="#cloisons">VI. Cloisons durales et engagements</a></li>
+            <li><a href="#rachis">VII. Méninges du rachis</a></li>
+          </ul>
+        </div>
+
+        <!-- SECTION I - GÉNÉRALITÉS -->
+        <section id="generalites">
+          <h2>I. Généralités — Les 3 méninges</h2>
+
+          <div class="box box-recap">
+            <div class="box-title">📋 Les 3 méninges (de dehors en dedans)</div>
+            <ol>
+              <li><strong>DURE-MÈRE</strong> : la plus externe, épaisse et résistante</li>
+              <li><strong>ARACHNOÏDE</strong> : intermédiaire, fine membrane</li>
+              <li><strong>PIE-MÈRE</strong> : la plus interne, adhère au SNC</li>
+            </ol>
+          </div>
+
+          <div class="accordion">
+            <div class="accordion-item open">
+              <div class="accordion-header">A) Dure-mère (DM)</div>
+              <div class="accordion-content">
+                <div class="accordion-body">
+                  <h4>Au niveau du crâne : 2 feuillets</h4>
+                  <ul>
+                    <li><span class="term">DM externe</span> (ostéo-périostée) : adhère à l'os, forme le périoste interne du crâne</li>
+                    <li><span class="term">DM interne</span> (encéphalique) : enveloppe le cerveau, forme les cloisons durales</li>
+                  </ul>
+                  
+                  <h4>Au niveau du rachis : 1 seul feuillet</h4>
+                  <p>La DM externe disparaît au foramen magnum → seule la DM interne forme le <strong>sac dural</strong>.</p>
+                </div>
+              </div>
+            </div>
+
+            <div class="accordion-item">
+              <div class="accordion-header">B) Arachnoïde</div>
+              <div class="accordion-content">
+                <div class="accordion-body">
+                  <ul>
+                    <li>Fine membrane entre dure-mère et pie-mère</li>
+                    <li>Forme les <span class="term">granulations arachnoïdiennes</span> → réabsorption du LCS</li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+
+            <div class="accordion-item">
+              <div class="accordion-header">C) Pie-mère</div>
+              <div class="accordion-content">
+                <div class="accordion-body">
+                  <ul>
+                    <li>Méninge la plus profonde, adhère au SNC</li>
+                    <li>S'invagine dans tous les sillons</li>
+                    <li>Forme les <span class="term">plexus choroïdes</span> dans les ventricules → sécrétion du LCS (~250 mL/jour)</li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <!-- SECTION II - ESPACES -->
+        <section id="espaces">
+          <h2>II. Espaces méningés</h2>
+
+          <div class="table-wrapper">
+            <table>
+              <thead>
+                <tr><th>Espace</th><th>Situation</th><th>Contenu</th><th>Pathologie</th></tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td><span class="term">Extradural</span> (épidural)</td>
+                  <td>Entre os et DM externe</td>
+                  <td>Artère méningée moyenne</td>
+                  <td><strong>Hématome extradural</strong></td>
+                </tr>
+                <tr>
+                  <td><span class="term">Sous-dural</span></td>
+                  <td>Entre DM interne et arachnoïde</td>
+                  <td>Veines cortico-durales</td>
+                  <td><strong>Hématome sous-dural</strong></td>
+                </tr>
+                <tr>
+                  <td><span class="term">Sous-arachnoïdien</span></td>
+                  <td>Entre arachnoïde et pie-mère</td>
+                  <td><strong>LCS</strong>, artères cérébrales</td>
+                  <td><strong>Hémorragie sous-arachnoïdienne</strong></td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+
+          <div class="accordion">
+            <div class="accordion-item open">
+              <div class="accordion-header">A) Hématome extradural</div>
+              <div class="accordion-content">
+                <div class="accordion-body">
+                  <ul>
+                    <li>Lésion de l'<strong>artère méningée moyenne</strong> (traumatisme temporal)</li>
+                    <li>Hématome en lentille <strong>biconvexe</strong></li>
+                    <li><strong>Intervalle libre</strong> puis aggravation rapide</li>
+                    <li>Urgence neurochirurgicale</li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+
+            <div class="accordion-item">
+              <div class="accordion-header">B) Hématome sous-dural</div>
+              <div class="accordion-content">
+                <div class="accordion-body">
+                  <ul>
+                    <li>Lésion des <strong>veines cortico-durales</strong></li>
+                    <li>Hématome en <strong>croissant</strong> (concave)</li>
+                    <li>Fréquent chez le sujet âgé (atrophie cérébrale → veines étirées)</li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+
+            <div class="accordion-item open">
+              <div class="accordion-header">C) Hémorragie sous-arachnoïdienne</div>
+              <div class="accordion-content">
+                <div class="accordion-body">
+                  <ul>
+                    <li>Rupture d'<strong>anévrisme</strong> (artère communicante antérieure ++)</li>
+                    <li>Céphalée brutale "en coup de tonnerre"</li>
+                    <li>Sang dans le LCS (PL rouge qui ne s'éclaircit pas)</li>
+                  </ul>
+                  
+                  <div class="box box-clinical">
+                    <div class="box-title">⚕️ Anévrisme cérébral</div>
+                    <p>Dilatation localisée de la paroi artérielle. Sites fréquents : artère communicante antérieure, carotide interne, artère cérébrale moyenne. Risque de rupture → hémorragie méningée.</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <!-- SECTION III - DURE-MÈRE CRÂNIENNE -->
+        <section id="duremere">
+          <h2>III. Dure-mère crânienne</h2>
+
+          <div class="accordion">
+            <div class="accordion-item open">
+              <div class="accordion-header">A) Feuillet externe (ostéo-périostée)</div>
+              <div class="accordion-content">
+                <div class="accordion-body">
+                  <ul>
+                    <li>Tapisse toute la face interne du crâne</li>
+                    <li>Se prolonge par la <strong>sclère</strong> au niveau de l'orbite</li>
+                    <li>Recouvre les reliefs de la base du crâne</li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+
+            <div class="accordion-item open">
+              <div class="accordion-header">B) Feuillet interne (encéphalique)</div>
+              <div class="accordion-content">
+                <div class="accordion-body">
+                  <p>Se décolle du feuillet externe pour former :</p>
+                  <ul>
+                    <li>Les <strong>cloisons durales</strong> (faux du cerveau, tente du cervelet)</li>
+                    <li>Les <strong>sinus veineux</strong> (espaces inter-duraux)</li>
+                    <li>Le <strong>sac dural hypophysaire</strong></li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <!-- SECTION IV - SINUS VEINEUX -->
+        <section id="sinus">
+          <h2>IV. Sinus veineux duraux</h2>
+
+          <div class="tree">
+            <div class="tree-node tree-root expanded">
+              <span class="tree-label expandable">DRAINAGE VEINEUX CÉRÉBRAL</span>
+              <div class="tree-children">
+                <div class="tree-node expanded">
+                  <span class="tree-label expandable">Sinus sagittal supérieur (voûte, ligne médiane)</span>
+                  <div class="tree-children">
+                    <div class="tree-node"><span class="tree-label">↓ Lacunes latéro-sinusiennes</span></div>
+                    <div class="tree-node"><span class="tree-label">↓ Veines émissaires (→ scalp)</span></div>
+                  </div>
+                </div>
+                <div class="tree-node">
+                  <span class="tree-label">Sinus droit (reçoit grande veine cérébrale)</span>
+                </div>
+                <div class="tree-node expanded">
+                  <span class="tree-label expandable">↓ CONFLUENT POSTÉRIEUR DES SINUS</span>
+                  <div class="tree-children">
+                    <div class="tree-node expanded">
+                      <span class="tree-label expandable">↓ Sinus TRANSVERSE (D et G)</span>
+                      <div class="tree-children">
+                        <div class="tree-node expanded">
+                          <span class="tree-label expandable">↓ Sinus SIGMOÏDE</span>
+                          <div class="tree-children">
+                            <div class="tree-node"><span class="tree-label">↓ VEINE JUGULAIRE INTERNE</span></div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="box box-nb">
+            <div class="box-title">📝 NB</div>
+            <ul>
+              <li><strong>Sinus latéral</strong> = sinus transverse + sinus sigmoïde</li>
+              <li>Le sinus pétreux supérieur suit l'arête supéro-médiale du rocher</li>
+              <li>Le sinus pétreux inférieur rejoint la veine jugulaire interne au foramen jugulaire</li>
+            </ul>
+          </div>
+
+          <div class="box box-clinical">
+            <div class="box-title">⚕️ Thrombophlébite cérébrale</div>
+            <p>Une infection du scalp peut se propager via les <strong>veines émissaires</strong> jusqu'aux sinus → thrombose veineuse cérébrale.</p>
+          </div>
+        </section>
+
+        <!-- SECTION V - SINUS CAVERNEUX -->
+        <section id="caverneux">
+          <h2>V. Sinus caverneux</h2>
+
+          <div class="accordion">
+            <div class="accordion-item open">
+              <div class="accordion-header">A) Situation</div>
+              <div class="accordion-content">
+                <div class="accordion-body">
+                  <ul>
+                    <li>De part et d'autre de la <strong>selle turcique</strong> (sinus sphénoïdal)</li>
+                    <li>Espace inter-dural rempli de sang veineux + îlots graisseux</li>
+                    <li>Le toit est formé par les <strong>plis pétro-clinoïdiens antérieurs</strong></li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+
+            <div class="accordion-item open">
+              <div class="accordion-header">B) Contenu du sinus caverneux</div>
+              <div class="accordion-content">
+                <div class="accordion-body">
+                  <h4>À l'intérieur du sinus</h4>
+                  <ul>
+                    <li><span class="term">Artère carotide interne</span> (portion intra-caverneuse)</li>
+                    <li><span class="term">Nerf abducens (VI)</span> : contre l'ACI</li>
+                  </ul>
+                  
+                  <h4>Dans la paroi latérale (de haut en bas)</h4>
+                  <ol>
+                    <li><span class="term">Nerf oculomoteur (III)</span></li>
+                    <li><span class="term">Nerf trochléaire (IV)</span></li>
+                    <li><span class="term">Nerf ophtalmique (V1)</span></li>
+                  </ol>
+                  
+                  <div class="box box-nb">
+                    <div class="box-title">📝 NB</div>
+                    <p>Le <strong>nerf maxillaire (V2)</strong> passe sous le sinus caverneux (limite inférieure) → n'en fait PAS partie.</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="accordion-item">
+              <div class="accordion-header">C) Hypophyse et diaphragme sellaire</div>
+              <div class="accordion-content">
+                <div class="accordion-body">
+                  <ul>
+                    <li><strong>Hypophyse</strong> : dans le sac dural hypophysaire (invagination de la DM interne)</li>
+                    <li><strong>Diaphragme sellaire</strong> : toit de la selle turcique, percé par la tige hypophysaire</li>
+                    <li><strong>Foramen hypophysaire</strong> : laisse passer la tige pituitaire</li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <!-- SECTION VI - CLOISONS ET ENGAGEMENTS -->
+        <section id="cloisons">
+          <h2>VI. Cloisons durales et engagements cérébraux</h2>
+
+          <div class="accordion">
+            <div class="accordion-item open">
+              <div class="accordion-header">A) Cloisons durales</div>
+              <div class="accordion-content">
+                <div class="accordion-body">
+                  <div class="table-wrapper">
+                    <table>
+                      <thead>
+                        <tr><th>Cloison</th><th>Situation</th><th>Rôle</th><th>Orifice</th></tr>
+                      </thead>
+                      <tbody>
+                        <tr>
+                          <td><span class="term">Faux du cerveau</span></td>
+                          <td>Sagittale, ligne médiane</td>
+                          <td>Sépare les 2 hémisphères cérébraux</td>
+                          <td>Bord libre antérieur</td>
+                        </tr>
+                        <tr>
+                          <td><span class="term">Tente du cervelet</span></td>
+                          <td>Horizontale</td>
+                          <td>Sépare cervelet des hémisphères</td>
+                          <td><strong>Incisure tentorielle</strong> (tronc cérébral)</td>
+                        </tr>
+                      </tbody>
+                    </table>
+                  </div>
+                  
+                  <h4>Les 3 compartiments crâniens</h4>
+                  <ul>
+                    <li>Compartiment <strong>sous-tentoriel</strong> (fosse postérieure)</li>
+                    <li>Compartiment <strong>sus-tentoriel droit</strong></li>
+                    <li>Compartiment <strong>sus-tentoriel gauche</strong></li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+
+            <div class="accordion-item open">
+              <div class="accordion-header">B) Engagements cérébraux (URGENT)</div>
+              <div class="accordion-content">
+                <div class="accordion-body">
+                  <p>Une <span class="term">hypertension intracrânienne</span> (HTIC) crée un gradient de pression → le parenchyme se déplace vers les zones de basse pression.</p>
+                  
+                  <div class="table-wrapper">
+                    <table>
+                      <thead>
+                        <tr><th>Type d'engagement</th><th>Mécanisme</th><th>Conséquences</th></tr>
+                      </thead>
+                      <tbody>
+                        <tr>
+                          <td><strong>Sous-falcoriel</strong></td>
+                          <td>Sous le bord libre de la faux</td>
+                          <td>Peu de conséquence clinique</td>
+                        </tr>
+                        <tr>
+                          <td><strong>Temporal (transtentoriel)</strong></td>
+                          <td>Lobe temporal dans l'incisure tentorielle</td>
+                          <td><strong>Mydriase, ptosis, coma, hémiplégie controlatérale</strong></td>
+                        </tr>
+                        <tr>
+                          <td><strong>Tonsillaire (occipital)</strong></td>
+                          <td>Amygdales cérébelleuses dans le foramen magnum</td>
+                          <td>Compression du tronc cérébral → <strong>décès</strong></td>
+                        </tr>
+                      </tbody>
+                    </table>
+                  </div>
+                  
+                  <div class="box box-clinical">
+                    <div class="box-title">⚕️ Engagement temporal — Signes cliniques</div>
+                    <ul>
+                      <li><strong>Mydriase</strong> (dilatation pupillaire) — compression du III</li>
+                      <li><strong>Ptosis</strong> (chute de la paupière) — compression du III</li>
+                      <li><strong>Coma</strong> — compression du tronc cérébral</li>
+                      <li><strong>Hémiplégie controlatérale</strong> — compression voie motrice</li>
+                      <li>Troubles respiratoires et cardiaques</li>
+                    </ul>
+                    <p><strong>⚠️ Urgence vitale — Décès possible en quelques heures</strong></p>
+                  </div>
+                  
+                  <div class="box box-nb">
+                    <div class="box-title">📝 INTERDIT — Ponction lombaire si HTIC</div>
+                    <p>Devant toute suspicion d'HTIC : <strong>imagerie AVANT ponction lombaire</strong>. Une PL diminuerait la pression rachidienne → majoration du gradient → aggravation de l'engagement.</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <!-- SECTION VII - RACHIS -->
+        <section id="rachis">
+          <h2>VII. Méninges du rachis</h2>
+
+          <div class="accordion">
+            <div class="accordion-item open">
+              <div class="accordion-header">A) Organisation</div>
+              <div class="accordion-content">
+                <div class="accordion-body">
+                  <ul>
+                    <li>La DM externe disparaît au foramen magnum → remplacée par le périoste vertébral</li>
+                    <li>La DM interne forme le <span class="term">sac dural</span> (fourreau dural)</li>
+                    <li><span class="term">Espace épidural</span> (entre périoste et sac dural) : <strong>très large</strong>, contient graisse + plexus veineux</li>
+                  </ul>
+                  
+                  <h4>Contenu du sac dural</h4>
+                  <ul>
+                    <li>Au-dessus de <strong>L1/L2</strong> : moelle épinière</li>
+                    <li>En-dessous de <strong>L1/L2</strong> : queue de cheval</li>
+                    <li>Le sac dural se termine en <strong>S2</strong></li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+
+            <div class="accordion-item open">
+              <div class="accordion-header">B) Ponction lombaire (PL)</div>
+              <div class="accordion-content">
+                <div class="accordion-body">
+                  <p>Prélèvement de LCS dans l'<strong>espace sous-arachnoïdien</strong>.</p>
+                  
+                  <h4>Technique</h4>
+                  <ul>
+                    <li>Niveau : <strong>L4/L5</strong> ou <strong>L5/S1</strong> (repère : ligne des crêtes iliaques)</li>
+                    <li>Position : patient assis, dos rond (ouvre l'espace inter-épineux)</li>
+                    <li>Trajet : <strong>ligne médiane</strong>, légèrement ascendant</li>
+                    <li>Traverse : ligament jaune → dure-mère → arachnoïde</li>
+                  </ul>
+                  
+                  <h4>Indications</h4>
+                  <ul>
+                    <li>Diagnostic de <strong>méningite</strong> (bactérienne, virale)</li>
+                    <li>Hémorragie sous-arachnoïdienne</li>
+                    <li>Maladies inflammatoires (SEP, lymphome)</li>
+                  </ul>
+                  
+                  <div class="box box-nb">
+                    <div class="box-title">📝 PL traumatique vs Hémorragie sous-arachnoïdienne</div>
+                    <ul>
+                      <li><strong>PL traumatique</strong> : le LCS s'éclaircit au fil des tubes (test des 3 tubes)</li>
+                      <li><strong>Hémorragie</strong> : LCS reste rosé/rouge dans tous les tubes</li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="accordion-item open">
+              <div class="accordion-header">C) Anesthésies</div>
+              <div class="accordion-content">
+                <div class="accordion-body">
+                  <div class="table-wrapper">
+                    <table>
+                      <thead>
+                        <tr><th>Type</th><th>Espace</th><th>Sensibilité</th><th>Motricité</th><th>Indication</th></tr>
+                      </thead>
+                      <tbody>
+                        <tr>
+                          <td><strong>Péridurale</strong></td>
+                          <td>Épidural</td>
+                          <td>Abolie</td>
+                          <td><strong>Conservée</strong></td>
+                          <td>Accouchement (efforts de poussée possibles)</td>
+                        </tr>
+                        <tr>
+                          <td><strong>Rachianesthésie</strong></td>
+                          <td>Sous-arachnoïdien</td>
+                          <td>Abolie</td>
+                          <td><strong>Abolie</strong></td>
+                          <td>Chirurgie MI (prothèse genou)</td>
+                        </tr>
+                      </tbody>
+                    </table>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="box box-recap">
+            <div class="box-title">📋 LCS — Production et réabsorption</div>
+            <ul>
+              <li><strong>Production</strong> : plexus choroïdes (pie-mère) dans les ventricules (~250 mL/jour)</li>
+              <li><strong>Circulation</strong> : ventricules → espace sous-arachnoïdien</li>
+              <li><strong>Réabsorption</strong> : granulations arachnoïdiennes → sinus veineux</li>
+            </ul>
+            
+            <div class="box box-clinical" style="margin-top: 1rem;">
+              <div class="box-title">⚕️ Hydrocéphalie à pression normale (HPN)</div>
+              <p>Triade : <strong>troubles de la marche</strong> (petits pas) + <strong>troubles urinaires</strong> + <strong>troubles cognitifs</strong>.<br>
+              Traitement : dérivation ventriculo-péritonéale.</p>
+            </div>
+          </div>
+        </section>
+
+      </div>
+    </main>
+  </div>
+
+  <button class="menu-toggle" onclick="document.querySelector('.sidebar').classList.toggle('open')">☰</button>
+  <script src="../app.js"></script>
+</body>
+</html>

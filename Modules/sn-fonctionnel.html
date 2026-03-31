@@ -1,0 +1,689 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Système nerveux fonctionnel - Anatomie</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="../styles.css">
+</head>
+<body>
+  <div class="app">
+    <aside class="sidebar">
+      <div class="sidebar-header">
+        <h1>🦴 Anatomie</h1>
+        <p>Cours PASS/LAS - Tours</p>
+      </div>
+      <div class="sidebar-search">
+        <input type="text" data-search placeholder="Rechercher... (Ctrl+K)" />
+      </div>
+      <nav class="sidebar-nav">
+        <div class="nav-group">
+          <div class="nav-group-title">Accueil</div>
+          <div class="nav-group-items">
+            <a href="../index.html" class="nav-item">🏠 Vue d'ensemble</a>
+          </div>
+        </div>
+        <div class="nav-group collapsed">
+          <div class="nav-group-title">Pelvis (Maldonado)</div>
+          <div class="nav-group-items">
+            <a href="pelvis-osseux.html" class="nav-item">Pelvis osseux et musculaire</a>
+            <a href="pelvis-vascu.html" class="nav-item">Vascularisation & innervation</a>
+          </div>
+        </div>
+        <div class="nav-group">
+          <div class="nav-group-title">Neuroanatomie (Destrieux)</div>
+          <div class="nav-group-items">
+            <a href="sn-fonctionnel.html" class="nav-item active">Système nerveux fonctionnel</a>
+            <a href="voies-visuelles.html" class="nav-item">Voies visuelles</a>
+          </div>
+        </div>
+      </nav>
+    </aside>
+
+    <main class="main">
+      <header class="header">
+        <div class="breadcrumb">
+          <a href="../index.html">Accueil</a> / Neuroanatomie / Système nerveux fonctionnel
+        </div>
+        <div class="header-actions">
+          <button class="btn-icon" onclick="expandAllAccordions()">⊞</button>
+          <button class="btn-icon" onclick="collapseAllAccordions()">⊟</button>
+          <button class="btn-icon" id="theme-toggle">◐</button>
+        </div>
+      </header>
+
+      <div class="content">
+        <h1>🧠 Système nerveux fonctionnel</h1>
+        <p><strong>Pr. Destrieux</strong> — Poly spé n°8 — Tutorat Santé de Tours 2025</p>
+
+        <div class="toc">
+          <div class="toc-title">📑 Sommaire</div>
+          <ul class="toc-list">
+            <li><a href="#pyramidal">I. Système cortico-spinal (pyramidal)</a></li>
+            <li><a href="#extrapyramidal">II. Systèmes extra-pyramidaux</a></li>
+            <li><a href="#ganglions">III. Ganglions de la base</a></li>
+            <li><a href="#cervelet">IV. Cervelet</a></li>
+            <li><a href="#syndromes">V. Syndromes moteurs</a></li>
+            <li><a href="#glasgow">VI. Échelle de Glasgow</a></li>
+          </ul>
+        </div>
+
+        <!-- SECTION I - SYSTÈME PYRAMIDAL -->
+        <section id="pyramidal">
+          <h2>I. Système cortico-spinal (pyramidal)</h2>
+
+          <p>Le <span class="term">système cortico-spinal</span> est :</p>
+          <ul>
+            <li>Un système <strong>direct</strong> ou <strong>monosynaptique</strong></li>
+            <li>Très <strong>coûteux en énergie</strong></li>
+            <li>Représente seulement <strong>2-3%</strong> des systèmes de contrôle du mouvement</li>
+            <li>Contrôle les mouvements les plus <strong>fins et volontaires</strong></li>
+          </ul>
+
+          <div class="accordion">
+            <div class="accordion-item open">
+              <div class="accordion-header">A) Origine</div>
+              <div class="accordion-content">
+                <div class="accordion-body">
+                  <p>Le système cortico-spinal prend son origine au niveau de la <strong>partie postérieure du lobe frontal</strong> :</p>
+                  <ul>
+                    <li>En <strong>avant</strong> du sillon central</li>
+                    <li>En <strong>arrière</strong> du sillon pré-central</li>
+                    <li>= <span class="term">Gyrus pré-central</span></li>
+                  </ul>
+                  <p>Le <span class="term">cortex moteur primaire (M1)</span> se situe dans ce gyrus.</p>
+                </div>
+              </div>
+            </div>
+
+            <div class="accordion-item open">
+              <div class="accordion-header">B) Trajet des fibres (ARBORESCENCE)</div>
+              <div class="accordion-content">
+                <div class="accordion-body">
+                  <div class="tree">
+                    <div class="tree-node tree-root expanded">
+                      <span class="tree-label expandable">CORTEX MOTEUR PRIMAIRE (M1) — Gyrus pré-central</span>
+                      <div class="tree-children">
+                        <div class="tree-node"><span class="tree-label">↓ Corona radiata (fibres se regroupent)</span></div>
+                        <div class="tree-node expanded">
+                          <span class="tree-label expandable">↓ CAPSULE INTERNE (bras postérieur + genou)</span>
+                          <div class="tree-children">
+                            <div class="tree-node"><span class="tree-label">Médialement : noyau caudé + thalamus</span></div>
+                            <div class="tree-node"><span class="tree-label">Latéralement : noyau lenticulaire</span></div>
+                          </div>
+                        </div>
+                        <div class="tree-node"><span class="tree-label">↓ MÉSENCÉPHALE — Pédoncules cérébraux (crus cerebri)</span></div>
+                        <div class="tree-node"><span class="tree-label">↓ PONT — Fibres se dilacèrent autour des noyaux pontins</span></div>
+                        <div class="tree-node expanded">
+                          <span class="tree-label expandable">↓ MOELLE ALLONGÉE (bulbe)</span>
+                          <div class="tree-children">
+                            <div class="tree-node"><span class="tree-label">Partie haute : fibres redeviennent compactes (pyramides)</span></div>
+                            <div class="tree-node"><span class="tree-label">Partie basse : DÉCUSSATION PYRAMIDALE</span></div>
+                          </div>
+                        </div>
+                        <div class="tree-node expanded">
+                          <span class="tree-label expandable">↓ MOELLE ÉPINIÈRE</span>
+                          <div class="tree-children">
+                            <div class="tree-node">
+                              <span class="tree-label expandable">Faisceau cortico-spinal CROISÉ (80%)</span>
+                              <div class="tree-children">
+                                <div class="tree-node"><span class="tree-label">Chemine dans le cordon LATÉRAL</span></div>
+                                <div class="tree-node"><span class="tree-label">Synapse DIRECTE avec motoneurone α (partie latérale)</span></div>
+                                <div class="tree-node"><span class="tree-label">→ Motricité DISTALE, fine, volontaire</span></div>
+                              </div>
+                            </div>
+                            <div class="tree-node">
+                              <span class="tree-label expandable">Faisceau cortico-spinal DIRECT (20%)</span>
+                              <div class="tree-children">
+                                <div class="tree-node"><span class="tree-label">Chemine près de la ligne médiane (cordon ANTÉRIEUR)</span></div>
+                                <div class="tree-node"><span class="tree-label">Synapse INDIRECTE via interneurone</span></div>
+                                <div class="tree-node"><span class="tree-label">Projections bilatérales</span></div>
+                                <div class="tree-node"><span class="tree-label">→ Motricité AXIALE, tonus de posture</span></div>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="table-wrapper">
+                    <table>
+                      <thead>
+                        <tr><th>Caractéristique</th><th>Faisceau CROISÉ</th><th>Faisceau DIRECT</th></tr>
+                      </thead>
+                      <tbody>
+                        <tr><td>% des fibres</td><td><strong>80%</strong></td><td><strong>20%</strong></td></tr>
+                        <tr><td>Décussation</td><td>Oui (au bulbe)</td><td>Non</td></tr>
+                        <tr><td>Position dans moelle</td><td>Cordon latéral</td><td>Cordon antérieur (médian)</td></tr>
+                        <tr><td>Synapse</td><td>Directe (monosynaptique)</td><td>Indirecte (polysynaptique)</td></tr>
+                        <tr><td>Motricité</td><td>Distale, fine, volontaire</td><td>Axiale, tonus de posture</td></tr>
+                      </tbody>
+                    </table>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="accordion-item">
+              <div class="accordion-header">C) Somatotopie — Homunculus de Penfield</div>
+              <div class="accordion-content">
+                <div class="accordion-body">
+                  <p>Le système cortico-spinal possède une <span class="term">somatotopie</span> très précise. <strong>Mr. Penfield</strong> a réalisé une cartographie de la motricité cérébrale par stimulation per-opératoire.</p>
+                  
+                  <p>Sur le <strong>gyrus pré-central</strong>, du plus <strong>latéral au plus médial</strong> :</p>
+                  <ul>
+                    <li><strong>Face</strong> (bouche sur-représentée → motricité très fine)</li>
+                    <li><strong>Main</strong> (pouce sur-représenté)</li>
+                    <li><strong>Corps</strong></li>
+                    <li><strong>Membre inférieur</strong> (face médiale de l'hémisphère)</li>
+                  </ul>
+                  
+                  <div class="box box-clinical">
+                    <div class="box-title">⚕️ Crises Bravais-Jacksoniennes</div>
+                    <p>Une crise d'épilepsie = décharge synchrone des neurones → contractions saccadées. Des décharges au niveau de la main provoquent d'abord des contractions du pouce, puis propagation. Si la décharge se propage aux deux hémisphères → perte de connaissance.</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="accordion-item open">
+              <div class="accordion-header">D) Syndrome pyramidal</div>
+              <div class="accordion-content">
+                <div class="accordion-body">
+                  <p>Le <span class="term">syndrome pyramidal</span> correspond à une lésion des fibres du faisceau cortico-spinal.</p>
+                  
+                  <h4>Localisation de la lésion</h4>
+                  <div class="table-wrapper">
+                    <table>
+                      <thead>
+                        <tr><th>Lésion</th><th>Type d'hémiplégie</th><th>Exemples</th></tr>
+                      </thead>
+                      <tbody>
+                        <tr>
+                          <td><strong>AU-DESSUS de la décussation</strong></td>
+                          <td>Hémiplégie <strong>CONTROLATÉRALE</strong> et sous-jacente</td>
+                          <td>Cortex cérébral, capsule interne (AVC), mésencéphale, pont</td>
+                        </tr>
+                        <tr>
+                          <td><strong>EN-DESSOUS de la décussation</strong></td>
+                          <td>Hémiplégie <strong>HOMOLATÉRALE</strong> et sous-jacente</td>
+                          <td>Moelle épinière (hémiplégie médullaire)</td>
+                        </tr>
+                      </tbody>
+                    </table>
+                  </div>
+                  
+                  <div class="box box-nb">
+                    <div class="box-title">📝 Paralysie vs Parésie</div>
+                    <ul>
+                      <li><strong>Paralysie</strong> : absence totale de mouvement</li>
+                      <li><strong>Parésie</strong> : le mouvement s'effectue mal (déficit partiel)</li>
+                    </ul>
+                  </div>
+                  
+                  <h4>Signes du syndrome pyramidal</h4>
+                  <p>Le faisceau cortico-spinal inhibe normalement les programmes moteurs automatiques de la moelle. Une lésion entraîne une <strong>levée d'inhibition</strong> → apparition de réflexes archaïques :</p>
+                  
+                  <div class="box box-recap">
+                    <div class="box-title">📋 Triade du syndrome pyramidal</div>
+                    <ul>
+                      <li><strong>Signe de Babinski</strong> : stimulation du bord latéral de la plante du pied → extension lente et majestueuse du gros orteil</li>
+                      <li><strong>ROT explosifs</strong> : réflexes ostéo-tendineux vifs, diffusés, polycinétiques</li>
+                      <li><strong>Hypertonie spastique</strong> : raideur musculaire, marche « fauchante »</li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <!-- SECTION II - SYSTÈMES EXTRA-PYRAMIDAUX -->
+        <section id="extrapyramidal">
+          <h2>II. Systèmes extra-pyramidaux</h2>
+
+          <p>Les <span class="term">systèmes extra-pyramidaux</span> :</p>
+          <ul>
+            <li><strong>Préparent</strong> et permettent le <strong>déroulement du mouvement</strong></li>
+            <li>Naissent dans le <strong>tronc cérébral</strong></li>
+            <li>Sont des systèmes <strong>indirects</strong> ou <strong>polysynaptiques</strong> (via interneurones)</li>
+            <li>Responsables de la <strong>majeure partie de la motricité</strong> (motricité automatique)</li>
+          </ul>
+
+          <div class="accordion">
+            <div class="accordion-item open">
+              <div class="accordion-header">A) Groupe postéro-latéral — Faisceau rubro-spinal</div>
+              <div class="accordion-content">
+                <div class="accordion-body">
+                  <ul>
+                    <li><strong>Origine</strong> : <span class="term">noyau rouge</span> (mésencéphale)</li>
+                    <li><strong>Trajet</strong> : descend dans le groupe postéro-latéral de la moelle, latéralement au faisceau cortico-spinal</li>
+                    <li><strong>Synapse</strong> : avec interneurones → motoneurones de la <strong>partie intermédiaire</strong> de la moelle</li>
+                    <li><strong>Action</strong> : innerve les muscles <strong>proximaux</strong> → <strong>tonus d'attitude</strong></li>
+                    <li><strong>Favorise</strong> : la <strong>FLEXION</strong></li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+
+            <div class="accordion-item open">
+              <div class="accordion-header">B) Groupe antéro-médial — Faisceau vestibulo-spinal</div>
+              <div class="accordion-content">
+                <div class="accordion-body">
+                  <ul>
+                    <li><strong>Origine</strong> : <span class="term">noyau vestibulaire</span> (tronc cérébral)</li>
+                    <li><strong>Trajet</strong> : descend à la face antérieure de la moelle, à côté du faisceau cortico-spinal direct</li>
+                    <li><strong>Synapse</strong> : avec interneurones → motoneurones <strong>axiaux</strong></li>
+                    <li><strong>Action</strong> : <strong>tonus de posture</strong></li>
+                    <li><strong>Favorise</strong> : l'<strong>EXTENSION</strong></li>
+                  </ul>
+                  
+                  <div class="box box-nb">
+                    <div class="box-title">📝 NB</div>
+                    <p>Le noyau vestibulaire est impliqué dans le <strong>tonus de posture</strong> (ex : tenir debout).</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="accordion-item">
+              <div class="accordion-header">C) Autres faisceaux extra-pyramidaux</div>
+              <div class="accordion-content">
+                <div class="accordion-body">
+                  <ul>
+                    <li><strong>Faisceau réticulo-spinal</strong> : origine dans la formation réticulaire</li>
+                    <li><strong>Faisceau tecto-spinal</strong> : origine dans le tectum (colliculi)</li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+
+            <div class="accordion-item open">
+              <div class="accordion-header">D) Rigidités de décortication et décérébration</div>
+              <div class="accordion-content">
+                <div class="accordion-body">
+                  <p><strong>Rappel</strong> : le cortex cérébral <strong>inhibe</strong> les structures sous-jacentes. Une lésion entraîne une levée d'inhibition.</p>
+                  
+                  <div class="table-wrapper">
+                    <table>
+                      <thead>
+                        <tr><th>Lésion</th><th>Système désinhibé</th><th>Effet</th><th>Signe clinique</th></tr>
+                      </thead>
+                      <tbody>
+                        <tr>
+                          <td><strong>AU-DESSUS du noyau rouge</strong></td>
+                          <td>Rubro-spinal</td>
+                          <td>Hypertonie en <strong>FLEXION</strong></td>
+                          <td><span class="term">Rigidité de décortication</span><br>= hyperflexion MS et MI</td>
+                        </tr>
+                        <tr>
+                          <td><strong>EN-DESSOUS du noyau rouge<br>AU-DESSUS du noyau vestibulaire</strong></td>
+                          <td>Vestibulo-spinal</td>
+                          <td>Hypertonie en <strong>EXTENSION</strong></td>
+                          <td><span class="term">Rigidité de décérébration</span><br>= hyperextension rachis + membres</td>
+                        </tr>
+                      </tbody>
+                    </table>
+                  </div>
+                  
+                  <div class="box box-mnemonic">
+                    <div class="box-title">💡 Mnémotechnique</div>
+                    <p><strong>« Rubro = Replié »</strong> (flexion) | <strong>« Vestibulo = Vertical »</strong> (extension)</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="table-wrapper">
+            <table>
+              <thead>
+                <tr><th>Groupe</th><th>Faisceau</th><th>Origine</th><th>Motoneurones</th><th>Action</th></tr>
+              </thead>
+              <tbody>
+                <tr><td>Antéro-médial</td><td>Vestibulo-spinal</td><td>Noyau vestibulaire</td><td>Axiaux</td><td>Tonus de posture</td></tr>
+                <tr><td>Postéro-latéral</td><td>Rubro-spinal</td><td>Noyau rouge</td><td>Intermédiaires</td><td>Tonus d'attitude</td></tr>
+              </tbody>
+            </table>
+          </div>
+        </section>
+
+        <!-- SECTION III - GANGLIONS DE LA BASE -->
+        <section id="ganglions">
+          <h2>III. Ganglions de la base (corps striés)</h2>
+
+          <p>Les <span class="term">ganglions de la base</span> forment un système complexe de contrôle du mouvement.</p>
+
+          <h3>A) Anatomie</h3>
+          <div class="tree">
+            <div class="tree-node tree-root expanded">
+              <span class="tree-label expandable">GANGLIONS DE LA BASE</span>
+              <div class="tree-children">
+                <div class="tree-node"><span class="tree-label">Noyau caudé</span></div>
+                <div class="tree-node expanded">
+                  <span class="tree-label expandable">Noyau lenticulaire</span>
+                  <div class="tree-children">
+                    <div class="tree-node"><span class="tree-label">Putamen (latéral)</span></div>
+                    <div class="tree-node expanded">
+                      <span class="tree-label expandable">Pallidum (médial)</span>
+                      <div class="tree-children">
+                        <div class="tree-node"><span class="tree-label">Pallidum latéral (externe)</span></div>
+                        <div class="tree-node"><span class="tree-label">Pallidum médial (interne)</span></div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="table-wrapper">
+            <table>
+              <thead>
+                <tr><th>Structure</th><th>Composition</th><th>Fonction</th></tr>
+              </thead>
+              <tbody>
+                <tr><td><strong>Néostriatum (striatum)</strong></td><td>Putamen + Noyau caudé</td><td>Voie d'ENTRÉE</td></tr>
+                <tr><td><strong>Paléostriatum</strong></td><td>Pallidum latéral + Pallidum médial</td><td>Voie de SORTIE</td></tr>
+              </tbody>
+            </table>
+          </div>
+
+          <div class="accordion">
+            <div class="accordion-item">
+              <div class="accordion-header">B) Voie glutamatergique</div>
+              <div class="accordion-content">
+                <div class="accordion-body">
+                  <p><strong>Cortex M1 → Putamen → Pallidum médial → Thalamus moteur → Cortex pré-moteur + Aires motrices supplémentaires</strong></p>
+                </div>
+              </div>
+            </div>
+
+            <div class="accordion-item open">
+              <div class="accordion-header">C) Voies dopaminergiques</div>
+              <div class="accordion-content">
+                <div class="accordion-body">
+                  <p>Partent de la <span class="term">substance noire</span> (locus niger) située dans le mésencéphale.</p>
+                  
+                  <h4>Voie DIRECTE (récepteurs D1) — Facilite le mouvement</h4>
+                  <p><strong>Substance noire → Putamen → Pallidum médial → Thalamus moteur → Cortex pré-moteur</strong></p>
+                  
+                  <h4>Voie INDIRECTE (récepteurs D2) — Inhibe le mouvement</h4>
+                  <p><strong>Substance noire → Putamen → Pallidum latéral → Noyau sub-thalamique → Pallidum médial → Thalamus → Cortex pré-moteur</strong></p>
+                  
+                  <div class="box box-nb">
+                    <div class="box-title">📝 Substance noire</div>
+                    <p>Située dans le mésencéphale, à la jonction du tegmen et de la crus cerebri. Produit de la <strong>neuromélanine</strong> (couleur foncée).</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="accordion-item open">
+              <div class="accordion-header">D) Maladie de Parkinson</div>
+              <div class="accordion-content">
+                <div class="accordion-body">
+                  <p>La <span class="term">maladie de Parkinson</span> résulte d'une <strong>raréfaction des neurones de la substance noire</strong> (pars compacta) → déficit en dopamine.</p>
+                  
+                  <div class="box box-recap">
+                    <div class="box-title">📋 Triade parkinsonienne</div>
+                    <ul>
+                      <li><strong>Akinésie / Bradykinésie</strong> : défaut d'initiation du mouvement, lenteur</li>
+                      <li><strong>Hypertonie plastique</strong> (rigidité en « roue dentée ») : rigidité par à-coups</li>
+                      <li><strong>Tremblements de REPOS</strong> : disparaissent au mouvement</li>
+                    </ul>
+                    <p>+ Marche à petits pas</p>
+                  </div>
+                  
+                  <h4>Traitements</h4>
+                  <ul>
+                    <li><strong>L-DOPA</strong> : précurseur de la dopamine qui traverse la BHE. Métabolisé par les cellules restantes de la substance noire. À terme : épuisement des cellules.</li>
+                    <li><strong>Stimulation cérébrale profonde</strong> : stimulation haute fréquence du <strong>noyau sub-thalamique</strong> (si inefficacité de la L-DOPA).</li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+
+            <div class="accordion-item">
+              <div class="accordion-header">E) Autres pathologies des ganglions de la base</div>
+              <div class="accordion-content">
+                <div class="accordion-body">
+                  <ul>
+                    <li><strong>Chorée de Huntington</strong> : dégénérescence du striatum → mouvements involontaires, désordonnés</li>
+                    <li><strong>Hémiballisme</strong> : lésion du noyau sub-thalamique → mouvements brusques de grande amplitude</li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <!-- SECTION IV - CERVELET -->
+        <section id="cervelet">
+          <h2>IV. Cervelet</h2>
+
+          <p>Le <span class="term">cervelet</span> contribue à la <strong>coordination</strong>, la <strong>synchronisation</strong> et la <strong>précision</strong> des mouvements. Il n'est <strong>pas à l'origine des mouvements</strong>.</p>
+
+          <h3>A) Anatomie</h3>
+          <ul>
+            <li><strong>Cortex cérébelleux</strong> : vermis (ligne médiane) + hémisphères cérébelleux (latéraux)</li>
+            <li><strong>Noyaux gris cérébelleux</strong> : noyau fastigial, noyaux interposés, noyau denté</li>
+          </ul>
+
+          <h3>B) Modules cérébelleux</h3>
+          <p>Chaque module comprend : afférence → cortex cérébelleux → cellule de Purkinje → noyau cérébelleux → efférence.</p>
+
+          <div class="accordion">
+            <div class="accordion-item">
+              <div class="accordion-header">1. Archéocervelet (vestibulo-cervelet)</div>
+              <div class="accordion-content">
+                <div class="accordion-body">
+                  <ul>
+                    <li><strong>Structure</strong> : lobe flocculo-nodulaire (partie antérieure du vermis)</li>
+                    <li><strong>Afférences</strong> : nerf vestibulaire (VIIIv) via noyau vestibulaire</li>
+                    <li><strong>Fonction</strong> : <strong>équilibre</strong>, position de la tête dans l'espace</li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+
+            <div class="accordion-item">
+              <div class="accordion-header">2. Paléocervelet (spino-cervelet)</div>
+              <div class="accordion-content">
+                <div class="accordion-body">
+                  <ul>
+                    <li><strong>Structure</strong> : vermis cérébelleux + noyau fastigial</li>
+                    <li><strong>Afférences</strong> : faisceau spino-cérébelleux (fuseaux neuromusculaires, activité moelle)</li>
+                    <li><strong>Efférences</strong> : faisceau vestibulo-spinal</li>
+                    <li><strong>Fonction</strong> : ajustement du <strong>tonus postural</strong></li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+
+            <div class="accordion-item">
+              <div class="accordion-header">3. Néocervelet (cérébro-cervelet)</div>
+              <div class="accordion-content">
+                <div class="accordion-body">
+                  <ul>
+                    <li><strong>Structure</strong> : hémisphères cérébelleux + noyau denté</li>
+                    <li><strong>Afférences</strong> : cortex cérébral (via noyaux du pont)</li>
+                    <li><strong>Efférences</strong> : thalamus → cortex moteur</li>
+                    <li><strong>Fonction</strong> : <strong>planification</strong> et coordination des mouvements volontaires</li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+
+            <div class="accordion-item open">
+              <div class="accordion-header">4. Syndrome cérébelleux (HOMOLATÉRAL)</div>
+              <div class="accordion-content">
+                <div class="accordion-body">
+                  <div class="box box-recap">
+                    <div class="box-title">📋 Signes du syndrome cérébelleux</div>
+                    <ul>
+                      <li><strong>HYPOTONIE</strong> (et non hypertonie)</li>
+                      <li><strong>Ataxie cérébelleuse</strong> : troubles de la coordination</li>
+                      <li><strong>Dysmétrie</strong> : difficultés à atteindre une cible (épreuve doigt-nez)</li>
+                      <li><strong>Adiadococinésie</strong> : impossibilité d'effectuer des mouvements alternatifs rapides</li>
+                      <li><strong>Tremblement INTENTIONNEL</strong> (à l'action, pas au repos)</li>
+                      <li><strong>Dysarthrie cérébelleuse</strong> : parole scandée</li>
+                      <li><strong>ROT pendulaires</strong></li>
+                    </ul>
+                  </div>
+                  
+                  <div class="box box-clinical">
+                    <div class="box-title">⚕️ ATTENTION — Latéralité</div>
+                    <p>Le syndrome cérébelleux est <strong>HOMOLATÉRAL</strong> à la lésion (exception par rapport aux autres syndromes moteurs qui sont controlatéraux).</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <!-- SECTION V - SYNDROMES -->
+        <section id="syndromes">
+          <h2>V. Tableau comparatif des syndromes moteurs</h2>
+
+          <div class="table-wrapper">
+            <table>
+              <thead>
+                <tr>
+                  <th>Caractéristique</th>
+                  <th>PYRAMIDAL</th>
+                  <th>EXTRAPYRAMIDAL (Parkinson)</th>
+                  <th>CÉRÉBELLEUX</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td><strong>Tonus</strong></td>
+                  <td>Hypertonie SPASTIQUE<br>("lame de canif")</td>
+                  <td>Hypertonie PLASTIQUE<br>("roue dentée")</td>
+                  <td><strong>HYPOTONIE</strong></td>
+                </tr>
+                <tr>
+                  <td><strong>ROT</strong></td>
+                  <td>Vifs, polycinétiques</td>
+                  <td>Normaux</td>
+                  <td>Pendulaires</td>
+                </tr>
+                <tr>
+                  <td><strong>Babinski</strong></td>
+                  <td><strong>PRÉSENT</strong></td>
+                  <td>Absent</td>
+                  <td>Absent</td>
+                </tr>
+                <tr>
+                  <td><strong>Tremblement</strong></td>
+                  <td>Absent</td>
+                  <td>De <strong>REPOS</strong></td>
+                  <td><strong>INTENTIONNEL</strong></td>
+                </tr>
+                <tr>
+                  <td><strong>Mouvement</strong></td>
+                  <td>Déficit moteur (hémiplégie)</td>
+                  <td>Akinésie, bradykinésie</td>
+                  <td>Ataxie, dysmétrie</td>
+                </tr>
+                <tr>
+                  <td><strong>Latéralité</strong></td>
+                  <td>CONTROLATÉRAL</td>
+                  <td>CONTROLATÉRAL</td>
+                  <td><strong>HOMOLATÉRAL</strong></td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+        </section>
+
+        <!-- SECTION VI - GLASGOW -->
+        <section id="glasgow">
+          <h2>VI. Échelle de Glasgow (GCS)</h2>
+
+          <p>L'<span class="term">échelle de Glasgow</span> évalue l'état de conscience. Score de <strong>3 à 15</strong>.</p>
+
+          <div class="table-wrapper">
+            <table>
+              <thead>
+                <tr><th colspan="2">👁️ Réponse OCULAIRE (Y) : 1-4</th></tr>
+              </thead>
+              <tbody>
+                <tr><td><strong>Y4</strong></td><td>Ouverture spontanée</td></tr>
+                <tr><td><strong>Y3</strong></td><td>Ouverture à la demande verbale</td></tr>
+                <tr><td><strong>Y2</strong></td><td>Ouverture à la douleur</td></tr>
+                <tr><td><strong>Y1</strong></td><td>Pas d'ouverture</td></tr>
+              </tbody>
+            </table>
+          </div>
+
+          <div class="table-wrapper">
+            <table>
+              <thead>
+                <tr><th colspan="2">💬 Réponse VERBALE (V) : 1-5</th></tr>
+              </thead>
+              <tbody>
+                <tr><td><strong>V5</strong></td><td>Orientée</td></tr>
+                <tr><td><strong>V4</strong></td><td>Confuse</td></tr>
+                <tr><td><strong>V3</strong></td><td>Inappropriée (mots isolés)</td></tr>
+                <tr><td><strong>V2</strong></td><td>Incompréhensible (sons)</td></tr>
+                <tr><td><strong>V1</strong></td><td>Absente</td></tr>
+              </tbody>
+            </table>
+          </div>
+
+          <div class="table-wrapper">
+            <table>
+              <thead>
+                <tr><th colspan="2">💪 Réponse MOTRICE (M) : 1-6</th></tr>
+              </thead>
+              <tbody>
+                <tr><td><strong>M6</strong></td><td>Obéit aux ordres</td></tr>
+                <tr><td><strong>M5</strong></td><td>Localise la douleur (réponse adaptée)</td></tr>
+                <tr><td><strong>M4</strong></td><td>Retrait à la douleur (évitement)</td></tr>
+                <tr><td><strong>M3</strong></td><td>Flexion anormale (décortication)</td></tr>
+                <tr><td><strong>M2</strong></td><td>Extension anormale (décérébration)</td></tr>
+                <tr><td><strong>M1</strong></td><td>Pas de réponse</td></tr>
+              </tbody>
+            </table>
+          </div>
+
+          <div class="box box-clinical">
+            <div class="box-title">⚕️ Interprétation du GCS</div>
+            <ul>
+              <li><strong>GCS 15</strong> : État de conscience normal</li>
+              <li><strong>GCS 13-14</strong> : Traumatisme crânien léger</li>
+              <li><strong>GCS 9-12</strong> : Traumatisme crânien modéré</li>
+              <li><strong>GCS ≤ 8</strong> : Traumatisme crânien <strong>GRAVE</strong> → <strong>INTUBATION</strong> (protection des VAS)</li>
+              <li><strong>GCS 3</strong> : Coma profond / mort cérébrale</li>
+            </ul>
+          </div>
+
+          <div class="box box-remark">
+            <div class="box-title">Remarque du Pr. Destrieux</div>
+            <p>« Le Glasgow 3 correspond à celui d'une chaise, soit quelque chose d'inanimé. »</p>
+          </div>
+        </section>
+
+      </div>
+    </main>
+  </div>
+
+  <div id="search-results" class="search-results">
+    <div class="search-results-panel">
+      <div class="search-results-header">
+        <strong>Résultats</strong>
+        <button onclick="hideSearchResults()" style="background:none;border:none;font-size:1.5rem;cursor:pointer;">×</button>
+      </div>
+      <div class="search-results-list"></div>
+    </div>
+  </div>
+
+  <button class="menu-toggle" onclick="document.querySelector('.sidebar').classList.toggle('open')">☰</button>
+  <script src="../app.js"></script>
+</body>
+</html>

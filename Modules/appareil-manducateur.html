@@ -1,0 +1,492 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Appareil manducateur - Anatomie</title>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="../styles.css">
+</head>
+<body>
+  <div class="app">
+    <aside class="sidebar">
+      <div class="sidebar-header">
+        <h1>🦴 Anatomie</h1>
+        <p>Cours PASS/LAS - Tours</p>
+      </div>
+      <nav class="sidebar-nav">
+        <div class="nav-group">
+          <div class="nav-group-title">Accueil</div>
+          <div class="nav-group-items">
+            <a href="../index.html" class="nav-item">🏠 Vue d'ensemble</a>
+          </div>
+        </div>
+        <div class="nav-group">
+          <div class="nav-group-title">Tête (Destrieux)</div>
+          <div class="nav-group-items">
+            <a href="osteologie-crane.html" class="nav-item">Ostéologie du crâne</a>
+            <a href="os-crane.html" class="nav-item">Os du crâne</a>
+            <a href="fosses-nasales.html" class="nav-item">Fosses nasales</a>
+            <a href="appareil-manducateur.html" class="nav-item active">Appareil manducateur</a>
+          </div>
+        </div>
+      </nav>
+    </aside>
+
+    <main class="main">
+      <header class="header">
+        <div class="breadcrumb">
+          <a href="../index.html">Accueil</a> / Appareil manducateur
+        </div>
+        <div class="header-actions">
+          <button class="btn-icon" onclick="expandAllAccordions()">⊞</button>
+          <button class="btn-icon" onclick="collapseAllAccordions()">⊟</button>
+          <button class="btn-icon" id="theme-toggle">◐</button>
+        </div>
+      </header>
+
+      <div class="content">
+        <h1>🦷 Appareil manducateur</h1>
+        <p><strong>Pr. Destrieux</strong> — Poly spé n°6 — Tutorat Santé de Tours 2025</p>
+
+        <div class="toc">
+          <div class="toc-title">📑 Sommaire</div>
+          <ul class="toc-list">
+            <li><a href="#muscles">I. Muscles masticateurs</a></li>
+            <li><a href="#fosses">II. Fosses infra-temporale et ptérygo-palatine</a></li>
+            <li><a href="#vascu">III. Vascularisation et innervation</a></li>
+            <li><a href="#dents">IV. Dents</a></li>
+          </ul>
+        </div>
+
+        <!-- SECTION I - MUSCLES -->
+        <section id="muscles">
+          <h2>I. Muscles masticateurs</h2>
+
+          <div class="accordion">
+            <div class="accordion-item open">
+              <div class="accordion-header">A) Muscle temporal</div>
+              <div class="accordion-content">
+                <div class="accordion-body">
+                  <h4>Insertions</h4>
+                  <ul>
+                    <li><strong>Origine</strong> : fosse temporale</li>
+                    <li><strong>Terminaison</strong> : face médiale du processus coronoïde de la mandibule</li>
+                  </ul>
+                  
+                  <h4>Fonctions</h4>
+                  <ul>
+                    <li><strong>Élévateur</strong> de la mandibule (fermeture bouche)</li>
+                    <li><strong>Rétropulseur</strong></li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+
+            <div class="accordion-item open">
+              <div class="accordion-header">B) Muscle masséter</div>
+              <div class="accordion-content">
+                <div class="accordion-body">
+                  <h4>Insertions</h4>
+                  <div class="table-wrapper">
+                    <table>
+                      <thead>
+                        <tr><th>Faisceau</th><th>Origine</th><th>Terminaison</th></tr>
+                      </thead>
+                      <tbody>
+                        <tr>
+                          <td><strong>Superficiel</strong></td>
+                          <td>2/3 antéro-inférieurs arcade zygomatique</td>
+                          <td>Face latérale angle mandibulaire</td>
+                        </tr>
+                        <tr>
+                          <td><strong>Profond</strong></td>
+                          <td>1/4 postérieur arcade zygomatique</td>
+                          <td>Face latérale branche mandibulaire</td>
+                        </tr>
+                      </tbody>
+                    </table>
+                  </div>
+                  
+                  <h4>Fonction</h4>
+                  <p><strong>Élévateur et rotateur</strong> de la mandibule</p>
+                </div>
+              </div>
+            </div>
+
+            <div class="accordion-item open">
+              <div class="accordion-header">C) Muscle ptérygoïdien latéral</div>
+              <div class="accordion-content">
+                <div class="accordion-body">
+                  <h4>Insertions</h4>
+                  <div class="table-wrapper">
+                    <table>
+                      <thead>
+                        <tr><th>Faisceau</th><th>Origine</th><th>Terminaison</th></tr>
+                      </thead>
+                      <tbody>
+                        <tr>
+                          <td><strong>Supérieur</strong></td>
+                          <td>Grande aile sphénoïde + partie supéro-latérale lame lat. ptérygoïde</td>
+                          <td rowspan="2">Fossette mandibulaire + capsule articulaire</td>
+                        </tr>
+                        <tr>
+                          <td><strong>Inférieur</strong></td>
+                          <td>Tubercule maxillaire + partie inféro-latérale lame lat. ptérygoïde</td>
+                        </tr>
+                      </tbody>
+                    </table>
+                  </div>
+                  
+                  <h4>Fonction</h4>
+                  <p><strong>Propulseur</strong> de la mandibule</p>
+                </div>
+              </div>
+            </div>
+
+            <div class="accordion-item">
+              <div class="accordion-header">D) Muscle ptérygoïdien médial</div>
+              <div class="accordion-content">
+                <div class="accordion-body">
+                  <h4>Insertions</h4>
+                  <ul>
+                    <li><strong>Origine</strong> : face médiale lame latérale processus ptérygoïdien (+ palatin + tubérosité maxillaire)</li>
+                    <li><strong>Terminaison</strong> : face médiale angle mandibulaire</li>
+                  </ul>
+                  
+                  <h4>Fonctions</h4>
+                  <ul>
+                    <li><strong>Propulseur</strong></li>
+                    <li><strong>Élévateur</strong></li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="box box-recap">
+            <div class="box-title">📋 Récapitulatif muscles masticateurs</div>
+            <div class="table-wrapper">
+              <table>
+                <thead>
+                  <tr><th>Muscle</th><th>Fonction principale</th></tr>
+                </thead>
+                <tbody>
+                  <tr><td><strong>Temporal</strong></td><td>Élévateur + rétropulseur</td></tr>
+                  <tr><td><strong>Masséter</strong></td><td>Élévateur + rotateur</td></tr>
+                  <tr><td><strong>Ptérygoïdien latéral</strong></td><td>Propulseur</td></tr>
+                  <tr><td><strong>Ptérygoïdien médial</strong></td><td>Propulseur + élévateur</td></tr>
+                </tbody>
+              </table>
+            </div>
+          </div>
+        </section>
+
+        <!-- SECTION II - FOSSES -->
+        <section id="fosses">
+          <h2>II. Fosses infra-temporale et ptérygo-palatine</h2>
+
+          <div class="accordion">
+            <div class="accordion-item open">
+              <div class="accordion-header">A) Fosse infra-temporale (FIT)</div>
+              <div class="accordion-content">
+                <div class="accordion-body">
+                  <p>Située sous la région temporale, en avant de l'articulation temporo-mandibulaire.</p>
+                  
+                  <h4>Limites</h4>
+                  <ul>
+                    <li><strong>Supérieure</strong> : plan sous-temporal grande aile sphénoïde</li>
+                    <li><strong>Latérale</strong> : ouverte (mandibule, ATM)</li>
+                    <li><strong>Médiale</strong> : lame latérale processus ptérygoïdien</li>
+                    <li><strong>Antérieure</strong> : tubérosité maxillaire</li>
+                    <li><strong>Postérieure</strong> : ouverte</li>
+                  </ul>
+                  
+                  <h4>Foramens</h4>
+                  <ul>
+                    <li><strong>Foramen ovale</strong> : nerf mandibulaire (V3)</li>
+                    <li><strong>Foramen épineux</strong> : artère méningée moyenne</li>
+                  </ul>
+                  
+                  <h4>Contenu</h4>
+                  <p>Artère maxillaire, nerf maxillaire (V2), nerf mandibulaire (V3)</p>
+                </div>
+              </div>
+            </div>
+
+            <div class="accordion-item">
+              <div class="accordion-header">B) Fosse ptérygo-palatine</div>
+              <div class="accordion-content">
+                <div class="accordion-body">
+                  <p>Espace entre la FIT et les fosses nasales.</p>
+                  
+                  <h4>Limites</h4>
+                  <ul>
+                    <li><strong>Antérieure</strong> : maxillaire</li>
+                    <li><strong>Postérieure</strong> : ptérygoïde</li>
+                    <li><strong>Médiale/inférieure</strong> : palatin</li>
+                    <li><strong>Latérale</strong> : fissure ptérygo-maxillaire</li>
+                  </ul>
+                  
+                  <p>Communique avec les fosses nasales via le <strong>foramen sphéno-palatin</strong>.</p>
+                  
+                  <div class="box box-nb">
+                    <div class="box-title">📝 Trajet latéro-médial</div>
+                    <p>FIT → fissure ptérygo-maxillaire → fosse ptérygo-palatine → foramen sphéno-palatin → fosses nasales</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <!-- SECTION III - VASCU -->
+        <section id="vascu">
+          <h2>III. Vascularisation et innervation</h2>
+
+          <div class="accordion">
+            <div class="accordion-item open">
+              <div class="accordion-header">A) Artère maxillaire</div>
+              <div class="accordion-content">
+                <div class="accordion-body">
+                  <h4>Origine</h4>
+                  <div class="tree">
+                    <div class="tree-node tree-root expanded">
+                      <span class="tree-label expandable">Artère carotide externe</span>
+                      <div class="tree-children">
+                        <div class="tree-node"><span class="tree-label">→ A. temporale superficielle</span></div>
+                        <div class="tree-node expanded">
+                          <span class="tree-label expandable">→ A. MAXILLAIRE</span>
+                          <div class="tree-children">
+                            <div class="tree-node"><span class="tree-label">→ A. sphéno-palatine (terminale)</span></div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  
+                  <h4>Trajet</h4>
+                  <ol>
+                    <li>Médialement au condyle mandibulaire</li>
+                    <li>Entre les 2 faisceaux du ptérygoïdien latéral (FIT)</li>
+                    <li>Fissure ptérygo-maxillaire → fosse ptérygo-palatine</li>
+                    <li>Foramen sphéno-palatin → devient <strong>artère sphéno-palatine</strong></li>
+                  </ol>
+                  
+                  <h4>Branches collatérales</h4>
+                  <div class="table-wrapper">
+                    <table>
+                      <thead>
+                        <tr><th>Branche</th><th>Trajet</th><th>Territoire</th></tr>
+                      </thead>
+                      <tbody>
+                        <tr>
+                          <td><strong>A. méningée moyenne</strong></td>
+                          <td>Foramen épineux → extra-dural</td>
+                          <td>Méninges</td>
+                        </tr>
+                        <tr>
+                          <td><strong>A. alvéolaire inférieure</strong></td>
+                          <td>Foramen mandibulaire → foramen mentonnier</td>
+                          <td>Mandibule, dents inférieures</td>
+                        </tr>
+                        <tr>
+                          <td><strong>A. alvéolaire sup. et post.</strong></td>
+                          <td>Corps maxillaire</td>
+                          <td>Dents sup. postérieures</td>
+                        </tr>
+                        <tr>
+                          <td><strong>A. infra-orbitaire</strong></td>
+                          <td>Canal infra-orbitaire</td>
+                          <td>Dents sup. antérieures</td>
+                        </tr>
+                      </tbody>
+                    </table>
+                  </div>
+                  
+                  <div class="box box-clinical">
+                    <div class="box-title">⚕️ Applications cliniques</div>
+                    <ul>
+                      <li><strong>Hématome extradural</strong> : lésion de l'artère méningée moyenne</li>
+                      <li><strong>Épistaxis</strong> : ligature/embolisation de l'artère maxillaire ou sphéno-palatine</li>
+                      <li><strong>Maladie de Horton</strong> : artérite → biopsie de l'artère temporale superficielle</li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="accordion-item open">
+              <div class="accordion-header">B) Nerf maxillaire (V2)</div>
+              <div class="accordion-content">
+                <div class="accordion-body">
+                  <h4>Trajet</h4>
+                  <p><strong>Foramen rond</strong> → fosse ptérygo-palatine → canal infra-orbitaire → foramen infra-orbitaire → <strong>nerf infra-orbitaire</strong></p>
+                  
+                  <h4>Territoire</h4>
+                  <p>Sensibilité des <strong>pommettes</strong> et des <strong>dents supérieures</strong></p>
+                  
+                  <h4>Branches</h4>
+                  <ul>
+                    <li>N. alvéolaire supérieur et antérieur</li>
+                    <li>N. alvéolaire supérieur et moyen</li>
+                    <li>N. alvéolaire supérieur et postérieur</li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+
+            <div class="accordion-item open">
+              <div class="accordion-header">C) Nerf mandibulaire (V3)</div>
+              <div class="accordion-content">
+                <div class="accordion-body">
+                  <h4>Trajet</h4>
+                  <p><strong>Foramen ovale</strong> → entre ptérygoïdiens médial et latéral</p>
+                  
+                  <div class="box box-nb">
+                    <div class="box-title">📝 NB</div>
+                    <p>V3 est principalement sensitif mais récupère les <strong>fibres motrices</strong> du nerf trijumeau.</p>
+                  </div>
+                  
+                  <h4>Branches terminales</h4>
+                  <ul>
+                    <li><strong>Nerf lingual</strong> : sensibilité tactile et gustative des 2/3 antérieurs de la langue</li>
+                    <li><strong>Nerf alvéolaire inférieur</strong> : sensibilité des dents inférieures</li>
+                  </ul>
+                  
+                  <h4>Branche collatérale</h4>
+                  <p><strong>Nerf auriculo-temporal</strong> : sensibilité région temporale, innervation parotidienne. Forme une boutonnière autour de l'artère méningée moyenne.</p>
+                  
+                  <div class="box box-clinical">
+                    <div class="box-title">⚕️ Anesthésie dentaire mandibulaire</div>
+                    <p>Injection au niveau du <strong>foramen mandibulaire</strong> (entrée du nerf alvéolaire inférieur).</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <!-- SECTION IV - DENTS -->
+        <section id="dents">
+          <h2>IV. Dents</h2>
+
+          <div class="accordion">
+            <div class="accordion-item open">
+              <div class="accordion-header">A) Structure d'une dent</div>
+              <div class="accordion-content">
+                <div class="accordion-body">
+                  <h4>Tissus (par ordre de dureté croissante)</h4>
+                  <ol>
+                    <li><strong>Os et Cément</strong> (dureté similaire)</li>
+                    <li><strong>Dentine</strong> (intérieur de la dent)</li>
+                    <li><strong>Émail</strong> (tissu le plus dur de l'organisme)</li>
+                  </ol>
+                  
+                  <h4>Parties anatomiques</h4>
+                  <ul>
+                    <li><strong>Couronne</strong> : partie recouverte d'émail</li>
+                    <li><strong>Racine</strong> : partie recouverte de cément</li>
+                    <li><strong>Collet</strong> : jonction couronne-racine</li>
+                  </ul>
+                  
+                  <h4>Canal pulpaire</h4>
+                  <p>Cavité dans la dentine contenant : pulpe, nerfs, tissu conjonctif, vaisseaux.</p>
+                </div>
+              </div>
+            </div>
+
+            <div class="accordion-item">
+              <div class="accordion-header">B) Périodonte</div>
+              <div class="accordion-content">
+                <div class="accordion-body">
+                  <p><strong>Périodonte = Os alvéolaire + Cément + Ligament périodontal (desmodonte)</strong></p>
+                  
+                  <p>Rôles :</p>
+                  <ul>
+                    <li>Stabilité des dents</li>
+                    <li>Amortisseur</li>
+                    <li>Sensibilité à la pression (mastication)</li>
+                  </ul>
+                  
+                  <div class="box box-clinical">
+                    <div class="box-title">⚕️ Périodontopathies</div>
+                    <p>Maladies du périodonte → chute des dents.</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="accordion-item open">
+              <div class="accordion-header">C) Nomenclature dentaire</div>
+              <div class="accordion-content">
+                <div class="accordion-body">
+                  <h4>Adulte (32 dents = 8 par cadran)</h4>
+                  <p><strong>1<sup>er</sup> chiffre = cadran</strong> (vue de face)</p>
+                  <ul>
+                    <li><strong>1</strong> : sup. droit</li>
+                    <li><strong>2</strong> : sup. gauche</li>
+                    <li><strong>3</strong> : inf. gauche</li>
+                    <li><strong>4</strong> : inf. droit</li>
+                  </ul>
+                  
+                  <p><strong>2<sup>e</sup> chiffre = dent</strong> (depuis la ligne médiane)</p>
+                  <ul>
+                    <li>1 : Incisive centrale</li>
+                    <li>2 : Incisive latérale</li>
+                    <li>3 : Canine</li>
+                    <li>4 : PM1</li>
+                    <li>5 : PM2</li>
+                    <li>6 : M1</li>
+                    <li>7 : M2</li>
+                    <li>8 : M3 (dent de sagesse)</li>
+                  </ul>
+                  
+                  <p><em>Exemple : <strong>24</strong> = 1<sup>re</sup> prémolaire supérieure gauche</em></p>
+                  
+                  <h4>Enfant (20 dents = 5 par cadran)</h4>
+                  <p>Cadrans : <strong>5, 6, 7, 8</strong> (même ordre)</p>
+                  <p>Dents : 1-Incisive centrale, 2-Incisive latérale, 3-Canine, 4-M1, 5-M2</p>
+                  <p><em>Pas de prémolaires ni de M3 chez l'enfant.</em></p>
+                </div>
+              </div>
+            </div>
+
+            <div class="accordion-item">
+              <div class="accordion-header">D) Morphologie et fonction</div>
+              <div class="accordion-content">
+                <div class="accordion-body">
+                  <div class="table-wrapper">
+                    <table>
+                      <thead>
+                        <tr><th>Dent</th><th>Morphologie</th><th>Fonction</th></tr>
+                      </thead>
+                      <tbody>
+                        <tr><td><strong>Incisives</strong></td><td>1 cuspide, 1 racine</td><td>Trancher</td></tr>
+                        <tr><td><strong>Canines</strong></td><td>Pointues</td><td>Arracher</td></tr>
+                        <tr><td><strong>Molaires</strong></td><td>3-5 cuspides, 2-3 racines</td><td>Écraser, broyer</td></tr>
+                      </tbody>
+                    </table>
+                  </div>
+                  
+                  <h4>Faces d'une dent</h4>
+                  <ul>
+                    <li><strong>Occlusale</strong> : contact avec dent homologue</li>
+                    <li><strong>Vestibulaire</strong> : vers les lèvres/joue</li>
+                    <li><strong>Linguale</strong> : vers la langue</li>
+                    <li><strong>Mésiale</strong> (médiale) et <strong>distale</strong> (latérale) : faces de contact</li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+
+      </div>
+    </main>
+  </div>
+
+  <button class="menu-toggle" onclick="document.querySelector('.sidebar').classList.toggle('open')">☰</button>
+  <script src="../app.js"></script>
+</body>
+</html>

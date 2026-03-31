@@ -1,0 +1,538 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Voies visuelles - Anatomie</title>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="../styles.css">
+</head>
+<body>
+  <div class="app">
+    <aside class="sidebar">
+      <div class="sidebar-header">
+        <h1>🦴 Anatomie</h1>
+        <p>Cours PASS/LAS - Tours</p>
+      </div>
+      <div class="sidebar-search">
+        <input type="text" data-search placeholder="Rechercher... (Ctrl+K)" />
+      </div>
+      <nav class="sidebar-nav">
+        <div class="nav-group">
+          <div class="nav-group-title">Accueil</div>
+          <div class="nav-group-items">
+            <a href="../index.html" class="nav-item">🏠 Vue d'ensemble</a>
+          </div>
+        </div>
+        <div class="nav-group">
+          <div class="nav-group-title">Neuroanatomie (Destrieux)</div>
+          <div class="nav-group-items">
+            <a href="sn-fonctionnel.html" class="nav-item">Système nerveux fonctionnel</a>
+            <a href="voies-visuelles.html" class="nav-item active">Voies visuelles</a>
+          </div>
+        </div>
+      </nav>
+    </aside>
+
+    <main class="main">
+      <header class="header">
+        <div class="breadcrumb">
+          <a href="../index.html">Accueil</a> / Neuroanatomie / Voies visuelles
+        </div>
+        <div class="header-actions">
+          <button class="btn-icon" onclick="expandAllAccordions()">⊞</button>
+          <button class="btn-icon" onclick="collapseAllAccordions()">⊟</button>
+          <button class="btn-icon" id="theme-toggle">◐</button>
+        </div>
+      </header>
+
+      <div class="content">
+        <h1>👁️ Voies visuelles</h1>
+        <p><strong>Pr. Destrieux</strong> — Poly spé n°9 — Tutorat Santé de Tours 2025</p>
+
+        <div class="toc">
+          <div class="toc-title">📑 Sommaire</div>
+          <ul class="toc-list">
+            <li><a href="#bulbe">I. Bulbe oculaire</a></li>
+            <li><a href="#retine">II. Histologie de la rétine</a></li>
+            <li><a href="#trajet">III. Trajet des voies visuelles</a></li>
+            <li><a href="#retinotopie">IV. Rétinotopie</a></li>
+            <li><a href="#lesions">V. Syndromes lésionnels</a></li>
+          </ul>
+        </div>
+
+        <div class="box box-nb">
+          <div class="box-title">📝 Les 3 systèmes optiques</div>
+          <ul>
+            <li><strong>Système primaire</strong> : perception visuelle consciente (sensoriel) + analyse inconsciente (accessoire)</li>
+            <li><strong>Systèmes secondaires</strong> : réflexes d'accommodation et photomoteurs</li>
+            <li><strong>Systèmes tertiaires</strong> : oculomoteurs (mouvements des yeux)</li>
+          </ul>
+        </div>
+
+        <!-- SECTION I - BULBE OCULAIRE -->
+        <section id="bulbe">
+          <h2>I. Bulbe oculaire</h2>
+          
+          <p>Le <span class="term">bulbe oculaire</span> (globe oculaire) fonctionne comme un appareil photographique :</p>
+
+          <div class="accordion">
+            <div class="accordion-item open">
+              <div class="accordion-header">A) Sclère (= "boîtier")</div>
+              <div class="accordion-content">
+                <div class="accordion-body">
+                  <p>Enveloppe fibreuse conjonctive épaisse = <strong>partie blanche de l'œil</strong>.</p>
+                  <ul>
+                    <li>Prolongement de la <strong>dure-mère</strong> : dure-mère cérébrale → gaine du nerf optique → sclère</li>
+                    <li>Insertion des <strong>muscles oculomoteurs</strong></li>
+                    <li>Maintien de la <strong>pression intra-oculaire</strong> (> pression atmosphérique)</li>
+                  </ul>
+                  
+                  <div class="box box-nb">
+                    <div class="box-title">📝 NB</div>
+                    <p>L'œil est une <strong>expansion du SNC</strong>, en continuité avec le compartiment intra-dural.</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="accordion-item">
+              <div class="accordion-header">B) Choroïde</div>
+              <div class="accordion-content">
+                <div class="accordion-body">
+                  <p>Membrane vasculaire tapissant la face interne de la sclère (analogue à la pie-mère).</p>
+                  
+                  <h4>Iris</h4>
+                  <ul>
+                    <li>Expansion antérieure de la choroïde</li>
+                    <li>Rôle de <strong>diaphragme</strong> régulant la lumière entrante</li>
+                    <li>Donne la <strong>coloration de l'œil</strong></li>
+                  </ul>
+                  
+                  <h4>Corps ciliaire</h4>
+                  <ul>
+                    <li>Formation vascularisée appendue à la choroïde</li>
+                    <li>Sécrète l'<strong>humeur aqueuse</strong></li>
+                    <li>Comparable aux plexus choroïdes</li>
+                  </ul>
+                  
+                  <div class="box box-clinical">
+                    <div class="box-title">⚕️ Yeux rouges sur les photos</div>
+                    <p>En faible luminosité, pupille dilatée → le flash se réfléchit sur la choroïde (rouge). Les albinos ont les yeux rougeâtres par absence de pigmentation de l'iris.</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="accordion-item">
+              <div class="accordion-header">C) Cornée et cristallin (= "système optique")</div>
+              <div class="accordion-content">
+                <div class="accordion-body">
+                  <h4>Cornée</h4>
+                  <ul>
+                    <li>Membrane <strong>transparente</strong>, <strong>avasculaire</strong>, fragile</li>
+                    <li>Une structure transparente est forcément avasculaire</li>
+                  </ul>
+                  
+                  <h4>Cristallin</h4>
+                  <ul>
+                    <li>Lentille biconvexe transparente</li>
+                    <li>Permet l'<strong>accommodation</strong> (mise au point)</li>
+                    <li>Suspendu par les <strong>fibres zonulaires</strong> (zonule de Zinn)</li>
+                  </ul>
+                  
+                  <div class="box box-clinical">
+                    <div class="box-title">⚕️ Cataracte</div>
+                    <p>Opacification du cristallin → vision trouble. Traitement : remplacement par implant artificiel.</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="accordion-item">
+              <div class="accordion-header">D) Milieux transparents</div>
+              <div class="accordion-content">
+                <div class="accordion-body">
+                  <h4>Humeur aqueuse</h4>
+                  <ul>
+                    <li>Liquide entre cornée et cristallin</li>
+                    <li>Sécrétée par le <strong>corps ciliaire</strong></li>
+                    <li>Résorbée par le <strong>trabéculum</strong> (angle irido-cornéen)</li>
+                  </ul>
+                  
+                  <div class="box box-clinical">
+                    <div class="box-title">⚕️ Glaucome</div>
+                    <p>Défaut de résorption de l'humeur aqueuse → <strong>hypertension intra-oculaire</strong> → compression du nerf optique → cécité progressive.</p>
+                  </div>
+                  
+                  <h4>Corps vitré</h4>
+                  <ul>
+                    <li>Gel transparent remplissant la chambre postérieure</li>
+                    <li>Maintient la forme du globe</li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <!-- SECTION II - RÉTINE -->
+        <section id="retine">
+          <h2>II. Histologie de la rétine</h2>
+
+          <div class="accordion">
+            <div class="accordion-item">
+              <div class="accordion-header">A) Rétine pigmentée</div>
+              <div class="accordion-content">
+                <div class="accordion-body">
+                  <p>Couche externe, au contact de la choroïde. Rôle dans la nutrition et le recyclage des photopigments.</p>
+                </div>
+              </div>
+            </div>
+
+            <div class="accordion-item open">
+              <div class="accordion-header">B) Rétine nerveuse — Photorécepteurs</div>
+              <div class="accordion-content">
+                <div class="accordion-body">
+                  <p>La rétine nerveuse comporte <strong>3 couches de cellules</strong> :</p>
+                  <ol>
+                    <li><strong>Photorécepteurs</strong> (cônes et bâtonnets)</li>
+                    <li><strong>Cellules bipolaires</strong></li>
+                    <li><strong>Cellules ganglionnaires</strong></li>
+                  </ol>
+                  
+                  <h4>Structure d'un photorécepteur</h4>
+                  <p>De la couche pigmentaire vers le corps vitré :</p>
+                  <ul>
+                    <li><strong>Segment externe</strong> : contient les photopigments</li>
+                    <li><strong>Segment interne</strong> : riche en mitochondries</li>
+                    <li><strong>Corps cellulaire</strong> (noyau)</li>
+                    <li><strong>Prolongement synaptique</strong></li>
+                  </ul>
+                  
+                  <div class="table-wrapper">
+                    <table>
+                      <thead>
+                        <tr><th></th><th>BÂTONNETS</th><th>CÔNES</th></tr>
+                      </thead>
+                      <tbody>
+                        <tr><td><strong>Segment externe</strong></td><td>Long</td><td>Court</td></tr>
+                        <tr><td><strong>Sensibilité lumière</strong></td><td>Haute (+)</td><td>Basse (-)</td></tr>
+                        <tr><td><strong>Photopigment</strong></td><td>Rhodopsine (noir/blanc)</td><td>Rouge, vert ou bleu</td></tr>
+                        <tr><td><strong>Type de vision</strong></td><td><strong>SCOTOPIQUE</strong> (nocturne, N&B)</td><td><strong>PHOTOPIQUE</strong> (diurne, couleurs)</td></tr>
+                        <tr><td><strong>Localisation</strong></td><td>Périphérie rétine</td><td>Fovea / Foveola</td></tr>
+                        <tr><td><strong>Précision</strong></td><td>Faible (système en parasol)</td><td>Haute (1 cône = 1 bipolaire)</td></tr>
+                      </tbody>
+                    </table>
+                  </div>
+                  
+                  <div class="box box-mnemonic">
+                    <div class="box-title">💡 Mnémotechnique</div>
+                    <p><strong>« La nuit, tous les chats sont gris »</strong> → faible luminosité = seuls les bâtonnets sont activés = pas de couleurs.</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="accordion-item">
+              <div class="accordion-header">C) Trajet de l'information nerveuse</div>
+              <div class="accordion-content">
+                <div class="accordion-body">
+                  <div class="tree">
+                    <div class="tree-node tree-root expanded">
+                      <span class="tree-label expandable">PHOTORÉCEPTEUR (cône ou bâtonnet)</span>
+                      <div class="tree-children">
+                        <div class="tree-node">
+                          <span class="tree-label expandable">↓ Cellule BIPOLAIRE</span>
+                          <div class="tree-children">
+                            <div class="tree-node">
+                              <span class="tree-label expandable">↓ Cellule GANGLIONNAIRE</span>
+                              <div class="tree-children">
+                                <div class="tree-node"><span class="tree-label">↓ Axones → Disque optique</span></div>
+                                <div class="tree-node"><span class="tree-label">↓ NERF OPTIQUE (II)</span></div>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  
+                  <div class="box box-nb">
+                    <div class="box-title">📝 Différence cônes/bâtonnets</div>
+                    <ul>
+                      <li><strong>Cônes</strong> : 1 cône → 1 cellule bipolaire → 1 cellule ganglionnaire = <strong>haute précision</strong></li>
+                      <li><strong>Bâtonnets</strong> : plusieurs bâtonnets → 1 bipolaire → plusieurs bipolaires → 1 ganglionnaire = <strong>« système en parasol »</strong> = sommation, basse précision</li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="accordion-item">
+              <div class="accordion-header">D) Fond d'œil</div>
+              <div class="accordion-content">
+                <div class="accordion-body">
+                  <ul>
+                    <li><span class="term">Fovea</span> : zone centrale de la rétine, maximum de cônes</li>
+                    <li><span class="term">Foveola</span> : centre de la fovea, cônes exclusivement</li>
+                    <li><span class="term">Papille optique</span> (disque optique) : émergence du nerf optique, <strong>zone aveugle</strong> (pas de photorécepteurs)</li>
+                    <li><span class="term">Artère centrale de la rétine</span> : émerge au niveau de la papille</li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <!-- SECTION III - TRAJET -->
+        <section id="trajet">
+          <h2>III. Trajet des voies visuelles</h2>
+
+          <div class="tree">
+            <div class="tree-node tree-root expanded">
+              <span class="tree-label expandable">RÉTINE (photorécepteurs → bipolaires → ganglionnaires)</span>
+              <div class="tree-children">
+                <div class="tree-node"><span class="tree-label">↓ NERF OPTIQUE (II)</span></div>
+                <div class="tree-node expanded">
+                  <span class="tree-label expandable">↓ CHIASMA OPTIQUE (au-dessus de l'hypophyse)</span>
+                  <div class="tree-children">
+                    <div class="tree-node"><span class="tree-label">Fibres TEMPORALES : restent homolatérales</span></div>
+                    <div class="tree-node"><span class="tree-label">Fibres NASALES : DÉCUSSENT (croisent)</span></div>
+                  </div>
+                </div>
+                <div class="tree-node"><span class="tree-label">↓ TRACTUS OPTIQUE (contourne la crus cerebri)</span></div>
+                <div class="tree-node"><span class="tree-label">↓ CORPS GÉNICULÉ LATÉRAL (expansion du thalamus)</span></div>
+                <div class="tree-node"><span class="tree-label">↓ RADIATIONS OPTIQUES</span></div>
+                <div class="tree-node"><span class="tree-label">↓ CORTEX VISUEL PRIMAIRE (V1) — Sillon calcarin (lobe occipital)</span></div>
+              </div>
+            </div>
+          </div>
+
+          <div class="box box-nb">
+            <div class="box-title">📝 Point clé — Chiasma optique</div>
+            <ul>
+              <li>Situé juste <strong>AU-DESSUS de l'hypophyse</strong></li>
+              <li>Fibres de la <strong>rétine NASALE</strong> = <strong>DÉCUSSENT</strong></li>
+              <li>Fibres de la <strong>rétine TEMPORALE</strong> = restent <strong>HOMOLATÉRALES</strong></li>
+            </ul>
+          </div>
+        </section>
+
+        <!-- SECTION IV - RÉTINOTOPIE -->
+        <section id="retinotopie">
+          <h2>IV. Rétinotopie</h2>
+
+          <p>La <span class="term">rétinotopie</span> = correspondance entre un point du champ visuel et une zone précise du cortex.</p>
+
+          <div class="accordion">
+            <div class="accordion-item open">
+              <div class="accordion-header">A) Inversion de l'image au cristallin</div>
+              <div class="accordion-content">
+                <div class="accordion-body">
+                  <div class="table-wrapper">
+                    <table>
+                      <thead>
+                        <tr><th>Hémichamp visuel</th><th>Projette sur la rétine</th></tr>
+                      </thead>
+                      <tbody>
+                        <tr><td>Temporal (latéral)</td><td>Rétine NASALE (médiale)</td></tr>
+                        <tr><td>Nasal (médial)</td><td>Rétine TEMPORALE (latérale)</td></tr>
+                        <tr><td>Supérieur</td><td>Rétine INFÉRIEURE</td></tr>
+                        <tr><td>Inférieur</td><td>Rétine SUPÉRIEURE</td></tr>
+                      </tbody>
+                    </table>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="accordion-item open">
+              <div class="accordion-header">B) Organisation des voies rétro-chiasmatiques</div>
+              <div class="accordion-content">
+                <div class="accordion-body">
+                  <p>Après le chiasma, chaque <strong>voie rétro-chiasmatique</strong> reçoit les informations d'un <strong>même hémichamp visuel</strong> :</p>
+                  
+                  <div class="table-wrapper">
+                    <table>
+                      <thead>
+                        <tr><th>Voie rétro-chiasmatique</th><th>Reçoit les fibres de</th><th>Analyse</th></tr>
+                      </thead>
+                      <tbody>
+                        <tr>
+                          <td><strong>GAUCHE</strong></td>
+                          <td>Rétine temporale G (homolatérale) + Rétine nasale D (controlatérale)</td>
+                          <td>Hémichamp visuel <strong>DROIT</strong></td>
+                        </tr>
+                        <tr>
+                          <td><strong>DROITE</strong></td>
+                          <td>Rétine temporale D (homolatérale) + Rétine nasale G (controlatérale)</td>
+                          <td>Hémichamp visuel <strong>GAUCHE</strong></td>
+                        </tr>
+                      </tbody>
+                    </table>
+                  </div>
+                  
+                  <div class="box box-nb">
+                    <div class="box-title">📝 Vision stéréoscopique</div>
+                    <p>Chaque corps géniculé latéral reçoit <strong>2 copies</strong> du même hémichamp (une de chaque œil) → permet la <strong>vision en relief</strong>.</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="accordion-item">
+              <div class="accordion-header">C) Cortex visuel primaire (V1)</div>
+              <div class="accordion-content">
+                <div class="accordion-body">
+                  <p>Le cortex visuel primaire (cortex strié) entoure le <span class="term">sillon calcarin</span> (face médiale du lobe occipital).</p>
+                  
+                  <h4>Somatotopie du cortex visuel</h4>
+                  <ul>
+                    <li><strong>Rétine centrale</strong> (fovea) → partie <strong>POSTÉRIEURE</strong> au sillon calcarin (grande surface car haute précision)</li>
+                    <li><strong>Rétine périphérique</strong> → partie <strong>ANTÉRIEURE</strong> au sillon calcarin</li>
+                    <li><strong>Rétine inférieure</strong> (champ visuel sup.) → <strong>berge INFÉRIEURE</strong> du sillon calcarin</li>
+                    <li><strong>Rétine supérieure</strong> (champ visuel inf.) → <strong>berge SUPÉRIEURE</strong> du sillon calcarin</li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <!-- SECTION V - LÉSIONS -->
+        <section id="lesions">
+          <h2>V. Syndromes lésionnels (TRÈS IMPORTANT)</h2>
+
+          <div class="box box-recap">
+            <div class="box-title">📋 Tableau récapitulatif des atteintes du champ visuel</div>
+            <div class="table-wrapper">
+              <table>
+                <thead>
+                  <tr><th>Niveau de lésion</th><th>Pathologie</th><th>Déficit</th></tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><strong>Nerf optique</strong></td>
+                    <td><span class="term">Amaurose homolatérale</span></td>
+                    <td>Cécité de l'œil du côté de la lésion</td>
+                  </tr>
+                  <tr>
+                    <td><strong>Chiasma optique</strong></td>
+                    <td><span class="term">Hémianopsie BITEMPORALE</span></td>
+                    <td>Perte des 2 champs temporaux (vision "en tunnel")</td>
+                  </tr>
+                  <tr>
+                    <td><strong>Voies rétro-chiasmatiques</strong><br>(tractus, CGL, radiations, V1)</td>
+                    <td><span class="term">Hémianopsie latérale homonyme (HLH)</span></td>
+                    <td>Perte d'un hémichamp des 2 côtés (controlatéral à la lésion)</td>
+                  </tr>
+                  <tr>
+                    <td><strong>Berge INFÉRIEURE</strong> du sillon calcarin<br>ou lobe temporal antérieur</td>
+                    <td><span class="term">Quadranopsie latérale homonyme SUPÉRIEURE</span></td>
+                    <td>Perte du quadrant supérieur controlatéral</td>
+                  </tr>
+                  <tr>
+                    <td><strong>Berge SUPÉRIEURE</strong> du sillon calcarin</td>
+                    <td><span class="term">Quadranopsie latérale homonyme INFÉRIEURE</span></td>
+                    <td>Perte du quadrant inférieur controlatéral</td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+          </div>
+
+          <div class="accordion">
+            <div class="accordion-item open">
+              <div class="accordion-header">A) Amaurose (lésion du nerf optique)</div>
+              <div class="accordion-content">
+                <div class="accordion-body">
+                  <p>Lésion <strong>pré-chiasmatique</strong> → cécité <strong>monoculaire homolatérale</strong>.</p>
+                  <p>Le patient ne voit plus avec l'œil du côté de la lésion.</p>
+                </div>
+              </div>
+            </div>
+
+            <div class="accordion-item open">
+              <div class="accordion-header">B) Hémianopsie bitemporale (lésion du chiasma)</div>
+              <div class="accordion-content">
+                <div class="accordion-body">
+                  <p>Atteinte des <strong>fibres nasales D et G</strong> qui décussent au chiasma.</p>
+                  <p>→ Perte des <strong>deux champs visuels temporaux</strong> (le patient ne voit plus sur les côtés).</p>
+                  
+                  <div class="box box-clinical">
+                    <div class="box-title">⚕️ Adénome hypophysaire</div>
+                    <p>L'hypophyse est située <strong>juste sous le chiasma</strong>. Une tumeur hypophysaire (adénome "en bouchon de champagne") peut comprimer le chiasma → hémianopsie bitemporale.</p>
+                    <p><strong>Traitement</strong> : chirurgie par voie trans-rhino-septale (via les fosses nasales et le sinus sphénoïdal).</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="accordion-item open">
+              <div class="accordion-header">C) Hémianopsie latérale homonyme (HLH)</div>
+              <div class="accordion-content">
+                <div class="accordion-body">
+                  <p>Lésion <strong>rétro-chiasmatique</strong> (tractus optique, CGL, radiations optiques, cortex V1).</p>
+                  <p>→ Perte de l'<strong>hémichamp visuel controlatéral</strong> des deux yeux.</p>
+                  
+                  <p><strong>Exemple</strong> : HLH droite = atteinte voie rétro-chiasmatique GAUCHE → le patient ne voit plus rien à droite (hémichamp temporal D + hémichamp nasal G).</p>
+                </div>
+              </div>
+            </div>
+
+            <div class="accordion-item">
+              <div class="accordion-header">D) Quadranopsies</div>
+              <div class="accordion-content">
+                <div class="accordion-body">
+                  <p>Atteinte partielle du champ visuel (1/4 seulement).</p>
+                  
+                  <h4>Quadranopsie latérale homonyme SUPÉRIEURE</h4>
+                  <ul>
+                    <li>Lésion de la <strong>berge inférieure</strong> du sillon calcarin</li>
+                    <li>Ou lésion des fibres de la rétine inférieure (passent par le lobe temporal antérieur)</li>
+                    <li>Peut survenir après une <strong>lobectomie temporale</strong></li>
+                  </ul>
+                  
+                  <h4>Quadranopsie latérale homonyme INFÉRIEURE</h4>
+                  <ul>
+                    <li>Lésion de la <strong>berge supérieure</strong> du sillon calcarin</li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+
+            <div class="accordion-item">
+              <div class="accordion-header">E) Examen du champ visuel — Goldman</div>
+              <div class="accordion-content">
+                <div class="accordion-body">
+                  <p>Le <span class="term">champ visuel de Goldman</span> est un examen ophtalmologique :</p>
+                  <ul>
+                    <li>Patient face à une coupole blanche, fixant un point central</li>
+                    <li>Projection de cibles lumineuses (taille I-V, luminosité 1-4)</li>
+                    <li>Tracé des <strong>isoptères</strong> = lignes de même perception</li>
+                    <li>Permet de cartographier le champ visuel et détecter les déficits</li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="box box-mnemonic">
+            <div class="box-title">💡 Mnémotechnique — Localisation des lésions</div>
+            <ul>
+              <li><strong>Amaurose</strong> = problème AVANT le chiasma (nerf optique) → 1 seul œil</li>
+              <li><strong>Bitemporale</strong> = problème AU chiasma → les 2 côtés latéraux</li>
+              <li><strong>Homonyme</strong> = problème APRÈS le chiasma → 1 seul côté mais les 2 yeux</li>
+            </ul>
+          </div>
+        </section>
+
+      </div>
+    </main>
+  </div>
+
+  <button class="menu-toggle" onclick="document.querySelector('.sidebar').classList.toggle('open')">☰</button>
+  <script src="../app.js"></script>
+</body>
+</html>
