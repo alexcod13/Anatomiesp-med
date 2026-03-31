@@ -1,0 +1,309 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Anatomie - Plateforme de révision PASS/LAS</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div class="app">
+    <!-- Sidebar -->
+    <aside class="sidebar">
+      <div class="sidebar-header">
+        <h1>🦴 Anatomie</h1>
+        <p>Cours PASS/LAS - Tours</p>
+      </div>
+      
+      <div class="sidebar-search">
+        <input type="text" data-search placeholder="Rechercher... (Ctrl+K)" />
+      </div>
+      
+      <nav class="sidebar-nav">
+        <div class="nav-group">
+          <div class="nav-group-title">Accueil</div>
+          <div class="nav-group-items">
+            <a href="index.html" class="nav-item active">🏠 Vue d'ensemble</a>
+          </div>
+        </div>
+        
+        <div class="nav-group">
+          <div class="nav-group-title">Pelvis (Maldonado)</div>
+          <div class="nav-group-items">
+            <a href="modules/pelvis-osseux.html" class="nav-item">Pelvis osseux et musculaire</a>
+            <a href="modules/pelvis-vascu.html" class="nav-item">Vascularisation & innervation</a>
+            <a href="modules/pelvis-visceres.html" class="nav-item">Viscères du pelvis féminin</a>
+            <a href="modules/pelvis-perinee.html" class="nav-item">Organes génitaux & périnée</a>
+          </div>
+        </div>
+        
+        <div class="nav-group">
+          <div class="nav-group-title">Ostéologie (Destrieux)</div>
+          <div class="nav-group-items">
+            <a href="modules/osteologie-membres.html" class="nav-item">Ostéologie des membres</a>
+            <a href="modules/squelette-axial.html" class="nav-item">Squelette axial</a>
+            <a href="modules/osteologie-crane.html" class="nav-item">Ostéologie du crâne</a>
+            <a href="modules/os-crane.html" class="nav-item">Os du crâne (détails)</a>
+          </div>
+        </div>
+
+        <div class="nav-group">
+          <div class="nav-group-title">Tête & Cou (Destrieux)</div>
+          <div class="nav-group-items">
+            <a href="modules/fosses-nasales.html" class="nav-item">Fosses nasales</a>
+            <a href="modules/appareil-manducateur.html" class="nav-item">Appareil manducateur</a>
+            <a href="modules/meninges.html" class="nav-item">Méninges</a>
+          </div>
+        </div>
+
+        <div class="nav-group">
+          <div class="nav-group-title">Neuroanatomie (Destrieux)</div>
+          <div class="nav-group-items">
+            <a href="modules/sn-fonctionnel.html" class="nav-item">Système nerveux fonctionnel</a>
+            <a href="modules/voies-visuelles.html" class="nav-item">Voies visuelles</a>
+          </div>
+        </div>
+      </nav>
+    </aside>
+
+    <!-- Main -->
+    <main class="main">
+      <header class="header">
+        <div class="breadcrumb">
+          <span>Accueil</span>
+        </div>
+        <div class="header-actions">
+          <button class="btn-icon" id="theme-toggle" title="Thème">◐</button>
+        </div>
+      </header>
+
+      <div class="content">
+        <h1>🦴 Anatomie — Plateforme de révision</h1>
+        <p>Cours complets basés sur les polycopiés du <strong>Tutorat Santé de Tours 2025</strong> (Pr. Maldonado & Pr. Destrieux)</p>
+
+        <div class="box box-nb">
+          <div class="box-title">📖 Comment utiliser cette plateforme</div>
+          <ul>
+            <li><strong>Navigation</strong> : Utilisez le menu latéral pour accéder aux différents modules</li>
+            <li><strong>Recherche</strong> : Tapez dans la barre de recherche ou utilisez <kbd>Ctrl</kbd>+<kbd>K</kbd></li>
+            <li><strong>Menus déroulants</strong> : Cliquez sur les en-têtes pour déplier/replier les sections</li>
+            <li><strong>Arborescences</strong> : Cliquez sur les ▶ pour voir les subdivisions (vascularisation, innervation...)</li>
+            <li><strong>Thème</strong> : Cliquez sur ◐ pour basculer en mode sombre</li>
+          </ul>
+        </div>
+
+        <!-- PELVIS -->
+        <h2>📦 Pelvis — Pr. Maldonado</h2>
+        <div class="modules-grid">
+          <a href="modules/pelvis-osseux.html" class="module-card">
+            <div class="icon">🦴</div>
+            <h3>Pelvis osseux et musculaire</h3>
+            <p>Sacrum, coccyx, os coxal, détroits, ligaments, muscles (MEA, piriforme), plancher pelvien, loges</p>
+          </a>
+          <a href="modules/pelvis-vascu.html" class="module-card">
+            <div class="icon">🩸</div>
+            <h3>Vascularisation & innervation</h3>
+            <p>Artères iliaques, veines, drainage lymphatique, plexus sacral, plexus pudendal, SNA pelvien</p>
+          </a>
+          <a href="modules/pelvis-visceres.html" class="module-card">
+            <div class="icon">🫀</div>
+            <h3>Viscères du pelvis féminin</h3>
+            <p>Vessie, utérus, trompes, ovaires, vagin, rectum, rapports péritonéaux</p>
+          </a>
+          <a href="modules/pelvis-perinee.html" class="module-card">
+            <div class="icon">🔬</div>
+            <h3>Organes génitaux & périnée</h3>
+            <p>Vulve, clitoris, vestibule, glandes, périnée antérieur et postérieur</p>
+          </a>
+        </div>
+
+        <!-- OSTÉOLOGIE -->
+        <h2>🦴 Ostéologie — Pr. Destrieux</h2>
+        <div class="modules-grid">
+          <a href="modules/osteologie-membres.html" class="module-card">
+            <div class="icon">💪</div>
+            <h3>Ostéologie des membres</h3>
+            <p>Membre supérieur (clavicule, scapula, humérus, radius, ulna, carpe) et membre inférieur (fémur, tibia, fibula, tarse)</p>
+          </a>
+          <a href="modules/squelette-axial.html" class="module-card">
+            <div class="icon">🦴</div>
+            <h3>Squelette axial</h3>
+            <p>Colonne vertébrale, vertèbres types, vertèbres régionales, disques intervertébraux</p>
+          </a>
+          <a href="modules/osteologie-crane.html" class="module-card">
+            <div class="icon">💀</div>
+            <h3>Ostéologie du crâne</h3>
+            <p>Voûte, base du crâne, fontanelles, sutures, craniosténoses</p>
+          </a>
+          <a href="modules/os-crane.html" class="module-card">
+            <div class="icon">🧠</div>
+            <h3>Os du crâne (détails)</h3>
+            <p>Frontal, pariétal, temporal, occipital, sphénoïde, ethmoïde — foramens et contenu</p>
+          </a>
+        </div>
+
+        <!-- TÊTE & COU -->
+        <h2>👤 Tête & Cou — Pr. Destrieux</h2>
+        <div class="modules-grid">
+          <a href="modules/fosses-nasales.html" class="module-card">
+            <div class="icon">👃</div>
+            <h3>Fosses nasales</h3>
+            <p>Parois, cornets, méats, sinus paranasaux, vascularisation, innervation</p>
+          </a>
+          <a href="modules/appareil-manducateur.html" class="module-card">
+            <div class="icon">🦷</div>
+            <h3>Appareil manducateur</h3>
+            <p>ATM, muscles masticateurs, innervation (V3), vascularisation</p>
+          </a>
+          <a href="modules/meninges.html" class="module-card">
+            <div class="icon">🧬</div>
+            <h3>Méninges</h3>
+            <p>Dure-mère, arachnoïde, pie-mère, sinus veineux, espaces méningés, LCS</p>
+          </a>
+        </div>
+
+        <!-- NEUROANATOMIE -->
+        <h2>🧠 Neuroanatomie fonctionnelle — Pr. Destrieux</h2>
+        <div class="modules-grid">
+          <a href="modules/sn-fonctionnel.html" class="module-card">
+            <div class="icon">⚡</div>
+            <h3>Système nerveux fonctionnel</h3>
+            <p>Voie pyramidale, voies extrapyramidales, cervelet, ganglions de la base, syndromes, Glasgow</p>
+          </a>
+          <a href="modules/voies-visuelles.html" class="module-card">
+            <div class="icon">👁️</div>
+            <h3>Voies visuelles</h3>
+            <p>Rétine, nerf optique, chiasma, bandelettes, corps genouillé latéral, radiations, cortex visuel</p>
+          </a>
+        </div>
+
+        <!-- Tableaux récap -->
+        <h2>📊 Tableaux récapitulatifs par thème</h2>
+        <div class="accordion">
+          <div class="accordion-item">
+            <div class="accordion-header">Foramens de la base du crâne</div>
+            <div class="accordion-content">
+              <div class="accordion-body">
+                <div class="table-wrapper">
+                  <table>
+                    <thead>
+                      <tr><th>Foramen</th><th>Localisation</th><th>Contenu</th></tr>
+                    </thead>
+                    <tbody>
+                      <tr><td>Lame criblée</td><td>Ethmoïde</td><td>Filets olfactifs (I)</td></tr>
+                      <tr><td>Canal optique</td><td>Petite aile sphénoïde</td><td>II, A. ophtalmique</td></tr>
+                      <tr><td>Fissure orbitaire sup. (FOS)</td><td>Entre petite et grande aile</td><td>III, IV, V1, VI, V. ophtalmiques</td></tr>
+                      <tr><td>Foramen rond</td><td>Grande aile sphénoïde</td><td>V2 (n. maxillaire)</td></tr>
+                      <tr><td>Foramen ovale</td><td>Grande aile sphénoïde</td><td>V3 (n. mandibulaire)</td></tr>
+                      <tr><td>Foramen épineux</td><td>Grande aile sphénoïde</td><td>A. méningée moyenne</td></tr>
+                      <tr><td>Foramen lacerum</td><td>Apex du rocher</td><td>A. carotide interne (traverse au-dessus)</td></tr>
+                      <tr><td>Méat acoustique interne</td><td>Face post. rocher</td><td>VII, VIII, A. labyrinthique</td></tr>
+                      <tr><td>Foramen jugulaire</td><td>Entre temporal et occipital</td><td>IX, X, XI, V. jugulaire interne</td></tr>
+                      <tr><td>Canal hypoglosse</td><td>Occipital</td><td>XII</td></tr>
+                      <tr><td>Foramen magnum</td><td>Occipital</td><td>Tronc cérébral, XI spinal, A. vertébrales</td></tr>
+                    </tbody>
+                  </table>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="accordion-item">
+            <div class="accordion-header">SNA pelvien — Fonctions</div>
+            <div class="accordion-content">
+              <div class="accordion-body">
+                <div class="table-wrapper">
+                  <table>
+                    <thead>
+                      <tr><th>Fonction</th><th>PARASYMPATHIQUE (S2-S4)</th><th>SYMPATHIQUE (T10-L2)</th></tr>
+                    </thead>
+                    <tbody>
+                      <tr><td><strong>Vessie</strong> - Détrusor</td><td>Contraction → MICTION</td><td>Relaxation → remplissage</td></tr>
+                      <tr><td><strong>Vessie</strong> - Sphincter lisse</td><td>Relaxation</td><td>Contraction → continence</td></tr>
+                      <tr><td><strong>Rectum</strong> - Musculeuse</td><td>Contraction → DÉFÉCATION</td><td>Relaxation</td></tr>
+                      <tr><td><strong>Rectum</strong> - Sphincter int.</td><td>Relaxation</td><td>Contraction → continence</td></tr>
+                      <tr><td><strong>Sexuel ♂</strong></td><td>ÉRECTION</td><td>ÉJACULATION</td></tr>
+                      <tr><td><strong>Sexuel ♀</strong></td><td>ÉRECTION clitoridienne</td><td>Lubrification</td></tr>
+                    </tbody>
+                  </table>
+                </div>
+                <div class="box box-mnemonic">
+                  <div class="box-title">💡 Point and Shoot</div>
+                  <p>Point = Parasympathique = Érection | Shoot = Sympathique = Éjaculation</p>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="accordion-item">
+            <div class="accordion-header">Syndromes neurologiques moteurs</div>
+            <div class="accordion-content">
+              <div class="accordion-body">
+                <div class="table-wrapper">
+                  <table>
+                    <thead>
+                      <tr><th>Caractéristique</th><th>Pyramidal</th><th>Extrapyramidal</th><th>Cérébelleux</th></tr>
+                    </thead>
+                    <tbody>
+                      <tr><td><strong>Tonus</strong></td><td>Hypertonie spastique</td><td>Hypertonie plastique</td><td>HYPOTONIE</td></tr>
+                      <tr><td><strong>ROT</strong></td><td>Vifs, polycinétiques</td><td>Normaux</td><td>Pendulaires</td></tr>
+                      <tr><td><strong>Babinski</strong></td><td>PRÉSENT</td><td>Absent</td><td>Absent</td></tr>
+                      <tr><td><strong>Tremblement</strong></td><td>Absent</td><td>De repos</td><td>Intentionnel</td></tr>
+                      <tr><td><strong>Latéralité</strong></td><td>Controlatéral</td><td>Controlatéral</td><td><strong>HOMOLATÉRAL</strong></td></tr>
+                    </tbody>
+                  </table>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="accordion-item">
+            <div class="accordion-header">Diamètres des détroits pelviens</div>
+            <div class="accordion-content">
+              <div class="accordion-body">
+                <div class="table-wrapper">
+                  <table>
+                    <thead>
+                      <tr><th>Détroit</th><th>Diamètre</th><th>Valeur</th></tr>
+                    </thead>
+                    <tbody>
+                      <tr><td rowspan="3"><strong>SUPÉRIEUR</strong></td><td>AP (promonto-rétro-pubien)</td><td><strong>11 cm</strong></td></tr>
+                      <tr><td>Transverse maximal</td><td>13,5 cm</td></tr>
+                      <tr><td>Transverse médian (utile)</td><td>12 cm</td></tr>
+                      <tr><td><strong>MOYEN</strong></td><td>Bi-épineux</td><td><strong>10,5 cm</strong> (le + étroit)</td></tr>
+                      <tr><td><strong>INFÉRIEUR</strong></td><td>Bi-ischiatique</td><td>11 cm</td></tr>
+                    </tbody>
+                  </table>
+                </div>
+                <div class="box box-nb">
+                  <div class="box-title">📝 Nutation / Contre-nutation</div>
+                  <p><strong>CONTRE-nutation</strong> : ↑ détroit sup. → favorise l'ENGAGEMENT<br>
+                  <strong>Nutation</strong> : ↑ détroit inf. → favorise le DÉGAGEMENT</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </main>
+  </div>
+
+  <!-- Search Results Modal -->
+  <div id="search-results" class="search-results">
+    <div class="search-results-panel">
+      <div class="search-results-header">
+        <strong>Résultats</strong>
+        <button onclick="hideSearchResults()" style="background:none;border:none;font-size:1.5rem;cursor:pointer;">×</button>
+      </div>
+      <div class="search-results-list"></div>
+    </div>
+  </div>
+
+  <button class="menu-toggle" onclick="document.querySelector('.sidebar').classList.toggle('open')">☰</button>
+
+  <script src="app.js"></script>
+</body>
+</html>
