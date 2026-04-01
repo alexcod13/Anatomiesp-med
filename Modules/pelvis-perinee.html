@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Périnée féminin - Anatomie</title>
+  <title>Périnée et OGF - Anatomie</title>
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="../styles.css">
 </head>
@@ -27,7 +27,7 @@
             <a href="pelvis-osseux.html" class="nav-item">Pelvis osseux</a>
             <a href="pelvis-vascu.html" class="nav-item">Vascularisation</a>
             <a href="pelvis-visceres.html" class="nav-item">Viscères pelvis féminin</a>
-            <a href="pelvis-perinee.html" class="nav-item active">Périnée</a>
+            <a href="pelvis-perinee.html" class="nav-item active">Périnée et OGF</a>
           </div>
         </div>
       </nav>
@@ -35,8 +35,9 @@
 
     <main class="main">
       <header class="header">
+        <button class="sidebar-toggle" title="Masquer/Afficher le menu">☰</button>
         <div class="breadcrumb">
-          <a href="../index.html">Accueil</a> / Pelvis / Périnée et organes génitaux féminins
+          <a href="../index.html">Accueil</a> / Pelvis / Organes génitaux féminins et périnée
         </div>
         <div class="header-actions">
           <button class="btn-icon" onclick="expandAllAccordions()">⊞</button>
@@ -46,78 +47,329 @@
       </header>
 
       <div class="content">
-        <h1>🩺 Périnée et organes génitaux féminins</h1>
+        <h1>🩺 Organes génitaux féminins et périnée</h1>
         <p><strong>Pr. Maldonado</strong> — Poly spé n°4 — Tutorat Santé de Tours 2025</p>
 
         <div class="toc">
           <div class="toc-title">📑 Sommaire</div>
           <ul class="toc-list">
-            <li><a href="#ligaments">I. Ligaments utérins</a></li>
-            <li><a href="#vascu-uterus">II. Vascularisation utérine</a></li>
-            <li><a href="#ovaires">III. Ovaires</a></li>
-            <li><a href="#peritoine">IV. Péritoine pelvien</a></li>
-            <li><a href="#perinee">V. Périnée</a></li>
+            <li><a href="#rappels">I. Rappels et repères du pelvis</a></li>
+            <li><a href="#vagin">II. Vagin</a></li>
+            <li><a href="#trompes">III. Trompes utérines</a></li>
+            <li><a href="#ligaments">IV. Ligaments utérins</a></li>
+            <li><a href="#vascu">V. Vascularisation utérine</a></li>
+            <li><a href="#ovaires">VI. Ovaires</a></li>
+            <li><a href="#peritoine">VII. Péritoine pelvien</a></li>
+            <li><a href="#perinee">VIII. Périnée</a></li>
+            <li><a href="#vulve">IX. Vulve</a></li>
           </ul>
         </div>
 
-        <!-- SECTION I - LIGAMENTS -->
-        <section id="ligaments">
-          <h2>I. Ligaments utérins</h2>
+        <!-- SECTION I - RAPPELS -->
+        <section id="rappels">
+          <h2>I. Rappels et repères du pelvis</h2>
 
           <div class="accordion">
-            <div class="accordion-item open">
-              <div class="accordion-header">A) Ligament rond</div>
+            <div class="accordion-item">
+              <div class="accordion-header">A) Repères osseux</div>
               <div class="accordion-content">
                 <div class="accordion-body">
                   <ul>
-                    <li><strong>Origine</strong> : portion antérieure de la corne utérine</li>
-                    <li><strong>Trajet</strong> : sous le péritoine → pénètre la paroi abdominale → canal inguinal</li>
-                    <li><strong>Terminaison</strong> : grande lèvre</li>
+                    <li>Vertèbre <strong>L5</strong> et disque L5-S1 (annulus fibreux)</li>
+                    <li><strong>Sacrum</strong> (5 vertèbres) : promontoire sur S1, canal vertébral contenant la queue de cheval</li>
+                    <li><strong>Coccyx</strong></li>
+                    <li><strong>Crête iliaque</strong> : niveau L4-L5</li>
+                    <li><strong>Symphyse pubienne</strong> : fibrocartilage</li>
                   </ul>
                 </div>
               </div>
             </div>
 
             <div class="accordion-item">
-              <div class="accordion-header">B) Ligament utéro-sacral</div>
+              <div class="accordion-header">B) Détroit supérieur — Diamètres</div>
               <div class="accordion-content">
                 <div class="accordion-body">
+                  <div class="table-wrapper">
+                    <table>
+                      <thead>
+                        <tr><th>Diamètre</th><th>Taille relative</th></tr>
+                      </thead>
+                      <tbody>
+                        <tr><td><strong>Antéro-postérieur</strong></td><td>Le plus court</td></tr>
+                        <tr><td><strong>Transverse (latéro-latéral)</strong></td><td>Intermédiaire</td></tr>
+                        <tr><td><strong>Oblique</strong></td><td>Le plus long</td></tr>
+                      </tbody>
+                    </table>
+                  </div>
+                  
+                  <div class="box box-remark">
+                    <div class="box-title">Remarque</div>
+                    <p>En obstétrique, le diamètre transverse maximal peut être plus long que l'oblique. Le terme "diamètre transverse" désigne généralement le diamètre transverse moyen.</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="accordion-item open">
+              <div class="accordion-header">C) Rappels viscéraux — Statique pelvienne</div>
+              <div class="accordion-content">
+                <div class="accordion-body">
+                  <h4>Vessie</h4>
                   <ul>
-                    <li><strong>Origine</strong> : portion basse de l'utérus</li>
-                    <li><strong>Trajet</strong> : latéralement et postérieurement</li>
-                    <li><strong>Terminaison</strong> : face antérieure du sacrum (lames sacro-pubiennes)</li>
+                    <li>Cache une grande partie du foramen obturé</li>
+                    <li>Dôme péritonisé (partie supérieure)</li>
+                    <li>Uretères s'abouchent sur la paroi postéro-inférieure (trigone vésical)</li>
+                    <li>Se continue par le <strong>ligament vésical médian</strong></li>
+                    <li><strong>Espace rétropubien</strong> entre vessie et pubis : plexus vésical</li>
                   </ul>
+                  
+                  <h4>Utérus et vagin</h4>
+                  <ul>
+                    <li>Utérus en <strong>versoflexion</strong> : angle d'antéversion + angle d'antéflexion</li>
+                    <li>Vagin s'insère autour du col → <strong>fornix antérieur et postérieur</strong></li>
+                    <li><strong>Septum vésico-vaginal</strong> entre vessie et vagin</li>
+                  </ul>
+                  
+                  <div class="box box-clinical">
+                    <div class="box-title">⚕️ Troubles de la statique pelvienne</div>
+                    <ul>
+                      <li><strong>Cystocèle</strong> : descente de la vessie vers le périnée, pousse contre la paroi antérieure du vagin</li>
+                      <li><strong>Colpocèle</strong> : descente du vagin</li>
+                      <li><strong>Prolapsus utérin</strong> : utérus descend, col visible voire extériorisé à l'orifice vaginal</li>
+                    </ul>
+                  </div>
+                  
+                  <h4>Rectum</h4>
+                  <p>Ampoule rectale + canal anal, séparés par un angle participant à la continence.</p>
                 </div>
               </div>
             </div>
           </div>
         </section>
 
-        <!-- SECTION II - VASCULARISATION UTÉRINE -->
-        <section id="vascu-uterus">
-          <h2>II. Vascularisation utérine</h2>
+        <!-- SECTION II - VAGIN -->
+        <section id="vagin">
+          <h2>II. Vagin</h2>
+
+          <div class="accordion">
+            <div class="accordion-item open">
+              <div class="accordion-header">A) Généralités</div>
+              <div class="accordion-content">
+                <div class="accordion-body">
+                  <ul>
+                    <li>Organe de la <strong>copulation</strong></li>
+                    <li>Tube musculaire et muqueux, <strong>aplati dans le sens antéro-postérieur</strong></li>
+                    <li>Paroi antérieure et paroi postérieure</li>
+                    <li>Direction : vers le haut et vers l'arrière</li>
+                    <li>Rapports : vessie (ant.) et rectum (post.) via les septa pelviens</li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+
+            <div class="accordion-item open">
+              <div class="accordion-header">B) Fornix</div>
+              <div class="accordion-content">
+                <div class="accordion-body">
+                  <p>La muqueuse vaginale s'attache aux pourtours de la partie inférieure du col utérin (cervix) en laissant un espace circulaire : le <strong>fornix</strong>.</p>
+                  
+                  <ul>
+                    <li><strong>Fornix antérieur</strong></li>
+                    <li><strong>Deux fornices latéraux</strong> (taille réduite)</li>
+                    <li><strong>Fornix postérieur</strong> : <strong>plus profond</strong> que l'antérieur</li>
+                  </ul>
+                  
+                  <div class="box box-clinical">
+                    <div class="box-title">⚕️ Toucher vaginal</div>
+                    <p>Au niveau du fornix postérieur → palpation indirecte du <strong>cul-de-sac de Douglas</strong>. Permet aussi de palper le col utérin, la vessie et l'ampoule rectale.</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="accordion-item open">
+              <div class="accordion-header">C) Histologie du vagin</div>
+              <div class="accordion-content">
+                <div class="accordion-body">
+                  <h4>Couches musculaires (de l'intérieur vers l'extérieur)</h4>
+                  <ul>
+                    <li><strong>Couche circulaire</strong> (interne)</li>
+                    <li><strong>Couche longitudinale</strong> (externe) → permet raccourcissement/allongement</li>
+                    <li><strong>Adventice</strong> : fine couche externe de tissu conjonctif</li>
+                  </ul>
+                  
+                  <div class="box box-nb">
+                    <div class="box-title">📝 Dimensions</div>
+                    <p>Au repos : <strong>7-10 cm</strong>. Lors d'un rapport sexuel : <strong>12-14 cm</strong> (relaxation des fibres longitudinales).</p>
+                  </div>
+                  
+                  <h4>Rides vaginales</h4>
+                  <ul>
+                    <li>Plicatures de la muqueuse imposées par les fibres longitudinales</li>
+                    <li>Très marquées, s'effacent légèrement lors de la copulation</li>
+                    <li><strong>Point G</strong> : portion inférieure de la paroi antérieure, riche en rides vaginales, zone particulièrement érogène</li>
+                  </ul>
+                  
+                  <h4>Sphincter vaginal</h4>
+                  <p>Partie inférieure du vagin, peut être contracté lors d'un rapport sexuel.</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <!-- SECTION III - TROMPES -->
+        <section id="trompes">
+          <h2>III. Trompes utérines</h2>
+
+          <div class="accordion">
+            <div class="accordion-item open">
+              <div class="accordion-header">A) Anatomie</div>
+              <div class="accordion-content">
+                <div class="accordion-body">
+                  <p>Aussi appelé <strong>tube utérin</strong> (ancienne nomenclature : trompe de Fallope).</p>
+                  <p>Située latéralement à la portion haute de l'utérus, reliée par la <strong>corne utérine</strong>.</p>
+                  
+                  <h4>Segments (du médial au latéral)</h4>
+                  <div class="table-wrapper">
+                    <table>
+                      <thead>
+                        <tr><th>Segment</th><th>Description</th></tr>
+                      </thead>
+                      <tbody>
+                        <tr><td><strong>Zone interstitielle</strong></td><td>Plus proche de l'utérus, s'étend dans la corne</td></tr>
+                        <tr><td><strong>Isthme</strong></td><td>Portion rétrécie</td></tr>
+                        <tr><td><strong>Ampoule</strong></td><td>Zone élargie, <strong>site de fécondation</strong></td></tr>
+                        <tr><td><strong>Infundibulum</strong></td><td>Segment distal, s'ouvre en pavillon</td></tr>
+                      </tbody>
+                    </table>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="accordion-item open">
+              <div class="accordion-header">B) Infundibulum et franges</div>
+              <div class="accordion-content">
+                <div class="accordion-body">
+                  <ul>
+                    <li>Situé en position <strong>sous-péritonéale</strong>, s'ouvre dans la cavité péritonéale</li>
+                    <li>Point de départ d'une <strong>dizaine de franges</strong> (fimbriae)</li>
+                    <li><strong>Frange ovarique</strong> : la plus longue, relie et fixe l'ovaire au tube utérin (tissu conjonctif)</li>
+                    <li><strong>Ostium tubaire</strong> : au centre des franges, orifice de communication entre lumière tubaire et cavité péritonéale</li>
+                  </ul>
+                  
+                  <div class="box box-clinical">
+                    <div class="box-title">⚕️ Hystérographie</div>
+                    <p>Injection de produit de contraste dans l'utérus → petite fuite dans la cavité péritonéale via l'ostium tubaire (communication physiologique).</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="accordion-item open">
+              <div class="accordion-header">C) Histologie du tube utérin</div>
+              <div class="accordion-content">
+                <div class="accordion-body">
+                  <ul>
+                    <li><strong>Muqueuse ciliée</strong> : extrêmement plissée, cils favorisant la migration de l'œuf vers l'utérus</li>
+                    <li><strong>Couche musculaire circulaire</strong> (interne)</li>
+                    <li><strong>Couche musculaire longitudinale</strong> (externe) → génèrent un péristaltisme</li>
+                    <li><strong>Fine couche de tissu conjonctif</strong></li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+
+            <div class="accordion-item">
+              <div class="accordion-header">D) Fonction tubaire</div>
+              <div class="accordion-content">
+                <div class="accordion-body">
+                  <p><strong>Fécondation</strong> : se déroule dans l'<strong>ampoule</strong> de la trompe utérine.</p>
+                  <p>Les trompes participent ensuite à la <strong>migration de l'ovocyte fécondé</strong> vers l'endomètre.</p>
+                  
+                  <div class="box box-clinical">
+                    <div class="box-title">⚕️ Applications cliniques</div>
+                    <ul>
+                      <li><strong>Lésions inflammatoires/cicatricielles</strong> → occlusion de la lumière → <strong>grossesse extra-utérine</strong> (risque de rupture de trompe)</li>
+                      <li><strong>Stérilisation tubaire</strong> : occlusion ou interruption chirurgicale de la trompe</li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <!-- SECTION IV - LIGAMENTS -->
+        <section id="ligaments">
+          <h2>IV. Ligaments utérins</h2>
+
+          <div class="accordion">
+            <div class="accordion-item open">
+              <div class="accordion-header">Ligaments utérins</div>
+              <div class="accordion-content">
+                <div class="accordion-body">
+                  <div class="table-wrapper">
+                    <table>
+                      <thead>
+                        <tr><th>Ligament</th><th>Origine</th><th>Trajet</th><th>Terminaison</th></tr>
+                      </thead>
+                      <tbody>
+                        <tr>
+                          <td><strong>Ligament rond</strong></td>
+                          <td>Portion antérieure de la corne utérine</td>
+                          <td>Sous le péritoine → paroi abdominale → canal inguinal</td>
+                          <td>Grande lèvre (couches conjonctives)</td>
+                        </tr>
+                        <tr>
+                          <td><strong>Ligament utéro-sacral</strong></td>
+                          <td>Portion basse de l'utérus</td>
+                          <td>Latéralement et postérieurement</td>
+                          <td>Face antérieure du sacrum (lames sacro-pubiennes)</td>
+                        </tr>
+                      </tbody>
+                    </table>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <!-- SECTION V - VASCULARISATION -->
+        <section id="vascu">
+          <h2>V. Vascularisation utérine</h2>
 
           <div class="accordion">
             <div class="accordion-item open">
               <div class="accordion-header">A) Artère utérine</div>
               <div class="accordion-content">
                 <div class="accordion-body">
-                  <ul>
-                    <li>Trajet très <strong>sinueux</strong></li>
-                    <li><strong>Croise l'uretère par l'avant</strong></li>
-                    <li>Longe la face latérale de l'utérus</li>
-                  </ul>
+                  <p>Issue du <strong>tronc antérieur</strong> de l'artère iliaque interne.</p>
                   
-                  <h4>Branches</h4>
+                  <h4>Trajet</h4>
                   <ul>
-                    <li><strong>Branches cervico-vaginales</strong> (5-6) : naissent en amont du croisement urétéral</li>
-                    <li><strong>Branches perforantes/transversales</strong> : pénètrent le myomètre → branches spiralées (endomètre)</li>
-                    <li><strong>Branches terminales</strong> : branche du fond utérin + artère tubaire médiale</li>
+                    <li>Rejoint l'utérus en longeant son bord latéral</li>
+                    <li>Trajet <strong>très sinueux</strong></li>
+                    <li><strong>Croise l'uretère par l'avant</strong></li>
                   </ul>
                   
                   <div class="box box-nb">
                     <div class="box-title">📝 NB</div>
-                    <p>L'<strong>artère vaginale</strong> est indépendante, issue du tronc antérieur de l'iliaque interne.</p>
+                    <p>L'uretère chemine entre la face antérieure de l'utérus et la face postérieure de la vessie où il s'abouche.</p>
+                  </div>
+                  
+                  <h4>Branches</h4>
+                  <ul>
+                    <li><strong>Branches cervico-vaginales</strong> (5-6) : naissent en amont du croisement urétéral, vascularisent col et région vaginale</li>
+                    <li><strong>Branches perforantes (transversales)</strong> : pénètrent le myomètre → branches spiralées (endomètre)</li>
+                    <li><strong>Branches terminales</strong> : branche du fond utérin + artère tubaire médiale</li>
+                  </ul>
+                  
+                  <div class="box box-remark">
+                    <div class="box-title">Artère vaginale</div>
+                    <p>Indépendante de l'artère utérine, issue du tronc antérieur de l'iliaque interne. Vascularise la partie basse du vagin.</p>
                   </div>
                 </div>
               </div>
@@ -127,6 +379,8 @@
               <div class="accordion-header">B) Arcades anastomotiques utéro-ovariennes</div>
               <div class="accordion-content">
                 <div class="accordion-body">
+                  <p>Deux réseaux anastomotiques formant une double circulation :</p>
+                  
                   <div class="table-wrapper">
                     <table>
                       <thead>
@@ -134,12 +388,12 @@
                       </thead>
                       <tbody>
                         <tr>
-                          <td><span class="term">Arcade infratubaire</span></td>
+                          <td><strong>Arcade infratubaire</strong></td>
                           <td>Bord inférieur de la trompe</td>
                           <td>A. tubaire médiale (utérine) + A. tubaire latérale (ovarique)</td>
                         </tr>
                         <tr>
-                          <td><span class="term">Arcade infra-ovarique</span></td>
+                          <td><strong>Arcade infra-ovarique</strong></td>
                           <td>Ligament utéro-ovarien</td>
                           <td>A. ovarique médiale (utérine) + A. ovarique latérale (ovarique)</td>
                         </tr>
@@ -147,13 +401,21 @@
                     </table>
                   </div>
                   
-                  <p>Une <strong>artère tubaire moyenne</strong> relie souvent les deux arcades.</p>
+                  <p>Une <strong>artère tubaire moyenne</strong> relie souvent les deux arcades (dans le ligament large).</p>
                   
                   <div class="box box-clinical">
                     <div class="box-title">⚕️ Intérêt clinique</div>
                     <ul>
                       <li><strong>Torsion ovarienne</strong> : la double circulation évite la nécrose</li>
-                      <li><strong>Stérilisation tubaire</strong> : la circulation collatérale compense</li>
+                      <li><strong>Stérilisation tubaire</strong> : la circulation collatérale compense la perte vasculaire</li>
+                    </ul>
+                  </div>
+                  
+                  <div class="box box-nb">
+                    <div class="box-title">📝 Variantes anatomiques</div>
+                    <ul>
+                      <li>Vascularisation unique par l'artère ovarique</li>
+                      <li>Vascularisation unique par l'artère utérine (plus problématique si stérilisation tubaire)</li>
                     </ul>
                   </div>
                 </div>
@@ -161,7 +423,26 @@
             </div>
 
             <div class="accordion-item">
-              <div class="accordion-header">C) Drainage lymphatique</div>
+              <div class="accordion-header">C) Drainage veineux</div>
+              <div class="accordion-content">
+                <div class="accordion-body">
+                  <ul>
+                    <li>Certaines veines sont satellites des artères</li>
+                    <li>Plexus : utérin, vaginal, pampiniforme</li>
+                    <li>Plexus utérin et pampiniforme = unique élément anastomosé</li>
+                  </ul>
+                  
+                  <h4>Drainage</h4>
+                  <ul>
+                    <li>Vers la veine iliaque commune</li>
+                    <li>Vers la VCI : directement (v. ovarique droite) ou indirectement (v. rénale gauche)</li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+
+            <div class="accordion-item open">
+              <div class="accordion-header">D) Drainage lymphatique</div>
               <div class="accordion-content">
                 <div class="accordion-body">
                   <div class="table-wrapper">
@@ -170,12 +451,26 @@
                         <tr><th>Structure</th><th>Drainage</th></tr>
                       </thead>
                       <tbody>
-                        <tr><td>Utérus (majorité)</td><td>Nœuds iliaques internes (hypogastriques)</td></tr>
-                        <tr><td>Cornes utérines</td><td>Nœuds inguinaux (via ligament rond)</td></tr>
-                        <tr><td>Ovaire</td><td>Nœuds pré-aortiques (via ligament suspenseur)</td></tr>
-                        <tr><td>Vagin inférieur</td><td>Nœuds inguinaux superficiels</td></tr>
+                        <tr><td>Utérus (majorité)</td><td>Nœuds <strong>iliaques internes</strong> (hypogastriques)</td></tr>
+                        <tr><td>Cornes utérines</td><td>Nœuds <strong>inguinaux</strong> (via ligament rond)</td></tr>
+                        <tr><td>Ovaire</td><td>Nœuds <strong>pré-aortiques</strong> (via ligament suspenseur)</td></tr>
+                        <tr><td>Vagin inférieur (périnéal)</td><td>Nœuds <strong>inguinaux superficiels</strong></td></tr>
                       </tbody>
                     </table>
+                  </div>
+                  
+                  <h4>Drainages multiples</h4>
+                  <ul>
+                    <li><strong>Vessie</strong> : fond → iliaques internes / face antéro-inf. et dôme → iliaques externes</li>
+                    <li><strong>Rectum</strong> : partie haute → mésentériques inf. / moyenne → iliaques internes / basse → iliaques externes + inguinaux superficiels</li>
+                  </ul>
+                  
+                  <div class="box box-clinical">
+                    <div class="box-title">⚕️ Métastases</div>
+                    <ul>
+                      <li>Utérus : métastases vers région hypogastrique (le long des veines iliaques internes)</li>
+                      <li>Ovaire (cancer de la granulosa) : métastases aux ganglions pré-aortiques puis suivent le ligament suspenseur</li>
+                    </ul>
                   </div>
                 </div>
               </div>
@@ -183,64 +478,81 @@
           </div>
         </section>
 
-        <!-- SECTION III - OVAIRES -->
+        <!-- SECTION VI - OVAIRES -->
         <section id="ovaires">
-          <h2>III. Ovaires</h2>
+          <h2>VI. Ovaires</h2>
 
           <div class="accordion">
-            <div class="accordion-item open">
-              <div class="accordion-header">A) Morphologie</div>
+            <div class="accordion-item">
+              <div class="accordion-header">A) Développement embryonnaire</div>
               <div class="accordion-content">
                 <div class="accordion-body">
                   <ul>
-                    <li>Aspect blanchâtre/rosé, recouvert d'<strong>albuginée</strong></li>
-                    <li>Pôles supérieur et inférieur, bords médial et latéral</li>
+                    <li>Bourgeons des gonades = <strong>abdominaux</strong></li>
+                    <li>Migration vers la cavité pelvienne (féminin) ou les bourses (masculin)</li>
+                    <li>Les artères s'allongent et migrent avec les bourgeons</li>
                   </ul>
                   
-                  <h4>En coupe</h4>
+                  <p>Chez la femme : ovaire d'abord rétropéritonéal, puis une partie devient sous-péritonéale et l'autre intrapéritonéale.</p>
+                </div>
+              </div>
+            </div>
+
+            <div class="accordion-item open">
+              <div class="accordion-header">B) Morphologie ovarienne</div>
+              <div class="accordion-content">
+                <div class="accordion-body">
                   <ul>
-                    <li><span class="term">Cortex (corticale)</span> : zone superficielle, contient les follicules → ovulation</li>
-                    <li><span class="term">Medulla (médullaire)</span> : zone profonde, vaisseaux + tissu conjonctif</li>
+                    <li>Glande blanchâtre/rosée, recouverte d'<strong>albuginée</strong> (fine couche conjonctive blanchâtre)</li>
+                    <li>Pôle supérieur et inférieur, bords médial et latéral</li>
                   </ul>
                   
-                  <h4>Portions</h4>
+                  <h4>En coupe transversale</h4>
                   <ul>
-                    <li><strong>1/3 sous-péritonéal</strong> : hile ovarien</li>
-                    <li><strong>2/3 intrapéritonéal</strong> : seul organe vraiment intrapéritonéal (avec l'ovocyte)</li>
+                    <li><strong>Cortex (corticale)</strong> : zone superficielle, contient les follicules → ovulation</li>
+                    <li><strong>Medulla (médullaire)</strong> : zone profonde, vaisseaux + tissu conjonctif</li>
+                  </ul>
+                  
+                  <h4>Portions de l'ovaire</h4>
+                  <ul>
+                    <li><strong>1/3 sous-péritonéal</strong> (extrapéritonéal) = hile ovarien</li>
+                    <li><strong>2/3 intrapéritonéal</strong> = dans la cavité abdominale</li>
                   </ul>
                   
                   <div class="box box-nb">
-                    <div class="box-title">📝 Stigmas de ponte</div>
-                    <p>Cicatrices visibles sur la portion intrapéritonéale de l'ovaire.</p>
+                    <div class="box-title">📝 NB</div>
+                    <p>Seuls l'<strong>ovocyte et les 2/3 de l'ovaire</strong> sont purement intrapéritonéaux. La portion intrapéritonéale est recouverte de cicatrices des <strong>stigmas de pontes</strong> ovulaires.</p>
                   </div>
                 </div>
               </div>
             </div>
 
             <div class="accordion-item open">
-              <div class="accordion-header">B) Ligaments ovariens</div>
+              <div class="accordion-header">C) Ligaments ovariens</div>
               <div class="accordion-content">
                 <div class="accordion-body">
+                  <p>L'ovaire est un organe <strong>très mobile</strong> malgré ses ligaments.</p>
+                  
                   <div class="table-wrapper">
                     <table>
                       <thead>
-                        <tr><th>Ligament</th><th>Attache</th><th>Direction</th></tr>
+                        <tr><th>Ligament</th><th>Attache</th><th>Terminaison</th></tr>
                       </thead>
                       <tbody>
                         <tr>
-                          <td><span class="term">Tubo-ovarien</span></td>
+                          <td><strong>Tubo-ovarien</strong></td>
                           <td>Pôle supérieur</td>
-                          <td>Vers la frange ovarique</td>
+                          <td>Frange ovarique</td>
                         </tr>
                         <tr>
-                          <td><span class="term">Suspenseur de l'ovaire</span> (lombo-ovarien)</td>
+                          <td><strong>Suspenseur (lombo-ovarien)</strong></td>
                           <td>Pôle supérieur</td>
-                          <td>Vers L2-L3 (paroi abdominale post.)</td>
+                          <td>Paroi abdominale postérieure (L2-L3)</td>
                         </tr>
                         <tr>
-                          <td><span class="term">Propre de l'ovaire</span> (utéro-ovarien)</td>
+                          <td><strong>Propre (utéro-ovarien)</strong></td>
                           <td>Pôle inférieur</td>
-                          <td>Vers la corne utérine postérieure</td>
+                          <td>Portion postérieure de la corne utérine</td>
                         </tr>
                       </tbody>
                     </table>
@@ -255,10 +567,17 @@
             </div>
 
             <div class="accordion-item">
-              <div class="accordion-header">C) Hile ovarien et mésovarium</div>
+              <div class="accordion-header">D) Hile ovarien et mésovarium</div>
               <div class="accordion-content">
                 <div class="accordion-body">
-                  <p>Le <span class="term">mésovarium</span> = feuillets péritonéaux délimitant le hile ovarien.</p>
+                  <p>Le péritoine s'insère sur l'ovaire et forme un entonnoir au niveau de sa portion sous-péritonéale = <strong>hile ovarien</strong>.</p>
+                  
+                  <div class="box box-nb">
+                    <div class="box-title">📝 Particularité</div>
+                    <p>Le hile ovarien ne forme <strong>pas de dépression</strong> (exception parmi les hiles).</p>
+                  </div>
+                  
+                  <p>Le hile est délimité par le <strong>mésovarium</strong> (feuillets de péritoine, structure aplatie).</p>
                   
                   <h4>Contenu du hile</h4>
                   <ul>
@@ -268,21 +587,16 @@
                     <li>Graisse et tissu conjonctif</li>
                     <li>Attaches des ligaments</li>
                   </ul>
-                  
-                  <div class="box box-nb">
-                    <div class="box-title">📝 NB</div>
-                    <p>Le hile ovarien ne forme <strong>pas de dépression</strong> (exception parmi les hiles).</p>
-                  </div>
                 </div>
               </div>
             </div>
 
             <div class="accordion-item">
-              <div class="accordion-header">D) Vascularisation ovarienne</div>
+              <div class="accordion-header">E) Vascularisation ovarienne</div>
               <div class="accordion-content">
                 <div class="accordion-body">
                   <h4>Artère</h4>
-                  <p><strong>Artère ovarique</strong> : issue de l'<strong>aorte abdominale</strong> (pas de l'iliaque !), suit le ligament suspenseur.</p>
+                  <p><strong>Artère ovarique</strong> : issue de l'<strong>aorte abdominale</strong> (pas de l'iliaque !), suit le ligament lombo-ovarien.</p>
                   
                   <h4>Veines</h4>
                   <p>Plexus pampiniforme → veine ovarique :</p>
@@ -296,68 +610,101 @@
           </div>
         </section>
 
-        <!-- SECTION IV - PÉRITOINE -->
+        <!-- SECTION VII - PÉRITOINE -->
         <section id="peritoine">
-          <h2>IV. Péritoine pelvien</h2>
+          <h2>VII. Péritoine pelvien</h2>
 
           <div class="accordion">
             <div class="accordion-item open">
               <div class="accordion-header">A) Ligament large</div>
               <div class="accordion-content">
                 <div class="accordion-body">
-                  <p>Ensemble de replis de péritoine contenant :</p>
-                  <ul>
-                    <li>Tissu conjonctif et graisse</li>
-                    <li>Vaisseaux et nerfs</li>
-                  </ul>
+                  <p>Le péritoine se divise en feuillet antérieur et postérieur de l'utérus. Il se pose aussi sur les trompes et les ligaments.</p>
                   
-                  <p>Maintient l'utérus, les trompes et l'ovaire entre eux et à la paroi pelvienne latérale.</p>
+                  <p>Cet ensemble de replis abrite tissu conjonctif, graisse, vaisseaux, nerfs = <strong>ligament large</strong>.</p>
+                  
+                  <h4>Rôle</h4>
+                  <p>Maintien de l'utérus, des trompes et de l'ovaire entre eux et à la paroi latérale du pelvis.</p>
                   
                   <h4>Mésos du ligament large</h4>
                   <ul>
-                    <li><span class="term">Mésosalpinx</span> : méso de la trompe utérine</li>
-                    <li><span class="term">Mésovarium</span> : méso de l'ovaire</li>
+                    <li><strong>Mésosalpinx</strong> : méso de la trompe (partie haute et postérieure du ligament large)</li>
+                    <li><strong>Mésovarium</strong> : méso de l'ovaire</li>
                   </ul>
+                  
+                  <div class="box box-remark">
+                    <div class="box-title">Comparaison</div>
+                    <p>Le péritoine est similaire à un <strong>drap posé sur un fil à linge</strong>.</p>
+                  </div>
                 </div>
               </div>
             </div>
 
             <div class="accordion-item">
-              <div class="accordion-header">B) Fosse ovarique</div>
+              <div class="accordion-header">B) Reliefs péritonéaux</div>
+              <div class="accordion-content">
+                <div class="accordion-body">
+                  <p>Le péritoine forme des reliefs en se déposant sur les structures sous-jacentes.</p>
+                  
+                  <h4>Reliefs formés par les ligaments</h4>
+                  <ul>
+                    <li>Ligament rond (ant. corne utérine)</li>
+                    <li>Ligament tubo-ovarien (entre trompe et ovaire)</li>
+                    <li>Ligament propre de l'ovaire (arr. corne utérine)</li>
+                    <li>Ligament suspenseur (arr. ovaire)</li>
+                  </ul>
+                  
+                  <h4>Reliefs formés par les viscères</h4>
+                  <ul>
+                    <li>Uretère (élément le plus médial, trajet latéro-rectal)</li>
+                    <li>Vessie (partie supérieure)</li>
+                    <li>Utérus et trompes</li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+
+            <div class="accordion-item open">
+              <div class="accordion-header">C) Fosse ovarique</div>
               <div class="accordion-content">
                 <div class="accordion-body">
                   <ul>
                     <li>Dépression délimitée par le mésosalpinx</li>
                     <li>Abrite l'ovaire</li>
                     <li>Chez la <strong>nullipare</strong> : ovaire en arrière du mésosalpinx, en avant de l'uretère</li>
-                    <li>Après grossesses : ovaire plus bas et postérieur (rétro-urétérique)</li>
+                    <li>Après grossesses : ovaire plus bas et postérieur → peut devenir <strong>rétro-urétérique</strong></li>
                   </ul>
                 </div>
               </div>
             </div>
 
             <div class="accordion-item">
-              <div class="accordion-header">C) Culs-de-sac péritonéaux</div>
+              <div class="accordion-header">D) Culs-de-sac péritonéaux</div>
               <div class="accordion-content">
                 <div class="accordion-body">
                   <div class="table-wrapper">
                     <table>
                       <thead>
-                        <tr><th>Cul-de-sac</th><th>Situation</th><th>Profondeur</th></tr>
+                        <tr><th>Cul-de-sac</th><th>Tapisse</th><th>Profondeur</th></tr>
                       </thead>
                       <tbody>
                         <tr>
                           <td><strong>Vésico-utérin</strong></td>
-                          <td>Entre vessie et utérus</td>
+                          <td>Ant: face sup. vessie / Post: face ant. utérus / partiellement face latérale utérus</td>
                           <td>Peu profond</td>
                         </tr>
                         <tr>
                           <td><strong>Recto-utérin (Douglas)</strong></td>
                           <td>Entre rectum et vagin</td>
-                          <td><strong>Plus profond</strong></td>
+                          <td>Plus profond</td>
                         </tr>
                       </tbody>
                     </table>
+                  </div>
+                  
+                  <div class="box box-remark">
+                    <div class="box-title">Remarque</div>
+                    <p>Le péritoine ne forme pas de méso pour le rectum mais tapisse légèrement sa face antéro-latérale.</p>
                   </div>
                 </div>
               </div>
@@ -365,16 +712,16 @@
           </div>
         </section>
 
-        <!-- SECTION V - PÉRINÉE -->
+        <!-- SECTION VIII - PÉRINÉE -->
         <section id="perinee">
-          <h2>V. Périnée</h2>
+          <h2>VIII. Périnée</h2>
 
           <div class="accordion">
             <div class="accordion-item open">
-              <div class="accordion-header">A) Plancher périnéal (vue inférieure)</div>
+              <div class="accordion-header">A) Plancher périnéal</div>
               <div class="accordion-content">
                 <div class="accordion-body">
-                  <p>D'avant en arrière :</p>
+                  <p>Vue inférieure, en position gynécologique, d'avant en arrière :</p>
                   <ol>
                     <li><strong>Ostium de l'urètre</strong> (méat urétral)</li>
                     <li><strong>Ostium du vagin</strong></li>
@@ -407,11 +754,20 @@
               </div>
             </div>
 
-            <div class="accordion-item open">
-              <div class="accordion-header">B) Corps érectiles</div>
+            <div class="accordion-item">
+              <div class="accordion-header">B) Fascia périnéal</div>
               <div class="accordion-content">
                 <div class="accordion-body">
-                  <p>Structures profondes, richement vascularisées → tuméfaction vulvaire.</p>
+                  <p>Fascia superficiel constitué de lames de tissu conjonctif. Se dédouble pour abriter des éléments musculaires.</p>
+                </div>
+              </div>
+            </div>
+
+            <div class="accordion-item open">
+              <div class="accordion-header">C) Corps érectiles</div>
+              <div class="accordion-content">
+                <div class="accordion-body">
+                  <p>Structures profondes du périnée, richement vascularisées → engorgement sanguin → érection → <strong>tuméfaction vulvaire</strong>.</p>
                   
                   <div class="table-wrapper">
                     <table>
@@ -420,14 +776,14 @@
                       </thead>
                       <tbody>
                         <tr>
-                          <td><span class="term">Corps caverneux</span></td>
+                          <td><strong>Corps caverneux</strong></td>
                           <td>2</td>
-                          <td>Se rejoignent → corps du clitoris</td>
+                          <td>Se rejoignent antérieurement → <strong>corps du clitoris</strong></td>
                         </tr>
                         <tr>
-                          <td><span class="term">Corps spongieux</span></td>
+                          <td><strong>Corps spongieux</strong></td>
                           <td>2</td>
-                          <td>Paravaginaux</td>
+                          <td><strong>Paravaginaux</strong></td>
                         </tr>
                       </tbody>
                     </table>
@@ -437,39 +793,35 @@
             </div>
 
             <div class="accordion-item open">
-              <div class="accordion-header">C) Muscles du périnée</div>
+              <div class="accordion-header">D) Muscles du périnée</div>
               <div class="accordion-content">
                 <div class="accordion-body">
+                  <h4>Muscles transverses du périnée</h4>
+                  <p>Dans le périnée postérieur, le fascia périnéal se dédouble pour les abriter.</p>
+                  <ul>
+                    <li><strong>M. transverse superficiel</strong> : ischion → centre tendineux du périnée</li>
+                    <li><strong>M. transverse profond</strong> : ischion → centre tendineux du périnée</li>
+                  </ul>
+                  
+                  <h4>Muscle compresseur de l'urètre</h4>
+                  <p>Dans un dédoublement du fascia périnéal. Fonction : <strong>expulsion des derniers résidus d'urine</strong> lors de la miction.</p>
+                  
+                  <h4>Muscles liés aux corps érectiles</h4>
                   <div class="table-wrapper">
                     <table>
                       <thead>
-                        <tr><th>Muscle</th><th>Insertion</th><th>Fonction</th></tr>
+                        <tr><th>Muscle</th><th>Insertion</th><th>Corps érectile</th></tr>
                       </thead>
                       <tbody>
                         <tr>
-                          <td><strong>Transverse superficiel</strong></td>
-                          <td>Ischion → centre tendineux</td>
-                          <td>Soutien</td>
-                        </tr>
-                        <tr>
-                          <td><strong>Transverse profond</strong></td>
-                          <td>Ischion → centre tendineux</td>
-                          <td>Soutien</td>
-                        </tr>
-                        <tr>
-                          <td><strong>Compresseur de l'urètre</strong></td>
-                          <td>-</td>
-                          <td>Expulsion résidus urine</td>
-                        </tr>
-                        <tr>
                           <td><strong>Ischio-caverneux</strong></td>
-                          <td>Corps caverneux ↔ ischion</td>
-                          <td>Érection</td>
+                          <td>Corps caverneux + pubis ↔ ischion</td>
+                          <td>Corps caverneux</td>
                         </tr>
                         <tr>
                           <td><strong>Bulbo-spongieux</strong></td>
-                          <td>Corps spongieux (post.)</td>
-                          <td>Érection</td>
+                          <td>Partie postérieure du corps spongieux</td>
+                          <td>Corps spongieux</td>
                         </tr>
                       </tbody>
                     </table>
@@ -478,19 +830,106 @@
               </div>
             </div>
 
-            <div class="accordion-item">
-              <div class="accordion-header">D) Glandes vestibulaires</div>
+            <div class="accordion-item open">
+              <div class="accordion-header">E) Glandes</div>
               <div class="accordion-content">
                 <div class="accordion-body">
+                  <h4>Glandes vestibulaires majeures</h4>
                   <ul>
-                    <li><span class="term">Glandes vestibulaires majeures</span> (anciennes "glandes de Bartholin")</li>
-                    <li>Situées en arrière des corps érectiles</li>
-                    <li>Fonction : <strong>lubrification vaginale</strong></li>
+                    <li>Anciennes "glandes de Bartholin"</li>
+                    <li>En arrière des corps érectiles, légèrement recouvertes par les muscles</li>
+                    <li>Fonction : <strong>lubrification vaginale</strong> lors de la copulation</li>
                   </ul>
                   
                   <div class="box box-clinical">
                     <div class="box-title">⚕️ Bartholinite</div>
-                    <p>Inflammation des glandes vestibulaires majeures → tuméfaction douloureuse à l'entrée du vagin.</p>
+                    <p>Inflammation des glandes vestibulaires majeures → grosse tuméfaction à l'entrée du vagin.</p>
+                  </div>
+                  
+                  <h4>Glandes vestibulaires mineures</h4>
+                  <ul>
+                    <li>Situées en dessous du méat urétral</li>
+                    <li>Faible lubrification</li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+
+            <div class="accordion-item open">
+              <div class="accordion-header">F) Innervation et vascularisation du périnée</div>
+              <div class="accordion-content">
+                <div class="accordion-body">
+                  <h4>Nerf pudendal interne</h4>
+                  <ul>
+                    <li>Provient du <strong>plexus pudendal</strong></li>
+                    <li>Chemine le long de la branche ischiopubienne</li>
+                    <li>Donne des branches superficielles et profondes</li>
+                    <li>Responsable de l'<strong>innervation somatique de tout le périnée</strong> (très sensible)</li>
+                  </ul>
+                  
+                  <h4>Branche terminale</h4>
+                  <p><strong>Nerf dorsal du clitoris</strong> : responsable du <strong>plaisir sexuel féminin et de l'orgasme</strong>.</p>
+                  
+                  <h4>Branches motrices</h4>
+                  <ul>
+                    <li>Innervent le <strong>sphincter strié de l'anus</strong> (partie externe)</li>
+                    <li>Innervent le <strong>muscle élévateur de l'anus</strong></li>
+                    <li>Action motrice volontaire → <strong>continence ano-rectale</strong></li>
+                  </ul>
+                  
+                  <h4>Vaisseaux</h4>
+                  <p>Le nerf pudendal interne est longé par la <strong>veine pudendale interne</strong> et l'<strong>artère pudendale interne</strong>.</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <!-- SECTION IX - VULVE -->
+        <section id="vulve">
+          <h2>IX. Vulve</h2>
+
+          <div class="accordion">
+            <div class="accordion-item open">
+              <div class="accordion-header">A) Petites et grandes lèvres</div>
+              <div class="accordion-content">
+                <div class="accordion-body">
+                  <p>La vulve = partie externe de l'appareil génital féminin (position gynécologique).</p>
+                  
+                  <h4>Grandes lèvres</h4>
+                  <ul>
+                    <li><strong>Bords externes</strong> : pilosité</li>
+                    <li><strong>Bords internes</strong> : zone de transition avec la muqueuse</li>
+                  </ul>
+                  
+                  <h4>Petites lèvres</h4>
+                  <ul>
+                    <li>Médialement aux grandes lèvres</li>
+                    <li>Surface de transition avec la muqueuse <strong>non kératinisée</strong></li>
+                    <li>Partie médiale → transition avec le vestibule</li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+
+            <div class="accordion-item open">
+              <div class="accordion-header">B) Vestibule</div>
+              <div class="accordion-content">
+                <div class="accordion-body">
+                  <p>Délimité par les contours des petites lèvres.</p>
+                  
+                  <h4>Contenu</h4>
+                  <ul>
+                    <li><strong>Hymen</strong> : repli de muqueuse à bords réguliers (femme n'ayant jamais eu de rapport ni accouché), visible au niveau de l'ostium vaginal</li>
+                    <li><strong>Gland du clitoris</strong> : entouré par le prépuce du clitoris (repli cutané)</li>
+                    <li><strong>Corps spongieux</strong></li>
+                    <li><strong>Ostium des conduits</strong> des glandes vestibulaires majeures et mineures</li>
+                    <li><strong>Méat urinaire</strong> : en arrière du clitoris</li>
+                  </ul>
+                  
+                  <div class="box box-clinical">
+                    <div class="box-title">⚕️ Sondage urinaire</div>
+                    <p>Pour effectuer un sondage urinaire, il faut <strong>soulever le clitoris</strong> pour dévoiler le méat urinaire.</p>
                   </div>
                 </div>
               </div>
@@ -499,14 +938,16 @@
         </section>
 
         <div class="box box-recap">
-          <div class="box-title">📋 Récapitulatif — Points clés</div>
+          <div class="box-title">📋 Points clés du module</div>
           <ul>
-            <li><strong>Artère utérine</strong> : croise l'uretère par l'AVANT</li>
-            <li><strong>Ovaire</strong> : seul organe vraiment intrapéritonéal</li>
-            <li><strong>Artère ovarique</strong> : issue de l'AORTE (pas de l'iliaque)</li>
-            <li><strong>Veine ovarique droite</strong> → VCI / <strong>gauche</strong> → veine rénale G</li>
-            <li><strong>Arcades anastomotiques</strong> : protection contre la nécrose</li>
+            <li><strong>Vagin</strong> : 7-10 cm au repos, 12-14 cm lors du rapport, point G (paroi ant. inf.)</li>
+            <li><strong>Trompe utérine</strong> : interstitielle → isthme → ampoule (fécondation) → infundibulum</li>
+            <li><strong>Arcades anastomotiques</strong> : infratubaire + infra-ovarique → protection contre la nécrose</li>
+            <li><strong>Ovaire</strong> : 1/3 sous-péritonéal (hile), 2/3 intrapéritonéal, artère ovarique vient de l'AORTE</li>
             <li><strong>Corps caverneux</strong> → clitoris / <strong>Corps spongieux</strong> → paravaginaux</li>
+            <li><strong>Nerf pudendal interne</strong> → innervation somatique du périnée, nerf dorsal du clitoris → plaisir/orgasme</li>
+            <li><strong>Glandes vestibulaires majeures</strong> : lubrification, bartholinite si inflammation</li>
+            <li><strong>Méat urinaire</strong> : en arrière du clitoris (soulever pour sondage)</li>
           </ul>
         </div>
 
