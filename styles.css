@@ -600,6 +600,49 @@ mark {
 }
 
 /* ================================================
+   Sidebar Toggle (Desktop & Mobile)
+   ================================================ */
+.sidebar-toggle {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 40px;
+  height: 40px;
+  border: 1px solid var(--border-color);
+  border-radius: 8px;
+  background: var(--bg-primary);
+  color: var(--text-primary);
+  cursor: pointer;
+  transition: all 0.15s;
+  font-size: 1.25rem;
+  margin-right: 1rem;
+}
+
+.sidebar-toggle:hover { background: var(--bg-tertiary); }
+
+/* Sidebar collapsed state */
+.sidebar.collapsed {
+  transform: translateX(-100%);
+}
+
+.app.sidebar-collapsed .main {
+  margin-left: 0;
+}
+
+.app.sidebar-collapsed .content {
+  max-width: 1200px;
+}
+
+/* Transition for smooth collapse */
+.sidebar {
+  transition: transform 0.3s ease;
+}
+
+.main {
+  transition: margin-left 0.3s ease;
+}
+
+/* ================================================
    Responsive
    ================================================ */
 .menu-toggle {
@@ -622,9 +665,12 @@ mark {
 @media (max-width: 900px) {
   .sidebar { transform: translateX(-100%); }
   .sidebar.open { transform: translateX(0); }
+  .sidebar.collapsed { transform: translateX(-100%); }
   .main { margin-left: 0; }
+  .app.sidebar-collapsed .main { margin-left: 0; }
   .menu-toggle { display: flex; align-items: center; justify-content: center; }
   .content { padding: 1.5rem; }
+  .sidebar-toggle { display: none; }
 }
 
 /* ================================================

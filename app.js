@@ -7,6 +7,7 @@
 // ================================================
 document.addEventListener('DOMContentLoaded', () => {
   initTheme();
+  initSidebarToggle();
   initAccordions();
   initTreeViews();
   initSearch();
@@ -195,6 +196,31 @@ function highlightTerms(text, query) {
     result = result.replace(regex, '<mark>$1</mark>');
   });
   return result;
+}
+
+// ================================================
+// Sidebar Toggle (Desktop & Mobile)
+// ================================================
+function initSidebarToggle() {
+  const sidebarToggle = document.querySelector('.sidebar-toggle');
+  const sidebar = document.querySelector('.sidebar');
+  const app = document.querySelector('.app');
+  
+  // Load saved state
+  const isCollapsed = localStorage.getItem('sidebar-collapsed') === 'true';
+  if (isCollapsed) {
+    sidebar?.classList.add('collapsed');
+    app?.classList.add('sidebar-collapsed');
+  }
+  
+  sidebarToggle?.addEventListener('click', () => {
+    sidebar?.classList.toggle('collapsed');
+    app?.classList.toggle('sidebar-collapsed');
+    
+    // Save state
+    const nowCollapsed = sidebar?.classList.contains('collapsed');
+    localStorage.setItem('sidebar-collapsed', nowCollapsed);
+  });
 }
 
 // ================================================
