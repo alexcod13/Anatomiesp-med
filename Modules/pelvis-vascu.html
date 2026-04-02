@@ -4,23 +4,16 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Vascularisation, innervation et drainage du pelvis - Anatomie</title>
-  <link rel="preconnect" href="https://fonts.googleapis.com">
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="../styles.css">
 </head>
 <body>
   <div class="app">
-    <!-- Sidebar -->
     <aside class="sidebar">
       <div class="sidebar-header">
         <h1>🦴 Anatomie</h1>
         <p>Cours PASS/LAS - Tours</p>
       </div>
-      
-      <div class="sidebar-search">
-        <input type="text" data-search placeholder="Rechercher... (Ctrl+K)" />
-      </div>
-      
       <nav class="sidebar-nav">
         <div class="nav-group">
           <div class="nav-group-title">Accueil</div>
@@ -28,7 +21,13 @@
             <a href="../index.html" class="nav-item">🏠 Vue d'ensemble</a>
           </div>
         </div>
-        
+        <div class="nav-group">
+          <div class="nav-group-title">Tronc Commun (Destrieux)</div>
+          <div class="nav-group-items">
+            <a href="appareil-digestif.html" class="nav-item">Appareil digestif</a>
+          </div>
+        </div>
+
         <div class="nav-group">
           <div class="nav-group-title">Pelvis (Maldonado)</div>
           <div class="nav-group-items">
@@ -38,51 +37,19 @@
             <a href="pelvis-perinee.html" class="nav-item">Organes génitaux & périnée</a>
           </div>
         </div>
-        
-        <div class="nav-group">
-          <div class="nav-group-title">Ostéologie (Destrieux)</div>
-          <div class="nav-group-items">
-            <a href="osteologie-membres.html" class="nav-item">Ostéologie des membres</a>
-            <a href="squelette-axial.html" class="nav-item">Squelette axial</a>
-            <a href="osteologie-crane.html" class="nav-item">Ostéologie du crâne</a>
-            <a href="os-crane.html" class="nav-item">Os du crâne (détails)</a>
-          </div>
-        </div>
-
-        <div class="nav-group">
-          <div class="nav-group-title">Tête & Cou (Destrieux)</div>
-          <div class="nav-group-items">
-            <a href="fosses-nasales.html" class="nav-item">Fosses nasales</a>
-            <a href="appareil-manducateur.html" class="nav-item">Appareil manducateur</a>
-            <a href="meninges.html" class="nav-item">Méninges</a>
-          </div>
-        </div>
-
-        <div class="nav-group">
-          <div class="nav-group-title">Neuroanatomie (Destrieux)</div>
-          <div class="nav-group-items">
-            <a href="sn-fonctionnel.html" class="nav-item">Système nerveux fonctionnel</a>
-            <a href="voies-visuelles.html" class="nav-item">Voies visuelles</a>
-          </div>
-        </div>
       </nav>
     </aside>
 
-    <!-- Main -->
     <main class="main">
       <header class="header">
         <button class="sidebar-toggle" title="Masquer/Afficher le menu">☰</button>
         <div class="breadcrumb">
-          <a href="../index.html">Accueil</a>
-          <span>/</span>
-          <span>Pelvis</span>
-          <span>/</span>
-          <span>Vascularisation & innervation</span>
+          <a href="../index.html">Accueil</a> / Pelvis / Vascularisation, innervation et drainage
         </div>
         <div class="header-actions">
-          <button class="btn-icon" onclick="expandAllAccordions()" title="Tout déplier">⊞</button>
-          <button class="btn-icon" onclick="collapseAllAccordions()" title="Tout replier">⊟</button>
-          <button class="btn-icon" id="theme-toggle" title="Thème">◐</button>
+          <button class="btn-icon" onclick="expandAllAccordions()">⊞</button>
+          <button class="btn-icon" onclick="collapseAllAccordions()">⊟</button>
+          <button class="btn-icon" id="theme-toggle">◐</button>
         </div>
       </header>
 
@@ -90,686 +57,471 @@
         <h1>🩸 Vascularisation, innervation et drainage du pelvis</h1>
         <p><strong>Pr. Maldonado</strong> — Poly spé n°2 — Tutorat Santé de Tours 2025</p>
 
-        <!-- Table des matières -->
         <div class="toc">
           <div class="toc-title">📑 Sommaire</div>
           <ul class="toc-list">
             <li><a href="#reperes">I. Repères pelviens</a></li>
-            <li><a href="#arteres">II. Vascularisation artérielle</a></li>
-            <li><a href="#veines">III. Drainage veineux</a></li>
-            <li><a href="#lymphatiques">IV. Drainage lymphatique</a></li>
-            <li><a href="#somatique">V. Innervation somatique</a></li>
-            <li><a href="#autonome">VI. Innervation autonome</a></li>
-            <li><a href="#tableaux">VII. Tableaux récapitulatifs</a></li>
+            <li><a href="#arteriel">II. Vascularisation artérielle</a></li>
+            <li><a href="#veineux">III. Drainage veineux</a></li>
+            <li><a href="#lymph">IV. Drainage lymphatique</a></li>
+            <li><a href="#innerv">V. Innervation</a></li>
           </ul>
         </div>
 
-        <!-- ============================================
-             SECTION I - REPÈRES PELVIENS
-             ============================================ -->
+        <!-- SECTION I - REPERES -->
         <section id="reperes">
           <h2>I. Repères pelviens</h2>
 
-          <h3>A) Repères osseux</h3>
-          <p>Plusieurs reliefs osseux entourent la cavité pelvienne :</p>
-          <ul>
-            <li><span class="term">Ligne arquée</span> : participe à former le détroit supérieur</li>
-            <li><strong>Limite antérieure :</strong>
-              <ul>
-                <li><span class="term">Symphyse pubienne</span> : articulation interpubienne sur la ligne médiane (très peu mobile)</li>
-              </ul>
-            </li>
-            <li><strong>Limite antéro-latérale :</strong>
-              <ul>
-                <li><span class="term">Foramen obturé</span> (foramen obturatum) : partiellement fermé par la membrane obturatrice</li>
-              </ul>
-            </li>
-            <li><strong>Limite postéro-latérale :</strong>
-              <ul>
-                <li>Tubérosité ischiatique</li>
-                <li>Petite incisure ischiatique</li>
-                <li>Épine ischiatique</li>
-                <li>Grande incisure ischiatique</li>
-                <li>Crête iliaque (en regard de L4-L5)</li>
-              </ul>
-            </li>
-            <li><strong>Limite postérieure :</strong>
-              <ul>
-                <li><span class="term">Sacrum</span> : fusion des 5 vertèbres sacrées, 4 paires de foramens sacrés</li>
-                <li><span class="term">Coccyx</span></li>
-              </ul>
-            </li>
-          </ul>
-
-          <div class="box box-clinical">
-            <div class="box-title">⚕️ Application clinique</div>
-            <p>La crête iliaque est un repère clinique utile pour repérer l'espace intervertébral L4-L5, notamment lors de la réalisation d'une <strong>ponction lombaire</strong> pour un prélèvement de liquide cérébro-spinal (diagnostic de méningite).</p>
-          </div>
-
-          <h3>B) Repères ligamentaires</h3>
-          <ul>
-            <li><span class="term">Ligament sacro-tubéral</span> : du sacrum (S3) et coccyx → tubérosité ischiatique</li>
-            <li><span class="term">Ligament sacro-épineux</span> : du sacrum (S4) et coccyx → épine ischiatique</li>
-          </ul>
-          <p>Ces deux ligaments subdivisent l'espace pariétal en deux ouvertures :</p>
-          <ul>
-            <li><strong>Grande ouverture ischiatique</strong> (en haut)</li>
-            <li><strong>Petite ouverture ischiatique</strong> (en bas, plus petite)</li>
-          </ul>
-
-          <h3>C) Repères musculaires</h3>
-          <ul>
-            <li><span class="term">Muscle piriforme</span> : sort par la grande ouverture ischiatique et la divise en deux parties :
-              <ul>
-                <li><strong>Foramen supra-piriforme</strong> : au-dessus du muscle</li>
-                <li><strong>Foramen infra-piriforme</strong> : au-dessous du muscle</li>
-              </ul>
-            </li>
-            <li><span class="term">Muscle obturateur interne</span> : sort par la petite ouverture ischiatique</li>
-          </ul>
-        </section>
-
-        <!-- ============================================
-             SECTION II - VASCULARISATION ARTÉRIELLE
-             ============================================ -->
-        <section id="arteres">
-          <h2>II. Vascularisation artérielle</h2>
-
-          <p>L'<span class="term">aorte abdominale</span> se divise au niveau de <strong>L4</strong> en deux <strong>artères iliaques communes</strong> (droite et gauche). Chaque artère iliaque commune se divise en regard de l'articulation sacro-iliaque en :</p>
-          <ul>
-            <li><strong>Artère iliaque externe</strong> : destinée au membre inférieur</li>
-            <li><strong>Artère iliaque interne</strong> : destinée au pelvis (viscères et parois)</li>
-          </ul>
-
-          <!-- ARBORESCENCE ARTÉRIELLE COMPLÈTE -->
-          <h3>🌳 Arborescence artérielle du pelvis</h3>
-          <div class="tree">
-            <div class="tree-node tree-root expanded">
-              <span class="tree-label expandable">Aorte abdominale (bifurcation L4)</span>
-              <div class="tree-children">
-                
-                <!-- Artère iliaque commune -->
-                <div class="tree-node expanded">
-                  <span class="tree-label expandable">Artère iliaque commune</span>
-                  <div class="tree-children">
-                    
-                    <!-- Artère iliaque externe -->
-                    <div class="tree-node">
-                      <span class="tree-label expandable">Artère iliaque externe → Membre inférieur</span>
-                      <div class="tree-children">
-                        <div class="tree-node"><span class="tree-label">→ A. fémorale (sous le ligament inguinal)</span></div>
-                        <div class="tree-node"><span class="tree-label">A. épigastrique inférieure (paroi abdominale)</span></div>
-                        <div class="tree-node"><span class="tree-label">A. circonflexe iliaque profonde (crête iliaque)</span></div>
-                      </div>
-                    </div>
-                    
-                    <!-- Artère iliaque interne -->
-                    <div class="tree-node expanded">
-                      <span class="tree-label expandable">Artère iliaque interne (hypogastrique) → Pelvis</span>
-                      <div class="tree-children">
-                        
-                        <!-- Tronc postérieur -->
-                        <div class="tree-node">
-                          <span class="tree-label expandable">TRONC POSTÉRIEUR (pariétal)</span>
-                          <div class="tree-children">
-                            <div class="tree-node"><span class="tree-label">A. ilio-lombaire → m. iliaque, m. carré des lombes</span></div>
-                            <div class="tree-node"><span class="tree-label">A. sacrales latérales → canal sacral, muscles post.</span></div>
-                            <div class="tree-node"><span class="tree-label">A. glutéale supérieure → sort AU-DESSUS du piriforme → m. glutéaux moyen et petit, TFL</span></div>
-                          </div>
-                        </div>
-                        
-                        <!-- Tronc antérieur -->
-                        <div class="tree-node expanded">
-                          <span class="tree-label expandable">TRONC ANTÉRIEUR (viscéral + pariétal)</span>
-                          <div class="tree-children">
-                            <div class="tree-node">
-                              <span class="tree-label expandable">A. ombilicale</span>
-                              <div class="tree-children">
-                                <div class="tree-node"><span class="tree-label">Partie proximale perméable</span></div>
-                                <div class="tree-node"><span class="tree-label">Partie distale = ligament ombilical médial</span></div>
-                                <div class="tree-node"><span class="tree-label">→ A. vésicale supérieure</span></div>
-                              </div>
-                            </div>
-                            <div class="tree-node"><span class="tree-label">A. obturatrice → traverse canal obturateur → m. obturateurs, adducteurs</span></div>
-                            <div class="tree-node"><span class="tree-label">A. utérine ♀ → CROISE L'URETÈRE PAR EN AVANT → utérus, vagin sup., trompe</span></div>
-                            <div class="tree-node"><span class="tree-label">A. vaginale ♀ → vagin, base vessie</span></div>
-                            <div class="tree-node"><span class="tree-label">A. vésicale inférieure → vessie (base), prostate ♂, vésicules séminales ♂</span></div>
-                            <div class="tree-node"><span class="tree-label">A. rectale moyenne → rectum (partie moyenne)</span></div>
-                            <div class="tree-node"><span class="tree-label">A. glutéale inférieure → sort SOUS le piriforme → m. grand glutéal, cuisse post.</span></div>
-                            <div class="tree-node">
-                              <span class="tree-label expandable">A. pudendale interne → PÉRINÉE</span>
-                              <div class="tree-children">
-                                <div class="tree-node"><span class="tree-label">Sort par grand foramen ischiatique (sous piriforme)</span></div>
-                                <div class="tree-node"><span class="tree-label">Contourne l'épine ischiatique</span></div>
-                                <div class="tree-node"><span class="tree-label">Entre par petit foramen ischiatique</span></div>
-                                <div class="tree-node"><span class="tree-label">Chemine dans le canal pudendal (d'Alcock)</span></div>
-                                <div class="tree-node"><span class="tree-label">→ A. rectale inférieure</span></div>
-                                <div class="tree-node"><span class="tree-label">→ A. périnéale</span></div>
-                                <div class="tree-node"><span class="tree-label">→ A. bulbaire</span></div>
-                                <div class="tree-node"><span class="tree-label">→ A. urétrale</span></div>
-                                <div class="tree-node"><span class="tree-label">→ A. profonde du clitoris/pénis (corps caverneux)</span></div>
-                                <div class="tree-node"><span class="tree-label">→ A. dorsale du clitoris/pénis (gland)</span></div>
-                              </div>
-                            </div>
-                          </div>
-                        </div>
-                        
-                      </div>
-                    </div>
-                    
-                  </div>
-                </div>
-                
-              </div>
-            </div>
-          </div>
-
-          <div class="box box-nb">
-            <div class="box-title">📝 NB - Rapport artère utérine / uretère</div>
-            <p>L'<strong>artère utérine croise l'uretère par en avant</strong>, à environ 2 cm du col utérin. Ce rapport est crucial en chirurgie gynécologique (risque de ligature accidentelle de l'uretère lors d'une hystérectomie).</p>
-          </div>
-
-          <div class="box box-mnemonic">
-            <div class="box-title">💡 Mnémotechnique</div>
-            <p><strong>« L'eau passe sous le pont »</strong> : L'uretère (eau = urine) passe SOUS l'artère utérine (pont).</p>
-          </div>
-
-          <div class="box box-nb">
-            <div class="box-title">📝 NB - Artère glutéale supérieure</div>
-            <p>L'artère glutéale supérieure est la <strong>seule artère à passer AU-DESSUS du muscle piriforme</strong>. Toutes les autres structures (glutéale inférieure, pudendale interne, nerf sciatique) passent en dessous.</p>
-          </div>
-        </section>
-
-        <!-- ============================================
-             SECTION III - DRAINAGE VEINEUX
-             ============================================ -->
-        <section id="veines">
-          <h2>III. Drainage veineux</h2>
-
-          <p>Le système veineux est globalement <strong>satellite du système artériel</strong>, mais présente des particularités importantes.</p>
-
-          <h3>A) Organisation générale</h3>
-          
-          <!-- Accordéon veines -->
           <div class="accordion">
             <div class="accordion-item open">
-              <div class="accordion-header">Veine iliaque commune et ses tributaires</div>
+              <div class="accordion-header">A) Repères osseux</div>
               <div class="accordion-content">
                 <div class="accordion-body">
-                  <p>La <span class="term">veine iliaque commune</span> possède deux tributaires :</p>
+                  <p>Reliefs osseux entourant la cavité pelvienne :</p>
                   
-                  <h4>1. Veine iliaque externe</h4>
-                  <p>Issue de la veine fémorale qui draine le membre inférieur, puis passe sous le ligament inguinal.</p>
-                  
-                  <h4>2. Veine iliaque interne</h4>
-                  <p>Donne deux troncs veineux :</p>
-                  
-                  <p><strong>Tronc antérieur :</strong></p>
+                  <h4>Limite antérieure</h4>
                   <ul>
-                    <li>V. pudendale (canal pudendal)</li>
-                    <li>V. rectale inférieure</li>
-                    <li>V. glutéale inférieure</li>
-                    <li>V. rectale moyenne</li>
-                    <li>V. vaginale</li>
-                    <li>V. utérine (satellite de l'artère seulement dans sa partie proximale)</li>
-                    <li>V. obturatrice</li>
-                    <li>V. ombilicale</li>
+                    <li><strong>Symphyse pubienne</strong> : articulation interpubienne (ligne médiane), très peu mobile</li>
                   </ul>
                   
-                  <p><strong>Tronc postérieur :</strong></p>
+                  <h4>Limite antéro-latérale</h4>
                   <ul>
-                    <li>V. glutéale supérieure</li>
-                    <li>V. sacrale latérale</li>
-                    <li>V. ilio-lombaire</li>
+                    <li><strong>Foramen obturé</strong> (foramen obturatum) : partiellement fermé par la membrane obturatrice</li>
                   </ul>
                   
-                  <p>Les <strong>veines iliaques communes D et G</strong> se rejoignent pour former la <span class="term">veine cave inférieure (VCI)</span>.</p>
+                  <h4>Limite postéro-latérale</h4>
+                  <ul>
+                    <li><strong>Tubérosité ischiatique</strong></li>
+                    <li><strong>Petite incisure ischiatique</strong></li>
+                    <li><strong>Épine ischiatique</strong></li>
+                    <li><strong>Grande incisure ischiatique</strong></li>
+                    <li><strong>Crête iliaque</strong> : en regard de l'espace intervertébral L4-L5</li>
+                  </ul>
+                  
+                  <div class="box box-clinical">
+                    <div class="box-title">⚕️ Ponction lombaire</div>
+                    <p>La crête iliaque = repère clinique pour l'espace intervertébral <strong>L4-L5</strong> (prélèvement de LCS, diagnostic de méningite).</p>
+                  </div>
+                  
+                  <h4>Limite postérieure</h4>
+                  <ul>
+                    <li><strong>Sacrum</strong> : fusion des 5 vertèbres sacrées, 4 paires de foramens sacrés entre les vertèbres</li>
+                    <li><strong>Coccyx</strong></li>
+                  </ul>
+                  
+                  <div class="box box-nb">
+                    <div class="box-title">📝 NB</div>
+                    <ul>
+                      <li>Les éléments postérieurs du sacrum forment le <strong>canal sacral</strong> jusqu'à S4. La portion caudale du sacrum reste <strong>ouverte postérieurement</strong>.</li>
+                      <li>Le sacrum présente une <strong>concavité antérieure</strong> très prononcée. La transition lombo-sacrée est marquée (lordose lombaire = concavité postérieure).</li>
+                    </ul>
+                  </div>
+                  
+                  <p>Autres repères :</p>
+                  <ul>
+                    <li><strong>Ligne arquée</strong> : participe à former le détroit supérieur</li>
+                  </ul>
                 </div>
               </div>
             </div>
 
-            <div class="accordion-item">
-              <div class="accordion-header">Trajet des veines iliaques</div>
+            <div class="accordion-item open">
+              <div class="accordion-header">B) Repères ligamentaires</div>
               <div class="accordion-content">
                 <div class="accordion-body">
-                  <p>Dans le trigone fémoral, la veine fémorale chemine <strong>en dedans</strong> de l'artère et du nerf.</p>
+                  <ul>
+                    <li><strong>Ligament sacro-tubéral</strong> : plan plutôt <strong>superficiel</strong></li>
+                    <li><strong>Ligament sacro-épineux</strong> : plus <strong>profond</strong>. Sépare :
+                      <ul>
+                        <li><strong>Grande ouverture ischiatique</strong> (en haut) = grande échancrure sciatique / foramen sciatique majeur</li>
+                        <li><strong>Petite ouverture ischiatique</strong> (en bas) = petite échancrure sciatique / foramen sciatique mineur</li>
+                      </ul>
+                    </li>
+                  </ul>
+                  
+                  <div class="box box-nb">
+                    <div class="box-title">📝 NB</div>
+                    <p>Les deux ligaments sacro-épineux et sacro-tubéral <strong>s'étendent bien jusqu'au coccyx</strong>.</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="accordion-item open">
+              <div class="accordion-header">C) Repères musculaires</div>
+              <div class="accordion-content">
+                <div class="accordion-body">
+                  <h4>Muscle obturateur interne (MOI)</h4>
+                  <ul>
+                    <li>S'insère sur la <strong>membrane obturatrice</strong>, recouvre le pourtour du foramen obturé</li>
+                    <li>Fonction : <strong>rotateur latéral</strong> de la cuisse</li>
+                    <li>Recouvert par un <strong>fascia</strong> (aponévrose) comportant :
+                      <ul>
+                        <li>Extension vers le ligament sacro-tubéral → forme le <strong>canal pudendal</strong></li>
+                        <li>Zone d'épaississement = <strong>arc du muscle élévateur de l'anus (MEA)</strong></li>
+                      </ul>
+                    </li>
+                  </ul>
+                  
+                  <h4>Muscle élévateur de l'anus (MEA)</h4>
+                  <ul>
+                    <li>S'insère sur l'arc du MEA puis descend vers la ligne médiane</li>
+                    <li>Espace entre MEA et tubérosité ischiatique = <strong>fosse ischio-rectale</strong></li>
+                  </ul>
+                  
+                  <h4>Muscle piriforme</h4>
+                  <ul>
+                    <li>S'insère sur le pourtour des <strong>2ème et 3ème foramens sacrés</strong></li>
+                    <li>Chemine antérieurement et latéralement, sort du pelvis → rejoint le <strong>grand trochanter</strong> du fémur</li>
+                    <li>Divise la grande ouverture ischiatique en deux :
+                      <ul>
+                        <li><strong>Foramen supra-piriforme</strong> (en haut)</li>
+                        <li><strong>Foramen infra-piriforme</strong> (en bas)</li>
+                      </ul>
+                    </li>
+                  </ul>
+                  
+                  <div class="box box-nb">
+                    <div class="box-title">📝 NB</div>
+                    <p>"Piriforme" = "en forme de poire".</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <!-- SECTION II - ARTERIEL -->
+        <section id="arteriel">
+          <h2>II. Vascularisation artérielle</h2>
+
+          <div class="box box-nb">
+            <div class="box-title">📝 Rappels</div>
+            <ul>
+              <li>Aorte abdominale : à partir de T12</li>
+              <li>Artères rénales : L1</li>
+              <li>Artères gonadiques (ovariques/testiculaires) : L2</li>
+              <li>Bifurcation de l'aorte en <strong>artères iliaques communes D et G</strong> : <strong>L4</strong></li>
+              <li>Artère sacrale médiane : branche postérieure grêle naissant en L4, chemine sur la ligne médiane</li>
+            </ul>
+          </div>
+
+          <p>Chaque <strong>artère iliaque commune</strong> se divise en regard de la partie haute de l'articulation sacro-iliaque :</p>
+          <ul>
+            <li><strong>Artère iliaque externe</strong></li>
+            <li><strong>Artère iliaque interne</strong></li>
+          </ul>
+
+          <div class="accordion">
+            <div class="accordion-item open">
+              <div class="accordion-header">A) Artère iliaque externe</div>
+              <div class="accordion-content">
+                <div class="accordion-body">
+                  <p>Ne plonge <strong>pas dans le pelvis</strong>. Passe sous le <strong>ligament inguinal</strong> (tendu entre EIAS et pubis).</p>
+                  
+                  <h4>1. Artère fémorale</h4>
+                  <p>Lors du passage au niveau du <strong>pli de l'aine</strong> (entre os coxal et ligament inguinal), l'artère iliaque externe → <strong>artère fémorale</strong> → membre inférieur.</p>
+                  <p>Chemine dans le <strong>trigone fémoral</strong> (face antérieure de la cuisse) :</p>
+                  <ul>
+                    <li>Limites : ligament inguinal (haut), muscle sartorius (latéral), muscle long adducteur (médial)</li>
+                    <li>Contenu du faisceau vasculo-nerveux (latéral → médial) :
+                      <ul>
+                        <li><strong>Nerf fémoral</strong></li>
+                        <li><strong>Artère fémorale</strong></li>
+                        <li><strong>Veine fémorale</strong> (reçoit la veine grande saphène)</li>
+                      </ul>
+                    </li>
+                  </ul>
+                  
+                  <h4>2. Artère circonflexe iliaque profonde</h4>
+                  <ul>
+                    <li>Petite artère à trajet ascendant</li>
+                    <li>S'anastomose avec l'<strong>artère iliolombaire</strong> (branche de l'iliaque interne)</li>
+                  </ul>
+                  
+                  <div class="box box-recap">
+                    <div class="box-title">📋 Récapitulatif</div>
+                    <p>Artère iliaque externe → Artère fémorale + Artère circonflexe iliaque profonde</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="accordion-item open">
+              <div class="accordion-header">B) Artère iliaque interne</div>
+              <div class="accordion-content">
+                <div class="accordion-body">
+                  <p>Ramification <strong>endopelvienne</strong> (à l'intérieur de la cavité pelvienne).</p>
+                  <p>Se divise en <strong>deux troncs</strong> :</p>
+                  
+                  <div class="box box-nb">
+                    <div class="box-title">📝 NB</div>
+                    <p>Grande variabilité interindividuelle du niveau d'émergence des branches. Mais la <strong>persistance et la destinée</strong> des branches sont constantes.</p>
+                  </div>
+                  
+                  <h4>1. Tronc postérieur — Destinée essentiellement PARIÉTALE</h4>
+                  <p>Vascularise les éléments musculaires, ligamentaires et osseux.</p>
+                  
+                  <ul>
+                    <li><strong>Artère iliolombaire</strong> :
+                      <ul>
+                        <li>Trajet ascendant le long de la crête iliaque puis de l'ilion, contourne le rachis lombaire</li>
+                        <li>S'anastomose avec l'artère circonflexe iliaque profonde → <strong>arc artériel</strong> sur la paroi abdominale latérale</li>
+                      </ul>
+                    </li>
+                    <li><strong>Artère sacrale latérale</strong> (= sacrée latérale) :
+                      <ul>
+                        <li>Irrigue la face antérieure du sacrum + éléments ligamentaires</li>
+                        <li>Les artères sacrales latérales D et G suivent l'artère sacrale médiane</li>
+                      </ul>
+                    </li>
+                    <li><strong>Artère glutéale supérieure</strong> :
+                      <ul>
+                        <li>Grosse branche, quasiment dans la continuité du tronc postérieur</li>
+                        <li>Passe par le <strong>foramen supra-piriforme</strong> pour sortir du pelvis → région fessière</li>
+                        <li>Irrigue les <strong>muscles glutéaux</strong> (extra-pelvien)</li>
+                      </ul>
+                    </li>
+                  </ul>
+                  
+                  <h4>2. Tronc antérieur — Destinée majoritairement VISCÉRALE + un peu pariétale</h4>
+                  
+                  <ul>
+                    <li><strong>Artère ombilicale</strong> :
+                      <ul>
+                        <li>Embryologie : courbe à concavité supérieure remontant à la cicatrice ombilicale → sang désoxygéné vers le placenta</li>
+                        <li>Adulte : portion distale se ferme (cordon fibreux), portion proximale reste perméable</li>
+                        <li>Longe le bord supéro-latéral de la vessie, donne des branches en regard du foramen obturé</li>
+                      </ul>
+                    </li>
+                    <li><strong>Artère obturatrice</strong> :
+                      <ul>
+                        <li>Destinée au <strong>membre inférieur</strong> (région médiale de la cuisse)</li>
+                        <li>Traverse le <strong>foramen obturé</strong> (participe à le "fermer")</li>
+                      </ul>
+                    </li>
+                    <li><strong>Artère utérine</strong> (♀) :
+                      <ul>
+                        <li>Épaisse, forme en "zig-zag" (s'hypertrophie et s'étire pendant la grossesse)</li>
+                        <li><em>Chez l'homme</em> : remplacée par l'<strong>artère vésico-déférentielle</strong> (vessie + conduit déférent)</li>
+                      </ul>
+                    </li>
+                    <li><strong>Artère vaginale</strong> (♀) :
+                      <ul>
+                        <li>Parfois double, peut naître plus précocement</li>
+                        <li><em>Chez l'homme</em> : remplacée par l'<strong>artère vésico-prostatique</strong> (vessie basse + prostate)</li>
+                      </ul>
+                    </li>
+                    <li><strong>Artère rectale moyenne</strong> :
+                      <ul>
+                        <li>Le rectum est aussi irrigué par d'autres artères rectales (pudendale interne, AMI)</li>
+                      </ul>
+                    </li>
+                    <li><strong>Artère glutéale inférieure</strong> :
+                      <ul>
+                        <li>Rejoint la région fessière</li>
+                      </ul>
+                    </li>
+                    <li><strong>Artère pudendale interne</strong> (développée ci-dessous)</li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+
+            <div class="accordion-item open">
+              <div class="accordion-header">C) Artère pudendale interne</div>
+              <div class="accordion-content">
+                <div class="accordion-body">
+                  <h4>Trajet</h4>
+                  <ol>
+                    <li>Sort du pelvis par le <strong>foramen infra-piriforme</strong> (grande ouverture ischiatique)</li>
+                    <li>Contourne l'<strong>épine ischiatique</strong></li>
+                    <li>Revient dans le pelvis par la <strong>petite ouverture ischiatique</strong></li>
+                    <li>Longe la partie basse de la paroi latérale du pubis</li>
+                    <li>Chemine dans le <strong>canal pudendal</strong></li>
+                  </ol>
+                  <p>→ Portion <strong>extra-pelvienne</strong> + portion <strong>intra-pelvienne</strong>.</p>
+                  
+                  <div class="box box-nb">
+                    <div class="box-title">📝 NB</div>
+                    <ul>
+                      <li>Artère pudendale <strong>interne</strong> ≠ artère pudendale <strong>externe</strong> (naît en extra-pelvien)</li>
+                      <li>Anciennement : "artère honteuse"</li>
+                      <li>Canal pudendal = anciennement "canal d'Alcock"</li>
+                    </ul>
+                  </div>
+                  
+                  <h4>Contenu du canal pudendal</h4>
+                  <p>Du plus supérieur au plus inférieur :</p>
+                  <ol>
+                    <li><strong>Nerf pudendal</strong></li>
+                    <li><strong>Artère pudendale</strong></li>
+                    <li><strong>Veine pudendale</strong></li>
+                  </ol>
+                  
+                  <div class="box box-clinical">
+                    <div class="box-title">⚕️ Syndrome d'Alcock</div>
+                    <p>Sténose du canal pudendal → compression vasculaire et nerveuse → <strong>douleurs périnéales</strong>.</p>
+                    <p>Retrouvé chez les <strong>grands cyclistes</strong> : selle de vélo étroite comprime le canal pudendal (normalement seule la tubérosité ischiatique supporte l'assise). L'hypertrophie musculaire favorise aussi la compression.</p>
+                    <p>Traitement : chirurgical ou embolisation pour libérer le faisceau vasculo-nerveux.</p>
+                  </div>
+                  
+                  <h4>Branches de l'artère pudendale interne</h4>
+                  <p><strong>Avant le canal pudendal :</strong></p>
+                  <ul>
+                    <li><strong>Artère rectale inférieure</strong> : vascularise le rectum</li>
+                  </ul>
+                  
+                  <p><strong>Après le canal pudendal :</strong></p>
+                  <ul>
+                    <li>Branches pour la partie basse des viscères pelviens (branches vésicales inférieures)</li>
+                    <li><strong>Artère périnéale</strong> : partie centrale du périnée, centre tendineux du périnée</li>
+                    <li>Branches <strong>rétropubienne</strong> puis <strong>prépubienne</strong> : vascularisent le pubis</li>
+                    <li><strong>Artère bulbaire</strong> : corps érectiles du clitoris (♀) ou du pénis (♂)</li>
+                    <li><strong>Artère urétrale</strong></li>
+                    <li><strong>Artère profonde du clitoris</strong></li>
+                    <li><strong>Artère dorsale du clitoris</strong> (♀) / <strong>artère dorsale du pénis</strong> (♂) : artère terminale très fine</li>
+                  </ul>
+                  
+                  <div class="box box-recap">
+                    <div class="box-title">📋 Récapitulatif — Branches de l'artère iliaque interne</div>
+                    <div class="tree">
+                      <div class="tree-node tree-root expanded">
+                        <span class="tree-label expandable">Artère iliaque interne</span>
+                        <div class="tree-children">
+                          <div class="tree-node expanded">
+                            <span class="tree-label expandable">Tronc POSTÉRIEUR (pariétal)</span>
+                            <div class="tree-children">
+                              <div class="tree-node"><span class="tree-label">• Artère iliolombaire</span></div>
+                              <div class="tree-node"><span class="tree-label">• Artère sacrale latérale</span></div>
+                              <div class="tree-node"><span class="tree-label">• Artère glutéale supérieure (foramen supra-piriforme)</span></div>
+                            </div>
+                          </div>
+                          <div class="tree-node expanded">
+                            <span class="tree-label expandable">Tronc ANTÉRIEUR (viscéral)</span>
+                            <div class="tree-children">
+                              <div class="tree-node"><span class="tree-label">• Artère ombilicale</span></div>
+                              <div class="tree-node"><span class="tree-label">• Artère obturatrice</span></div>
+                              <div class="tree-node"><span class="tree-label">• Artère utérine (♀) / vésico-déférentielle (♂)</span></div>
+                              <div class="tree-node"><span class="tree-label">• Artère vaginale (♀) / vésico-prostatique (♂)</span></div>
+                              <div class="tree-node"><span class="tree-label">• Artère rectale moyenne</span></div>
+                              <div class="tree-node"><span class="tree-label">• Artère glutéale inférieure</span></div>
+                              <div class="tree-node"><span class="tree-label">• Artère pudendale interne (foramen infra-piriforme)</span></div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <!-- SECTION III - VEINEUX -->
+        <section id="veineux">
+          <h2>III. Drainage veineux</h2>
+
+          <p>Les veines sont en partie <strong>satellites des artères</strong>.</p>
+
+          <div class="accordion">
+            <div class="accordion-item open">
+              <div class="accordion-header">A) Système veineux iliaque</div>
+              <div class="accordion-content">
+                <div class="accordion-body">
+                  <p><strong>Veine iliaque commune</strong> = veine iliaque externe + veine iliaque interne</p>
+                  
+                  <h4>Veine iliaque externe</h4>
+                  <p>Issue de la <strong>veine fémorale</strong> (draine le membre inférieur) → passe sous le ligament inguinal.</p>
+                  
+                  <h4>Veine iliaque interne</h4>
+                  <p>Donne deux troncs veineux :</p>
+                  
+                  <p><strong>Tronc antérieur</strong> reçoit :</p>
+                  <ul>
+                    <li>Veine pudendale (passe dans le canal pudendal)</li>
+                    <li>Veine rectale inférieure</li>
+                    <li>Veine glutéale inférieure</li>
+                    <li>Veine rectale moyenne</li>
+                    <li>Veine vaginale</li>
+                    <li>Veine utérine (satellite de l'artère seulement dans sa partie proximale)</li>
+                    <li>Veine obturatrice</li>
+                    <li>Veine ombilicale</li>
+                  </ul>
+                  
+                  <p><strong>Tronc postérieur</strong> reçoit :</p>
+                  <ul>
+                    <li>Veine glutéale supérieure</li>
+                    <li>Veine sacrale latérale</li>
+                    <li>Veine iliolombaire</li>
+                  </ul>
+                  
+                  <p>Les veines iliaques communes D et G → <strong>veine cave inférieure (VCI)</strong>.</p>
+                </div>
+              </div>
+            </div>
+
+            <div class="accordion-item open">
+              <div class="accordion-header">B) Trajet des veines iliaques</div>
+              <div class="accordion-content">
+                <div class="accordion-body">
+                  <p>Dans le trigone fémoral, la veine fémorale chemine <strong>en-dedans</strong> de l'artère et du nerf.</p>
                   
                   <h4>À droite</h4>
-                  <p>La veine iliaque externe passe en arrière de l'artère iliaque externe pour devenir latérale. Elle se jette dans la veine iliaque commune droite → VCI (la VCI est à droite de l'aorte).</p>
+                  <p>Veine iliaque externe (médiale à l'artère) → passe <strong>en arrière</strong> de l'artère iliaque externe → devient <strong>latérale</strong> → veine iliaque commune D → VCI.</p>
                   
                   <h4>À gauche</h4>
-                  <p>La veine iliaque commune gauche chemine <strong>en arrière de l'artère iliaque commune droite</strong> pour rejoindre la VCI.</p>
+                  <p>Veine iliaque externe (médiale à l'artère) → veine iliaque commune G → chemine <strong>en arrière de l'artère iliaque commune droite</strong> (partiellement couverte par celle-ci) → devient latérale à l'artère iliaque commune D → VCI.</p>
                   
                   <div class="box box-clinical">
                     <div class="box-title">⚕️ Syndrome de Cockett (May-Thurner)</div>
-                    <p>Compression de la <strong>veine iliaque commune gauche</strong> par l'<strong>artère iliaque commune droite</strong> contre le rachis. L'artère pulsatile et athéromateuse écrase la veine molle → problème de drainage veineux du MI gauche et du pelvis gauche. Traitement : anticoagulation, parfois stent veineux.</p>
+                    <p>L'artère iliaque commune D (pulsatile, peut devenir rigide et athéromateuse avec le vieillissement) <strong>écrase la veine iliaque commune G</strong> (molle et compressible) qui passe en arrière.</p>
+                    <p>→ Problème de drainage veineux du <strong>membre inférieur gauche</strong> et du <strong>pelvis gauche</strong>.</p>
                   </div>
                 </div>
               </div>
             </div>
 
-            <div class="accordion-item">
-              <div class="accordion-header">Plexus pampiniforme et plexus veineux pelviens</div>
+            <div class="accordion-item open">
+              <div class="accordion-header">C) Plexus pampiniforme</div>
               <div class="accordion-content">
                 <div class="accordion-body">
-                  <p>Le <span class="term">plexus pampiniforme</span> est un réseau veineux extrêmement développé qui reçoit de multiples tributaires.</p>
-                  <ul>
-                    <li>Chez la <strong>femme</strong> : draine l'ovaire, chemine dans le ligament large</li>
-                    <li>Chez l'<strong>homme</strong> : moins développé, situé autour des voies spermatiques dans les bourses</li>
-                  </ul>
-                  
-                  <p><strong>Autres plexus veineux pelviens :</strong></p>
-                  <ul>
-                    <li>Plexus vésical (prévésical)</li>
-                    <li>Plexus prérectal</li>
-                    <li>Plexus sacral</li>
-                  </ul>
-                </div>
-              </div>
-            </div>
-
-            <div class="accordion-item">
-              <div class="accordion-header">Drainage veineux gonadique (ASYMÉTRIQUE)</div>
-              <div class="accordion-content">
-                <div class="accordion-body">
-                  <div class="table-wrapper">
-                    <table>
-                      <thead>
-                        <tr>
-                          <th>Côté</th>
-                          <th>Drainage</th>
-                          <th>Niveau</th>
-                          <th>Angle</th>
-                        </tr>
-                      </thead>
-                      <tbody>
-                        <tr>
-                          <td><strong>Veine ovarique DROITE</strong></td>
-                          <td>→ VCI directement</td>
-                          <td>L2</td>
-                          <td>Angle aigu (fonction de valvule)</td>
-                        </tr>
-                        <tr>
-                          <td><strong>Veine ovarique GAUCHE</strong></td>
-                          <td>→ Veine rénale gauche → VCI</td>
-                          <td>L1-L2</td>
-                          <td>Angle presque droit</td>
-                        </tr>
-                      </tbody>
-                    </table>
-                  </div>
+                  <p>En distalité du tronc antérieur de la veine iliaque interne, la <strong>veine utérine</strong> reçoit le <strong>plexus pampiniforme</strong> (plexus veineux très développé, multiples tributaires).</p>
                   
                   <div class="box box-nb">
                     <div class="box-title">📝 NB</div>
-                    <p>Cette organisation est identique pour les <strong>veines testiculaires</strong> chez l'homme.</p>
-                  </div>
-                  
-                  <div class="box box-clinical">
-                    <div class="box-title">⚕️ Varicocèle</div>
-                    <p>L'angle moins aigu à gauche transmet plus facilement la pression veineuse vers le plexus pampiniforme qui peut se dilater. Chez l'homme, cette dilatation forme des varices au niveau des bourses = <strong>varicocèles</strong>, plus fréquentes à gauche. Traitement : chirurgie ou embolisation.</p>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </section>
-
-        <!-- ============================================
-             SECTION IV - DRAINAGE LYMPHATIQUE
-             ============================================ -->
-        <section id="lymphatiques">
-          <h2>IV. Drainage lymphatique</h2>
-
-          <div class="box box-clinical">
-            <div class="box-title">⚕️ Importance clinique</div>
-            <p>En cas de maladie oncologique, connaître le drainage lymphatique permet de savoir quelles régions doivent être surveillées pour prévenir l'apparition de <strong>métastases lymphatiques</strong> (= métastases ganglionnaires).</p>
-          </div>
-
-          <p>Les nœuds lymphatiques s'organisent en <strong>deux grands groupes</strong> :</p>
-
-          <div class="accordion">
-            <div class="accordion-item open">
-              <div class="accordion-header">Nœuds lymphatiques PROFONDS</div>
-              <div class="accordion-content">
-                <div class="accordion-body">
-                  <p><strong>Drainent :</strong></p>
-                  <ul>
-                    <li>Les viscères</li>
-                    <li>La face interne de la paroi pelvienne</li>
-                  </ul>
-                  
-                  <p><strong>Localisation :</strong></p>
-                  <ul>
-                    <li>Région du trigone fémoral</li>
-                    <li>Autour des veines iliaques internes</li>
-                    <li>Autour des veines iliaques externes</li>
-                    <li>Aux niveaux utérin, vaginal et rectal</li>
-                  </ul>
-                </div>
-              </div>
-            </div>
-
-            <div class="accordion-item">
-              <div class="accordion-header">Nœuds lymphatiques SUPERFICIELS</div>
-              <div class="accordion-content">
-                <div class="accordion-body">
-                  <p><strong>Drainent :</strong></p>
-                  <ul>
-                    <li>Les plis inguinaux</li>
-                    <li>La région fémorale</li>
-                    <li>Le périnée</li>
-                  </ul>
-                  
-                  <p>Retrouvés dans les <strong>trois loges pelviennes</strong> : loge urinaire, loge génitale, loge digestive.</p>
-                </div>
-              </div>
-            </div>
-          </div>
-
-          <div class="box box-recap">
-            <div class="box-title">📋 Trajet du drainage lymphatique</div>
-            <p><strong>Nœuds superficiels/profonds → Voies de drainage abdomino-pelviennes → Canal thoracique → Circulation générale</strong></p>
-          </div>
-
-          <div class="box box-clinical">
-            <div class="box-title">⚕️ Zones transitionnelles</div>
-            <p>En cas de cancer situé dans une <strong>zone transitionnelle</strong> (ex : transition vésicale de la portion basse de l'utérus), des métastases peuvent être retrouvées à la fois dans les groupes superficiel ET profond. Ces cancers sont considérés comme particulièrement graves.</p>
-          </div>
-        </section>
-
-        <!-- ============================================
-             SECTION V - INNERVATION SOMATIQUE
-             ============================================ -->
-        <section id="somatique">
-          <h2>V. Innervation somatique</h2>
-
-          <p>Les <span class="term">nerfs somatiques</span> sont responsables de la <strong>motricité volontaire</strong> et de la <strong>sensibilité consciente</strong>.</p>
-
-          <div class="box box-remark">
-            <div class="box-title">Rappel</div>
-            <p>Les nerfs rachidiens émergent de la moelle spinale par la réunion des racines dorsale et ventrale. Ils sortent par le foramen intervertébral entre deux vertèbres. Il existe <strong>31 paires de nerfs rachidiens</strong>.</p>
-          </div>
-
-          <!-- Accordéon innervation somatique -->
-          <div class="accordion">
-            <div class="accordion-item open">
-              <div class="accordion-header">1. Le plexus sacral</div>
-              <div class="accordion-content">
-                <div class="accordion-body">
-                  <p>Les vertèbres sacrales étant fusionnées, les nerfs sacrés sortent au niveau des <strong>foramens sacrés</strong>.</p>
-                  
-                  <h4>Composition du plexus sacral</h4>
-                  <div class="tree">
-                    <div class="tree-node tree-root expanded">
-                      <span class="tree-label expandable">PLEXUS SACRAL</span>
-                      <div class="tree-children">
-                        <div class="tree-node">
-                          <span class="tree-label expandable">Tronc lombo-sacral</span>
-                          <div class="tree-children">
-                            <div class="tree-node"><span class="tree-label">Petite contribution de L4</span></div>
-                            <div class="tree-node"><span class="tree-label">Nerf L5</span></div>
-                          </div>
-                        </div>
-                        <div class="tree-node"><span class="tree-label">Nerf S1</span></div>
-                        <div class="tree-node"><span class="tree-label">Nerf S2</span></div>
-                        <div class="tree-node"><span class="tree-label">Nerf S3</span></div>
-                      </div>
-                    </div>
-                  </div>
-                  
-                  <div class="box box-nb">
-                    <div class="box-title">📝 NB</div>
-                    <p>Le tronc lombo-sacral relie le plexus lombaire et le plexus sacral car les nerfs L4 et L5 appartiennent aux deux plexus.</p>
-                  </div>
-                  
-                  <h4>Le nerf sciatique</h4>
-                  <ul>
-                    <li>Nerf somatique, <strong>sensitif et moteur</strong></li>
-                    <li>Dans la continuité du plexus sacral</li>
-                    <li>Sort du pelvis par le <strong>foramen infra-piriforme</strong></li>
-                    <li>Rejoint la portion postéro-médiale de la région glutéale</li>
-                    <li>Descend vers le membre inférieur</li>
-                    <li>Dermatomes longitudinaux (verticaux)</li>
-                  </ul>
-                  
-                  <div class="box box-clinical">
-                    <div class="box-title">⚕️ Hernie discale L5-S1</div>
-                    <p>Compression de la racine L5 ou S1 → douleur lombaire basse + irradiation intense sur la <strong>face postérieure de la jambe</strong> et souvent jusqu'à la <strong>plante du pied</strong>. Dans le langage familier, cette douleur est appelée « sciatique ».</p>
-                  </div>
-                </div>
-              </div>
-            </div>
-
-            <div class="accordion-item">
-              <div class="accordion-header">2. Le plexus pudendal</div>
-              <div class="accordion-content">
-                <div class="accordion-body">
-                  <h4>Composition</h4>
-                  <div class="box box-recap">
-                    <div class="box-title">📋 Composition du plexus pudendal</div>
-                    <p><strong>S2 + S3 + S4 → Plexus pudendal → Nerf pudendal</strong></p>
-                  </div>
-                  
-                  <h4>Le nerf pudendal</h4>
-                  <ul>
-                    <li><strong>Majoritairement sensitif</strong> mais possède une fonction motrice mineure</li>
-                    <li>Trajet similaire à l'artère et la veine pudendale</li>
-                    <li>Passe par le <strong>canal pudendal</strong> (canal d'Alcock)</li>
-                  </ul>
-                  
-                  <h4>Branches du nerf pudendal</h4>
-                  <ul>
-                    <li><strong>Branche rectale inférieure</strong> (contient quelques fibres motrices → SSA)</li>
-                    <li><strong>Branche périnéale</strong></li>
-                    <li><strong>Branche dorsale du clitoris</strong></li>
-                  </ul>
-                  
-                  <div class="box box-remark">
-                    <div class="box-title">Remarque</div>
-                    <p>Le Pr Maldonado qualifie le nerf pudendal de <strong>« nerf sensitif par excellence »</strong>.</p>
-                  </div>
-                  
-                  <h4>Fibres motrices</h4>
-                  <p>L'innervation du MEA et du muscle SSA proviennent du plexus pudendal. Leur contraction <strong>ne peut pas être dissociée</strong> → lors de la contraction de l'anus, MEA et SSA se contractent de manière bilatérale et simultanée.</p>
-                  
-                  <div class="box box-clinical">
-                    <div class="box-title">⚕️ Examen clinique</div>
-                    <p>L'examen de l'innervation motrice du plexus pudendal se fait par le <strong>toucher rectal</strong> : vérifier si le patient contracte les muscles anorectaux de façon uniforme et bilatérale.</p>
-                  </div>
-                  
-                  <h4>Fibres sensitives - Dermatomes périnéaux</h4>
-                  <p>Dans la région périnéale, les dermatomes sont <strong>circulaires</strong> (ni horizontaux, ni verticaux) :</p>
-                  <ul>
-                    <li><strong>S5</strong> : région périanale (le plus central)</li>
-                    <li><strong>S4</strong> : région périanale + vulvaire partiellement</li>
-                    <li><strong>S3</strong></li>
-                    <li><strong>S2</strong> : reprend une organisation habituelle</li>
-                  </ul>
-                  
-                  <div class="box box-clinical">
-                    <div class="box-title">⚕️ Examen sensitif</div>
-                    <p>Test de la sensibilité de la région périanale au froid, au chaud et au toucher (compresse, coton, objet pointu).</p>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </section>
-
-        <!-- ============================================
-             SECTION VI - INNERVATION AUTONOME
-             ============================================ -->
-        <section id="autonome">
-          <h2>VI. Innervation autonome (végétative)</h2>
-
-          <p>Les <span class="term">nerfs autonomes</span> assurent l'innervation <strong>sympathique</strong> et <strong>parasympathique</strong> des viscères. L'innervation autonome présente beaucoup d'échanges de fibres et de variations interindividuelles.</p>
-
-          <div class="accordion">
-            <div class="accordion-item open">
-              <div class="accordion-header">1. Rappels sur le SNA</div>
-              <div class="accordion-content">
-                <div class="accordion-body">
-                  <h4>Système nerveux sympathique</h4>
-                  <ul>
-                    <li><strong>Thoraco-lombaire</strong></li>
-                    <li>Neurone préganglionnaire : corne intermédio-latérale de la moelle spinale</li>
-                    <li>Chemine dans la racine antérieure</li>
-                    <li>Synapse dans la chaîne ganglionnaire paravertébrale (ou à un autre niveau)</li>
-                    <li>Fibre postganglionnaire → organe cible</li>
-                    <li><strong>Fibre préganglionnaire COURTE, postganglionnaire LONGUE</strong></li>
-                  </ul>
-                  
-                  <p><strong>Exception :</strong> les <span class="term">nerfs splanchniques</span> traversent le ganglion paravertébral SANS synapse, puis font synapse dans un ganglion du plexus pré-aortique.</p>
-                  
-                  <h4>Système nerveux parasympathique</h4>
-                  <ul>
-                    <li><strong>Crânio-sacral</strong></li>
-                    <li>Synapse près du viscère ou dans sa paroi</li>
-                    <li><strong>Fibre préganglionnaire LONGUE, postganglionnaire COURTE</strong></li>
-                  </ul>
-                </div>
-              </div>
-            </div>
-
-            <div class="accordion-item">
-              <div class="accordion-header">2. Organisation des plexus autonomes pelviens</div>
-              <div class="accordion-content">
-                <div class="accordion-body">
-                  <h4>Plexus pré-aortique (prévertébral)</h4>
-                  <p>Situé en avant de l'aorte, au départ des grandes artères. Reçoit les nerfs splanchniques sympathiques.</p>
-                  
-                  <h4>Plexus hypogastrique</h4>
-                  <ul>
-                    <li><span class="term">Plexus hypogastrique supérieur (PHS)</span> : près de la bifurcation aortique, principalement sympathique</li>
-                    <li><span class="term">Plexus hypogastrique inférieur (PHI)</span> : en regard des artères iliaques internes</li>
-                  </ul>
-                  
-                  <p>Le PHI peut être directement continu avec le PHS ou relié par le <strong>nerf hypogastrique</strong>.</p>
-                </div>
-              </div>
-            </div>
-
-            <div class="accordion-item">
-              <div class="accordion-header">3. Plexus hypogastrique inférieur (PHI)</div>
-              <div class="accordion-content">
-                <div class="accordion-body">
-                  <ul>
-                    <li><strong>Latéro-viscéral</strong>, bilatéral, pelvien</li>
-                    <li>Forme rectangulaire</li>
-                    <li>S'étend entre les viscères et la paroi latérale du pelvis</li>
-                    <li>Enveloppe les 3 loges : urinaire, génitale, digestive</li>
-                    <li><strong>Mélange de fibres sympathiques ET parasympathiques</strong></li>
-                  </ul>
-                  
-                  <h4>Composante sympathique</h4>
-                  <p>Chaîne ganglionnaire paravertébrale thoraco-lombaire → 4 ganglions sympathiques pelviens + chaîne pré-aortique (nerfs splanchniques).</p>
-                  
-                  <h4>Composante parasympathique</h4>
-                  <p>Neurones préganglionnaires au niveau <strong>S2, S3, S4</strong>. Fibres issues des <span class="term">nerfs érecteurs</span> (nerfs splanchniques pelviens).</p>
-                  
-                  <div class="box box-nb">
-                    <div class="box-title">📝 NB - Nerfs érecteurs</div>
-                    <p>Ils portent ce nom car ils innervent les <strong>corps érectiles</strong>. Ils participent à l'érection, la miction et le remplissage de l'ampoule rectale.</p>
-                  </div>
-                </div>
-              </div>
-            </div>
-
-            <div class="accordion-item open">
-              <div class="accordion-header">4. Fonctions du SNA pelvien (TABLEAU IMPORTANT)</div>
-              <div class="accordion-content">
-                <div class="accordion-body">
-                  <div class="table-wrapper">
-                    <table>
-                      <thead>
-                        <tr>
-                          <th>Fonction</th>
-                          <th>PARASYMPATHIQUE (S2-S4)</th>
-                          <th>SYMPATHIQUE (T10-L2)</th>
-                        </tr>
-                      </thead>
-                      <tbody>
-                        <tr>
-                          <td colspan="3" style="background: var(--primary); color: white; font-weight: 600;">FONCTION URINAIRE</td>
-                        </tr>
-                        <tr>
-                          <td>Sphincter vésical interne</td>
-                          <td><strong>Relaxation</strong></td>
-                          <td><strong>Contraction</strong> (continence)</td>
-                        </tr>
-                        <tr>
-                          <td>Muscle détrusor</td>
-                          <td><strong>Contraction</strong></td>
-                          <td><strong>Relaxation</strong></td>
-                        </tr>
-                        <tr>
-                          <td><em>Résultat</em></td>
-                          <td><strong>→ MICTION</strong></td>
-                          <td><strong>→ REMPLISSAGE</strong></td>
-                        </tr>
-                        <tr>
-                          <td colspan="3" style="background: var(--primary); color: white; font-weight: 600;">FONCTION DIGESTIVE</td>
-                        </tr>
-                        <tr>
-                          <td>Sphincter anal interne</td>
-                          <td><strong>Relaxation</strong></td>
-                          <td><strong>Contraction</strong></td>
-                        </tr>
-                        <tr>
-                          <td>Fibres lisses rectales</td>
-                          <td><strong>Contraction</strong></td>
-                          <td><strong>Relaxation</strong></td>
-                        </tr>
-                        <tr>
-                          <td><em>Résultat</em></td>
-                          <td><strong>→ DÉFÉCATION</strong></td>
-                          <td><strong>→ REMPLISSAGE</strong></td>
-                        </tr>
-                        <tr>
-                          <td colspan="3" style="background: var(--primary); color: white; font-weight: 600;">FONCTION SEXUELLE</td>
-                        </tr>
-                        <tr>
-                          <td>Corps érectiles</td>
-                          <td><strong>→ ÉRECTION</strong> (vasodilatation)</td>
-                          <td>—</td>
-                        </tr>
-                        <tr>
-                          <td>Éjaculation / Lubrification</td>
-                          <td>—</td>
-                          <td><strong>→ ÉJACULATION (♂)</strong><br><strong>→ SÉCRÉTION lubrifiant (♀)</strong></td>
-                        </tr>
-                      </tbody>
-                    </table>
-                  </div>
-                  
-                  <div class="box box-mnemonic">
-                    <div class="box-title">💡 Mnémotechnique</div>
-                    <p><strong>« Point and Shoot »</strong></p>
                     <ul>
-                      <li><strong>Point</strong> (pointer) = <strong>Parasympathique</strong> = <strong>Érection</strong></li>
-                      <li><strong>Shoot</strong> (tirer) = <strong>Sympathique</strong> = <strong>Éjaculation</strong></li>
+                      <li>Chez l'homme, le plexus pampiniforme est moins développé, situé autour des voies spermatiques dans les bourses.</li>
+                      <li>Le drainage veineux viscéral pelvien s'organise en plusieurs plexus : plexus vésical/prévésical, plexus prérectal, plexus sacral.</li>
                     </ul>
                   </div>
                 </div>
               </div>
             </div>
 
-            <div class="accordion-item">
-              <div class="accordion-header">5. Lames sacro-pubiennes et septa pelviens</div>
+            <div class="accordion-item open">
+              <div class="accordion-header">D) Drainage veineux gonadique</div>
               <div class="accordion-content">
                 <div class="accordion-body">
-                  <p>Le PHI est contenu dans les <span class="term">lames sacro-pubiennes</span> : structures fibreuses de tissu conjonctif s'étendant du pubis au sacrum.</p>
+                  <h4>À droite</h4>
+                  <p>Veine ovarique D → se jette <strong>directement dans la VCI</strong> (en L2). Angle aigu = fonction de valvule.</p>
                   
-                  <p>Les lames émettent des <span class="term">septa pelviens</span> situés entre les viscères :</p>
-                  <ul>
-                    <li><strong>Septum vésico-vaginal</strong> : entre vessie et vagin</li>
-                    <li><strong>Septum recto-vaginal</strong> : entre rectum et vagin</li>
-                    <li><strong>Septum présacral</strong></li>
-                  </ul>
+                  <h4>À gauche</h4>
+                  <p>Veine ovarique G → se jette dans la <strong>veine rénale gauche</strong> (trajet différent pour rejoindre la VCI située à droite). Angle presque droit.</p>
+                  
+                  <div class="box box-nb">
+                    <div class="box-title">📝 NB</div>
+                    <p>Cette organisation est identique pour les veines testiculaires chez l'homme.</p>
+                  </div>
+                  
+                  <p>D et G : veine ovarique anastomosée avec le plexus pampiniforme.</p>
                   
                   <div class="box box-clinical">
-                    <div class="box-title">⚕️ Importance chirurgicale</div>
-                    <p>Les gestes chirurgicaux dans la zone périnéale peuvent entraîner des <strong>pertes de fonctions digestives, urinaires et sexuelles</strong> si les fibres du PHI sont lésées. Ces troubles peuvent être extrêmement invalidants.</p>
+                    <div class="box-title">⚕️ Varicocèle</div>
+                    <p>À gauche, la jonction veine ovarique/veine rénale forme un angle moins aigu → transmet plus facilement la pression veineuse vers le plexus pampiniforme → dilatation.</p>
+                    <p>Chez l'homme : varices au niveau des bourses = <strong>varicocèles</strong>, plus courantes <strong>à gauche</strong>.</p>
+                    <p>Traitement : chirurgie ou <strong>embolisation</strong> (cathéter qui obstrue la lumière du vaisseau pathologique).</p>
                   </div>
                 </div>
               </div>
@@ -777,144 +529,204 @@
           </div>
         </section>
 
-        <!-- ============================================
-             SECTION VII - TABLEAUX RÉCAPITULATIFS
-             ============================================ -->
-        <section id="tableaux">
-          <h2>VII. Tableaux récapitulatifs</h2>
+        <!-- SECTION IV - LYMPHATIQUE -->
+        <section id="lymph">
+          <h2>IV. Drainage lymphatique</h2>
 
-          <h3>Artères du tronc postérieur de l'artère iliaque interne</h3>
-          <div class="table-wrapper">
-            <table>
-              <thead>
-                <tr>
-                  <th>Artère</th>
-                  <th>Trajet</th>
-                  <th>Territoire</th>
-                </tr>
-              </thead>
-              <tbody>
-                <tr>
-                  <td>A. ilio-lombaire</td>
-                  <td>Remonte vers la fosse iliaque</td>
-                  <td>M. iliaque, m. carré des lombes</td>
-                </tr>
-                <tr>
-                  <td>A. sacrales latérales</td>
-                  <td>Descendent le long du sacrum</td>
-                  <td>Canal sacral, muscles postérieurs</td>
-                </tr>
-                <tr>
-                  <td>A. glutéale supérieure</td>
-                  <td><strong>AU-DESSUS du piriforme</strong></td>
-                  <td>M. glutéaux moyen et petit, TFL</td>
-                </tr>
-              </tbody>
-            </table>
-          </div>
+          <p>Importance clinique majeure : connaître le drainage de chaque groupe de viscères.</p>
 
-          <h3>Artères du tronc antérieur de l'artère iliaque interne</h3>
-          <div class="table-wrapper">
-            <table>
-              <thead>
-                <tr>
-                  <th>Artère</th>
-                  <th>Particularités</th>
-                  <th>Territoire</th>
-                </tr>
-              </thead>
-              <tbody>
-                <tr>
-                  <td>A. ombilicale</td>
-                  <td>Partie distale = ligament ombilical médial</td>
-                  <td>→ A. vésicale supérieure</td>
-                </tr>
-                <tr>
-                  <td>A. obturatrice</td>
-                  <td>Traverse le canal obturateur</td>
-                  <td>M. obturateurs, adducteurs</td>
-                </tr>
-                <tr>
-                  <td>A. utérine ♀</td>
-                  <td><strong>Croise l'uretère par EN AVANT</strong></td>
-                  <td>Utérus, vagin supérieur, trompe</td>
-                </tr>
-                <tr>
-                  <td>A. vaginale ♀</td>
-                  <td>Descend le long du vagin</td>
-                  <td>Vagin, base de la vessie</td>
-                </tr>
-                <tr>
-                  <td>A. vésicale inférieure</td>
-                  <td>Vers la base de la vessie</td>
-                  <td>Vessie (base), prostate ♂</td>
-                </tr>
-                <tr>
-                  <td>A. rectale moyenne</td>
-                  <td>Vers le rectum</td>
-                  <td>Rectum (partie moyenne)</td>
-                </tr>
-                <tr>
-                  <td>A. glutéale inférieure</td>
-                  <td><strong>SOUS le piriforme</strong></td>
-                  <td>M. grand glutéal, cuisse postérieure</td>
-                </tr>
-                <tr>
-                  <td>A. pudendale interne</td>
-                  <td>Sort grand foramen, rentre petit foramen, canal pudendal</td>
-                  <td>Périnée, OGE</td>
-                </tr>
-              </tbody>
-            </table>
-          </div>
-
-          <h3>Plexus nerveux pelviens</h3>
-          <div class="table-wrapper">
-            <table>
-              <thead>
-                <tr>
-                  <th>Plexus</th>
-                  <th>Racines</th>
-                  <th>Nerf principal</th>
-                  <th>Fonction</th>
-                </tr>
-              </thead>
-              <tbody>
-                <tr>
-                  <td>Plexus sacral</td>
-                  <td>L4 + L5 + S1 + S2 + S3</td>
-                  <td>Nerf sciatique</td>
-                  <td>Motricité + sensibilité MI</td>
-                </tr>
-                <tr>
-                  <td>Plexus pudendal</td>
-                  <td>S2 + S3 + S4</td>
-                  <td>Nerf pudendal</td>
-                  <td>Sensibilité périnée, motricité sphincters</td>
-                </tr>
-              </tbody>
-            </table>
+          <div class="accordion">
+            <div class="accordion-item open">
+              <div class="accordion-header">Nœuds lymphatiques pelviens</div>
+              <div class="accordion-content">
+                <div class="accordion-body">
+                  <h4>A) Nœuds profonds</h4>
+                  <ul>
+                    <li>Situés le long des vaisseaux iliaques internes et externes</li>
+                    <li>Drainent les viscères pelviens profonds</li>
+                  </ul>
+                  
+                  <h4>B) Nœuds superficiels</h4>
+                  <ul>
+                    <li>Drainent le périnée, les organes génitaux externes, la partie inférieure du vagin</li>
+                  </ul>
+                  
+                  <div class="box box-clinical">
+                    <div class="box-title">⚕️ Cancer de la zone transitionnelle</div>
+                    <p>En cas de cancer localisé dans la portion basse de l'utérus (zone de transition vésicale), des métastases peuvent être retrouvées à la fois dans les groupes <strong>superficiel et profond</strong>. Ces cancers sont considérés comme particulièrement <strong>graves</strong>.</p>
+                  </div>
+                </div>
+              </div>
+            </div>
           </div>
         </section>
+
+        <!-- SECTION V - INNERVATION -->
+        <section id="innerv">
+          <h2>V. Innervation</h2>
+
+          <p>Deux types de nerfs dans la région pelvienne :</p>
+          <ul>
+            <li><strong>Nerfs somatiques</strong> : motricité volontaire et sensibilité consciente</li>
+            <li><strong>Nerfs autonomes</strong> : innervation sympathique et parasympathique des viscères</li>
+          </ul>
+
+          <div class="accordion">
+            <div class="accordion-item open">
+              <div class="accordion-header">A) Innervation somatique</div>
+              <div class="accordion-content">
+                <div class="accordion-body">
+                  <div class="box box-nb">
+                    <div class="box-title">📝 Rappel</div>
+                    <p>Les nerfs rachidiens (31 paires) émergent de la moelle spinale, formés par la réunion des racines dorsale et ventrale. Ils sortent par le foramen intervertébral.</p>
+                  </div>
+                  
+                  <h4>1. Plexus sacral</h4>
+                  <p>Nerf L5 sort entre L5 et S1. Les nerfs sacrés sortent par les foramens sacrés.</p>
+                  
+                  <p><strong>Formation du plexus sacral :</strong></p>
+                  <ul>
+                    <li><strong>Tronc lombo-sacré</strong> = petite contribution de L4 + nerf L5</li>
+                    <li>+ nerfs <strong>S1, S2, S3</strong></li>
+                  </ul>
+                  
+                  <div class="box box-nb">
+                    <div class="box-title">📝 NB</div>
+                    <p>Le tronc lombo-sacré relie le plexus lombaire et le plexus sacral (L4 et L5 appartiennent aux deux plexus). Le nerf S5 et le nerf coccygien contribuent peu aux plexus.</p>
+                  </div>
+                  
+                  <p><strong>Nerf sciatique :</strong></p>
+                  <ul>
+                    <li>Nerf somatique, sensitif et moteur, dans la continuité du plexus sacral</li>
+                    <li>Innerve le <strong>membre inférieur</strong></li>
+                    <li>Sort du pelvis par le <strong>foramen infra-piriforme</strong></li>
+                    <li>Rejoint la portion postéro-médiale de la région glutéale → descend vers le membre inférieur</li>
+                    <li>Dermatomes <strong>longitudinaux</strong> sur son territoire</li>
+                  </ul>
+                  
+                  <div class="box box-clinical">
+                    <div class="box-title">⚕️ Hernie discale L5-S1</div>
+                    <ul>
+                      <li>Les canaux lombaire et sacral sont en arrière du sacrum (ne reste que la queue de cheval). Un disque intervertébral qui bombe vers l'arrière peut comprimer la racine nerveuse.</li>
+                      <li>Hernie L5-S1 → compression de la racine <strong>L5 ou S1</strong></li>
+                      <li>Douleur lombaire basse + irradiation intense sur la <strong>face postérieure de la jambe</strong> jusqu'à la <strong>plante du pied</strong></li>
+                      <li>= "Sciatique" (compression du nerf sciatique, douleur sur le trajet du dermatome)</li>
+                    </ul>
+                  </div>
+                  
+                  <div class="box box-recap">
+                    <div class="box-title">📋 Récapitulatif</div>
+                    <p><strong>L5</strong> + petite contribution de <strong>L4</strong> → <strong>Tronc lombo-sacré</strong></p>
+                    <p>Tronc lombo-sacré + <strong>S1, S2, S3</strong> → <strong>Plexus sacral</strong></p>
+                  </div>
+                  
+                  <h4>2. Plexus pudendal</h4>
+                  
+                  <p><strong>a) Généralités</strong></p>
+                  <p>Formé des nerfs <strong>S2, S3, S4</strong>. Donne un seul nerf : le <strong>nerf pudendal</strong>.</p>
+                  <ul>
+                    <li>Majoritairement <strong>sensitif</strong> + fonction motrice mineure</li>
+                    <li>Trajet similaire à l'artère et à la veine pudendale (passe par le canal pudendal)</li>
+                  </ul>
+                  
+                  <div class="box box-nb">
+                    <div class="box-title">📝 NB</div>
+                    <p>Le plexus pudendal peut être lésé de façon idiopathique ou durant un exercice physique (ex: vélo). Le nerf pudendal = "nerf sensitif par excellence".</p>
+                  </div>
+                  
+                  <p><strong>Branches principales du nerf pudendal :</strong></p>
+                  <ul>
+                    <li><strong>Branche rectale inférieure</strong></li>
+                    <li><strong>Branche périnéale</strong></li>
+                    <li><strong>Branche dorsale du clitoris</strong></li>
+                  </ul>
+                  
+                  <div class="box box-recap">
+                    <div class="box-title">📋 Récapitulatif</div>
+                    <p><strong>S2 + S3 + S4</strong> → <strong>Plexus pudendal</strong> → <strong>Nerf pudendal</strong></p>
+                  </div>
+                  
+                  <p><strong>b) Fibres motrices du plexus pudendal</strong></p>
+                  <p>La branche rectale inférieure contient quelques fibres motrices pour :</p>
+                  <ul>
+                    <li><strong>Muscle sphincter strié de l'anus (SSA)</strong></li>
+                    <li><strong>Muscle élévateur de l'anus (MEA)</strong></li>
+                  </ul>
+                  <p>La contraction de ces deux muscles <strong>ne peut pas être dissociée</strong> (pas assez d'échanges de fibres). Contraction <strong>bilatérale et simultanée</strong>.</p>
+                  
+                  <div class="box box-clinical">
+                    <div class="box-title">⚕️ Examen clinique moteur</div>
+                    <p>Toucher rectal : vérifier si le patient peut contracter les muscles anorectaux de façon <strong>uniforme et bilatérale</strong> autour du doigt de l'examinateur.</p>
+                  </div>
+                  
+                  <p><strong>c) Fibres sensitives du plexus pudendal</strong></p>
+                  <p>Branches situées en avant du canal pudendal, extrêmement importantes pour la sensibilité périnéale : vulve, clitoris, lèvres.</p>
+                  
+                  <p><strong>Dermatomes sacrés</strong> : dans la région périnéale, les dermatomes sont <strong>circulaires</strong> (ni horizontaux, ni verticaux).</p>
+                  <p>En position gynécologique :</p>
+                  <ul>
+                    <li><strong>S5</strong> : région périanale (le plus central)</li>
+                    <li><strong>S4</strong> : région périanale et partiellement vulvaire</li>
+                    <li><strong>S3</strong></li>
+                    <li><strong>S2</strong> : reprend une organisation habituelle</li>
+                  </ul>
+                  
+                  <div class="box box-clinical">
+                    <div class="box-title">⚕️ Examen clinique sensitif</div>
+                    <p>Compresse, coton ou objet pointu pour tester la sensibilité de la région périanale (froid, chaud, toucher).</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="accordion-item open">
+              <div class="accordion-header">B) Innervation autonome</div>
+              <div class="accordion-content">
+                <div class="accordion-body">
+                  <p>Innervation sympathique et parasympathique des viscères. Beaucoup d'échanges de fibres et de variations interindividuelles → difficile à systématiser.</p>
+                  
+                  <h4>1. Rappels</h4>
+                  <ul>
+                    <li><strong>Système sympathique</strong> : origine dans la moelle épinière thoraco-lombaire</li>
+                    <li><strong>Système parasympathique</strong> : origine crânienne (nerfs crâniens) et sacrée (S2-S4)</li>
+                  </ul>
+                  
+                  <h4>2. Plexus pré-aortique</h4>
+                  <p>Réseau de fibres autonomes situé en avant de l'aorte abdominale.</p>
+                  
+                  <h4>3. Plexus hypogastrique inférieur</h4>
+                  <p>Plexus pelvien principal, situé de chaque côté du rectum. Reçoit des fibres sympathiques (nerfs hypogastriques) et parasympathiques (nerfs splanchniques pelviens S2-S4). Innerve les viscères pelviens.</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <div class="box box-recap">
+          <div class="box-title">📋 Points clés — Vascularisation et innervation du pelvis</div>
+          <ul>
+            <li><strong>Bifurcation aortique en L4</strong> → artères iliaques communes D et G</li>
+            <li><strong>Art. iliaque externe</strong> → passe sous le ligament inguinal → art. fémorale</li>
+            <li><strong>Art. iliaque interne</strong> : tronc postérieur (pariétal) + tronc antérieur (viscéral)</li>
+            <li><strong>Tronc postérieur</strong> : iliolombaire, sacrale latérale, glutéale supérieure (foramen supra-piriforme)</li>
+            <li><strong>Tronc antérieur</strong> : ombilicale, obturatrice, utérine/vaginale, rectale moyenne, glutéale inférieure, <strong>pudendale interne</strong></li>
+            <li><strong>Art. pudendale interne</strong> : sort par foramen infra-piriforme → contourne épine ischiatique → canal pudendal</li>
+            <li><strong>Syndrome d'Alcock</strong> : compression du canal pudendal (cyclistes)</li>
+            <li><strong>Syndrome de Cockett</strong> : art. iliaque commune D comprime veine iliaque commune G</li>
+            <li><strong>Varicocèle</strong> : plus fréquent à gauche (angle veine ovarique G/veine rénale)</li>
+            <li><strong>Plexus sacral</strong> : tronc lombo-sacré (L4-L5) + S1, S2, S3 → nerf sciatique</li>
+            <li><strong>Plexus pudendal</strong> : S2, S3, S4 → nerf pudendal (sensitif +++)</li>
+            <li><strong>Nerf sciatique</strong> : sort par foramen infra-piriforme</li>
+            <li><strong>Hernie discale L5-S1</strong> → sciatique (douleur face postérieure jambe)</li>
+            <li><strong>Dermatomes sacrés</strong> : circulaires dans la région périnéale</li>
+          </ul>
+        </div>
 
       </div>
     </main>
   </div>
 
-  <!-- Search Results Modal -->
-  <div id="search-results" class="search-results">
-    <div class="search-results-panel">
-      <div class="search-results-header">
-        <strong>Résultats</strong>
-        <button onclick="hideSearchResults()" style="background:none;border:none;font-size:1.5rem;cursor:pointer;">×</button>
-      </div>
-      <div class="search-results-list"></div>
-    </div>
-  </div>
-
-  <!-- Mobile Menu Toggle -->
   <button class="menu-toggle" onclick="document.querySelector('.sidebar').classList.toggle('open')">☰</button>
-
   <script src="../app.js"></script>
 </body>
 </html>
