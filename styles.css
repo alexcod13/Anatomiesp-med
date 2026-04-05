@@ -258,7 +258,7 @@ p { margin-bottom: 1rem; color: var(--text-secondary); }
 }
 
 .accordion-item.open .accordion-content {
-  max-height: 3000px;
+  max-height: 2000px;
 }
 
 .accordion-body {
