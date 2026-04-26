@@ -1,0 +1,829 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Appareil digestif - Anatomie</title>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="../styles.css">
+</head>
+<body>
+  <div class="app">
+    <aside class="sidebar">
+      <div class="sidebar-header">
+        <h1>🦴 Anatomie</h1>
+        <p>Cours PASS/LAS - Tours</p>
+      </div>
+      <nav class="sidebar-nav">
+        <div class="nav-group">
+          <div class="nav-group-title">Accueil</div>
+          <div class="nav-group-items">
+            <a href="../index.html" class="nav-item">🏠 Vue d'ensemble</a>
+            <a href="../carnet-erreurs.html" class="nav-item">📕 Carnet d'erreurs</a>
+          </div>
+        </div>
+        <div class="nav-group">
+          <div class="nav-group-title">Tronc Commun (Destrieux)</div>
+          <div class="nav-group-items">
+            <a href="appareil-digestif.html" class="nav-item active">Appareil digestif</a>
+          </div>
+        </div>
+      </nav>
+    </aside>
+
+    <main class="main">
+      <header class="header">
+        <button class="sidebar-toggle" title="Masquer/Afficher le menu">☰</button>
+        <div class="breadcrumb">
+          <a href="../index.html">Accueil</a> / Tronc Commun / Appareil digestif
+        </div>
+        <div class="header-actions">
+          <button class="btn-icon" onclick="expandAllAccordions()">⊞</button>
+          <button class="btn-icon" onclick="collapseAllAccordions()">⊟</button>
+          <button class="btn-icon" id="theme-toggle">◐</button>
+        </div>
+      </header>
+
+      <div class="content">
+        <h1>🍽️ Appareil digestif</h1>
+        <p><strong>Pr. Destrieux</strong> — Poly TC n°2 — Tutorat Santé de Tours 2025</p>
+
+        <div class="toc">
+          <div class="toc-title">📑 Sommaire</div>
+          <ul class="toc-list">
+            <li><a href="#embryo">I. Embryologie du tube digestif</a></li>
+            <li><a href="#peritoine">II. Péritoine</a></li>
+            <li><a href="#cervico">III. Intestin cervico-céphalique</a></li>
+            <li><a href="#thoracique">IV. Intestin thoracique</a></li>
+            <li><a href="#anterieur">V. Intestin antérieur</a></li>
+            <li><a href="#moyen">VI. Intestin moyen</a></li>
+            <li><a href="#posterieur">VII. Intestin postérieur</a></li>
+            <li><a href="#vascu">VIII. Vascularisation</a></li>
+          </ul>
+        </div>
+
+        <section id="embryo">
+          <h2>I. Embryologie du tube digestif</h2>
+
+          <div class="accordion">
+            <div class="accordion-item open">
+              <div class="accordion-header">A) Généralités</div>
+              <div class="accordion-content">
+                <div class="accordion-body">
+                  <p>Le tube digestif primitif (dérivé de l'endoderme) se forme précocement au cours du développement embryonnaire. Il traverse plusieurs régions du corps, de la tête au pelvis. Il est continu et relie la membrane stomodéale (bouche) à la membrane cloacale (anus).</p>
+                  
+                  <h4>Septum transversum</h4>
+                  <p>C'est une cloison qui divise le corps de l'embryon en deux parties : thoracique (supérieure) et abdominale (inférieure). Il correspond à l'ébauche du diaphragme.</p>
+                  
+                  <h4>Les canaux abdominaux</h4>
+                  <p>Au niveau abdominal, le tube digestif donne deux canaux participant à la formation du cordon ombilical : le canal vitellin (lécithocèle) et l'allantoïde (qui part du cloaque).</p>
+                  
+                  <h4>Portions du tube digestif</h4>
+                  <ul>
+                    <li><strong>Portion céphalique</strong></li>
+                    <li><strong>Portion cervicale</strong></li>
+                    <li><strong>Portion thoracique</strong></li>
+                    <li><strong>Portion abdominale</strong></li>
+                    <li><strong>Portion pelvienne</strong></li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+
+            <div class="accordion-item">
+              <div class="accordion-header">B) Vascularisation embryonnaire</div>
+              <div class="accordion-content">
+                <div class="accordion-body">
+                  <p>Au stade embryonnaire, le cœur primitif donne deux aortes (droite et gauche) qui fusionnent en arrière du tube digestif pour former une <strong>aorte dorsale primitive</strong>. Celle-ci traverse le septum transversum et vascularise le tube digestif.</p>
+                  
+                  <p>Au niveau abdominal, trois branches principales vascularisent le tube digestif :</p>
+                  
+                  <div class="table-wrapper">
+                    <table>
+                      <thead>
+                        <tr><th>Artère</th><th>Niveau vertébral</th><th>Vascularise</th></tr>
+                      </thead>
+                      <tbody>
+                        <tr><td><strong>Tronc cœliaque</strong></td><td>T12</td><td>Intestin antérieur</td></tr>
+                        <tr><td><strong>Artère mésentérique supérieure (AMS)</strong></td><td>L1</td><td>Intestin moyen</td></tr>
+                        <tr><td><strong>Artère mésentérique inférieure (AMI)</strong></td><td>L3</td><td>Intestin postérieur</td></tr>
+                      </tbody>
+                    </table>
+                  </div>
+                  
+                  <h4>Diverticules</h4>
+                  <p>Le tube digestif donne naissance à des expansions (diverticules) qui forment deux glandes primitives (dérivées du tube digestif) essentielles à la digestion :</p>
+                  <ul>
+                    <li><strong>Foie</strong></li>
+                    <li><strong>Pancréas</strong></li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <section id="peritoine">
+          <h2>II. Péritoine</h2>
+
+          <div class="accordion">
+            <div class="accordion-item open">
+              <div class="accordion-header">A) Généralités</div>
+              <div class="accordion-content">
+                <div class="accordion-body">
+                  <p>Le diaphragme sépare le thorax de l'abdomen. C'est le muscle inspirateur principal (s'abaisse lors de sa contraction) formé de deux coupoles (la droite étant plus haute). L'aorte thoracique traverse le diaphragme pour devenir l'aorte abdominale.</p>
+
+                  <p>Le <strong>péritoine</strong> est une <strong>séreuse</strong> = membrane tapissant la paroi de la cavité abdominale et les organes intra-abdominaux.</p>
+                  
+                  <h4>Structure du péritoine</h4>
+                  <ul>
+                    <li><strong>Feuillet pariétal (externe)</strong> : tapisse la totalité de la paroi de l'abdomen.</li>
+                    <li><strong>Feuillet viscéral (interne)</strong> : accolé aux viscères présents dans la cavité péritonéale.</li>
+                  </ul>
+                  <p>La réunion de ces deux feuillets forme des <strong>zones de réflexion</strong>.</p>
+                </div>
+              </div>
+            </div>
+
+            <div class="accordion-item open">
+              <div class="accordion-header">B) Fonctions et Rapports du péritoine</div>
+              <div class="accordion-content">
+                <div class="accordion-body">
+                  <h4>1. Mésos</h4>
+                  <p>Les <strong>mésos</strong> relient les organes creux à la paroi postérieure. Ils permettent :</p>
+                  <ul>
+                    <li>L'acheminement des vaisseaux et des nerfs</li>
+                    <li>Une certaine <strong>mobilité</strong> (péristaltisme, avancée du bolus alimentaire)</li>
+                  </ul>
+                  
+                  <p><strong>Exemples de mésos :</strong></p>
+                  <ul>
+                    <li><strong>Mésogastre</strong> : relie l'estomac à la paroi postérieure</li>
+                    <li><strong>Mésentère</strong> : relie l'intestin à la paroi postérieure</li>
+                    <li><strong>Mésocôlon</strong> : relie le côlon à la paroi postérieure</li>
+                  </ul>
+                  
+                  <div class="box box-clinical">
+                    <div class="box-title">⚕️ Volvulus</div>
+                    <p>Lorsqu'un organe se déplace de manière trop importante et se retourne sur lui-même → <strong>volvulus</strong>.</p>
+                    <p>Conséquences : empêche la vascularisation et provoque une occlusion (ex: occlusion intestinale).</p>
+                  </div>
+                  
+                  <h4>2. Méso accolé / Fascia</h4>
+                  <p>Un méso peut s'accoler contre la paroi postérieure pour fixer un organe → <strong>fascia</strong>. Ces mésos accolés confèrent une certaine <strong>fixité</strong>.</p>
+                  
+                  <h4>3. Ligaments et Omentums</h4>
+                  <ul>
+                    <li><strong>Ligament</strong> : relie un organe plein à la paroi (ex: ligaments suspenseurs du foie) OU deux organes creux entre eux (ex: ligament gastro-splénique entre rate et estomac).</li>
+                    <li><strong>Omentum</strong> : similaire au ligament mais forme une lame péritonéale <strong>surchargée en graisse</strong>. Exemples : petit omentum (estomac-foie) et grand omentum (estomac-côlon).</li>
+                  </ul>
+
+                  <h4>4. Compartiments péritonéaux</h4>
+                  <ul>
+                    <li><strong>Espace intra-péritonéal (cavité péritonéale)</strong> : renferme le tube digestif, les glandes et leurs annexes. <em>Exception : l'ovaire possède une partie non péritonisée pour permettre la ponte de l'ovocyte</em>.</li>
+                    <li><strong>Espace rétropéritonéal</strong> : contient l'aorte, la veine cave inférieure, les reins et les uretères.</li>
+                    <li><strong>Espace sous-péritonéal (pelvis)</strong> : contient les organes génitaux, la vessie et une partie du rectum.</li>
+                  </ul>
+                  
+                  <div class="box box-recap">
+                    <div class="box-title">📋 Récapitulatif — Péritoine</div>
+                    <ul>
+                      <li><strong>Méso</strong> : organe creux ↔ paroi postérieure = <strong>Mobilité</strong></li>
+                      <li><strong>Méso accolé / Fascia</strong> : = <strong>Fixité</strong></li>
+                      <li><strong>Ligament / Omentum</strong> : organe plein ↔ paroi OU organe creux ↔ organe creux</li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="accordion-item">
+              <div class="accordion-header">C) Division topographique de l'abdomen</div>
+              <div class="accordion-content">
+                <div class="accordion-body">
+                  <p>L'abdomen est divisé en <strong>9 cadrans</strong> par 4 lignes pour localiser précisément les douleurs :</p>
+                  <ul>
+                    <li><strong>2 lignes horizontales</strong> :
+                      <ul>
+                        <li>1ère : passe par le rebord inférieur du gril costal</li>
+                        <li>2ème : passe par les épines iliaques antérieures supérieures (EIAS)</li>
+                      </ul>
+                    </li>
+                    <li><strong>2 lignes verticales</strong> : à mi-distance entre EIAS et pubis de chaque côté</li>
+                  </ul>
+                  
+                  <div class="table-wrapper">
+                    <table>
+                      <thead>
+                        <tr><th>Cadran</th><th>Projection principale</th></tr>
+                      </thead>
+                      <tbody>
+                        <tr><td><strong>Hypochondre droit</strong></td><td>Foie</td></tr>
+                        <tr><td><strong>Épigastre</strong></td><td>Estomac (une partie)</td></tr>
+                        <tr><td><strong>Hypochondre gauche</strong></td><td>Rate</td></tr>
+                        <tr><td><strong>Flanc droit</strong></td><td>-</td></tr>
+                        <tr><td><strong>Région ombilicale</strong></td><td>Intestin grêle (au centre)</td></tr>
+                        <tr><td><strong>Flanc gauche</strong></td><td>-</td></tr>
+                        <tr><td><strong>Fosse iliaque droite</strong></td><td>Appendice vermiforme</td></tr>
+                        <tr><td><strong>Hypogastre</strong></td><td>Vessie</td></tr>
+                        <tr><td><strong>Fosse iliaque gauche</strong></td><td>Côlon sigmoïde</td></tr>
+                      </tbody>
+                    </table>
+                  </div>
+                  
+                  <div class="box box-nb">
+                    <div class="box-title">📝 NB</div>
+                    <p>Les douleurs de l'<strong>appendicite</strong> se projettent en <strong>fosse iliaque droite</strong> en raison de la présence de l'appendice vermiforme dans ce cadran.</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <section id="cervico">
+          <h2>III. Intestin cervico-céphalique</h2>
+
+          <div class="accordion">
+            <div class="accordion-item open">
+              <div class="accordion-header">A) Cavité orale et structures impliquées</div>
+              <div class="accordion-content">
+                <div class="accordion-body">
+                  <p>C'est la première portion de l'intestin, constituée de la <strong>cavité orale</strong> et du <strong>pharynx</strong>. Elle est située sous la base du crâne et en avant du rachis cervical.</p>
+                  
+                  <h4>Structures impliquées</h4>
+                  <ul>
+                    <li><strong>Palais</strong> :
+                      <ul>
+                        <li><strong>Palais osseux</strong> (en avant) : sépare la cavité buccale de la cavité nasale</li>
+                        <li><strong>Palais mou / voile du palais</strong> (en arrière) : structure souple, musculaire et fibreuse. Il joue un rôle de clapet durant la déglutition pour isoler les fosses nasales</li>
+                      </ul>
+                    </li>
+                    <li><strong>Langue</strong> : forme variable, s'insère sur l'os hyoïde (en arrière) et la mandibule (en avant)</li>
+                    <li><strong>Os hyoïde</strong> : appartient au squelette axial</li>
+                    <li><strong>Vestibule</strong> : portion périphérique de la cavité buccale (entre arcades alvéolo-dentaires et lèvres/joues)</li>
+                    <li><strong>Plancher</strong> : limite la cavité orale, lieu d'insertion musculaire</li>
+                  </ul>
+
+                  <h4>Processus dans la cavité orale</h4>
+                  <ul>
+                    <li><strong>Mastication</strong> : les aliments sont broyés</li>
+                    <li><strong>Insalivation</strong> : lubrification par la salive pour avaler. C'est la 1ère étape de la digestion (contient des amylases qui transforment les nutriments).</li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+
+            <div class="accordion-item">
+              <div class="accordion-header">B) Pharynx et Tube auditif</div>
+              <div class="accordion-content">
+                <div class="accordion-body">
+                  <h4>1. Pharynx (Carrefour aéro-digestif)</h4>
+                  <p>Gouttière concave vers l'avant, lieu de passage des aliments (vers l'œsophage) et de l'air (vers la trachée, située en avant). Ce <strong>carrefour aéro-digestif</strong> ferme en arrière la cavité nasale (haut), buccale et le larynx (bas).</p>
+                  
+                  <div class="box box-clinical">
+                    <div class="box-title">⚕️ Fausse route</div>
+                    <p>Passage de salive/aliments dans la trachée. Le premier réflexe est de tousser pour dégager les voies respiratoires.</p>
+                  </div>
+
+                  <p><strong>Division en 3 étages :</strong></p>
+                  <ul>
+                    <li><strong>Nasopharynx</strong> (étage supérieur) : en arrière des fosses nasales, limité en bas par le voile du palais. En rapport avec les choanes en arrière.</li>
+                    <li><strong>Oropharynx</strong> (étage moyen) : entre le voile du palais (haut) et l'os hyoïde (bas). Contient le <em>gosier</em>.</li>
+                    <li><strong>Hypopharynx / Laryngopharynx</strong> (étage inférieur) : limité en bas par la naissance de l'œsophage (vertèbre C6).</li>
+                  </ul>
+
+                  <h4>2. Tube auditif</h4>
+                  <p>Le <strong>tube auditif</strong> relie la paroi antérieure de l'oreille moyenne (caisse du tympan) au nasopharynx. Il permet :</p>
+                  <ul>
+                    <li>L'équilibre des pressions entre l'extérieur et la caisse du tympan</li>
+                    <li>Le drainage des sécrétions muqueuses</li>
+                  </ul>
+                  
+                  <div class="box box-clinical">
+                    <div class="box-title">⚕️ Applications cliniques — Tube auditif et Tonsilles</div>
+                    <ul>
+                      <li><strong>Voyage en avion</strong> : Au décollage (pression athmosphérique ↓), le tympan bombe → sensation d'oreille bouchée. Mâcher, bâiller ou déglutir ouvre le tube auditif pour équilibrer. À l'atterrissage, phénomène inverse (tympan se rétracte).</li>
+                      <li><strong>Infections (Tonsilles pharyngiennes)</strong> : L'extrémité du tube s'ouvre près des tonsilles pharyngiennes (végétations adénoïdes). Lors d'un rhume, leur inflammation bouche le tube. Chez l'enfant, cela empêche le drainage de la caisse du tympan → otites moyennes.</li>
+                      <li><strong>Tonsilles palatines (amygdales)</strong> : Situées dans l'oropharynx. Peuvent être retirées chirurgicalement si elles s'hypertrophient et gênent l'enfant.</li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <section id="thoracique">
+          <h2>IV. Intestin thoracique — Œsophage</h2>
+
+          <div class="accordion">
+            <div class="accordion-item open">
+              <div class="accordion-header">Généralités et Rapports</div>
+              <div class="accordion-content">
+                <div class="accordion-body">
+                  <p>L'<strong>œsophage</strong> est un long tuyau d'environ <strong>25 cm</strong>, qui naît en <strong>C6</strong> et descend jusqu'au niveau abdominal.</p>
+                  
+                  <h4>Trois portions</h4>
+                  <ul>
+                    <li><strong>Portion cervicale</strong> (courte)</li>
+                    <li><strong>Portion thoracique</strong> (principale)</li>
+                    <li><strong>Portion abdominale</strong> (très courte, fait suite au cardia)</li>
+                  </ul>
+                  
+                  <h4>Rapports anatomiques principaux</h4>
+                  <ul>
+                    <li><strong>Diaphragme</strong> : Séparant thorax/abdomen, avec 2 piliers (insertions postérieures). L'œsophage le traverse en <strong>T10</strong> via le <strong>hiatus œsophagien</strong> (trou musculaire pour réguler le flux alimentaire).</li>
+                    <li><strong>Trachée</strong> : L'œsophage se situe en arrière de la trachée et dépasse légèrement sur son bord gauche. La trachée (anneaux cartilagineux) se divise en <strong>T4</strong> en bronches droite et gauche (qui part à 45°).</li>
+                    <li><strong>Aorte</strong> : L'aorte forme une crosse, devient descendante, et croise l'œsophage. Elle est d'abord <strong>pré-œsophagienne</strong>, puis <strong>latéro-œsophagienne gauche</strong>, et enfin <strong>rétro-œsophagienne</strong>. Elle traverse le diaphragme en <strong>T12</strong> via le <strong>hiatus aortique</strong> (fibreux/tendineux pour éviter d'interrompre l'apport de sang).</li>
+                  </ul>
+
+                  <div class="box box-recap">
+                    <div class="box-title">📋 Repères vertébraux thoraciques</div>
+                    <ul>
+                      <li><strong>T4</strong> : Division de la trachée</li>
+                      <li><strong>T10</strong> : Hiatus œsophagien (musculaire)</li>
+                      <li><strong>T12</strong> : Hiatus aortique (fibreux)</li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <section id="anterieur">
+          <h2>V. Intestin antérieur</h2>
+
+          <p>L'intestin antérieur est vascularisé par le <strong>tronc cœliaque</strong> (qui naît de l'aorte en T12). Il comprend un tube (estomac, duodénum) et des glandes (foie, pancréas).</p>
+
+          <div class="accordion">
+            <div class="accordion-item open">
+              <div class="accordion-header">A) Estomac</div>
+              <div class="accordion-content">
+                <div class="accordion-body">
+                  <p>Lieu initial de la digestion. Il a une forme de <strong>cornemuse</strong> (variable selon le remplissage). Mobile et extensible, il a un rôle de <strong>stockage</strong> dans la cavité péritonéale.</p>
+                  
+                  <h4>Anatomie de l'estomac</h4>
+                  <ul>
+                    <li>Possède une <strong>face antérieure</strong> et une <strong>face postérieure</strong></li>
+                    <li><strong>Petite courbure</strong> (à droite) et <strong>Grande courbure</strong> (à gauche)</li>
+                  </ul>
+                  
+                  <h4>Régions et Orifices</h4>
+                  <ul>
+                    <li><strong>Cardia</strong> : orifice d'entrée au niveau du bord gauche de T11. Il est <strong>non continent</strong> (ce n'est pas un sphincter).</li>
+                    <li><strong>Grosse tubérosité / Fundus</strong> : au-dessus de l'angle cardio-tubérositaire.</li>
+                    <li><strong>Corps</strong> de l'estomac.</li>
+                    <li><strong>Antre pylorique</strong>.</li>
+                    <li><strong>Pylore</strong> : orifice de sortie au niveau du bord droit de L1. À l'inverse du cardia, c'est un <strong>sphincter continent</strong> qui régule l'avancée vers le duodénum.</li>
+                  </ul>
+                  
+                  <div class="box box-nb">
+                    <div class="box-title">📝 Angle cardio-tubérositaire</div>
+                    <p>Cet angle possède un rôle de <strong>clapet anti-reflux</strong>, évitant la remontée des sucs gastriques (acides) et des aliments vers l'œsophage.</p>
+                  </div>
+                  
+                  <div class="box box-recap">
+                    <div class="box-title">📋 Récapitulatif — Orifices gastriques</div>
+                    <ul>
+                      <li><strong>Cardia (T11)</strong> : orifice d'entrée, NON continent</li>
+                      <li><strong>Pylore (L1)</strong> : orifice de sortie, CONTINENT (sphincter)</li>
+                    </ul>
+                  </div>
+                  
+                  <div class="box box-clinical">
+                    <div class="box-title">⚕️ Applications cliniques</div>
+                    <ul>
+                      <li><strong>Sténose du pylore</strong> (chez l'enfant) : anomalie empêchant le contenu de cheminer vers le duodénum → vomissements. Traitement : dilatation au ballon pour ouvrir la sténose.</li>
+                      <li><strong>Ulcères gastriques</strong> : se forment généralement au niveau de l'antre pylorique et du duodénum à cause des ions acides. Diagnostic par endoscopie.</li>
+                      <li><strong>Reflux gastro-œsophagien (RGO)</strong> : dû à des anomalies de continence du cardia. Des RGO à répétition peuvent conduire à un cancer de l'œsophage.</li>
+                      <li><strong>Hernies hiatales</strong> : la jonction œsophage-estomac subit une ascension en position supra-diaphragmatique.
+                        <ul>
+                          <li><em>Par glissement</em> : l'angle cardio-tubérositaire disparaît</li>
+                          <li><em>Par roulement</em> : l'angle est conservé mais le fundus dépasse du diaphragme</li>
+                        </ul>
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="accordion-item">
+              <div class="accordion-header">B) Duodénum</div>
+              <div class="accordion-content">
+                <div class="accordion-body">
+                  <p>Organe très <strong>fixe</strong> car il est plaqué contre le rachis. Il est intimement lié au pancréas.</p>
+                  
+                  <h4>Les 4 portions du cadre duodénal</h4>
+                  <ul>
+                    <li><strong>D1 / Ampoule duodénale</strong> : dilatée, en regard de L1. Poursuit l'estomac après le pylore. Elle comporte l'<strong>angle duodénal</strong> (genou supérieur).</li>
+                    <li><strong>D2</strong> : descend le long du bord droit du rachis jusqu'à L4. Sur le bord médial de son tiers moyen, on retrouve les <strong>papilles duodénales</strong> :
+                      <ul>
+                        <li><strong>Papille duodénale mineure</strong> (en haut) : reçoit les sécrétions pancréatiques</li>
+                        <li><strong>Papille duodénale majeure</strong> (en bas) : reçoit les sécrétions pancréatiques ET biliaires</li>
+                      </ul>
+                    </li>
+                    <li><strong>D3</strong> : horizontale, en regard de L4.</li>
+                    <li><strong>D4</strong> : ascendante, à gauche du rachis. Elle se poursuit par l'<strong>angle duodéno-jéjunal</strong> (fixé à la paroi postérieure) et se situe en arrière de la grande courbure de l'estomac.</li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+
+            <div class="accordion-item">
+              <div class="accordion-header">C) Pancréas</div>
+              <div class="accordion-content">
+                <div class="accordion-body">
+                  <p>Glande enchâssée dans le cadre duodénal. Le pancréas et le duodénum forment le <strong>bloc duodéno-pancréatique</strong> (accolé à la paroi postérieure).</p>
+                  
+                  <h4>Parties du pancréas</h4>
+                  <ul>
+                    <li><strong>Tête</strong> : enchâssée entre D1, D2 et D3</li>
+                    <li><strong>Processus unciné (uncus)</strong> : à la partie inférieure, forme un crochet</li>
+                    <li><strong>Isthme</strong> : zone rétrécie entre la tête et le corps</li>
+                    <li><strong>Corps</strong> et <strong>Queue</strong> : triangulaires à la coupe</li>
+                  </ul>
+                  
+                  <h4>Fonctions (glande amphicrine)</h4>
+                  <ul>
+                    <li><strong>Fonction endocrine</strong> : sécrétion d'insuline et de glucagon (régulation de la glycémie)</li>
+                    <li><strong>Fonction exocrine</strong> : sécrétion des sucs pancréatiques (enzymes de digestion des lipides/protides).</li>
+                  </ul>
+                  
+                  <h4>Voies pancréatiques</h4>
+                  <p>Ces voies acheminent les sécrétions jusqu'au duodénum :</p>
+                  <ul>
+                    <li><strong>Voie pancréatique principale</strong> : Le canal pancréatique principal (provient de la queue, chemine jusqu'à la tête puis descend) est rejoint par le <strong>canal cholédoque</strong> (voie biliaire, qui s'enfonce dans le parenchyme). Cet ensemble se jette dans la <strong>papille duodénale majeure</strong> (D2).</li>
+                    <li><strong>Voie pancréatique secondaire</strong> (peu détaillée dans ce cours).</li>
+                  </ul>
+                  
+                  <div class="box box-clinical">
+                    <div class="box-title">⚕️ Pancréatite aiguë hémorragique</div>
+                    <p>Des calculs biliaires peuvent se bloquer au niveau de la papille duodénale majeure. L'obstruction de la voie pancréatique principale entraîne une pancréatite : les sucs pancréatiques sont coincés et digèrent le pancréas lui-même.</p>
+                    <p><strong>Traitement</strong> : sphinctérectomie par endoscopie.</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="accordion-item">
+              <div class="accordion-header">D) Système porte</div>
+              <div class="accordion-content">
+                <div class="accordion-body">
+                  <p>Système reliant le réseau capillaire de l'<strong>intestin</strong> au réseau capillaire du <strong>foie</strong>. Il ramène le sang intestinal, riche en nutriments, vers le foie pour que celui-ci en extraie les métabolites. Il est situé en arrière du pancréas.</p>
+                  
+                  <h4>Formation de la veine porte</h4>
+                  <p>La veine porte est formée par la confluence de trois veines :</p>
+                  <div class="tree">
+                    <div class="tree-node tree-root expanded">
+                      <span class="tree-label expandable">Veine porte (vers le foie)</span>
+                      <div class="tree-children">
+                        <div class="tree-node expanded">
+                          <span class="tree-label expandable">Tronc veineux spléno-mésentérique (TVSM)</span>
+                          <div class="tree-children">
+                            <div class="tree-node"><span class="tree-label">← Veine splénique (vient de la rate, volumineuse, derrière le pancréas)</span></div>
+                            <div class="tree-node"><span class="tree-label">← Veine mésentérique inférieure (draine l'intestin postérieur)</span></div>
+                          </div>
+                        </div>
+                        <div class="tree-node">
+                          <span class="tree-label">← Veine mésentérique supérieure (draine l'intestin moyen)</span>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  
+                  <p>La veine porte se dirige vers la <strong>porte du foie (hile)</strong>, formant avec les artères et voies biliaires le <strong>pédicule hépatique</strong>.</p>
+                </div>
+              </div>
+            </div>
+
+            <div class="accordion-item open">
+              <div class="accordion-header">E) Foie et Voies Biliaires</div>
+              <div class="accordion-content">
+                <div class="accordion-body">
+                  <p>Énorme glande <strong>amphicrine</strong> (fonction exocrine = bile ; fonction endocrine = métabolisme). C'est un organe <strong>thoraco-abdominal</strong> qui projette principalement dans l'hypochondre droit, mais aussi l'épigastre et l'hypochondre gauche.</p>
+                  
+                  <p>Physiologiquement, le bord inférieur du foie <strong>ne dépasse pas le gril costal</strong>.</p>
+                  
+                  <div class="box box-clinical">
+                    <div class="box-title">⚕️ Hépatomégalie</div>
+                    <p>Lorsque le foie est trop volumineux, il déborde du gril costal. L'examen clinique (palpation avec les doigts en crochets sous les côtes) permet de palper son bord inférieur.</p>
+                  </div>
+                  
+                  <h4>Morphologie du Foie</h4>
+                  <p>Le foie a une forme ovoïde (comparable à un ballon de rugby ou une pastèque coupée). Il comporte deux faces :</p>
+                  <ul>
+                    <li><strong>Face diaphragmatique</strong> (bombée) :
+                      <ul>
+                        <li>Portion lisse (supéro-antérieure)</li>
+                        <li>Portion irrégulière (supéro-postérieure) : correspond à la zone d'adhérence au diaphragme (zone non péritonisée), où passent les vaisseaux, dont la veine cave inférieure (VCI).</li>
+                      </ul>
+                    </li>
+                    <li><strong>Face viscérale</strong> (plane, inférieure) : regarde les viscères.</li>
+                  </ul>
+
+                  <h4>Pédicules Hépatiques</h4>
+                  <ul>
+                    <li><strong>Pédicule infra-hépatique</strong> (voie d'entrée) : formé de trois éléments, du plus postérieur au plus antérieur : la <strong>veine porte</strong>, l'<strong>artère hépatique propre</strong>, et la <strong>voie biliaire</strong>.</li>
+                    <li><strong>Pédicule supra-hépatique</strong> (voie de sortie) : formé par les trois veines supra-hépatiques qui se drainent dans la veine cave inférieure (VCI).</li>
+                  </ul>
+                  
+                  <h4>Système biliaire</h4>
+                  <p>Il conduit la bile jusqu'au duodénum.</p>
+                  <p><strong>Voie biliaire principale :</strong></p>
+                  <ul>
+                    <li>Canaux hépatiques droit et gauche se réunissent en → <strong>Canal hépatique commun</strong>.</li>
+                    <li>Le canal hépatique commun fusionne avec le canal cystique pour former le → <strong>Canal cholédoque</strong>. Ce dernier rejoint le pancréas et se jette dans la papille duodénale majeure.</li>
+                  </ul>
+                  
+                  <p><strong>Voie biliaire secondaire :</strong></p>
+                  <ul>
+                    <li><strong>Vésicule biliaire</strong> : appendue à la face inférieure du foie (fond, corps, col).</li>
+                    <li><strong>Canal cystique</strong> : issu de la vésicule biliaire.</li>
+                  </ul>
+                  
+                  <div class="box box-mnemonic">
+                    <div class="box-title">💡 Moyen mnémotechnique</div>
+                    <p>Canal <strong>C</strong>ystique + Canal <strong>H</strong>épatique = Canal <strong>CH</strong>olédoque.</p>
+                  </div>
+                  
+                  <div class="box box-recap">
+                    <div class="box-title">📋 Récapitulatif — Bile</div>
+                    <ul>
+                      <li>Le <strong>foie</strong> sécrète la bile en continu. Elle sert à éliminer la bilirubine (dégradation de l'hémoglobine) et donne la coloration aux selles.</li>
+                      <li>Lors des repas, la bile descend au duodénum. En dehors des repas, la papille duodénale se ferme et la bile remonte par le canal cystique pour être <strong>stockée par la vésicule biliaire</strong>.</li>
+                    </ul>
+                  </div>
+
+                  <div class="box box-clinical">
+                    <div class="box-title">⚕️ Maladies lithiasiques (calculs)</div>
+                    <ul>
+                      <li><strong>Voie biliaire secondaire (Canal cystique)</strong> : La vésicule tente de se contracter sans succès → <strong>Colique biliaire</strong> (douleurs hypochondre droit). Si surinfection → <strong>Cholecystite</strong> (douleurs + fièvre, mais pas d'ictère).</li>
+                      <li><strong>Voie biliaire principale (Cholédoque)</strong> : La bile stagne. Infection grave → <strong>Angiocholite</strong> (coliques biliaires, fièvre, <strong>ictère / coloration jaune</strong>, selles décolorées "mastic", urines foncées).</li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="accordion-item">
+              <div class="accordion-header">F) Rate</div>
+              <div class="accordion-content">
+                <div class="accordion-body">
+                  <p>Organe hématopoïétique très vascularisé, situé très profondément dans l'<strong>hypochondre gauche</strong>, coincé entre la paroi, l'estomac et le rein. Son hile reçoit l'artère splénique et se draine via la <strong>veine splénique</strong> (la plus grosse branche du système porte).</p>
+                  
+                  <div class="box box-clinical">
+                    <div class="box-title">⚕️ Traumatisme splénique</div>
+                    <p>Une fracture de la rate entraîne une hémorragie cataclysmique (car la rate n'est pas collée à la paroi post.) → <strong>hémopéritoine</strong> mettant en jeu le pronostic vital. Douleurs en hypochondre gauche irradiant vers l'épaule. Examen par scanner et, si besoin, <strong>splénectomie</strong> (ablation de la rate).</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="accordion-item">
+              <div class="accordion-header">G) Vascularisation artérielle : Le Tronc Cœliaque</div>
+              <div class="accordion-content">
+                <div class="accordion-body">
+                  <p>Le <strong>tronc cœliaque</strong> naît de l'aorte en <strong>T12</strong> et assure la quasi-totalité de la vascularisation de l'intestin antérieur via trois artères principales :</p>
+                  <ul>
+                    <li><strong>Artère splénique</strong> (volumineuse) : descend derrière le pancréas, vascularise la rate.</li>
+                    <li><strong>Artère gastrique gauche</strong> (petite) : vascularise une partie de l'estomac.</li>
+                    <li><strong>Artère hépatique commune</strong> : donne l'artère gastro-duodénale et l'<strong>artère hépatique propre</strong> (qui se divise ensuite en branches droite et gauche au hile du foie).</li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <section id="moyen">
+          <h2>VI. Intestin moyen</h2>
+
+          <p>L'intestin moyen est vascularisé par l'<strong>artère mésentérique supérieure (AMS)</strong>. La limite avec l'intestin antérieur se fait à la partie distale de la papille duodénale majeure.</p>
+
+          <div class="accordion">
+            <div class="accordion-item open">
+              <div class="accordion-header">A) Composition</div>
+              <div class="accordion-content">
+                <div class="accordion-body">
+                  <p>De proximal en distal :</p>
+                  <ul>
+                    <li><strong>Parties du duodénum</strong> : portion distale de D2, D3, D4, angle duodéno-jéjunal</li>
+                    <li><strong>Intestin grêle</strong> : jéjunum, iléum</li>
+                    <li><strong>Cæcum</strong></li>
+                    <li><strong>Côlon ascendant</strong></li>
+                    <li><strong>Angle colique droit</strong></li>
+                    <li><strong>2/3 proximaux (droits) du côlon transverse</strong></li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+
+            <div class="accordion-item open">
+              <div class="accordion-header">B) Intestin grêle (Jéjuno-iléum)</div>
+              <div class="accordion-content">
+                <div class="accordion-body">
+                  <p>Fait suite au duodénum. Composé de <strong>15 à 16 anses</strong>, mesurant au total <strong>6 mètres</strong> de long pour <strong>3 cm</strong> de diamètre.</p>
+                  <p>Assure l'<strong>absorption des nutriments</strong> grâce à sa muqueuse ornée de villosités (accroissant massivement la surface de contact). Il est relié à la paroi postérieure par le <strong>mésentère</strong>.</p>
+                  
+                  <div class="table-wrapper">
+                    <table>
+                      <thead>
+                        <tr><th>Portion</th><th>Position</th><th>Orientation des anses</th></tr>
+                      </thead>
+                      <tbody>
+                        <tr><td><strong>Jéjunum</strong></td><td>Proximale</td><td><strong>Horizontales</strong> (comme la barre du J)</td></tr>
+                        <tr><td><strong>Iléum</strong></td><td>Terminale</td><td><strong>Verticales</strong> (comme la lettre I)</td></tr>
+                      </tbody>
+                    </table>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="accordion-item open">
+              <div class="accordion-header">C) Côlon (Gros intestin) et Psoas</div>
+              <div class="accordion-content">
+                <div class="accordion-body">
+                  <p>Le côlon a la forme d'un U inversé. Son rôle est l'absorption de l'eau et la préparation des selles (son diamètre diminue progressivement, ce qui explique ce rôle).</p>
+                  
+                  <h4>Structure typique de la surface colique</h4>
+                  <ul>
+                    <li><strong>Haustrations</strong> (bosses) et sillons</li>
+                    <li><strong>Bandelettes musculaires (tænia coli)</strong> : hypertrophies de la couche longitudinale externe</li>
+                    <li><strong>Appendices omentaux</strong> : expansions péritonéales (plus nombreuses en distalité)</li>
+                    <li><strong>Diverticules</strong> : petites poches muqueuses communiquant avec la lumière colique (plus nombreuses en distalité)</li>
+                  </ul>
+                  
+                  <div class="box box-clinical">
+                    <div class="box-title">⚕️ Diverticulite</div>
+                    <p>L'inflammation des diverticules cause la <strong>diverticulite</strong> (douleurs en fosse iliaque gauche, fièvre). Risque de perforation et de péritonite.</p>
+                  </div>
+
+                  <h4>Portions de l'intestin moyen</h4>
+                  <ul>
+                    <li><strong>1. Cæcum</strong> : Portion dilatée (6 cm de diamètre) en cul-de-sac borgne dans la fosse iliaque droite. Reçoit l'iléum (angle iléo-cæcal) et porte l'<strong>appendice vermiforme</strong> (les tænias convergent vers l'appendice pour le repérer).</li>
+                    <li><strong>2. Côlon ascendant</strong> : 10 cm de long, 6 cm de diamètre. Flanc droit, remonte jusqu'à L1. Fixe grâce au mésocôlon ascendant (fascia).</li>
+                    <li><strong>3. Angle colique droit</strong> (hépatique) : en regard de L1, collé au diaphragme en arrière.</li>
+                    <li><strong>4. Côlon transverse (2/3 droits)</strong> : La portion droite (jusqu'au 2/3) appartient à l'intestin moyen (vascularisée par AMS).</li>
+                  </ul>
+                  
+                  <div class="box box-clinical">
+                    <div class="box-title">⚕️ Appendicite et Muscle Psoas</div>
+                    <p>Le muscle psoas (inséré de T12 à L4 jusqu'au petit trochanter du fémur) est un fléchisseur de la hanche. Lors d'une <strong>appendicite</strong> (infection de l'appendice causant des douleurs en FID), on peut observer un <strong>psoïtis</strong>, c'est-à-dire une contracture irréductible et involontaire du muscle psoas voisin. L'appendicectomie est l'ablation de l'appendice.</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="accordion-item">
+              <div class="accordion-header">D) Portions fixes vs mobiles (Tube digestif)</div>
+              <div class="accordion-content">
+                <div class="accordion-body">
+                  <div class="table-wrapper">
+                    <table>
+                      <thead>
+                        <tr><th>Portions FIXES</th><th>Portions MOBILES</th></tr>
+                      </thead>
+                      <tbody>
+                        <tr><td>Bloc duodéno-pancréatique</td><td>Jéjunum</td></tr>
+                        <tr><td>Angle duodéno-jéjunal</td><td>Iléum</td></tr>
+                        <tr><td>Côlon ascendant</td><td>Cæcum</td></tr>
+                        <tr><td>Angle colique droit</td><td>Appendice vermiforme</td></tr>
+                        <tr><td>Portion droite du côlon transverse</td><td>Portion gauche du côlon transverse</td></tr>
+                        <tr><td>Angle colique gauche</td><td>Côlon sigmoïde</td></tr>
+                        <tr><td>Côlon descendant</td><td></td></tr>
+                        <tr><td>Rectum distal, Canal anal</td><td></td></tr>
+                      </tbody>
+                    </table>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <section id="posterieur">
+          <h2>VII. Intestin postérieur</h2>
+
+          <p>L'intestin postérieur est vascularisé par l'<strong>artère mésentérique inférieure (AMI)</strong>.</p>
+
+          <div class="accordion">
+            <div class="accordion-item open">
+              <div class="accordion-header">A) Composition (du Côlon transverse au Sigmoïde)</div>
+              <div class="accordion-content">
+                <div class="accordion-body">
+                  <ul>
+                    <li><strong>1/3 gauche du côlon transverse</strong> : vascularisé par l'AMI.</li>
+                    <li><strong>Angle colique gauche</strong> : situé en regard de T11.</li>
+                    <li><strong>Côlon descendant</strong> : descend le long du flanc gauche. Diamètre de 4 cm. Fixe (mésocôlon descendant accolé).
+                      <ul>
+                        <li><em>Portion lombaire</em> (au-dessus de la crête iliaque)</li>
+                        <li><em>Portion iliaque</em> (en-dessous)</li>
+                      </ul>
+                    </li>
+                    <li><strong>Côlon sigmoïde</strong> : au niveau du détroit supérieur. Forme en "S" (sigma), mobile grâce à son méso-sigmoïde, 3 cm de diamètre. Ne possède pas d'haustrations.</li>
+                  </ul>
+                  <p><strong>Règle générale colique :</strong> De proximal en distal, le diamètre diminue, le nombre d'haustrations diminue, le nombre de diverticules augmente.</p>
+                </div>
+              </div>
+            </div>
+
+            <div class="accordion-item open">
+              <div class="accordion-header">B) Rectum et Canal Anal</div>
+              <div class="accordion-content">
+                <div class="accordion-body">
+                  <p>Le rectum commence à la jonction avec le sigmoïde en regard de <strong>S3</strong>. Il mesure 12 cm de haut et 3 cm de diamètre. Il joue le rôle de réservoir.</p>
+
+                  <h4>Ampoule rectale</h4>
+                  <p>Partie dilatée contenant les selles. Sa paroi comporte :</p>
+                  <ul>
+                    <li><strong>Fibres lisses circulaires</strong> : leur contraction entraîne la <strong>relaxation</strong> de la paroi et du canal anal (défécation).</li>
+                    <li><strong>Fibres longitudinales</strong> (externes) : leur contraction entraîne un <strong>raccourcissement</strong> du canal anal (arrêt de la défécation).</li>
+                  </ul>
+                  
+                  <h4>Le système sphinctérien et le cap anal</h4>
+                  <p>Le canal anal est une cavité virtuelle (sauf à la défécation) renforcée par 2 sphincters :</p>
+                  <ul>
+                    <li><strong>Sphincter interne</strong> : lisse, sous contrôle <strong>involontaire</strong> (épaississement de la musculature circulaire).</li>
+                    <li><strong>Sphincter externe (strié)</strong> : 3 couches (sous-cutanée, superficielle, profonde), sous contrôle <strong>volontaire</strong>.</li>
+                  </ul>
+                  
+                  <p>Le <strong>muscle corrugator ani</strong> (fibres superficielles) ferme le canal anal et forme les plis cutanés de l'anus.</p>
+                  
+                  <p>La jonction ano-rectale forme le <strong>cap anal</strong> (angle ano-rectal) d'environ <strong>100°</strong>, orienté en arrière. Le muscle élévateur de l'anus (MEA) s'entremêle avec le sphincter externe ; sa contraction chasse les résidus et <strong>fait remonter l'anus</strong>.</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <section id="vascu">
+          <h2>VIII. Vascularisation et Anastomoses</h2>
+
+          <div class="accordion">
+            <div class="accordion-item open">
+              <div class="accordion-header">A) Vascularisation artérielle</div>
+              <div class="accordion-content">
+                <div class="accordion-body">
+                  <h4>1. Intestin moyen — AMS</h4>
+                  <p>Naît de l'aorte (face ventrale, <strong>L1</strong>). Trajet : sous-péritonéal → rétropéritonéal → en arrière du pancréas → s'engage entre la tête et l'uncus pancréatiques → vers l'iléum.</p>
+                  <p><strong>Branches :</strong></p>
+                  <ul>
+                    <li><strong>Branches gauches</strong> : pour jéjunum et iléum</li>
+                    <li><strong>Branches droites</strong> : pour le côlon droit (cæcum, côlon ascendant, angle colique droit, 2/3 droits du côlon transverse)</li>
+                  </ul>
+                  
+                  <h4>2. Intestin postérieur — AMI</h4>
+                  <p>Naît de l'aorte en <strong>L3</strong>. Se dirige vers le côlon sigmoïde.</p>
+                  <p><strong>Branches terminales</strong> : artères rectales supérieures (droite et gauche).</p>
+                  <p><strong>Branches collatérales</strong> : pour 1/3 gauche du côlon transverse, côlon descendant, angle colique gauche, côlon sigmoïde.</p>
+                </div>
+              </div>
+            </div>
+
+            <div class="accordion-item open">
+              <div class="accordion-header">B) Drainage veineux et Anastomoses porto-caves</div>
+              <div class="accordion-content">
+                <div class="accordion-body">
+                  <p>L'intestin postérieur est drainé par la VMI, l'intestin moyen par la VMS, le tout convergeant vers la <strong>veine porte</strong> (vers le foie). Le sang hépatique rejoint la VCI via les veines supra-hépatiques.</p>
+                  
+                  <h4>Anastomoses porto-caves (dérivation)</h4>
+                  <p>Aux extrémités du tube digestif, des anastomoses dévient le sang du système porte vers le système cave en cas de surpression (ex: cirrhose hépatique causant une hypertension portale).</p>
+                  
+                  <ul>
+                    <li><strong>Au niveau du cardia (œsophage)</strong> : double drainage par les veines diaphragmatiques. Une hypertension entraîne des <strong>varices œsophagiennes</strong> qui, si elles cèdent, causent des <strong>hématémèses</strong> (vomissements sanglants) potentiellement mortelles.</li>
+                    <li><strong>Au niveau du rectum</strong> : drainage vers les deux systèmes. Peut provoquer la dilatation de <strong>varices hémorroïdaires</strong> → risque de <strong>rectorragies</strong> cataclysmiques.</li>
+                    <li><strong>Au niveau de l'ombilic</strong> : le ligament rond (reliquat de la veine ombilicale) peut s'ouvrir sous la pression, créant une dilatation veineuse sous-cutanée autour du nombril appelée <strong>"tête de méduse"</strong>.</li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <div class="box box-recap">
+          <div class="box-title">📋 Points clés du module</div>
+          <ul>
+            <li><strong>Tronc cœliaque (T12)</strong> → intestin antérieur (estomac, duodénum proximal, foie, pancréas)</li>
+            <li><strong>AMS (L1)</strong> → intestin moyen (duodénum distal, jéjunum, iléum, cæcum, côlon droit, 2/3 côlon transverse)</li>
+            <li><strong>AMI (L3)</strong> → intestin postérieur (1/3 côlon transverse gauche, côlon descendant, sigmoïde, rectum)</li>
+            <li><strong>Cardia (T11)</strong> = non continent | <strong>Pylore (L1)</strong> = sphincter continent</li>
+            <li><strong>Hiatus œsophagien (T10)</strong> = musculaire | <strong>Hiatus aortique (T12)</strong> = fibreux</li>
+            <li><strong>Veine porte</strong> = TVSM (veine splénique + VMI) + VMS</li>
+            <li><strong>Canal cholédoque</strong> = canal hépatique commun + canal cystique</li>
+            <li>Bloc <strong>duodéno-pancréatique</strong> = fixe (accolé paroi post.)</li>
+            <li><strong>Mésentère</strong> = relie intestin grêle à la paroi → mobilité</li>
+          </ul>
+        </div>
+
+      </div>
+    </main>
+  </div>
+
+  <button class="menu-toggle" onclick="document.querySelector('.sidebar').classList.toggle('open')">☰</button>
+  <script src="../app.js"></script>
+</body>
+</html>

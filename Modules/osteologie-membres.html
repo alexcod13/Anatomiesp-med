@@ -1,0 +1,623 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Ostéologie des membres - Anatomie</title>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="../styles.css">
+</head>
+<body>
+  <div class="app">
+    <aside class="sidebar">
+      <div class="sidebar-header">
+        <h1>🦴 Anatomie</h1>
+        <p>Cours PASS/LAS - Tours</p>
+      </div>
+      <div class="sidebar-search">
+        <input type="text" data-search placeholder="Rechercher... (Ctrl+K)" />
+      </div>
+      <nav class="sidebar-nav">
+        <div class="nav-group">
+          <div class="nav-group-title">Accueil</div>
+          <div class="nav-group-items">
+            <a href="../index.html" class="nav-item">🏠 Vue d'ensemble</a>
+            <a href="../carnet-erreurs.html" class="nav-item">📕 Carnet d'erreurs</a>
+          </div>
+        </div>
+        <div class="nav-group">
+          <div class="nav-group-title">Ostéologie (Destrieux)</div>
+          <div class="nav-group-items">
+            <a href="osteologie-membres.html" class="nav-item active">Ostéologie des membres</a>
+            <a href="squelette-axial.html" class="nav-item">Squelette axial</a>
+          </div>
+        </div>
+      </nav>
+    </aside>
+
+    <main class="main">
+      <header class="header">
+        <button class="sidebar-toggle" title="Masquer/Afficher le menu">☰</button>
+        <div class="breadcrumb">
+          <a href="../index.html">Accueil</a> / Ostéologie des membres
+        </div>
+        <div class="header-actions">
+          <button class="btn-icon" onclick="expandAllAccordions()">⊞</button>
+          <button class="btn-icon" onclick="collapseAllAccordions()">⊟</button>
+          <button class="btn-icon" id="theme-toggle">◐</button>
+        </div>
+      </header>
+
+      <div class="content">
+        <h1>💪 Ostéologie des membres</h1>
+        <p><strong>Pr. Destrieux</strong> — Poly spé n°1 — Tutorat Santé de Tours 2026 (comparaison 2025/2026 effectuée).</p>
+
+        <div class="toc">
+          <div class="toc-title">📑 Sommaire</div>
+          <ul class="toc-list">
+            <li><a href="#ceinture-scapulaire">I. Ceinture scapulaire</a></li>
+            <li><a href="#bras">II. Bras (Humérus)</a></li>
+            <li><a href="#avantbras">III. Avant-bras (Radius & Ulna)</a></li>
+            <li><a href="#main">IV. Poignet et main</a></li>
+            <li><a href="#coxal">V. Os coxal (Ceinture pelvienne)</a></li>
+            <li><a href="#femur">VI. Cuisse (Fémur & Patella)</a></li>
+            <li><a href="#jambe">VII. Jambe (Tibia & Fibula)</a></li>
+            <li><a href="#pied">VIII. Pied</a></li>
+          </ul>
+        </div>
+
+        <h2 style="background: var(--primary); color: white; padding: 1rem; border-radius: 8px;">MEMBRE SUPÉRIEUR (Thoracique)</h2>
+        <p>Relié au squelette axial par la ceinture scapulaire. Libéré de la fonction de sustentation par la bipédie, il s'est <strong>spécialisé dans la préhension</strong>. Membre très mobile, mais relativement fragile et exposé aux traumatismes.</p>
+
+        <section id="ceinture-scapulaire">
+          <h2>I. Ceinture scapulaire</h2>
+
+          <div class="accordion">
+            <div class="accordion-item open">
+              <div class="accordion-header">A) Clavicule (Os long superficiel)</div>
+              <div class="accordion-content">
+                <div class="accordion-body">
+                  <p>Seul os qui relie le membre supérieur au thorax.</p>
+                  <ul>
+                    <li><strong>Morphologie</strong> : forme en « S » italique en vue supérieure, forme rectiligne en vue antérieure. Facilement palpable.</li>
+                    <li><strong>Extrémité latérale (acromiale)</strong> : aplatie. S'articule avec l'acromion de la scapula via une surface ovalaire regardant en bas et latéralement.</li>
+                    <li><strong>Extrémité médiale (sternale)</strong> : volumineuse. Forme l'articulation sterno-costo-claviculaire (avec manubrium et 1er cartilage costal), <strong>unique point d'attache direct</strong> du membre supérieur au tronc.</li>
+                  </ul>
+                  <div class="box box-clinical">
+                    <div class="box-title">⚕️ Expositions aux fractures</div>
+                    <p>La position superficielle de la clavicule la rend très exposée aux fractures, particulièrement lors d'accidents sportifs.</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="accordion-item open">
+              <div class="accordion-header">B) Scapula (Os plat triangulaire)</div>
+              <div class="accordion-content">
+                <div class="accordion-body">
+                  <p>Possède 2 faces, 3 bords (supérieur, latéral, médial) et 3 angles (supérieur, latéral, inférieur).</p>
+                  <ul>
+                    <li><strong>Face ventrale (costale)</strong> : concave vers l'avant, forme la <span class="term">fosse subscapulaire</span>. Reliée au thorax par une jonction musculaire (synergie avec l'articulation scapulo-humérale).</li>
+                    <li><strong>Face dorsale</strong> : porte l'<span class="term">épine de la scapula</span> (perpendiculaire au tiers supérieur). L'épine divise la face en fosse supra-épineuse et infra-épineuse (insertions musculaires), et se prolonge par l'<span class="term">acromion</span> (volumineux, se dirige en arrière et latéralement).</li>
+                    <li><strong>Angle latéral</strong> :
+                      <ul>
+                        <li id="err-incisure-scapulaire"><span class="term">Processus coracoïde</span> : forme de crochet, regarde en bas et latéralement. <mark>Insertion bordée par l'<strong>incisure scapulaire</strong> (fermée par <strong>ligament calcifié</strong>, passage d'un nerf).</mark></li>
+                        <li id="err-gleno-direction"><mark><span class="term">Cavité glénoïdale</span> : surface ovalaire recouverte de cartilage, reliée par un col peu marqué. Regarde en avant, en haut et latéralement.</mark></li>
+                      </ul>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <section id="bras">
+          <h2>II. Bras — Humérus</h2>
+          <p>Os long et unique du bras. Comporte deux cols : le col anatomique et le col chirurgical (correspond à la métaphyse, zone de croissance).</p>
+
+          <div class="accordion">
+            <div class="accordion-item open">
+              <div class="accordion-header">A) Épiphyse proximale et Diaphyse</div>
+              <div class="accordion-content">
+                <div class="accordion-body">
+                  <h4>1. Épiphyse proximale</h4>
+                  <ul>
+                    <li><span class="term">Tête humérale</span> : sphère d'environ <strong>30 mm</strong> de rayon, <strong>1/3 recouverte de cartilage</strong>. Regarde en haut, médialement et en arrière. <strong>Angle d'inclinaison</strong> : ~130° avec la diaphyse.</li>
+                    <li><span class="term">Col anatomique</span> : sépare la tête des tubercules.</li>
+                    <li><span class="term">Tubercules</span> : <strong>Majeur</strong> (latéral, visible faces ant/post) et <strong>Mineur</strong> (médial, visible uniquement face ant). Lieux d'insertions musculaires.</li>
+                    <li id="ann24-sillon-intertub"><mark class="annale"><span class="term">Sillon intertuberculaire</span> : gouttière <strong>délimitée par les tubercules majeur et mineur</strong>, permettant le coulissement du tendon du <strong>chef LONG du biceps brachial</strong>.</mark></li>
+                  </ul>
+                  
+                  <h4>2. Diaphyse</h4>
+                  <p>Triangulaire à la coupe. 3 bords délimitant 3 faces : antéro-médiale, antéro-latérale, et <strong>dorsale</strong>.</p>
+                  <ul>
+                    <li><span class="term">Face dorsale</span> : porte le sillon du nerf radial (oblique en bas et latéralement).</li>
+                  </ul>
+
+                  <div class="box box-clinical">
+                    <div class="box-title">⚕️ Pathologies liées</div>
+                    <p><strong>Chirurgie de l'épaule</strong> : Il faut impérativement respecter l'angle d'inclinaison de 130° pour préserver la fonction de l'articulation scapulo-humérale.</p>
+                    <p><strong>Fracture diaphysaire</strong> : Risque de paralysie radiale. Le nerf radial étant responsable de l'extension du bras et de la main, cette fonction devient impossible.</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="accordion-item open">
+              <div class="accordion-header">B) Épiphyse distale (Aplatie)</div>
+              <div class="accordion-content">
+                <div class="accordion-body">
+                  <p>Comprend le condyle huméral (zone articulaire complexe) et deux épicondyles (saillies le surmontant).</p>
+                  
+                  <h4>1. Condyle huméral (Cartilagineux)</h4>
+                  <ul>
+                    <li><span class="term">Capitulum</span> (latéral) : demi-sphère présente <strong>uniquement</strong> sur la face ventrale. S'articule avec la fossette radiale. Surmonté de la fossette radiale.</li>
+                    <li><span class="term">Trochlée</span> (médiale) : en forme de poulie, présente aux faces <strong>ventrale et dorsale</strong>. S'articule avec l'incisure trochléaire de l'ulna. Surmontée des fossettes coronoïde (ventralement) et olécranienne (dorsalement).</li>
+                    <li><span class="term">Zone capitulo-trochléaire</span> : entre capitulum et trochlée, uniquement ventrale. Zone en biseau répondant au bord biseauté du radius.</li>
+                  </ul>
+
+                  <div class="box box-clinical">
+                    <div class="box-title">⚕️ Biomécanique et Épicondylites</div>
+                    <p>Les <strong>fossettes</strong> (radiale, coronoïde, olécranienne) évitent les butées osseuses lors des mouvements extrêmes de flexion-extension du coude.</p>
+                    <p id="err-tennis-elbow">Les épicondyles (médial et latéral) sont les lieux d'insertions musculoligamentaires. Les gestes répétés provoquent des <strong>épicondylites</strong> (ex: <mark>tennis-elbow = épicondylite <strong>latérale</strong></mark> par surutilisation).</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <section id="avantbras">
+          <h2>III. Avant-bras — Radius et Ulna</h2>
+          <p>Deux os reliés par la membrane interosseuse. Il existe une rotation relative de ces deux os. Leur incurvation permet la <strong>pronosupination</strong>.</p>
+
+          <div class="box box-clinical">
+            <div class="box-title">⚕️ Traitement des fractures de l'avant-bras</div>
+            <p>Il est indispensable de <strong>respecter les courbures</strong> naturelles de ces os pour ne pas limiter le mouvement de pronosupination du patient.</p>
+          </div>
+
+          <div class="accordion">
+            <div class="accordion-item open">
+              <div class="accordion-header">A) Radius (latéral)</div>
+              <div class="accordion-content">
+                <div class="accordion-body">
+                  <h4>1. Épiphyse proximale</h4>
+                  <ul>
+                    <li><span class="term">Tête radiale</span> : 
+                      <ul>
+                        <li><strong>Fossette articulaire</strong> (supérieure) : cupule concave vers le haut. S'articule avec le capitulum et la zone capitulo-trochléaire (bord biseauté).</li>
+                        <li><strong>Circonférence articulaire</strong> : segment de cylindre s'articulant avec l'incisure radiale (ulna) et le ligament annulaire.</li>
+                      </ul>
+                    </li>
+                    <li><span class="term">Col radial</span> : zone rétrécie distale à la tête.</li>
+                    <li id="err-bicipitale-direction"><mark><span class="term">Tubérosité bicipitale</span> : regarde médialement et dorsalement.</mark> Lieu d'insertion du muscle <strong>biceps brachial</strong> (fléchisseur principal du coude).</li>
+                  </ul>
+                  
+                  <h4>2. Diaphyse</h4>
+                  <p>Triangulaire. 3 bords (antérieur, postérieur, interosseux/médial) limitant 3 faces (antérieure, postérieure, latérale).</p>
+                  
+                  <h4>3. Épiphyse distale (S'élargit, quadrangulaire)</h4>
+                  <ul>
+                    <li><strong>Face antérieure</strong> : lisse.</li>
+                    <li><strong>Face latérale</strong> : se prolonge par le <span class="term">processus styloïde radial</span> (palpable sous la peau).</li>
+                    <li><strong>Face médiale</strong> : porte l'<span class="term">incisure ulnaire du radius</span> (s'articule avec la tête de l'ulna).</li>
+                    <li><strong>Face postérieure</strong> : porte des gouttières pour le coulissement des tendons.</li>
+                    <li><strong>Face inférieure</strong> : séparée par une crête sagittale. Surface latérale s'articule avec le <strong>scaphoïde</strong>, surface médiale avec le <strong>lunatum</strong>.</li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+
+            <div class="accordion-item open">
+              <div class="accordion-header">B) Ulna (médial)</div>
+              <div class="accordion-content">
+                <div class="accordion-body">
+                  <h4>1. Épiphyse proximale</h4>
+                  <ul>
+                    <li><span class="term">Olécrâne</span> : situé dorsalement, prolonge le bord postérieur. Insertion musculaire.</li>
+                    <li><span class="term">Processus coronoïde</span> : appendu à la face ventrale en forme de console. Porte sur sa face latérale l'<span class="term">incisure radiale</span> (art. radio-ulnaire proximale).</li>
+                    <li><span class="term">Incisure trochléaire</span> : surface articulaire en poulie (limitée par l'olécrâne et le coronoïde) s'articulant avec la trochlée humérale.</li>
+                  </ul>
+                  
+                  <h4>2. Diaphyse</h4>
+                  <p>Triangulaire à la coupe. Incurvée ventralement et latéralement en distalité. Le bord latéral insère la membrane interosseuse.</p>
+
+                  <h4>3. Épiphyse distale</h4>
+                  <ul>
+                    <li><span class="term">Tête ulnaire</span> : possède une surface articulaire latérale cartilagineuse (<span class="term">circonférence articulaire de l'ulna</span>). <strong>Attention : la tête ulnaire ne s'articule pas directement avec le carpe.</strong></li>
+                    <li id="err-styloide-ulnaire"><span class="term">Processus styloïde ulnaire</span> : situé <mark>dorsalement et médialement</mark>.</li>
+                  </ul>
+                  
+                  <div class="box box-nb">
+                    <div class="box-title">📝 Signe de la styloïde</div>
+                    <p>En condition normale, le processus styloïde radial descend <strong>plus bas</strong> que le processus styloïde ulnaire. Lors d'une fracture (ex: poignet), ce décalage caractéristique disparaît.</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <section id="main">
+          <h2>IV. Poignet et main</h2>
+
+          <div class="accordion">
+            <div class="accordion-item open">
+              <div class="accordion-header">A) Carpe et Canal carpien</div>
+              <div class="accordion-content">
+                <div class="accordion-body">
+                  <h4>Carpe (8 os courts en 2 rangées)</h4>
+                  <p>Forme une gouttière concave ventralement.</p>
+                  <ul>
+                    <li><strong>Rangée proximale (lat → méd)</strong> : Scaphoïde (porte un tubercule ventral), Lunatum, Triquetrum, Pisiforme. <br><em>NB: Scaphoïde + Lunatum forment une surface ellipsoïde s'articulant avec le radius.</em></li>
+                    <li><strong>Rangée distale (lat → méd)</strong> : Trapèze (porte un tubercule ventral), Trapézoïde, Capitatum (très volumineux), Hamatum (porte l'hamulus, un crochet ventral et médial).</li>
+                  </ul>
+                  
+                  <h4>Rétinaculum des fléchisseurs et Canal carpien</h4>
+                  <p>Le rétinaculum est la membrane qui ferme la gouttière carpienne. Il s'insère sur 4 reliefs :</p>
+                  <ol>
+                    <li>Tubercule du scaphoïde</li>
+                    <li id="err-retinacula-trapeze"><mark>Tubercule du trapèze</mark></li>
+                    <li>Hamulus de l'hamatum</li>
+                    <li>Pisiforme</li>
+                  </ol>
+                  <p>L'espace étroit délimité est le <strong>canal carpien</strong>. Il laisse passer :</p>
+                  <ul>
+                    <li>Les <strong>tendons fléchisseurs</strong> des doigts (avec leur gaine synoviale).</li>
+                    <li>Le <strong>nerf médian</strong> (motricité et sensibilité de la main).</li>
+                  </ul>
+                  
+                  <div class="box box-clinical">
+                    <div class="box-title">⚕️ Syndrome du canal carpien</div>
+                    <p>Compression du nerf médian dans cet espace étroit. Le patient souffre de troubles sensitifs de la main et d'une diminution de la force. Le traitement chirurgical consiste à <strong>inciser le rétinaculum des fléchisseurs</strong> pour libérer le nerf.</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="accordion-item">
+              <div class="accordion-header">B) Métacarpe et phalanges</div>
+              <div class="accordion-content">
+                <div class="accordion-body">
+                  <h4>Métacarpe (5 os longs)</h4>
+                  <p>Composés de proximal en distal :</p>
+                  <ul>
+                    <li><span class="term">Base cuboïde</span> : s'articule avec la rangée distale du carpe et les bases voisines.</li>
+                    <li><span class="term">Corps triangulaire</span> : à la coupe, possède un bord palmaire assez aigu.</li>
+                    <li><span class="term">Tête arrondie</span> : encroûtée de cartilage (faces distale et palmaire). S'articule avec les phalanges proximales.</li>
+                  </ul>
+
+                  <h4>Phalanges (I à V)</h4>
+                  <p>Squelette des doigts. Le <strong>pouce (I)</strong> comporte 2 phalanges (proximale, distale). Les <strong>doigts II, III, IV et V</strong> en comportent 3 (proximale, moyenne, distale).</p>
+                  <ul>
+                    <li><span class="term">Base</span> : articulaire avec la pièce osseuse proximale.</li>
+                    <li><span class="term">Corps</span> : semi-cylindrique avec une face palmaire plane.</li>
+                    <li><span class="term">Tête</span> : articulaire, <strong>à l'exception de la phalange distale</strong> qui porte l'ongle à sa face dorsale.</li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <h2 style="background: var(--primary); color: white; padding: 1rem; border-radius: 8px; margin-top: 2rem;">MEMBRE INFÉRIEUR (Pelvien)</h2>
+        <p>Squelette fermement rattaché au squelette axial par l'os coxal. Membre très solide adapté à la sustentation (soutenir le poids du corps transmis par le rachis). Il est moins mobile que le membre supérieur et n'a pas développé la préhension.</p>
+
+        <section id="coxal">
+          <h2>V. Os coxal (Ceinture pelvienne)</h2>
+          <p id="ann25-coxal-plat"><mark class="annale">L'<strong>os coxal</strong> est un <strong>os plat</strong></mark> reliant le membre inférieur au rachis. Indissociable chez l'adulte, il est formé de 3 parties s'anastomosant autour de l'acétabulum : l'<strong>Ilium</strong> (aile + corps, supérieur), l'<strong>Ischium</strong> (corps + branche, postéro-inférieur) et le <strong>Pubis</strong> (corps près de la ligne médiane + branche supérieure vers l'ilium + branche inférieure vers l'ischium).</p>
+
+          <div class="accordion">
+            <div class="accordion-item open">
+              <div class="accordion-header">A) Face latérale (Exopelvienne)</div>
+              <div class="accordion-content">
+                <div class="accordion-body">
+                  <h4>Acétabulum (Cavité profonde)</h4>
+                  <ul>
+                    <li><span class="term">Limbus acétabulaire</span> : rebord osseux marqué bordant la cavité.</li>
+                    <li id="err-surface-semilunaire"><mark><span class="term">Surface semi-lunaire</span> : partie articulaire périphérique cartilagineuse s'articulant avec la tête fémorale.</mark></li>
+                    <li><span class="term">Fosse acétabulaire</span> : centre non-articulaire (<mark>bordée haut/avant/arrière par la surface semi-lunaire</mark>). Lieu d'insertion du ligament de la tête fémorale (rôle vasculaire chez l'enfant, léger rôle mécanique chez l'adulte).</li>
+                  </ul>
+                  
+                  <h4>Partie supra-acétabulaire (Face glutéale)</h4>
+                  <p>Constituée par l'ilium. Présente des lignes osseuses pour l'insertion des muscles glutéaux (fesse). Limitée en haut par un bourrelet, la <span class="term">crête iliaque</span>.</p>
+
+                  <h4>Bords antérieur et postérieur</h4>
+                  <div class="table-wrapper">
+                    <table>
+                      <thead><tr><th>Bord Antérieur (Haut en Bas)</th><th>Bord Postérieur (Haut en Bas)</th></tr></thead>
+                      <tbody>
+                        <tr><td><strong>EIAS</strong> (Épine Iliaque Antérieure et Supérieure)</td><td><strong>EIPS</strong> (Épine Iliaque Postérieure et Supérieure)</td></tr>
+                        <tr><td>Échancrure puis <strong>EIAI</strong> (Antérieure et Inférieure)</td><td>Échancrure puis <strong>EIPI</strong> (Postérieure et Inférieure)</td></tr>
+                        <tr><td>Éminence ilio-pubienne (hauteur acétabulum)</td><td>Grande incisure ischiatique (profonde)</td></tr>
+                        <tr><td>Branche supérieure du pubis</td><td>Épine ischiatique (hauteur acétabulum)</td></tr>
+                        <tr><td>Corps du pubis</td><td>Petite incisure ischiatique</td></tr>
+                        <tr><td></td><td><strong>Tubérosité ischiatique</strong> (volumineuse, muscles ischio-jambiers)</td></tr>
+                      </tbody>
+                    </table>
+                  </div>
+
+                  <h4>Partie infra-acétabulaire</h4>
+                  <p>Formée par l'ischium et le pubis. Centrée par le <span class="term">foramen obturé</span> (partiellement clos par la membrane obturatrice). Le bord inférieur forme la <strong>branche ischio-pubienne</strong> reliant tubérosité ischiatique et corps du pubis (limite inférieure du foramen).</p>
+                </div>
+              </div>
+            </div>
+
+            <div class="accordion-item">
+              <div class="accordion-header">B) Face médiale (Endopelvienne) et Articulations</div>
+              <div class="accordion-content">
+                <div class="accordion-body">
+                  <h4>Ligne arquée de l'ilium</h4>
+                  <p>Ligne oblique dirigée en bas et en avant divisant la face interne :</p>
+                  <ul>
+                    <li id="err-fosse-iliaque"><strong>Au-dessus et en avant</strong> : <span class="term">Fosse iliaque</span> <mark>(insertion du muscle iliaque, fléchisseur majeur de la cuisse)</mark>.</li>
+                    <li><strong>Au-dessus et en arrière</strong> : <span class="term">Surface auriculaire</span> (cartilagineuse, en forme de croissant concave en haut et en arrière, s'articule avec le sacrum) et <span class="term">Tubérosité iliaque</span> (dans la concavité, forts ligaments).</li>
+                    <li><strong>En-dessous</strong> : <span class="term">Foramen obturé</span> (membrane obturatrice visible) surmonté de la <span class="term">surface quadrilatère</span> (plane, insertion du muscle obturateur interne).</li>
+                  </ul>
+
+                  <h4>Articulations de la ceinture pelvienne</h4>
+                  <p>Les os coxaux s'articulent entre eux ventralement (symphyse pubienne) et avec le sacrum en arrière/médialement (articulation sacro-iliaque).</p>
+
+                  <div class="box box-clinical">
+                    <div class="box-title">⚕️ Le détroit supérieur (Obstétrique)</div>
+                    <p>Ligne continue reliant le <strong>promontoire sacré (S1)</strong>, la <strong>ligne arquée</strong> (os coxal) et la <strong>symphyse pubienne</strong>. Il constitue un repère majeur de l'engagement (1ère phase de l'accouchement).</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <section id="femur">
+          <h2>VI. Cuisse — Fémur et Patella</h2>
+          <p>Le fémur est l'os long et unique de la cuisse.</p>
+
+          <div class="accordion">
+            <div class="accordion-item open">
+              <div class="accordion-header">A) Épiphyse proximale et Diaphyse du Fémur</div>
+              <div class="accordion-content">
+                <div class="accordion-body">
+                  <h4>1. Épiphyse proximale</h4>
+                  <ul>
+                    <li><span class="term">Tête fémorale</span> : sphère de <strong>25 mm</strong> de rayon, encroûtée aux <strong>2/3 de cartilage</strong>. Porte une dépression inféro-médiale (la <span class="term">fovea capitis</span>) pour le ligament de la tête fémorale.</li>
+                    <li><span class="term">Col anatomique</span> : oriente la tête en haut, médialement et vers l'avant. Détermine deux angles :
+                      <ul>
+                        <li><strong>Angle d'inclinaison</strong> : diaphyse/col, mesure environ <strong>125°</strong>.</li>
+                        <li><strong>Angle de déclinaison</strong> : col/plan frontal, mesure environ <strong>15°</strong>.</li>
+                      </ul>
+                    </li>
+                    <li><span class="term">Trochanters</span> : Grand trochanter (latéral, quadrangulaire) et Petit trochanter (postéro-médial). Insertions musculaires.</li>
+                    <li><span class="term">Col chirurgical</span> : transition épiphyse/diaphyse, correspond à la métaphyse chez l'enfant.</li>
+                  </ul>
+                  
+                  <h4>2. Diaphyse</h4>
+                  <p>Triangulaire, rectiligne dans un plan frontal, <strong>incurvée vers l'arrière</strong> (concave dorsalement) dans un plan sagittal. Possède 3 faces lisses (ventrale, postéro-médiale, postéro-latérale) et 3 bords :</p>
+                  <ul>
+                    <li><strong>Bords médial et latéral</strong> : dits « mousses » (non tranchants).</li>
+                    <li><strong>Bord postérieur</strong> : dit <span class="term">ligne âpre</span>. Très marqué, tranchant, insère de nombreux muscles de la cuisse.</li>
+                  </ul>
+                  
+                  <div class="box box-clinical">
+                    <div class="box-title">⚕️ Traumatologie : Fractures proximales</div>
+                    <p>Une anomalie d'inclinaison favorise l'arthrose. Avec l'âge (trame osseuse pauvre), les cols cassent :</p>
+                    <div class="table-wrapper">
+                      <table>
+                        <thead><tr><th>Caractéristique</th><th>Col anatomique</th><th>Col chirurgical</th></tr></thead>
+                        <tbody>
+                          <tr><td><strong>Type</strong></td><td><strong>Articulaire</strong> (dans la capsule)</td><td><strong>Extra-articulaire</strong></td></tr>
+                          <tr><td><strong>Traitement</strong></td><td>Prothèse de hanche (respect strict des angles 125°/15° requis)</td><td>Ostéosynthèse (conserve l'articulation)</td></tr>
+                        </tbody>
+                      </table>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="accordion-item">
+              <div class="accordion-header">B) Épiphyse distale et Patella</div>
+              <div class="accordion-content">
+                <div class="accordion-body">
+                  <h4>Épiphyse distale du Fémur</h4>
+                  <p>S'élargit distalement. Porte une vaste surface articulaire recouverte de cartilage.</p>
+                  <ul>
+                    <li><span class="term">Condyles fémoraux</span> (médial et latéral) : arrondis, s'articulent avec le tibia.</li>
+                    <li id="err-patellaire-laterale"><mark><span class="term">Surface patellaire</span> (ventralement) : gouttière séparant les condyles. La <strong>facette latérale est plus large</strong> que la médiale.</mark></li>
+                    <li><span class="term">Fosse intercondylaire</span> (dorsalement) : fosse profonde <strong>non-articulaire</strong>, insertion des ligaments croisés.</li>
+                  </ul>
+
+                  <h4>Patella (Rotule)</h4>
+                  <p>Os <strong>sésamoïde</strong> (inclus dans l'appareil tendineux du quadriceps, extenseur principal du genou) et triangulaire. Très exposé car situé juste sous la peau.</p>
+                  <ul>
+                    <li id="err-patella-base-apex"><mark><span class="term">Base</span> : crâniale.</mark></li>
+                    <li><mark><span class="term">Apex</span> : caudal.</mark></li>
+                    <li><span class="term">Face dorsale</span> : cartilagineuse, porte une crête médiane séparant deux facettes légèrement concaves dorsalement. S'articule avec la surface patellaire fémorale.</li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <section id="jambe">
+          <h2>VII. Jambe — Tibia et Fibula</h2>
+
+          <div class="accordion">
+            <div class="accordion-item open">
+              <div class="accordion-header">A) Tibia (médial, volumineux)</div>
+              <div class="accordion-content">
+                <div class="accordion-body">
+                  <h4>1. Épiphyse proximale (Large)</h4>
+                  <ul>
+                    <li><strong>Face supérieure</strong> : <span class="term">Surfaces articulaires tibiales supérieures</span> (cartilage, condyles fémoraux) séparées par l'<span class="term">Aire intercondylaire</span> (dépourvue de cartilage, répond à la fosse fémorale, insertion ligaments croisés).</li>
+                    <li><strong>Face ventrale</strong> : <span class="term">Tubérosité tibiale</span> (palpable, insertion appareil extenseur du genou).</li>
+                    <li><strong>Face postérieure</strong> : Facette articulaire pour la tête de la fibula (arrière et latéral).</li>
+                  </ul>
+                  
+                  <h4>2. Diaphyse (Triangulaire)</h4>
+                  <ul>
+                    <li><strong>Bord antérieur</strong> : poursuit la tubérosité, facilement palpable sous la peau.</li>
+                    <li><strong>Bord latéral</strong> : relié à la membrane interosseuse pour la stabilité tibio-fibulaire. (Bord médial non mentionné).</li>
+                    <li><strong>Face postérieure</strong> : porte la <span class="term">ligne du muscle soléaire</span>.</li>
+                  </ul>
+
+                  <h4>3. Épiphyse distale (Quadrangulaire)</h4>
+                  <ul>
+                    <li><span class="term">Face inférieure</span> : Surface articulaire tibiale inférieure (regarde en bas) en continuité avec la surface de la malléole.</li>
+                    <li><strong>Prolongement médial</strong> : <span class="term">Malléole médiale</span> (cartilage sur sa face latérale).</li>
+                    <li id="err-incisure-fibulaire"><strong>Face latérale</strong> : porte l'<span class="term">incisure fibulaire</span> <mark>(gouttière longitudinale pour le ligament tibio-fibulaire — épiphyse <strong>distale</strong> du tibia)</mark>.</li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+
+            <div class="accordion-item open">
+              <div class="accordion-header">B) Fibula et Pince tibio-fibulaire</div>
+              <div class="accordion-content">
+                <div class="accordion-body">
+                  <h4 id="ecb-fibula-grele">Fibula (<mark class="annale">Os latéral, <strong>grêle</strong></mark>)</h4>
+                  <ul>
+                    <li><strong>Épiphyse proximale</strong> : <span class="term">Tête conique</span> suivie d'un col. S'articule avec la face postérieure du tibia. <strong>Elle n'est pas articulaire avec le fémur.</strong></li>
+                    <li><strong>Épiphyse distale</strong> : <span class="term">Malléole latérale</span>. De forme lancéolée (en lance). Surface articulaire sur sa face médiale. <strong>Descend plus bas</strong> que la malléole médiale.</li>
+                  </ul>
+                  
+                  <div class="box box-nb">
+                    <div class="box-title">📝 Biomécanique : La pince tibio-fibulaire</div>
+                    <p>Les épiphyses distales (malléoles latérale et médiale + surface inférieure du tibia) forment une <span class="term">pince</span> recevant la surface supérieure du talus. Cela forme l'<strong>articulation talo-crurale</strong> (crus = jambe en latin). Cette conformation permet essentiellement la flexion-extension de la cheville.</p>
+                    <p><em>Clinique : Une fracture distale de la jambe compromet gravement cette fonction.</em></p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <section id="pied">
+          <h2>VIII. Pied</h2>
+
+          <div class="accordion">
+            <div class="accordion-item open">
+              <div class="accordion-header">A) Tarse (7 os courts)</div>
+              <div class="accordion-content">
+                <div class="accordion-body">
+                  <h4>1. Tarse postérieur (Talus & Calcanéus)</h4>
+                  <ul>
+                    <li id="ann24-talus-3surfaces"><mark class="annale"><span class="term">Talus</span> : surface articulaire complexe. Comporte une face supérieure (<span class="term">Trochlée</span> s'articulant avec la surface tibiale et encadrée par deux surfaces malléolaires), un corps, un col, une tête (s'articule avec l'os naviculaire) et <strong>3 surfaces articulaires calcanéennes</strong> inférieures.</mark></li>
+                    <li id="ann24-subtalaire"><span class="term">Calcanéus</span> : s'articule en haut avec le talus via 3 facettes (<mark class="annale"><strong>Articulation subtalaire</strong> complexe, autorise les rotations, ex: <strong>s'adapter à un terrain irrégulier/accidenté</strong></mark>). <mark class="annale">S'articule en avant avec le <strong>cuboïde</strong> — et NON le naviculaire.</mark> À l'arrière, porte la très volumineuse <span class="term">tubérosité calcanéenne</span> (rôle de point d'appui postérieur au sol, et insertion du muscle triceps sural via le tendon d'Achille pour la flexion plantaire).</li>
+                  </ul>
+                  
+                  <h4>2. Tarse antérieur (5 os)</h4>
+                  <p>S'articulent avec le tarse postérieur, entre eux, et avec le métatarse.</p>
+                  <ul>
+                    <li><span class="term">Cuboïde</span> : s'articule avec le calcanéus (arrière), la base des M4 et M5 (avant), le naviculaire et le cunéiforme latéral.</li>
+                    <li><span class="term">Naviculaire</span> : s'articule avec le talus (arrière), les 3 cunéiformes (avant) et le cuboïde.</li>
+                    <li><span class="term">3 Cunéiformes</span> (Médial, Moyen, Latéral) : s'articulent avec naviculaire (arrière), bases M1-M2-M3 (avant), et le cuboïde pour le cunéiforme latéral.</li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+
+            <div class="accordion-item open">
+              <div class="accordion-header">B) Métatarse, Phalanges et Voûte plantaire</div>
+              <div class="accordion-content">
+                <div class="accordion-body">
+                  <h4>Métatarse (5 os longs) et Phalanges</h4>
+                  <ul>
+                    <li id="err-metV-court-fibulaire"><strong>Métatarsiens I à V</strong> : l'hallux (I) est le plus volumineux/médial. La base du Vème métatarsien porte latéralement une <mark><strong>tubérosité pour le muscle court fibulaire</strong></mark>. Possèdent corps triangulaire (faces dorsale/med/lat), base et tête.</li>
+                    <li><strong>Phalanges</strong> : L'hallux comporte 2 phalanges (proximale, distale). Les orteils II à V en comportent 3 (proximale, moyenne, distale). Identique à la main (tête distale porte l'ongle).</li>
+                  </ul>
+                  
+                  <h4>La Voûte Plantaire</h4>
+                  <p>Maintenue par ligaments/tendons. <strong>3 points de contact</strong> avec le sol (tubérosité calcanéenne + tête M1 + tête M5) réunis par <strong>3 arches</strong> :</p>
+                  <div class="table-wrapper">
+                    <table>
+                      <thead><tr><th>Arche</th><th>Situation</th><th>Contact avec le sol</th></tr></thead>
+                      <tbody>
+                        <tr><td><strong>Médiale</strong></td><td>Entre tête M1 et tubérosité calcanéenne</td><td>Nettement séparée du sol</td></tr>
+                        <tr><td><strong>Latérale</strong></td><td>Entre tête M5 et tubérosité calcanéenne</td><td>Touche pratiquement le sol</td></tr>
+                        <tr><td><strong>Antérieure</strong></td><td>Entre les têtes des M1 et M5</td><td>Transversale</td></tr>
+                      </tbody>
+                    </table>
+                  </div>
+                  
+                  <div class="box box-clinical">
+                    <div class="box-title">⚕️ Biomécanique et Pied plat</div>
+                    <p>La voûte s'assimile à une <strong>structure en tôle</strong> reposant sur 3 points d'appui. Elle est déformable et adapte sa forme en fonction de la charge exercée (rôle d'amortisseur). Une anomalie de statique (ex: <strong>pied plat</strong> = voûte effondrée) induit des douleurs à la marche par contraintes anormales.</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <section id="tableaux">
+          <h2>Tableaux récapitulatifs complets</h2>
+          
+          <h3>Insertions musculaires et ligamentaires</h3>
+          <div class="table-wrapper">
+            <table>
+              <thead><tr><th>Structure Osseuse</th><th>Élément(s) / Insertion(s)</th></tr></thead>
+              <tbody>
+                <tr><td>Face latérale / Partie supra-acétabulaire (Ilium)</td><td>Muscles glutéaux</td></tr>
+                <tr><td>Face latérale / Tubérosité ischiatique</td><td>Muscles ischio-jambiers</td></tr>
+                <tr><td>Face médiale / Fosse iliaque (au-dessus ligne arquée)</td><td>Muscle iliaque (Fléchisseur de la cuisse)</td></tr>
+                <tr><td>Face médiale / Surface quadrilatère (en-dessous)</td><td>Muscle obturateur interne</td></tr>
+                <tr><td>Tête fémorale / Fovea capitis</td><td>Ligament de la tête fémorale</td></tr>
+                <tr><td>Fémur / Ligne âpre (Bord postérieur diaphysaire)</td><td>Muscles de la cuisse</td></tr>
+                <tr><td>Tubérosité tibiale (face ventrale, épiphyse prox.)</td><td>Appareil extenseur du genou / Muscle quadriceps fémoral</td></tr>
+                <tr><td>Fosse intercondylaire (fémur) & Aire intercondylaire (tibia)</td><td>Ligaments croisés du genou</td></tr>
+                <tr><td>Tibia / Ligne du muscle soléaire (face post.)</td><td>Muscle soléaire</td></tr>
+                <tr id="err-tendon-achille"><td>Tubérosité calcanéenne (en arrière du calcanéus)</td><td><mark>Muscle triceps sural (Fléchisseur du pied/plantaire) via le <strong>tendon calcanéen (d'Achille)</strong></mark></td></tr>
+                <tr><td>Tubérosité du Vème métatarsien</td><td>Muscle court fibulaire</td></tr>
+              </tbody>
+            </table>
+          </div>
+
+          <h3>Surfaces Articulaires et Non-Articulaires</h3>
+          <div class="table-wrapper">
+            <table>
+              <thead><tr><th>Région</th><th>Surfaces Articulaires</th><th>Surfaces Non-Articulaires</th></tr></thead>
+              <tbody>
+                <tr><td><strong>Os Coxal</strong></td><td>Surface semi-lunaire (tête fémur) <br> Surface auriculaire (sacrum)</td><td>Fosse acétabulaire</td></tr>
+                <tr><td><strong>Fémur</strong></td><td>Surface patellaire <br> Condyles fémoraux</td><td>Fosse intercondylaire</td></tr>
+                <tr><td><strong>Tibia & Cheville</strong></td><td>Surfaces art. tibiales supérieures <br> Surface art. tibiale inférieure <br> Surfaces des malléoles lat/méd</td><td>Aire intercondylaire</td></tr>
+                <tr><td><strong>Talus</strong></td><td>Trochlée <br> Tête du talus</td><td></td></tr>
+              </tbody>
+            </table>
+          </div>
+        </section>
+
+        <section id="recap-2026">
+          <h2>🔄 Récapitulatif de la mise à jour 2026</h2>
+
+          <div class="box box-recap">
+            <div class="box-title">📊 Comparaison des versions 2025 vs 2026</div>
+            <p><strong>Bonne nouvelle :</strong> Le contenu du cours d'<strong>Ostéologie des membres</strong> est <strong>identique entre les versions 2025 et 2026</strong> du Tutorat Santé de Tours.</p>
+            <p>Seuls les éléments suivants diffèrent :</p>
+            <ul>
+              <li>Les crédits de l'équipe pédagogique (tuteurs, relecteurs)</li>
+              <li>La mise en page et la pagination</li>
+            </ul>
+            <p><strong>Aucun ajout ni retrait de contenu anatomique</strong> n'a été relevé entre les deux versions. Le programme sur l'ostéologie des membres demeure inchangé pour l'année 2026.</p>
+          </div>
+
+          <div class="box box-nb">
+            <div class="box-title">🆕 Nouveau au programme 2026</div>
+            <p><em>Aucun nouveau contenu — le cours est identique à 2025.</em></p>
+          </div>
+
+          <div class="box box-nb">
+            <div class="box-title">❌ Plus au programme en 2026</div>
+            <p><em>Aucun retrait — le cours est identique à 2025.</em></p>
+          </div>
+        </section>
+
+      </div>
+    </main>
+  </div>
+
+  <button class="menu-toggle" onclick="document.querySelector('.sidebar').classList.toggle('open')">☰</button>
+  <script src="../app.js"></script>
+</body>
+</html>

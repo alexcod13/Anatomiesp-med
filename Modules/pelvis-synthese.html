@@ -1,0 +1,812 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Synthèse Pelvis — Vascularisation & Innervation - Anatomie</title>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="../styles.css">
+  <style>
+    /* Styles spéciaux pour les cartes mentales */
+    .mind-map {
+      background: var(--bg-tertiary);
+      border-radius: 12px;
+      padding: 1.5rem;
+      margin: 1rem 0;
+      overflow-x: auto;
+    }
+    .mind-map-title {
+      font-weight: 700;
+      font-size: 1.1rem;
+      color: var(--accent);
+      margin-bottom: 1rem;
+      text-align: center;
+    }
+    .branch-arterial { border-left-color: #e74c3c !important; }
+    .branch-venous { border-left-color: #3498db !important; }
+    .branch-lymph { border-left-color: #2ecc71 !important; }
+    .branch-nerve { border-left-color: #f39c12 !important; }
+    .branch-organ { border-left-color: #9b59b6 !important; }
+    
+    .legend {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 1rem;
+      margin: 1rem 0;
+      padding: 1rem;
+      background: var(--bg-secondary);
+      border-radius: 8px;
+    }
+    .legend-item {
+      display: flex;
+      align-items: center;
+      gap: 0.5rem;
+      font-size: 0.85rem;
+    }
+    .legend-color {
+      width: 16px;
+      height: 16px;
+      border-radius: 4px;
+    }
+    .legend-arterial { background: #e74c3c; }
+    .legend-venous { background: #3498db; }
+    .legend-lymph { background: #2ecc71; }
+    .legend-nerve { background: #f39c12; }
+    .legend-organ { background: #9b59b6; }
+    
+    .mega-tree {
+      font-size: 0.9rem;
+    }
+    .mega-tree .tree-node {
+      margin-left: 1.5rem;
+    }
+    .mega-tree .tree-root {
+      margin-left: 0;
+    }
+    .mega-tree .tree-label {
+      padding: 0.4rem 0.8rem;
+    }
+    
+    .zone-card {
+      background: var(--bg-secondary);
+      border-radius: 12px;
+      padding: 1.5rem;
+      margin: 1rem 0;
+      border-left: 4px solid var(--accent);
+    }
+    .zone-card h4 {
+      margin-top: 0;
+      color: var(--accent);
+    }
+    
+    .flow-diagram {
+      display: flex;
+      flex-wrap: wrap;
+      align-items: center;
+      justify-content: center;
+      gap: 0.5rem;
+      padding: 1rem;
+      background: var(--bg-tertiary);
+      border-radius: 8px;
+      margin: 1rem 0;
+    }
+    .flow-item {
+      background: var(--accent);
+      color: white;
+      padding: 0.5rem 1rem;
+      border-radius: 20px;
+      font-weight: 600;
+      font-size: 0.85rem;
+    }
+    .flow-arrow {
+      font-size: 1.2rem;
+      color: var(--text-secondary);
+    }
+  </style>
+</head>
+<body>
+  <div class="app">
+    <aside class="sidebar">
+      <div class="sidebar-header">
+        <h1>🦴 Anatomie</h1>
+        <p>Cours PASS/LAS - Tours</p>
+      </div>
+      <nav class="sidebar-nav">
+        <div class="nav-group">
+          <div class="nav-group-title">Accueil</div>
+          <div class="nav-group-items">
+            <a href="../index.html" class="nav-item">🏠 Vue d'ensemble</a>
+            <a href="../carnet-erreurs.html" class="nav-item">📕 Carnet d'erreurs</a>
+          </div>
+        </div>
+        <div class="nav-group">
+          <div class="nav-group-title">Pelvis (Maldonado)</div>
+          <div class="nav-group-items">
+            <a href="pelvis-osseux.html" class="nav-item">Pelvis osseux et musculaire</a>
+            <a href="pelvis-vascu.html" class="nav-item">Vascularisation & innervation</a>
+            <a href="pelvis-visceres.html" class="nav-item">Pelvis féminin (viscères + périnée)</a>
+            <a href="pelvis-synthese.html" class="nav-item active">⭐ SYNTHÈSE globale</a>
+          </div>
+        </div>
+      </nav>
+    </aside>
+
+    <main class="main">
+      <header class="header">
+        <button class="sidebar-toggle" title="Masquer/Afficher le menu">☰</button>
+        <div class="breadcrumb">
+          <a href="../index.html">Accueil</a> / Pelvis / Synthèse vascularisation & innervation
+        </div>
+        <div class="header-actions">
+          <button class="btn-icon" onclick="expandAllAccordions()">⊞</button>
+          <button class="btn-icon" onclick="collapseAllAccordions()">⊟</button>
+          <button class="btn-icon" id="theme-toggle">◐</button>
+        </div>
+      </header>
+
+      <div class="content">
+        <h1>⭐ Synthèse — Vascularisation & Innervation du Pelvis</h1>
+        <p><strong>Module bonus</strong> — Vue d'ensemble des 4 chapitres pelvis (Pr. Maldonado)</p>
+
+        <div class="box box-nb">
+          <div class="box-title">📝 Objectif de ce module</div>
+          <p>Visualiser <strong>l'intégralité</strong> de la vascularisation artérielle, veineuse, lymphatique et de l'innervation du pelvis sous forme d'<strong>arborescences interactives</strong> et de <strong>cartes mentales</strong>.</p>
+        </div>
+
+        <div class="legend">
+          <div class="legend-item"><span class="legend-color legend-arterial"></span> Artériel</div>
+          <div class="legend-item"><span class="legend-color legend-venous"></span> Veineux</div>
+          <div class="legend-item"><span class="legend-color legend-lymph"></span> Lymphatique</div>
+          <div class="legend-item"><span class="legend-color legend-nerve"></span> Nerveux</div>
+          <div class="legend-item"><span class="legend-color legend-organ"></span> Organes/Structures</div>
+        </div>
+
+        <div class="toc">
+          <div class="toc-title">📑 Sommaire</div>
+          <ul class="toc-list">
+            <li><a href="#arteriel">I. Vascularisation artérielle complète</a></li>
+            <li><a href="#veineux">II. Drainage veineux complet</a></li>
+            <li><a href="#lymph">III. Drainage lymphatique</a></li>
+            <li><a href="#innerv">IV. Innervation complète</a></li>
+            <li><a href="#organes">V. Synthèse par organe</a></li>
+            <li><a href="#foramens">VI. Éléments passant par les foramens</a></li>
+          </ul>
+        </div>
+
+        <!-- SECTION I - ARTERIEL -->
+        <section id="arteriel">
+          <h2>I. 🔴 Vascularisation artérielle complète</h2>
+
+          <div class="accordion">
+            <div class="accordion-item open">
+              <div class="accordion-header">A) Vue d'ensemble — De l'aorte aux organes</div>
+              <div class="accordion-content">
+                <div class="accordion-body">
+                  <div class="flow-diagram">
+                    <span class="flow-item">Aorte (L4)</span>
+                    <span class="flow-arrow">→</span>
+                    <span class="flow-item">A. iliaques communes</span>
+                    <span class="flow-arrow">→</span>
+                    <span class="flow-item">A. iliaque externe</span>
+                    <span class="flow-arrow">+</span>
+                    <span class="flow-item">A. iliaque interne</span>
+                  </div>
+                  
+                  <div class="mind-map">
+                    <div class="mind-map-title">🗺️ CARTE COMPLÈTE — Artères du pelvis</div>
+                    <div class="mega-tree">
+                      <div class="tree">
+                        <div class="tree-node tree-root expanded">
+                          <span class="tree-label expandable" style="background:#e74c3c;color:white;font-weight:700;">AORTE ABDOMINALE (bifurcation L4)</span>
+                          <div class="tree-children">
+                            
+                            <!-- Artère sacrale médiane -->
+                            <div class="tree-node">
+                              <span class="tree-label">↓ <strong>A. sacrale médiane</strong> (branche post. grêle, ligne médiane)</span>
+                            </div>
+                            
+                            <!-- Artères iliaques communes -->
+                            <div class="tree-node expanded">
+                              <span class="tree-label expandable" style="background:#c0392b;color:white;">↓ A. ILIAQUES COMMUNES (D et G)</span>
+                              <div class="tree-children">
+                                
+                                <!-- ILIAQUE EXTERNE -->
+                                <div class="tree-node expanded">
+                                  <span class="tree-label expandable" style="background:#e67e22;color:white;">A. ILIAQUE EXTERNE (→ membre inf.)</span>
+                                  <div class="tree-children">
+                                    <div class="tree-node expanded">
+                                      <span class="tree-label expandable">→ A. fémorale (passe sous lig. inguinal)</span>
+                                      <div class="tree-children">
+                                        <div class="tree-node"><span class="tree-label">• Chemine dans le trigone fémoral</span></div>
+                                        <div class="tree-node"><span class="tree-label">• Faisceau : Nerf fémoral | A. fémorale | V. fémorale (lat.→méd.)</span></div>
+                                      </div>
+                                    </div>
+                                    <div class="tree-node">
+                                      <span class="tree-label">→ A. circonflexe iliaque profonde (↔ anastomose A. iliolombaire)</span>
+                                    </div>
+                                  </div>
+                                </div>
+                                
+                                <!-- ILIAQUE INTERNE -->
+                                <div class="tree-node expanded">
+                                  <span class="tree-label expandable" style="background:#c0392b;color:white;">A. ILIAQUE INTERNE (endopelvienne)</span>
+                                  <div class="tree-children">
+                                    
+                                    <!-- TRONC POSTÉRIEUR -->
+                                    <div class="tree-node expanded">
+                                      <span class="tree-label expandable" style="background:#9b59b6;color:white;">TRONC POSTÉRIEUR (pariétal)</span>
+                                      <div class="tree-children">
+                                        <div class="tree-node expanded">
+                                          <span class="tree-label expandable">• A. iliolombaire</span>
+                                          <div class="tree-children">
+                                            <div class="tree-node"><span class="tree-label">Trajet ascendant le long crête iliaque</span></div>
+                                            <div class="tree-node"><span class="tree-label">↔ Anastomose A. circonflexe iliaque profonde</span></div>
+                                          </div>
+                                        </div>
+                                        <div class="tree-node">
+                                          <span class="tree-label">• A. sacrale latérale → face ant. sacrum + ligaments</span>
+                                        </div>
+                                        <div class="tree-node expanded">
+                                          <span class="tree-label expandable" style="font-weight:600;">• A. GLUTÉALE SUPÉRIEURE ⭐</span>
+                                          <div class="tree-children">
+                                            <div class="tree-node"><span class="tree-label">Sort par <strong>foramen SUPRA-piriforme</strong></span></div>
+                                            <div class="tree-node"><span class="tree-label">→ Muscles glutéaux (extra-pelvien)</span></div>
+                                          </div>
+                                        </div>
+                                      </div>
+                                    </div>
+                                    
+                                    <!-- TRONC ANTÉRIEUR -->
+                                    <div class="tree-node expanded">
+                                      <span class="tree-label expandable" style="background:#e74c3c;color:white;">TRONC ANTÉRIEUR (viscéral)</span>
+                                      <div class="tree-children">
+                                        <div class="tree-node expanded">
+                                          <span class="tree-label expandable">• A. ombilicale</span>
+                                          <div class="tree-children">
+                                            <div class="tree-node"><span class="tree-label">Portion distale fermée (cordon fibreux)</span></div>
+                                            <div class="tree-node"><span class="tree-label">Portion proximale → bord supéro-lat. vessie</span></div>
+                                          </div>
+                                        </div>
+                                        <div class="tree-node">
+                                          <span class="tree-label">• A. obturatrice → foramen obturé → région méd. cuisse</span>
+                                        </div>
+                                        <div class="tree-node expanded">
+                                          <span class="tree-label expandable">• A. utérine ♀ / A. vésico-déférentielle ♂</span>
+                                          <div class="tree-children">
+                                            <div class="tree-node"><span class="tree-label">♀ Forme zig-zag, s'hypertrophie pendant grossesse</span></div>
+                                            <div class="tree-node"><span class="tree-label">♀ Croise l'uretère par l'AVANT</span></div>
+                                            <div class="tree-node"><span class="tree-label">♀ Branches : cervico-vaginales, transversales, spiralées</span></div>
+                                            <div class="tree-node"><span class="tree-label">♀ Terminales : br. du fond utérin + A. tubaire médiale</span></div>
+                                          </div>
+                                        </div>
+                                        <div class="tree-node">
+                                          <span class="tree-label">• A. vaginale ♀ / A. vésico-prostatique ♂</span>
+                                        </div>
+                                        <div class="tree-node">
+                                          <span class="tree-label">• A. rectale moyenne → rectum</span>
+                                        </div>
+                                        <div class="tree-node expanded">
+                                          <span class="tree-label expandable">• A. glutéale inférieure</span>
+                                          <div class="tree-children">
+                                            <div class="tree-node"><span class="tree-label">→ Région fessière</span></div>
+                                          </div>
+                                        </div>
+                                        <div class="tree-node expanded">
+                                          <span class="tree-label expandable" style="font-weight:600;">• A. PUDENDALE INTERNE ⭐⭐</span>
+                                          <div class="tree-children">
+                                            <div class="tree-node"><span class="tree-label">Sort par <strong>foramen INFRA-piriforme</strong></span></div>
+                                            <div class="tree-node"><span class="tree-label">Contourne <strong>épine ischiatique</strong></span></div>
+                                            <div class="tree-node"><span class="tree-label">Revient par <strong>petite ouverture ischiatique</strong></span></div>
+                                            <div class="tree-node"><span class="tree-label">Chemine dans le <strong>CANAL PUDENDAL</strong></span></div>
+                                            <div class="tree-node expanded">
+                                              <span class="tree-label expandable">Branches AVANT canal pudendal :</span>
+                                              <div class="tree-children">
+                                                <div class="tree-node"><span class="tree-label">→ A. rectale inférieure (rectum)</span></div>
+                                              </div>
+                                            </div>
+                                            <div class="tree-node expanded">
+                                              <span class="tree-label expandable">Branches APRÈS canal pudendal :</span>
+                                              <div class="tree-children">
+                                                <div class="tree-node"><span class="tree-label">→ Branches vésicales inférieures</span></div>
+                                                <div class="tree-node"><span class="tree-label">→ A. périnéale (centre tendineux périnée)</span></div>
+                                                <div class="tree-node"><span class="tree-label">→ Branches rétro/prépubiennes</span></div>
+                                                <div class="tree-node"><span class="tree-label">→ A. bulbaire (corps érectiles)</span></div>
+                                                <div class="tree-node"><span class="tree-label">→ A. urétrale</span></div>
+                                                <div class="tree-node"><span class="tree-label">→ A. profonde du clitoris/pénis</span></div>
+                                                <div class="tree-node"><span class="tree-label">→ A. dorsale du clitoris/pénis (terminale)</span></div>
+                                              </div>
+                                            </div>
+                                          </div>
+                                        </div>
+                                      </div>
+                                    </div>
+                                    
+                                  </div>
+                                </div>
+                                
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="accordion-item">
+              <div class="accordion-header">B) Repères vertébraux clés</div>
+              <div class="accordion-content">
+                <div class="accordion-body">
+                  <div class="table-wrapper">
+                    <table>
+                      <thead>
+                        <tr><th>Niveau</th><th>Structure</th></tr>
+                      </thead>
+                      <tbody>
+                        <tr><td><strong>T12</strong></td><td>Aorte abdominale (après hiatus aortique)</td></tr>
+                        <tr><td><strong>L1</strong></td><td>Artères rénales</td></tr>
+                        <tr><td><strong>L2</strong></td><td>Artères gonadiques (ovariques/testiculaires)</td></tr>
+                        <tr><td><strong>L4</strong></td><td>Bifurcation aortique → A. iliaques communes + A. sacrale médiane</td></tr>
+                        <tr><td><strong>Articulation sacro-iliaque</strong></td><td>Bifurcation iliaque commune → A. iliaque ext. + A. iliaque int.</td></tr>
+                      </tbody>
+                    </table>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <!-- SECTION II - VEINEUX -->
+        <section id="veineux">
+          <h2>II. 🔵 Drainage veineux complet</h2>
+
+          <div class="accordion">
+            <div class="accordion-item open">
+              <div class="accordion-header">A) Carte mentale — Retour veineux</div>
+              <div class="accordion-content">
+                <div class="accordion-body">
+                  <div class="mind-map">
+                    <div class="mind-map-title">🗺️ CARTE COMPLÈTE — Veines du pelvis</div>
+                    <div class="mega-tree">
+                      <div class="tree">
+                        <div class="tree-node tree-root expanded">
+                          <span class="tree-label expandable" style="background:#3498db;color:white;font-weight:700;">VEINE CAVE INFÉRIEURE (VCI)</span>
+                          <div class="tree-children">
+                            
+                            <!-- Veines gonadiques -->
+                            <div class="tree-node expanded">
+                              <span class="tree-label expandable">← V. gonadiques (ovariques/testiculaires)</span>
+                              <div class="tree-children">
+                                <div class="tree-node"><span class="tree-label"><strong>À DROITE</strong> : V. ovarique D → directement VCI (L2) - angle aigu</span></div>
+                                <div class="tree-node"><span class="tree-label"><strong>À GAUCHE</strong> : V. ovarique G → V. rénale G - angle ~droit ⚠️</span></div>
+                                <div class="tree-node"><span class="tree-label">Anastomose avec plexus pampiniforme</span></div>
+                              </div>
+                            </div>
+                            
+                            <!-- Veines iliaques communes -->
+                            <div class="tree-node expanded">
+                              <span class="tree-label expandable" style="background:#2980b9;color:white;">← V. ILIAQUES COMMUNES (D et G)</span>
+                              <div class="tree-children">
+                                
+                                <div class="tree-node expanded">
+                                  <span class="tree-label expandable">← V. iliaque externe (← V. fémorale)</span>
+                                  <div class="tree-children">
+                                    <div class="tree-node"><span class="tree-label">Draine le membre inférieur</span></div>
+                                    <div class="tree-node"><span class="tree-label">Reçoit la V. grande saphène</span></div>
+                                  </div>
+                                </div>
+                                
+                                <div class="tree-node expanded">
+                                  <span class="tree-label expandable" style="background:#2980b9;color:white;">← V. ILIAQUE INTERNE</span>
+                                  <div class="tree-children">
+                                    
+                                    <div class="tree-node expanded">
+                                      <span class="tree-label expandable">Tronc ANTÉRIEUR :</span>
+                                      <div class="tree-children">
+                                        <div class="tree-node"><span class="tree-label">← V. pudendale (canal pudendal)</span></div>
+                                        <div class="tree-node"><span class="tree-label">← V. rectale inférieure</span></div>
+                                        <div class="tree-node"><span class="tree-label">← V. glutéale inférieure</span></div>
+                                        <div class="tree-node"><span class="tree-label">← V. rectale moyenne</span></div>
+                                        <div class="tree-node"><span class="tree-label">← V. vaginale</span></div>
+                                        <div class="tree-node expanded">
+                                          <span class="tree-label expandable">← V. utérine</span>
+                                          <div class="tree-children">
+                                            <div class="tree-node"><span class="tree-label">← <strong>Plexus pampiniforme</strong> (très développé)</span></div>
+                                          </div>
+                                        </div>
+                                        <div class="tree-node"><span class="tree-label">← V. obturatrice</span></div>
+                                        <div class="tree-node"><span class="tree-label">← V. ombilicale</span></div>
+                                      </div>
+                                    </div>
+                                    
+                                    <div class="tree-node expanded">
+                                      <span class="tree-label expandable">Tronc POSTÉRIEUR :</span>
+                                      <div class="tree-children">
+                                        <div class="tree-node"><span class="tree-label">← V. glutéale supérieure</span></div>
+                                        <div class="tree-node"><span class="tree-label">← V. sacrale latérale</span></div>
+                                        <div class="tree-node"><span class="tree-label">← V. iliolombaire</span></div>
+                                      </div>
+                                    </div>
+                                    
+                                  </div>
+                                </div>
+                                
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  
+                  <div class="box box-clinical">
+                    <div class="box-title">⚕️ Pathologies veineuses</div>
+                    <ul>
+                      <li><strong>Syndrome de Cockett (May-Thurner)</strong> : A. iliaque commune D comprime V. iliaque commune G → problème drainage MI gauche + pelvis gauche</li>
+                      <li><strong>Varicocèle</strong> : dilatation du plexus pampiniforme (varices des bourses chez ♂). Plus fréquent <strong>à gauche</strong> (angle moins aigu V. gonadique G / V. rénale G)</li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <!-- SECTION III - LYMPHATIQUE -->
+        <section id="lymph">
+          <h2>III. 🟢 Drainage lymphatique</h2>
+
+          <div class="accordion">
+            <div class="accordion-item open">
+              <div class="accordion-header">Nœuds lymphatiques pelviens</div>
+              <div class="accordion-content">
+                <div class="accordion-body">
+                  <div class="mind-map">
+                    <div class="mind-map-title">🗺️ Drainage lymphatique du pelvis</div>
+                    <div class="tree">
+                      <div class="tree-node tree-root expanded">
+                        <span class="tree-label expandable" style="background:#2ecc71;color:white;font-weight:700;">DRAINAGE LYMPHATIQUE</span>
+                        <div class="tree-children">
+                          <div class="tree-node expanded">
+                            <span class="tree-label expandable" style="background:#27ae60;color:white;">Nœuds PROFONDS</span>
+                            <div class="tree-children">
+                              <div class="tree-node"><span class="tree-label">Le long des vaisseaux iliaques internes et externes</span></div>
+                              <div class="tree-node"><span class="tree-label">Drainent : viscères pelviens profonds</span></div>
+                            </div>
+                          </div>
+                          <div class="tree-node expanded">
+                            <span class="tree-label expandable" style="background:#27ae60;color:white;">Nœuds SUPERFICIELS</span>
+                            <div class="tree-children">
+                              <div class="tree-node"><span class="tree-label">Drainent : périnée, organes génitaux externes, partie inf. du vagin</span></div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  
+                  <div class="box box-clinical">
+                    <div class="box-title">⚕️ Importance oncologique</div>
+                    <p>Cancer de la zone transitionnelle (portion basse utérus) → métastases dans les groupes <strong>superficiel ET profond</strong> = pronostic <strong>grave</strong>.</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <!-- SECTION IV - INNERVATION -->
+        <section id="innerv">
+          <h2>IV. 🟡 Innervation complète</h2>
+
+          <div class="accordion">
+            <div class="accordion-item open">
+              <div class="accordion-header">A) Innervation somatique</div>
+              <div class="accordion-content">
+                <div class="accordion-body">
+                  <div class="mind-map">
+                    <div class="mind-map-title">🗺️ CARTE — Plexus nerveux pelviens</div>
+                    <div class="mega-tree">
+                      <div class="tree">
+                        <div class="tree-node tree-root expanded">
+                          <span class="tree-label expandable" style="background:#f39c12;color:white;font-weight:700;">INNERVATION SOMATIQUE</span>
+                          <div class="tree-children">
+                            
+                            <!-- PLEXUS SACRAL -->
+                            <div class="tree-node expanded">
+                              <span class="tree-label expandable" style="background:#e67e22;color:white;">PLEXUS SACRAL</span>
+                              <div class="tree-children">
+                                <div class="tree-node expanded">
+                                  <span class="tree-label expandable">Formation :</span>
+                                  <div class="tree-children">
+                                    <div class="tree-node"><span class="tree-label"><strong>Tronc lombo-sacré</strong> = L5 + petite contribution L4</span></div>
+                                    <div class="tree-node"><span class="tree-label">+ <strong>S1, S2, S3</strong></span></div>
+                                  </div>
+                                </div>
+                                <div class="tree-node expanded">
+                                  <span class="tree-label expandable" style="font-weight:600;">→ NERF SCIATIQUE ⭐</span>
+                                  <div class="tree-children">
+                                    <div class="tree-node"><span class="tree-label">Nerf somatique sensitif + moteur</span></div>
+                                    <div class="tree-node"><span class="tree-label">Sort par <strong>foramen INFRA-piriforme</strong></span></div>
+                                    <div class="tree-node"><span class="tree-label">→ Région glutéale postéro-médiale</span></div>
+                                    <div class="tree-node"><span class="tree-label">→ Membre inférieur</span></div>
+                                    <div class="tree-node"><span class="tree-label">Dermatomes longitudinaux</span></div>
+                                  </div>
+                                </div>
+                              </div>
+                            </div>
+                            
+                            <!-- PLEXUS PUDENDAL -->
+                            <div class="tree-node expanded">
+                              <span class="tree-label expandable" style="background:#d35400;color:white;">PLEXUS PUDENDAL</span>
+                              <div class="tree-children">
+                                <div class="tree-node">
+                                  <span class="tree-label">Formation : <strong>S2 + S3 + S4</strong></span>
+                                </div>
+                                <div class="tree-node expanded">
+                                  <span class="tree-label expandable" style="font-weight:600;">→ NERF PUDENDAL ⭐⭐</span>
+                                  <div class="tree-children">
+                                    <div class="tree-node"><span class="tree-label">Majoritairement <strong>SENSITIF</strong> ("nerf sensitif par excellence")</span></div>
+                                    <div class="tree-node"><span class="tree-label">Trajet similaire à A. et V. pudendale</span></div>
+                                    <div class="tree-node"><span class="tree-label">Passe dans le <strong>CANAL PUDENDAL</strong></span></div>
+                                    <div class="tree-node expanded">
+                                      <span class="tree-label expandable">Branches principales :</span>
+                                      <div class="tree-children">
+                                        <div class="tree-node"><span class="tree-label">• Branche rectale inférieure (+ fibres motrices → SSA, MEA)</span></div>
+                                        <div class="tree-node"><span class="tree-label">• Branche périnéale</span></div>
+                                        <div class="tree-node"><span class="tree-label">• Branche dorsale du clitoris</span></div>
+                                      </div>
+                                    </div>
+                                    <div class="tree-node">
+                                      <span class="tree-label">Sensibilité : vulve, clitoris, lèvres, périnée</span>
+                                    </div>
+                                  </div>
+                                </div>
+                              </div>
+                            </div>
+                            
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  
+                  <div class="box box-nb">
+                    <div class="box-title">📝 Dermatomes sacrés</div>
+                    <p>Dans la région périnéale, les dermatomes sont <strong>circulaires</strong> (ni horizontaux, ni verticaux) :</p>
+                    <ul>
+                      <li><strong>S5</strong> : région périanale (le plus central)</li>
+                      <li><strong>S4</strong> : région périanale + partiellement vulvaire</li>
+                      <li><strong>S3</strong></li>
+                      <li><strong>S2</strong> : reprend organisation habituelle</li>
+                    </ul>
+                  </div>
+                  
+                  <div class="box box-clinical">
+                    <div class="box-title">⚕️ Clinique</div>
+                    <ul>
+                      <li><strong>Hernie discale L5-S1</strong> → compression racine L5 ou S1 → "sciatique" (douleur face post. jambe jusqu'à plante du pied)</li>
+                      <li><strong>Syndrome d'Alcock</strong> : sténose canal pudendal → douleurs périnéales (cyclistes)</li>
+                      <li><strong>Examen moteur</strong> : toucher rectal (contraction bilatérale MEA + SSA)</li>
+                      <li><strong>Examen sensitif</strong> : compresse/coton sur région périanale</li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="accordion-item">
+              <div class="accordion-header">B) Innervation autonome</div>
+              <div class="accordion-content">
+                <div class="accordion-body">
+                  <div class="tree">
+                    <div class="tree-node tree-root expanded">
+                      <span class="tree-label expandable" style="background:#f39c12;color:white;">INNERVATION AUTONOME</span>
+                      <div class="tree-children">
+                        <div class="tree-node expanded">
+                          <span class="tree-label expandable">Système sympathique</span>
+                          <div class="tree-children">
+                            <div class="tree-node"><span class="tree-label">Origine : moelle épinière thoraco-lombaire</span></div>
+                            <div class="tree-node"><span class="tree-label">Plexus pré-aortique</span></div>
+                          </div>
+                        </div>
+                        <div class="tree-node expanded">
+                          <span class="tree-label expandable">Système parasympathique</span>
+                          <div class="tree-children">
+                            <div class="tree-node"><span class="tree-label">Origine : crânienne (nerfs crâniens) + sacrée (S2-S4)</span></div>
+                            <div class="tree-node"><span class="tree-label">Nerfs splanchniques pelviens (S2-S4)</span></div>
+                          </div>
+                        </div>
+                        <div class="tree-node">
+                          <span class="tree-label"><strong>Plexus hypogastrique inférieur</strong> : principal plexus pelvien, de chaque côté du rectum, innerve les viscères</span>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <!-- SECTION V - PAR ORGANE -->
+        <section id="organes">
+          <h2>V. 🟣 Synthèse par organe</h2>
+
+          <div class="accordion">
+            <div class="accordion-item open">
+              <div class="accordion-header">Vascularisation et innervation de chaque structure</div>
+              <div class="accordion-content">
+                <div class="accordion-body">
+                  
+                  <div class="zone-card">
+                    <h4>🔶 VESSIE</h4>
+                    <ul>
+                      <li><strong>Artères</strong> : A. ombilicale (portion proximale) + branches vésicales inf. (A. pudendale int.) + A. vésico-prostatique ♂ / A. vaginale ♀</li>
+                      <li><strong>Veines</strong> : Plexus vésical/prévésical → V. iliaque interne</li>
+                      <li><strong>Innervation</strong> : Plexus hypogastrique inférieur (sympathique + parasympathique S2-S4)</li>
+                    </ul>
+                  </div>
+                  
+                  <div class="zone-card">
+                    <h4>🔶 UTÉRUS</h4>
+                    <ul>
+                      <li><strong>Artères</strong> : <strong>A. utérine</strong> (branches cervico-vaginales, transversales, spiralées, tubaire médiale, fond utérin)</li>
+                      <li><strong>Veines</strong> : V. utérine → reçoit plexus pampiniforme → V. iliaque interne</li>
+                      <li><strong>Innervation</strong> : Plexus hypogastrique inférieur</li>
+                    </ul>
+                  </div>
+                  
+                  <div class="zone-card">
+                    <h4>🔶 VAGIN</h4>
+                    <ul>
+                      <li><strong>Artères</strong> : <strong>A. vaginale</strong> + branches cervico-vaginales (A. utérine)</li>
+                      <li><strong>Veines</strong> : V. vaginale → V. iliaque interne</li>
+                      <li><strong>Lymphatiques</strong> : partie sup. → nœuds profonds / partie inf. → nœuds superficiels</li>
+                    </ul>
+                  </div>
+                  
+                  <div class="zone-card">
+                    <h4>🔶 RECTUM</h4>
+                    <ul>
+                      <li><strong>Artères</strong> : A. rectale moyenne (A. iliaque int.) + A. rectale inférieure (A. pudendale int.) + A. rectales supérieures (AMI)</li>
+                      <li><strong>Veines</strong> : V. rectales moyenne et inf. → V. iliaque int. / V. rectales sup. → système porte</li>
+                      <li><strong>Innervation</strong> : Plexus prérectal + branches rectales inf. du nerf pudendal</li>
+                    </ul>
+                  </div>
+                  
+                  <div class="zone-card">
+                    <h4>🔶 PÉRINÉE / ORGANES GÉNITAUX EXTERNES</h4>
+                    <ul>
+                      <li><strong>Artères</strong> : <strong>A. pudendale interne</strong> (toutes ses branches : périnéale, bulbaire, urétrale, profonde et dorsale du clitoris/pénis)</li>
+                      <li><strong>Veines</strong> : V. pudendale → V. iliaque interne</li>
+                      <li><strong>Innervation</strong> : <strong>Nerf pudendal</strong> (S2-S4) — sensitif +++ et moteur (SSA, MEA)</li>
+                      <li><strong>Lymphatiques</strong> : nœuds superficiels</li>
+                    </ul>
+                  </div>
+                  
+                  <div class="zone-card">
+                    <h4>🔶 MUSCLES GLUTÉAUX</h4>
+                    <ul>
+                      <li><strong>A. glutéale supérieure</strong> : sort par foramen supra-piriforme</li>
+                      <li><strong>A. glutéale inférieure</strong> : sort par foramen infra-piriforme</li>
+                    </ul>
+                  </div>
+                  
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <!-- SECTION VI - FORAMENS -->
+        <section id="foramens">
+          <h2>VI. 🚪 Éléments passant par les foramens</h2>
+
+          <div class="accordion">
+            <div class="accordion-item open">
+              <div class="accordion-header">Tableau synthétique</div>
+              <div class="accordion-content">
+                <div class="accordion-body">
+                  <div class="table-wrapper">
+                    <table>
+                      <thead>
+                        <tr><th>Foramen</th><th>Éléments qui passent</th></tr>
+                      </thead>
+                      <tbody>
+                        <tr>
+                          <td style="background:#e8f6e8;"><strong>Foramen SUPRA-piriforme</strong></td>
+                          <td>
+                            <span style="color:#e74c3c;">• A. glutéale supérieure</span><br>
+                            <span style="color:#3498db;">• V. glutéale supérieure</span>
+                          </td>
+                        </tr>
+                        <tr>
+                          <td style="background:#fef3e2;"><strong>Foramen INFRA-piriforme</strong></td>
+                          <td>
+                            <span style="color:#e74c3c;">• A. glutéale inférieure</span><br>
+                            <span style="color:#e74c3c;">• A. pudendale interne (sort puis revient)</span><br>
+                            <span style="color:#3498db;">• V. glutéale inférieure</span><br>
+                            <span style="color:#3498db;">• V. pudendale interne</span><br>
+                            <span style="color:#f39c12;">• <strong>Nerf sciatique</strong></span><br>
+                            <span style="color:#f39c12;">• Nerf pudendal (sort puis revient)</span>
+                          </td>
+                        </tr>
+                        <tr>
+                          <td style="background:#e8f0fe;"><strong>Petite ouverture ischiatique</strong></td>
+                          <td>
+                            <span style="color:#e74c3c;">• A. pudendale interne (retour)</span><br>
+                            <span style="color:#3498db;">• V. pudendale interne</span><br>
+                            <span style="color:#f39c12;">• Nerf pudendal (retour)</span>
+                          </td>
+                        </tr>
+                        <tr>
+                          <td style="background:#f5e6f5;"><strong>Canal pudendal</strong></td>
+                          <td>
+                            De haut en bas :<br>
+                            <span style="color:#f39c12;">1. Nerf pudendal</span><br>
+                            <span style="color:#e74c3c;">2. Artère pudendale</span><br>
+                            <span style="color:#3498db;">3. Veine pudendale</span>
+                          </td>
+                        </tr>
+                        <tr>
+                          <td><strong>Foramen obturé</strong></td>
+                          <td>
+                            <span style="color:#e74c3c;">• A. obturatrice</span><br>
+                            <span style="color:#3498db;">• V. obturatrice</span><br>
+                            <span style="color:#f39c12;">• Nerf obturateur</span>
+                          </td>
+                        </tr>
+                        <tr>
+                          <td><strong>Sous ligament inguinal</strong></td>
+                          <td>
+                            Trigone fémoral (lat. → méd.) :<br>
+                            <span style="color:#f39c12;">• Nerf fémoral</span><br>
+                            <span style="color:#e74c3c;">• A. fémorale</span><br>
+                            <span style="color:#3498db;">• V. fémorale</span>
+                          </td>
+                        </tr>
+                        <tr>
+                          <td><strong>Foramen mandibulaire</strong></td>
+                          <td>
+                            <span style="color:#e74c3c;">• A. alvéolaire inférieure</span><br>
+                            <span style="color:#f39c12;">• Nerf alvéolaire inférieur</span>
+                          </td>
+                        </tr>
+                      </tbody>
+                    </table>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <div class="box box-recap">
+          <div class="box-title">📋 MÉGA-RÉCAPITULATIF — Points essentiels</div>
+          <ul>
+            <li><strong>Bifurcation aortique L4</strong> → A. iliaques communes → A. iliaque ext. (MI) + A. iliaque int. (pelvis)</li>
+            <li><strong>A. iliaque interne</strong> = tronc POST. (pariétal : iliolombaire, sacrale lat., glutéale sup.) + tronc ANT. (viscéral : ombilicale, obturatrice, utérine, vaginale, rectale moy., glutéale inf., pudendale int.)</li>
+            <li><strong>A. pudendale interne</strong> : sort infra-piriforme → contourne épine ischiatique → revient petite ouverture → canal pudendal → périnée</li>
+            <li><strong>Foramen supra-piriforme</strong> : A. glutéale supérieure</li>
+            <li><strong>Foramen infra-piriforme</strong> : A. glutéale inf., A. pudendale int., <strong>nerf sciatique</strong>, nerf pudendal</li>
+            <li><strong>Canal pudendal</strong> (de haut en bas) : nerf pudendal, artère, veine</li>
+            <li><strong>Plexus sacral</strong> : (L4)-L5-S1-S2-S3 → nerf sciatique</li>
+            <li><strong>Plexus pudendal</strong> : S2-S3-S4 → nerf pudendal (sensitif +++)</li>
+            <li><strong>V. ovarique G</strong> → V. rénale G (angle ~droit) → varicocèle plus fréquent à gauche</li>
+            <li><strong>Syndrome de Cockett</strong> : A. iliaque commune D comprime V. iliaque commune G</li>
+            <li><strong>Syndrome d'Alcock</strong> : compression canal pudendal (cyclistes)</li>
+          </ul>
+        </div>
+
+      </div>
+    </main>
+  </div>
+
+  <button class="menu-toggle" onclick="document.querySelector('.sidebar').classList.toggle('open')">☰</button>
+  <script src="../app.js"></script>
+</body>
+</html>

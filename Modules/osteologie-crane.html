@@ -1,0 +1,1006 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Ostéologie du crâne - Anatomie</title>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="../styles.css">
+</head>
+<body>
+  <div class="app">
+    <aside class="sidebar">
+      <div class="sidebar-header">
+        <h1>🦴 Anatomie</h1>
+        <p>Cours PASS/LAS - Tours</p>
+      </div>
+      <nav class="sidebar-nav">
+        <div class="nav-group">
+          <div class="nav-group-title">Accueil</div>
+          <div class="nav-group-items">
+            <a href="../index.html" class="nav-item">🏠 Vue d'ensemble</a>
+            <a href="../carnet-erreurs.html" class="nav-item">📕 Carnet d'erreurs</a>
+          </div>
+        </div>
+        <div class="nav-group">
+          <div class="nav-group-title">Ostéologie (Destrieux)</div>
+          <div class="nav-group-items">
+            <a href="osteologie-membres.html" class="nav-item">Membres</a>
+            <a href="squelette-axial.html" class="nav-item">Squelette axial</a>
+            <a href="osteologie-crane.html" class="nav-item active">Ostéologie du crâne</a>
+            <a href="os-crane.html" class="nav-item">Os du crâne (détails)</a>
+          </div>
+        </div>
+      </nav>
+    </aside>
+
+    <main class="main">
+      <header class="header">
+        <button class="sidebar-toggle" title="Masquer/Afficher le menu">☰</button>
+        <div class="breadcrumb">
+          <a href="../index.html">Accueil</a> / Ostéologie du crâne
+        </div>
+        <div class="header-actions">
+          <button class="btn-icon" onclick="expandAllAccordions()">⊞</button>
+          <button class="btn-icon" onclick="collapseAllAccordions()">⊟</button>
+          <button class="btn-icon" id="theme-toggle">◐</button>
+        </div>
+      </header>
+
+      <div class="content">
+        <h1>💀 Ostéologie du crâne</h1>
+        <p><strong>Pr. Destrieux</strong> — Poly spé n°3 — Tutorat Santé de Tours 2026</p>
+
+        <div class="toc">
+          <div class="toc-title">📑 Sommaire</div>
+          <ul class="toc-list">
+            <li><a href="#anatomie-comparee">I. Anatomie comparée</a></li>
+            <li><a href="#crane-adulte">II. Crâne adulte — Os constitutifs</a></li>
+            <li><a href="#face-anterieure">III. Vue antérieure, foramens de face, sutures</a></li>
+            <li><a href="#crane-foetal">IV. Crâne fœtal</a></li>
+            <li><a href="#fontanelles">V. Fontanelles</a></li>
+            <li><a href="#anomalies">VI. Anomalies cérébrales (micro/macrocéphalie)</a></li>
+            <li><a href="#exploration">VII. Applications cliniques (palpation, ETF)</a></li>
+            <li><a href="#craniostenoses">VIII. Craniosténoses</a></li>
+            <li><a href="#voute">IX. Voûte du crâne (vue endocrânienne)</a></li>
+            <li><a href="#etages">X. Étages de la base du crâne</a></li>
+            <li><a href="#foramens">XI. Foramens de la base</a></li>
+            <li><a href="#recap2026">🔄 Récap 2026</a></li>
+          </ul>
+        </div>
+
+        <!-- SECTION I - ANATOMIE COMPARÉE -->
+        <section id="anatomie-comparee">
+          <h2>I. Anatomie comparée</h2>
+
+          <div class="accordion">
+            <div class="accordion-item open">
+              <div class="accordion-header">A) Chez le poisson cartilagineux</div>
+              <div class="accordion-content">
+                <div class="accordion-body">
+                  <p>Le crâne du poisson cartilagineux est formé de <strong>3 parties</strong> :</p>
+                  <ul>
+                    <li><span class="term">Viscérocrâne</span> : appareil manducateur (alimentation), dérive des <strong>arcs branchiaux</strong></li>
+                    <li><span class="term">Chondrocrâne</span> : boîte cartilagineuse entourant le cerveau</li>
+                    <li><span class="term">Desmocrâne</span> : plaques cartilagineuses formant le reste de l'extrémité céphalique</li>
+                  </ul>
+                  <div class="box box-nb">
+                    <div class="box-title">📝 NB</div>
+                    <p>Le Pr. Destrieux utilise <strong>« branchial »</strong> et <strong>« cartilagineux »</strong> indifféremment.</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="accordion-item open">
+              <div class="accordion-header">B) Chez l'Homme</div>
+              <div class="accordion-content">
+                <div class="accordion-body">
+                  <p>Le cerveau étant bien plus développé, le chondrocrâne ne suffit plus. Les constituants se répartissent :</p>
+
+                  <div class="table-wrapper">
+                    <table>
+                      <thead>
+                        <tr><th>Structure</th><th>Origine embryologique</th><th>Type d'articulation</th><th>Ossification</th></tr>
+                      </thead>
+                      <tbody>
+                        <tr><td><strong>Base du crâne</strong></td><td>Chondrocrâne</td><td>Cartilagineuses</td><td>Cartilagineuse (chondrosarcome)</td></tr>
+                        <tr id="err-sutures-fibreuses"><td><strong>Voûte du crâne</strong></td><td>Desmocrâne</td><td><mark>Fibreuses (sutures) — limitent la mobilité</mark></td><td>Directe</td></tr>
+                        <tr><td><strong>Face</strong> (os papyracés)</td><td>Desmocrâne</td><td>—</td><td>Directe</td></tr>
+                        <tr><td><strong>Mandibule</strong></td><td>Viscérocrâne (1<sup>er</sup> arc branchial)</td><td>Synoviale avec temporal</td><td>—</td></tr>
+                      </tbody>
+                    </table>
+                  </div>
+
+                  <div class="box box-nb">
+                    <div class="box-title">📝 Remarque</div>
+                    <ul>
+                      <li>Le <strong>1<sup>er</sup> arc branchial</strong> donne aussi deux osselets : <em>malleus</em> et <em>incus</em></li>
+                      <li>Le <strong>2<sup>e</sup> arc branchial</strong> forme aussi en partie le viscérocrâne : <em>os hyoïde</em> et <em>stapes</em></li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <!-- SECTION II - CRÂNE ADULTE -->
+        <section id="crane-adulte">
+          <h2>II. Crâne adulte — Os constitutifs</h2>
+
+          <p>Le crâne = boîte <strong>fermée et inextensible</strong> contenant et protégeant l'encéphale. Il est centré (vue latérale) par le <strong>méat auditif externe (MAE)</strong>.</p>
+
+          <div class="accordion">
+            <div class="accordion-item open">
+              <div class="accordion-header">A) Os temporal</div>
+              <div class="accordion-content">
+                <div class="accordion-body">
+                  <p>Visible en vue latérale, formé par :</p>
+                  <ul>
+                    <li><strong>Os tympanal</strong> : tuile romane/gouttière concave vers le haut → borde le <strong>MAE</strong> en bas</li>
+                    <li><strong>Processus mastoïdien</strong> : en arrière de l'os tympanal et du processus styloïde</li>
+                    <li><strong>Écaille temporale</strong> : forme arrondie</li>
+                    <li><strong>Processus zygomatique</strong> de l'os temporal</li>
+                  </ul>
+                  <div class="box box-nb">
+                    <div class="box-title">📝 Remarque</div>
+                    <p id="err-styloide-temporal"><mark>Le <strong>processus styloïde</strong> appartient <strong>anatomiquement à l'os temporal</strong></mark> (appendu sous l'os tympanal). Son origine embryologique est le système hyoïdien (2e arc branchial), mais sa classification anatomique est temporale.</p>
+                  </div>
+                  <p>→ Participe à la <strong>voûte</strong> et à la <strong>base</strong> du crâne.</p>
+                </div>
+              </div>
+            </div>
+
+            <div class="accordion-item">
+              <div class="accordion-header">B) Orbites</div>
+              <div class="accordion-content">
+                <div class="accordion-body">
+                  <p>Structures déjetées en avant du crâne, entre base du crâne et face. Contiennent les <strong>bulbes oculaires</strong> et leurs annexes.</p>
+                </div>
+              </div>
+            </div>
+
+            <div class="accordion-item">
+              <div class="accordion-header">C) Os occipital</div>
+              <div class="accordion-content">
+                <div class="accordion-body">
+                  <ul>
+                    <li>Visible en vue latérale</li>
+                    <li><strong>Processus occipital externe</strong> palpable en arrière</li>
+                    <li>Descend jusqu'au niveau de la mastoïde</li>
+                  </ul>
+                  <div class="box box-nb retired2026">
+                    <div class="box-title">📝 Non-dit 2026</div>
+                    <p>Fusion de l'<strong>écaille occipitale</strong>, du <strong>basi-occipital</strong> et des <strong>exoccipitaux</strong> droit et gauche.</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="accordion-item">
+              <div class="accordion-header">D) Os sphénoïde</div>
+              <div class="accordion-content">
+                <div class="accordion-body">
+                  <p>Vue latérale : seul le <strong>plan temporal de la grande aile</strong> est visible. Participe à la <strong>voûte</strong> et à la <strong>base</strong>.</p>
+                </div>
+              </div>
+            </div>
+
+            <div class="accordion-item">
+              <div class="accordion-header">E) Os pariétal</div>
+              <div class="accordion-content">
+                <div class="accordion-body">
+                  <p>En arrière et sur la partie supérieure du crâne. Participe <strong>uniquement à la voûte</strong>.</p>
+                </div>
+              </div>
+            </div>
+
+            <div class="accordion-item">
+              <div class="accordion-header">F) Os frontal</div>
+              <div class="accordion-content">
+                <div class="accordion-body">
+                  <p>En avant — participe à la <strong>voûte et à la base</strong>. Forme le <strong>toit de l'orbite</strong>.</p>
+                  <h4>Deux processus</h4>
+                  <ul>
+                    <li>Processus <strong>zygomatique</strong> de l'os frontal</li>
+                    <li>Processus <strong>maxillaire</strong> de l'os frontal</li>
+                  </ul>
+                  <h4>Articulations</h4>
+                  <ul><li>Os zygomatique, maxillaire, nasal</li></ul>
+                </div>
+              </div>
+            </div>
+
+            <div class="accordion-item open">
+              <div class="accordion-header">G) Os zygomatique (trépied)</div>
+              <div class="accordion-content">
+                <div class="accordion-body">
+                  <p>Os en forme de <strong>trépied</strong> (articulation avec 3 os). Trois processus :</p>
+                  <ul>
+                    <li>Processus <strong>frontal</strong></li>
+                    <li>Processus <strong>maxillaire</strong></li>
+                    <li>Processus <strong>temporal</strong></li>
+                  </ul>
+                  <div class="box box-nb">
+                    <div class="box-title">📝 NB — Arcade zygomatique</div>
+                    <p><strong>Processus temporal de l'os zygomatique</strong> + <strong>processus zygomatique de l'os temporal</strong> = <strong>arcade zygomatique</strong>. Elle s'éloigne de la voûte en formant un espace.</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="accordion-item">
+              <div class="accordion-header">H) Os maxillaire</div>
+              <div class="accordion-content">
+                <div class="accordion-body">
+                  <ul>
+                    <li>Visible en <strong>vue de face</strong></li>
+                    <li>S'articule avec : os zygomatique, os frontal (via processus frontal du maxillaire)</li>
+                    <li>Porte l'<strong>arcade dentaire supérieure</strong></li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+
+            <div class="accordion-item open">
+              <div class="accordion-header">I) Mandibule</div>
+              <div class="accordion-content">
+                <div class="accordion-body">
+                  <p>Vue latérale. D'arrière en avant :</p>
+                  <ul>
+                    <li><strong>Deux branches</strong> :
+                      <ul>
+                        <li><strong>Processus condylaire</strong> : tête + col</li>
+                        <li><strong>Processus coronoïde</strong> : insertion des <strong>muscles manducateurs</strong></li>
+                      </ul>
+                    </li>
+                    <li><strong>Corps mandibulaire</strong> : descendant, porte les dents inférieures</li>
+                  </ul>
+                  <div class="box box-nb">
+                    <div class="box-title">📝 NB</div>
+                    <p>La <strong>tête mandibulaire</strong> s'articule avec la surface temporale, <strong>sous l'arcade zygomatique</strong>.</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="accordion-item open">
+              <div class="accordion-header">J) Os nasal et fosses nasales</div>
+              <div class="accordion-content">
+                <div class="accordion-body">
+                  <p>Os nasal : visible uniquement en <strong>vue de face</strong>, tuile romane, à la racine du nez entre les orbites.</p>
+
+                  <h4>Ouverture des fosses nasales (sous l'os nasal)</h4>
+                  <ul>
+                    <li><strong>Septum nasal</strong> (cloison nasale)</li>
+                    <li><strong>Cornets</strong> : replis osseux recouverts de muqueuse, développés aux dépens des parois des fosses nasales. <strong>3 paires</strong> :
+                      <ul>
+                        <li>Cornet <strong>supérieur</strong> (invisible en vue antérieure, le plus petit)</li>
+                        <li>Cornet <strong>moyen</strong></li>
+                        <li>Cornet <strong>inférieur</strong></li>
+                      </ul>
+                    </li>
+                  </ul>
+
+                  <div class="box box-nb">
+                    <div class="box-title">📝 Rôle des cornets</div>
+                    <p><strong>Réchauffer</strong> et <strong>humidifier</strong> l'air entrant via les muqueuses → empêchent l'irritation de la muqueuse des voies orales.</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <!-- SECTION III - VUE ANTÉRIEURE / FORAMENS DE FACE / SUTURES -->
+        <section id="face-anterieure">
+          <h2>III. Vue antérieure, foramens de face et sutures</h2>
+
+          <div class="accordion">
+            <div class="accordion-item open">
+              <div class="accordion-header">A) Vue antérieure du crâne</div>
+              <div class="accordion-content">
+                <div class="accordion-body">
+                  <p>En vue de face, on distingue :</p>
+                  <ul>
+                    <li>Os frontal, zygomatique, maxillaire, mandibule</li>
+                  </ul>
+
+                  <h4>Contenu de l'orbite</h4>
+                  <ul>
+                    <li>Os frontal (toit de l'orbite)</li>
+                    <li>Os zygomatique, maxillaire</li>
+                    <li>Os ethmoïde (partie médiale)</li>
+                    <li>Os sphénoïde : <strong>petite aile</strong> + <strong>plan orbitaire de la grande aile</strong></li>
+                  </ul>
+
+                  <h4>Fond de l'orbite</h4>
+                  <ul>
+                    <li><strong>Fissure orbitaire supérieure (FOS)</strong> en forme de <span class="new2026">virgule</span></li>
+                    <li id="err-fissure-orbitaire-inf"><mark><strong>Fissure orbitaire inférieure (FOI)</strong> : entre la <strong>grande aile du sphénoïde</strong> et l'<strong>os maxillaire</strong></mark> → passage du nerf maxillaire (V₂)</li>
+                  </ul>
+
+                  <div class="box box-clinical">
+                    <div class="box-title">⚕️ Hypertension intracrânienne (HTIC)</div>
+                    <p>Tumeurs, hématomes, traumatismes → ↑ quantité de liquide dans un volume limité → HTIC, se traduit par des <strong>maux de tête</strong> et d'autres signes cliniques.</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="accordion-item open">
+              <div class="accordion-header">B) Foramens de face — Branches du V</div>
+              <div class="accordion-content">
+                <div class="accordion-body">
+                  <p><strong>3 paires</strong> de foramens visibles en vue de face, pratiquement <strong>alignés verticalement</strong>. Laissent tous passer des branches du <strong>nerf trijumeau (V)</strong>, responsable de la sensibilité des téguments de la face.</p>
+
+                  <div class="table-wrapper">
+                    <table>
+                      <thead>
+                        <tr><th>Foramen</th><th>Os</th><th>Nerf</th><th>Territoire sensitif</th></tr>
+                      </thead>
+                      <tbody>
+                        <tr>
+                          <td><strong>Foramen supra-orbitaire</strong></td>
+                          <td>Frontal</td>
+                          <td>Nerf <strong>frontal</strong> (issu du V₁ ophtalmique)</td>
+                          <td>Front</td>
+                        </tr>
+                        <tr>
+                          <td><strong>Foramen infra-orbitaire</strong></td>
+                          <td>Maxillaire</td>
+                          <td>Branche terminale de V₂ (maxillaire)</td>
+                          <td>Pommettes</td>
+                        </tr>
+                        <tr>
+                          <td><strong>Foramen mentonnier</strong></td>
+                          <td>Mandibulaire</td>
+                          <td>Branche terminale de V₃ (mandibulaire)</td>
+                          <td>Partie inférieure de la face</td>
+                        </tr>
+                      </tbody>
+                    </table>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="accordion-item open">
+              <div class="accordion-header">C) Sutures</div>
+              <div class="accordion-content">
+                <div class="accordion-body">
+                  <p><strong>Articulations fibreuses</strong> entre les os de la voûte du crâne.</p>
+
+                  <div class="table-wrapper">
+                    <table>
+                      <thead>
+                        <tr><th>Suture</th><th>Entre</th><th>Particularité</th></tr>
+                      </thead>
+                      <tbody>
+                        <tr><td><strong>Lambdaïque</strong></td><td>Pariétal / occipital</td><td>Double</td></tr>
+                        <tr><td><strong>Pariéto-squameuse</strong></td><td>Pariétal / écaille du temporal</td><td>Double</td></tr>
+                        <tr><td><strong>Coronale</strong></td><td>Pariétal / frontal</td><td>Double</td></tr>
+                        <tr><td><strong>Sagittale sup.</strong></td><td>Entre les pariétaux</td><td>Simple — visible en vue sup.</td></tr>
+                        <tr id="err-metopique"><td><mark><strong>Métopique</strong></mark></td><td><mark>Entre les os frontaux</mark></td><td><mark>Simple — <strong>virtuelle</strong> (disparaît chez l'adulte)</mark></td></tr>
+                      </tbody>
+                    </table>
+                  </div>
+
+                  <div class="box box-nb">
+                    <div class="box-title">📝 Remarques</div>
+                    <ul>
+                      <li>Toutes les sutures sont <strong>doubles</strong> sauf les sagittale et métopique</li>
+                      <li><em>Anecdote</em> : autrefois, les anatomistes versaient des haricots secs + eau dans le crâne → le gonflement des haricots dessoudait les sutures</li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <!-- SECTION IV - CRÂNE FŒTAL -->
+        <section id="crane-foetal">
+          <h2>IV. Crâne fœtal</h2>
+
+          <p>Contrairement à l'adulte, le crâne fœtal ne s'inscrit pas dans un carré mais dans un <strong>rectangle</strong> (plus allongé). Formé de <strong>plaques osseuses</strong> mobiles les unes par rapport aux autres (sutures immatures).</p>
+
+          <div class="accordion">
+            <div class="accordion-item open">
+              <div class="accordion-header">Généralités (vue latérale)</div>
+              <div class="accordion-content">
+                <div class="accordion-body">
+                  <h4>Structures bordant le MAE</h4>
+                  <ul>
+                    <li><strong>Os tympanal</strong> (partie inférieure) : appartient à l'os temporal, gouttière concave vers le haut</li>
+                    <li><strong>Exoccipital</strong> (partie postérieure) : appartient à l'os occipital</li>
+                    <li><strong>Écaille occipitale</strong></li>
+                  </ul>
+
+                  <div class="box box-nb">
+                    <div class="box-title">📝 Remarque</div>
+                    <p>Comme chez l'adulte, le <strong>plan temporal de la grande aile sphénoïdale</strong> et l'<strong>arcade zygomatique</strong> sont visibles en vue latérale.</p>
+                  </div>
+
+                  <h4>Mandibule fœtale</h4>
+                  <ul>
+                    <li><strong>Horizontale, droite, peu développée</strong></li>
+                    <li>Ne porte pas de dents → pas soumise aux contraintes de mastication</li>
+                    <li>Sera remodelée avec la croissance selon les contraintes mécaniques</li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <!-- SECTION I - FONTANELLES -->
+        <section id="fontanelles">
+          <h2>V. Fontanelles</h2>
+          
+          <p>Les <span class="term">sutures</span> s'élargissent à certains endroits pour former des <strong>fontanelles</strong>. Elles permettent le passage dans la filière génitale et l'expansion du crâne.</p>
+
+          <div class="accordion">
+            <div class="accordion-item open">
+              <div class="accordion-header">A) Les 4 fontanelles</div>
+              <div class="accordion-content">
+                <div class="accordion-body">
+                  <div class="table-wrapper">
+                    <table>
+                      <thead>
+                        <tr><th>Fontanelle</th><th>Situation</th><th>Forme</th><th>Particularité</th></tr>
+                      </thead>
+                      <tbody>
+                        <tr>
+                          <td><span class="term">Bregmatique</span></td>
+                          <td>Entre pariétaux et frontaux</td>
+                          <td>Losange</td>
+                          <td><strong>La plus grande</strong></td>
+                        </tr>
+                        <tr>
+                          <td><span class="term">Lambdatique</span></td>
+                          <td>Entre pariétaux et occipital</td>
+                          <td>Triangle</td>
+                          <td>Se ferme en premier</td>
+                        </tr>
+                        <tr>
+                          <td><span class="term">Astérisque</span></td>
+                          <td>Entre temporal, occipital, pariétal</td>
+                          <td>Étoile</td>
+                          <td>-</td>
+                        </tr>
+                        <tr>
+                          <td><span class="term">Ptérionale</span> (sphénoïdale)</td>
+                          <td>Entre pariétal, temporal, frontal, sphénoïde</td>
+                          <td>-</td>
+                          <td>-</td>
+                        </tr>
+                      </tbody>
+                    </table>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="accordion-item open">
+              <div class="accordion-header">B) Ordre de fermeture (IMPORTANT)</div>
+              <div class="accordion-content">
+                <div class="accordion-body">
+                  <ol>
+                    <li><strong>Lambdatique</strong> : 2<sup>e</sup> mois</li>
+                    <li><strong>Ptérionale</strong> : 3<sup>e</sup> - 6<sup>e</sup> mois</li>
+                    <li><strong>Astérisque</strong> : 12<sup>e</sup> mois</li>
+                    <li><strong>Bregmatique</strong> : 6<sup>e</sup> - 18<sup>e</sup> mois</li>
+                  </ol>
+                  
+                  <div class="box box-mnemonic">
+                    <div class="box-title">💡 Mnémotechnique</div>
+                    <p><strong>« La Plus Ancienne se ferme en dernier »</strong><br>
+                    Lambda → Ptérionale → Astérisque → Bregmatique</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="accordion-item">
+              <div class="accordion-header">C) Explorations cliniques</div>
+              <div class="accordion-content">
+                <div class="accordion-body">
+                  <h4>Palpation crânienne</h4>
+                  <ul>
+                    <li>Bébé <strong>calme et assis</strong></li>
+                    <li>Fontanelle dure ou bombée → signe d'<strong>HTIC</strong></li>
+                  </ul>
+                  
+                  <h4>Échographie transfontanellaire (ETF)</h4>
+                  <ul>
+                    <li>Via la fontanelle <strong>bregmatique</strong> (la plus grande)</li>
+                    <li>Détecte : hydrocéphalie, tumeurs</li>
+                    <li>Permet gestes thérapeutiques : ponctions d'hématomes, de LCS</li>
+                  </ul>
+                  
+                  <div class="box box-nb">
+                    <div class="box-title">📝 NB</div>
+                    <p>L'ETF est <strong>inutile</strong> après fermeture des fontanelles → importance de connaître les dates.</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <!-- SECTION VI - ANOMALIES CÉRÉBRALES -->
+        <section id="anomalies-cerebrales">
+          <h2><span class="new2026">VI. Anomalies cérébrales (micro/macrocéphalie)</span></h2>
+
+          <p>Les anomalies de volume cérébral se traduisent par des anomalies du <strong>périmètre crânien (PC)</strong>, mesuré en routine chez l'enfant et reporté sur les courbes de croissance du carnet de santé.</p>
+
+          <div class="accordion">
+            <div class="accordion-item open">
+              <div class="accordion-header">A) Microcéphalie / microcrânie</div>
+              <div class="accordion-content">
+                <div class="accordion-body">
+                  <ul>
+                    <li><span class="term">Microcéphalie</span> = cerveau trop petit → <span class="term">microcrânie</span> = crâne trop petit (le crâne suit la croissance cérébrale)</li>
+                    <li>PC en dessous des courbes normales</li>
+                    <li>Sutures fermées précocement par absence de force d'écartement cérébral</li>
+                    <li>Étiologies : infections fœtales (CMV, Zika), alcoolisation fœtale, anomalies génétiques</li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+
+            <div class="accordion-item open">
+              <div class="accordion-header">B) Macrocéphalie / macrocrânie</div>
+              <div class="accordion-content">
+                <div class="accordion-body">
+                  <ul>
+                    <li><span class="term">Macrocéphalie</span> = cerveau trop gros (ou liquide en excès) → <span class="term">macrocrânie</span></li>
+                    <li>PC au-dessus des courbes normales</li>
+                    <li>Causes principales : <strong>hydrocéphalie</strong> (accumulation de LCS), tumeur, macrocéphalie constitutionnelle</li>
+                    <li>Fontanelles élargies, sutures écartées, veines du scalp saillantes</li>
+                  </ul>
+
+                  <div class="box box-clinical">
+                    <div class="box-title">⚕️ HTIC chez le nourrisson</div>
+                    <ul>
+                      <li><strong>Fontanelle bombée</strong> = signe majeur d'hypertension intracrânienne</li>
+                      <li><strong>Exception</strong> : un bébé qui <em>pleure</em> peut avoir une fontanelle bombée transitoirement → il faut l'examiner calme et assis</li>
+                      <li>Associé : vomissements, troubles de la vigilance, regard en "coucher de soleil"</li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <!-- SECTION VII - APPLICATIONS CLINIQUES -->
+        <section id="applications-cliniques-fontanelles">
+          <h2>VII. Applications cliniques (palpation, ETF)</h2>
+
+          <div class="accordion">
+            <div class="accordion-item open">
+              <div class="accordion-header">A) Palpation crânienne du nourrisson</div>
+              <div class="accordion-content">
+                <div class="accordion-body">
+                  <ul>
+                    <li>Bébé <strong>calme et assis</strong> (pas en pleurs)</li>
+                    <li>Palpation de la fontanelle bregmatique : souple, battante, ni bombée ni déprimée</li>
+                    <li>Fontanelle <strong>bombée</strong> → HTIC (hydrocéphalie, méningite, tumeur)</li>
+                    <li>Fontanelle <strong>déprimée</strong> → déshydratation</li>
+                    <li>Palpation des sutures : recherche d'une fermeture prématurée (craniosténose)</li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+
+            <div class="accordion-item open">
+              <div class="accordion-header">B) Échographie transfontanellaire (ETF)</div>
+              <div class="accordion-content">
+                <div class="accordion-body">
+                  <ul>
+                    <li>Réalisée via la fontanelle <strong>bregmatique</strong> (la plus grande, la plus tardive à se fermer)</li>
+                    <li>Explore : ventricules, parenchyme cérébral</li>
+                    <li>Détecte : <strong>hydrocéphalie</strong>, hémorragies intraventriculaires (prématuré), tumeurs, malformations</li>
+                    <li>Permet des gestes thérapeutiques : <strong>ponctions d'hématomes, ponction de LCS</strong></li>
+                    <li><strong>Inutile après fermeture de la fontanelle</strong> (≈ 18 mois) → importance de connaître les dates</li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <!-- SECTION VIII - CRANIOSTÉNOSES -->
+        <section id="craniostenoses">
+          <h2>VIII. Craniosténoses</h2>
+          
+          <p>Fermeture <strong>prématurée</strong> des sutures → déformation du crâne, risque de retard de développement.</p>
+
+          <div class="accordion">
+            <div class="accordion-item open">
+              <div class="accordion-header">A) Types de craniosténoses</div>
+              <div class="accordion-content">
+                <div class="accordion-body">
+                  <div class="table-wrapper">
+                    <table>
+                      <thead>
+                        <tr><th>Craniosténose</th><th>Sutures fermées</th><th>Compensation</th><th>Forme du crâne</th></tr>
+                      </thead>
+                      <tbody>
+                        <tr>
+                          <td><span class="term">Scaphocéphalie</span></td>
+                          <td>Sagittale + métopique</td>
+                          <td>Coronales</td>
+                          <td><strong>Allongé</strong> (barque, "S")</td>
+                        </tr>
+                        <tr id="err-turricephalie">
+                          <td><mark><span class="term">Acrobrachycéphalie</span> (turricéphalie)</mark></td>
+                          <td><mark>Coronales</mark></td>
+                          <td><mark>Sagittale + métopique</mark></td>
+                          <td><mark><strong>Rond</strong> (tour, "@")</mark></td>
+                        </tr>
+                      </tbody>
+                    </table>
+                  </div>
+                  
+                  <div class="box box-mnemonic">
+                    <div class="box-title">💡 Mnémotechniques</div>
+                    <ul>
+                      <li><strong>S</strong>caphocéphalie = <strong>S</strong>agittale = crâne en <strong>S</strong> (allongé)</li>
+                      <li><strong>A</strong>crobrachycéphalie = crâne comme le <strong>@</strong> (arrondi)</li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="accordion-item">
+              <div class="accordion-header">B) Traitement</div>
+              <div class="accordion-content">
+                <div class="accordion-body">
+                  <p>Chirurgie : découpe des os le long de la suture → création de <strong>néo-sutures</strong> pour permettre l'expansion cérébrale.</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <!-- SECTION III - VOÛTE -->
+        <section id="voute">
+          <h2>IX. Voûte du crâne (vue endocrânienne)</h2>
+
+          <div class="accordion">
+            <div class="accordion-item">
+              <div class="accordion-header">A) Épaisseur du crâne</div>
+              <div class="accordion-content">
+                <div class="accordion-body">
+                  <ul>
+                    <li><strong>En arrière</strong> : protubérance occipitale externe/interne</li>
+                    <li><strong>En avant</strong> : épaissi, pneumatisé → <strong>sinus frontaux</strong> (communiquent avec fosses nasales)</li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+
+            <div class="accordion-item">
+              <div class="accordion-header">B) Sinus sagittal supérieur</div>
+              <div class="accordion-content">
+                <div class="accordion-body">
+                  <ul>
+                    <li>Grosse veine sur la ligne médiane</li>
+                    <li>Draine une grande partie de l'encéphale</li>
+                    <li>Latéralement : <strong>granulations arachnoïdiennes</strong> (résorption du LCS)</li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+
+            <div class="accordion-item open">
+              <div class="accordion-header">C) Artère méningée moyenne (AMM)</div>
+              <div class="accordion-content">
+                <div class="accordion-body">
+                  <ul>
+                    <li>Branche de l'<strong>artère maxillaire</strong> (elle-même branche de la carotide externe)</li>
+                    <li>Chemine dans l'espace <strong>extradural</strong> (région temporale)</li>
+                    <li>Se divise en branches antérieure et postérieure</li>
+                  </ul>
+                  
+                  <div class="tree">
+                    <div class="tree-node tree-root expanded">
+                      <span class="tree-label expandable">Artère carotide externe</span>
+                      <div class="tree-children">
+                        <div class="tree-node expanded">
+                          <span class="tree-label expandable">→ Artère maxillaire</span>
+                          <div class="tree-children">
+                            <div class="tree-node"><span class="tree-label">→ ARTÈRE MÉNINGÉE MOYENNE</span></div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  
+                  <div class="box box-clinical">
+                    <div class="box-title">⚕️ Hématome extradural</div>
+                    <p>Rupture de l'AMM (traumatisme temporal) → sang dans l'espace extradural → compression cérébrale → <strong>urgence neurochirurgicale</strong>.</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <!-- SECTION IV - ÉTAGES -->
+        <section id="etages">
+          <h2>X. Étages de la base du crâne</h2>
+          
+          <p>La base du crâne comprend <strong>3 étages</strong> (marches d'escalier de haut en bas et d'avant en arrière).</p>
+
+          <div class="accordion">
+            <div class="accordion-item open">
+              <div class="accordion-header">A) Étage antérieur (le plus haut)</div>
+              <div class="accordion-content">
+                <div class="accordion-body">
+                  <h4>Limites</h4>
+                  <ul>
+                    <li><strong>Avant</strong> : os frontal</li>
+                    <li id="err-etage-limite"><mark><strong>Arrière</strong> : bord postérieur de la <strong>petite aile</strong> du sphénoïde</mark> (⚠ pas le bord postérieur du sphénoïde lui-même)</li>
+                  </ul>
+
+                  <h4>Contenu</h4>
+                  <p>Lobe <strong>frontal</strong></p>
+                  
+                  <h4>Os constitutifs</h4>
+                  <ul>
+                    <li id="err-crista-galli-faux"><mark><strong>Ethmoïde</strong> : processus <strong>crista galli</strong> (insertion de la <strong>faux du cerveau</strong>, pas la tente) + lame criblée (nerf I)</mark></li>
+                    <li><strong>Frontal</strong> : portion horizontale (toit de l'orbite)</li>
+                    <li><strong>Sphénoïde</strong> : petites ailes + canal optique (nerf II)</li>
+                  </ul>
+                  
+                  <div class="box box-clinical">
+                    <div class="box-title">⚕️ Fracture de l'ethmoïde</div>
+                    <p>Traumatisme crânien avec décélération → section des filets olfactifs → <strong>anosmie</strong> (perte de l'odorat).</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="accordion-item open">
+              <div class="accordion-header">B) Étage moyen</div>
+              <div class="accordion-content">
+                <div class="accordion-body">
+                  <h4>Limites</h4>
+                  <ul>
+                    <li><strong>Avant</strong> : bord postérieur du sphénoïde</li>
+                    <li id="err-petroux-superieur"><strong>Arrière</strong> : <mark><span class="retired2026">bord <strong>supéro-médial</strong> de l'os pétreux (direction du rocher : non-dit 2026)</span></mark></li>
+                  </ul>
+                  
+                  <h4>Contenu</h4>
+                  <p id="err-lobe-temporal-etage-moyen"><mark>Lobe <strong>temporal</strong> (dont la pointe repose ici, directement sous le bord postérieur de l'étage antérieur) + <strong>selle turcique</strong> (hypophyse)</mark></p>
+                  
+                  <h4>Os constitutifs</h4>
+                  <ul>
+                    <li><strong>Sphénoïde</strong> : grandes ailes, selle turcique (processus clinoïdiens)</li>
+                    <li><strong>Temporal</strong> : écaille temporale + os pétreux</li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+
+            <div class="accordion-item open">
+              <div class="accordion-header">C) Étage postérieur (le plus bas)</div>
+              <div class="accordion-content">
+                <div class="accordion-body">
+                  <h4>Limites</h4>
+                  <ul>
+                    <li><strong>Avant</strong> : bord postérieur de l'os pétreux</li>
+                    <li><strong>Arrière</strong> : os occipital</li>
+                  </ul>
+                  
+                  <h4>Contenu</h4>
+                  <p><strong>Cervelet</strong> + <strong>tronc cérébral</strong></p>
+                  
+                  <h4>Structures importantes</h4>
+                  <ul>
+                    <li><strong>Foramen magnum</strong> : centre de l'étage, livre passage au tronc cérébral</li>
+                    <li><strong>Clivus</strong> : pente reliant le <em>dos de la selle</em> (sphénoïde) au <em>bord antérieur du foramen magnum</em> (basi-occipital) ; soutient le tronc cérébral</li>
+                    <li><strong>Fissure pétro-clivale</strong> : entre pétreux et clivus ; lieu de convergence veineuse</li>
+                    <li><strong>Sinus latéral (transverse)</strong> : creusé dans l'occipital, drainage du <strong>confluent des sinus</strong> (pressoir d'Hérophile)</li>
+                    <li id="err-sigmoide-jugulaire"><mark><strong>Sinus sigmoïde</strong> : continuation du sinus latéral, en "S", qui se jette dans la <strong>veine jugulaire interne</strong> au <strong>foramen jugulaire</strong> (pas le foramen magnum)</mark></li>
+                    <li><strong>Condyles occipitaux</strong> : articulation avec l'atlas (C1)</li>
+                  </ul>
+
+                  <div class="box box-nb">
+                    <div class="box-title">📝 NB — Drainage veineux</div>
+                    <p id="err-jugulaire-drainage"><mark>Confluent des sinus → sinus latéral → sinus sigmoïde → <strong>veine jugulaire interne</strong> (foramen jugulaire). C'est la principale voie de sortie du sang veineux de l'<strong>encéphale</strong>.</mark></p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="box box-recap">
+            <div class="box-title">📋 Récapitulatif des étages</div>
+            <div class="table-wrapper">
+              <table>
+                <thead>
+                  <tr><th>Étage</th><th>Limite antérieure</th><th>Limite postérieure</th><th>Contenu</th></tr>
+                </thead>
+                <tbody>
+                  <tr><td><strong>Antérieur</strong></td><td>Os frontal</td><td>Petite aile sphénoïde</td><td>Lobe frontal</td></tr>
+                  <tr><td><strong>Moyen</strong></td><td>Bord post. sphénoïde</td><td>Bord sup-méd. pétreux</td><td>Lobe temporal, hypophyse</td></tr>
+                  <tr><td><strong>Postérieur</strong></td><td>Bord post. pétreux</td><td>Os occipital</td><td>Cervelet, tronc cérébral</td></tr>
+                </tbody>
+              </table>
+            </div>
+          </div>
+        </section>
+
+        <!-- SECTION V - FORAMENS -->
+        <section id="foramens">
+          <h2>XI. Foramens de la base du crâne</h2>
+
+          <div class="accordion">
+            <div class="accordion-item open">
+              <div class="accordion-header">A) Étage antérieur</div>
+              <div class="accordion-content">
+                <div class="accordion-body">
+                  <div class="table-wrapper">
+                    <table>
+                      <thead>
+                        <tr><th>Foramen</th><th>Contenu</th></tr>
+                      </thead>
+                      <tbody>
+                        <tr><td><strong>Lame criblée</strong> (ethmoïde)</td><td>Filets du nerf olfactif (I)</td></tr>
+                        <tr><td><strong>Canal optique</strong></td><td>Nerf optique (II)<span class="retired2026">, artère ophtalmique (non-dit 2026)</span></td></tr>
+                      </tbody>
+                    </table>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="accordion-item open">
+              <div class="accordion-header">B) Étage moyen</div>
+              <div class="accordion-content">
+                <div class="accordion-body">
+                  <div class="table-wrapper">
+                    <table>
+                      <thead>
+                        <tr><th>Foramen</th><th>Contenu</th></tr>
+                      </thead>
+                      <tbody>
+                        <tr>
+                          <td><strong>Fissure orbitaire supérieure (FOS)</strong></td>
+                          <td>III, IV, VI (oculomotricité) + V1 (ophtalmique) + veines ophtalmiques</td>
+                        </tr>
+                        <tr><td><strong>Foramen rond</strong></td><td>V2 (nerf maxillaire)</td></tr>
+                        <tr><td><strong>Foramen ovale</strong></td><td>V3 (nerf mandibulaire)</td></tr>
+                        <tr><td><strong>Foramen épineux</strong> <span class="new2026">(= foramen spinosum, 2026)</span></td><td><strong>Artère méningée moyenne</strong></td></tr>
+                        <tr><td><strong>Foramen lacerum</strong></td><td><strong>Artère carotide interne</strong></td></tr>
+                      </tbody>
+                    </table>
+                  </div>
+                  
+                  <div class="box box-mnemonic retired2026">
+                    <div class="box-title">💡 Mnémotechnique — Branches du V <em>(territoires sensitifs : non-dit 2026)</em></div>
+                    <p><strong>V1</strong> = Ophtalmique (sensibilité front)<br>
+                    <strong>V2</strong> = Maxillaire (sensibilité joue)<br>
+                    <strong>V3</strong> = Mandibulaire (sensibilité menton)</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="accordion-item open">
+              <div class="accordion-header">C) Étage postérieur</div>
+              <div class="accordion-content">
+                <div class="accordion-body">
+                  <div class="table-wrapper">
+                    <table>
+                      <thead>
+                        <tr><th>Foramen</th><th>Contenu</th></tr>
+                      </thead>
+                      <tbody>
+                        <tr>
+                          <td><strong>Méat auditif interne</strong></td>
+                          <td>VII (facial), VIII (vestibulo-cochléaire)</td>
+                        </tr>
+                        <tr>
+                          <td><strong>Méat auditif interne</strong> (détail)</td>
+                          <td>Dans le pétreux ; conduit le <strong>VII</strong> (motricité de la face) et le <strong>VIII</strong> (audition + équilibre) vers l'oreille interne</td>
+                        </tr>
+                        <tr>
+                          <td><strong>Foramen jugulaire</strong></td>
+                          <td>IX, X, XI (nerfs mixtes) + <strong>veine jugulaire interne</strong> <span class="new2026">+ artère spinale inférieure (2026)</span></td>
+                        </tr>
+                        <tr>
+                          <td id="c3-canal-hypoglosse"><mark class="annale"><strong>Canal hypoglosse</strong> (dans le <strong>condyle occipital</strong>)</mark></td>
+                          <td><mark class="annale"><strong>XII — nerf hypoglosse</strong> : motricité de la langue</mark></td>
+                        </tr>
+                        <tr>
+                          <td><strong>Condyles occipitaux</strong></td>
+                          <td>Articulation avec l'atlas (C1) — articulation occipito-atloïdienne (flexion/extension de la tête, "oui")</td>
+                        </tr>
+                        <tr id="c3-foramen-magnum">
+                          <td><strong>Foramen magnum</strong></td>
+                          <td id="err-foramen-accessoire"><mark class="annale">Tronc cérébral (= moelle allongée), <strong>nerf accessoire (XI)</strong> (et non le glossopharyngien IX) — <mark>seul nerf à traverser le foramen magnum</mark>, artères vertébrales, artère spinale <strong>antérieure</strong> (et non postérieure), plexus veineux</mark></td>
+                        </tr>
+                      </tbody>
+                    </table>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="box box-recap">
+            <div class="box-title">📋 Récapitulatif des nerfs crâniens et foramens</div>
+            <div class="table-wrapper">
+              <table>
+                <thead>
+                  <tr><th>Nerf</th><th>Foramen</th></tr>
+                </thead>
+                <tbody>
+                  <tr><td>I — Olfactif</td><td>Lame criblée</td></tr>
+                  <tr><td>II — Optique</td><td>Canal optique</td></tr>
+                  <tr><td>III, IV, VI + V1</td><td>Fissure orbitaire supérieure</td></tr>
+                  <tr><td>V2 — Maxillaire</td><td>Foramen rond</td></tr>
+                  <tr><td>V3 — Mandibulaire</td><td>Foramen ovale</td></tr>
+                  <tr><td>VII, VIII</td><td>Méat auditif interne</td></tr>
+                  <tr><td>IX, X, XI</td><td>Foramen jugulaire</td></tr>
+                  <tr><td>XII — Hypoglosse</td><td>Canal hypoglosse</td></tr>
+                </tbody>
+              </table>
+            </div>
+          </div>
+        </section>
+
+        <!-- SECTION RECAP 2026 -->
+        <section id="recap2026">
+          <h2>🔄 Récap 2026 — Ce qui change</h2>
+
+          <div class="box box-recap new2026">
+            <div class="box-title">✅ Ce qui est nouveau / précisé (2026)</div>
+            <ul>
+              <li><strong>Anatomie comparée</strong> : distinction chondrocrâne / desmocrâne / viscérocrâne ; arcs branchiaux 1<sup>er</sup> (malleus, incus, mandibule) et 2<sup>e</sup> (stapes, petite corne hyoïde)</li>
+              <li><strong>Os constitutifs du crâne adulte</strong> détaillés : ethmoïde, frontal, sphénoïde (grandes/petites ailes, processus ptérygoïdes, selle turcique), temporal, pariétal, occipital, zygomatique ("trépied"), maxillaire, mandibule, os nasal + cornets</li>
+              <li><strong>Vue antérieure du crâne</strong> : foramens de face (supra-orbitaire V1, infra-orbitaire V2, mentonnier V3), contenu de l'orbite, FOS en "virgule", FOI, HTIC et œdème papillaire</li>
+              <li><strong>Sutures</strong> détaillées : coronale, sagittale, lambdaïque, métopique, pariéto-squameuse</li>
+              <li><strong>Crâne fœtal</strong> : forme rectangulaire, os du MAE (tympanal, exoccipital, écaille occipitale), mandibule horizontale</li>
+              <li><strong>Anomalies cérébrales</strong> : microcéphalie/microcrânie, macrocéphalie/macrocrânie, périmètre crânien, HTIC (fontanelle bombée, exception bébé qui pleure)</li>
+              <li><strong>Clivus</strong> précisé : dos de selle + basi-occipital ; fissure pétro-clivale</li>
+              <li><strong>Drainage veineux postérieur</strong> : confluent des sinus → sinus latéral → sinus sigmoïde → veine jugulaire interne</li>
+              <li><strong>Condyles occipitaux</strong> (articulation avec C1), <strong>canal hypoglosse</strong> (XII, motricité de la langue)</li>
+              <li><strong>Artère spinale inférieure</strong> dans le foramen jugulaire</li>
+              <li><strong>Foramen épineux = foramen spinosum</strong> (équivalence de nomenclature)</li>
+            </ul>
+          </div>
+
+          <div class="box box-recap retired2026">
+            <div class="box-title">❌ Ce qui n'est plus dit (non-dit 2026)</div>
+            <ul>
+              <li><strong>Directions de l'os pétreux</strong> (bord supéro-médial = limite étage moyen/postérieur)</li>
+              <li><strong>Artère ophtalmique</strong> dans le canal optique (seul le nerf II reste)</li>
+              <li><strong>Territoires sensitifs détaillés du V</strong> (V1 front, V2 joue, V3 menton)</li>
+              <li><strong>Contenu détaillé du foramen magnum</strong> : XI (partie spinale), artères vertébrales, artère spinale antérieure, plexus veineux (seul le tronc cérébral reste explicite)</li>
+              <li>Fusion et directions détaillées de l'os occipital / pétreux à l'âge adulte</li>
+            </ul>
+          </div>
+
+          <div class="box box-nb">
+            <div class="box-title">📝 Remarque</div>
+            <p>Le cours 2026 simplifie le contenu détaillé des foramens (vaisseaux accessoires, territoires nerveux) pour se concentrer sur les <strong>os et repères osseux fondamentaux</strong>. Les territoires sensitifs du V sont désormais traités ailleurs (cours sur les nerfs crâniens).</p>
+          </div>
+        </section>
+
+      </div>
+    </main>
+  </div>
+
+  <button class="menu-toggle" onclick="document.querySelector('.sidebar').classList.toggle('open')">☰</button>
+  <script src="../app.js"></script>
+</body>
+</html>

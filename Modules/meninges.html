@@ -1,0 +1,668 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Méninges du crâne et du rachis - Anatomie</title>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="../styles.css">
+</head>
+<body>
+  <div class="app">
+    <aside class="sidebar">
+      <div class="sidebar-header">
+        <h1>🦴 Anatomie</h1>
+        <p>Cours PASS/LAS - Tours</p>
+      </div>
+      <nav class="sidebar-nav">
+        <div class="nav-group">
+          <div class="nav-group-title">Accueil</div>
+          <div class="nav-group-items">
+            <a href="../index.html" class="nav-item">🏠 Vue d'ensemble</a>
+            <a href="../carnet-erreurs.html" class="nav-item">📕 Carnet d'erreurs</a>
+          </div>
+        </div>
+        <div class="nav-group">
+          <div class="nav-group-title">Tête & Cou (Destrieux)</div>
+          <div class="nav-group-items">
+            <a href="fosses-nasales.html" class="nav-item">Fosses nasales</a>
+            <a href="appareil-manducateur.html" class="nav-item">Appareil manducateur</a>
+            <a href="meninges.html" class="nav-item active">Méninges</a>
+          </div>
+        </div>
+      </nav>
+    </aside>
+
+    <main class="main">
+      <header class="header">
+        <button class="sidebar-toggle" title="Masquer/Afficher le menu">☰</button>
+        <div class="breadcrumb">
+          <a href="../index.html">Accueil</a> / Tête & Cou / Méninges du crâne et du rachis
+        </div>
+        <div class="header-actions">
+          <button class="btn-icon" onclick="expandAllAccordions()">⊞</button>
+          <button class="btn-icon" onclick="collapseAllAccordions()">⊟</button>
+          <button class="btn-icon" id="theme-toggle">◐</button>
+        </div>
+      </header>
+
+      <div class="content">
+        <h1>🧬 Méninges du crâne et du rachis</h1>
+        <p><strong>Pr. Destrieux</strong> — Poly spé n°7 — Tutorat Santé de Tours 2025</p>
+
+        <div class="toc">
+          <div class="toc-title">📑 Sommaire</div>
+          <ul class="toc-list">
+            <li><a href="#generalites">I. Généralités (Méninges et Espaces)</a></li>
+            <li><a href="#craniennes">II. Méninges crâniennes</a></li>
+            <li><a href="#rachis">III. Méninges du rachis</a></li>
+          </ul>
+        </div>
+
+        <section id="generalites">
+          <h2>I. Généralités</h2>
+
+          <div class="accordion">
+            <div class="accordion-item open">
+              <div class="accordion-header">A) Les trois méninges</div>
+              <div class="accordion-content">
+                <div class="accordion-body">
+                  <p>Les <strong>méninges</strong> correspondent à 3 enveloppes entourant le Système Nerveux Central (SNC = encéphale + moelle épinière).</p>
+                  <p>Du plus externe au plus interne, on retrouve :</p>
+                  <ol>
+                    <li><strong>Dure-mère</strong></li>
+                    <li><strong>Arachnoïde</strong></li>
+                    <li><strong>Pie-mère</strong></li>
+                  </ol>
+                  
+                  <div class="box box-nb">
+                    <div class="box-title">📝 NB</div>
+                    <p>Le Pr. Destrieux compare les trois méninges à <em>« trois poupées russes »</em>.</p>
+                  </div>
+                  
+                  <div class="box box-recap">
+                    <div class="box-title">📋 Classification des méninges</div>
+                    <div class="table-wrapper">
+                      <table>
+                        <thead>
+                          <tr><th>Méninge</th><th>Type</th></tr>
+                        </thead>
+                        <tbody>
+                          <tr><td><strong>Dure-mère</strong></td><td>Méninge dure</td></tr>
+                          <tr><td><strong>Arachnoïde</strong></td><td rowspan="2">Méninges molles ou <strong>leptoméninges</strong></td></tr>
+                          <tr><td><strong>Pie-mère</strong></td></tr>
+                        </tbody>
+                      </table>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="accordion-item open">
+              <div class="accordion-header">B) Pie-mère</div>
+              <div class="accordion-content">
+                <div class="accordion-body">
+                  <p>C'est la couche la plus <strong>interne</strong> des méninges. Elle est extrêmement <strong>adhérente</strong> et intimement liée à la surface du système nerveux central et périphérique.</p>
+                  
+                  <h4>Structures tapissées par la pie-mère :</h4>
+                  <ul>
+                    <li><strong>Le cerveau</strong> : elle s'invagine au fond des sillons et tapisse les gyri.</li>
+                    <li><strong>Le cervelet</strong>.</li>
+                    <li><strong>Le tronc cérébral</strong>.</li>
+                    <li><strong>La moelle épinière</strong>.</li>
+                  </ul>
+                  
+                  <h4>Caractéristiques :</h4>
+                  <ul>
+                    <li>C'est une couche très fine et vasculaire, qualifiée de lame <strong>« porte-vaisseaux »</strong>.</li>
+                    <li>En pénétrant dans les ventricules cérébraux, elle forme les <strong>plexus choroïdes</strong> qui sont responsables de la sécrétion du liquide cérébro-spinal (LCS).</li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+
+            <div class="accordion-item open">
+              <div class="accordion-header">C) Dure-mère</div>
+              <div class="accordion-content">
+                <div class="accordion-body">
+                  <p>Couche la plus <strong>externe</strong>. C'est une couche fibreuse, résistante et peu extensible.</p>
+                  
+                  <h4>1. Au niveau du crâne</h4>
+                  <ul>
+                    <li>Constituée de <strong>deux couches</strong> tapissant la totalité de la face interne du crâne.</li>
+                    <li><strong>Adhère à l'os</strong>.</li>
+                    <li id="err-sinus-dure-mere">Peut contenir des structures veineuses dans son dédoublement (les <strong>sinus veineux du crâne</strong>). <mark>Tous les sinus veineux crâniens sont situés dans des <strong>dédoublements de la dure-mère</strong>.</mark></li>
+                    <li>Permet de former des <strong>cloisons fibreuses</strong> qui compartimentent la boîte crânienne : la <strong>Faux du cerveau</strong> et la <strong>Tente du cervelet</strong>.</li>
+                  </ul>
+                  
+                  <h4>2. Au niveau du rachis</h4>
+                  <ul>
+                    <li>La dure-mère <strong>se libère de l'os</strong> pour former le <strong>sac dural</strong> (ou fourreau dural).</li>
+                    <li>Le sac n'est pas adhérent aux vertèbres et en est séparé par un espace riche en graisse.</li>
+                    <li>Le sac dural s'arrête aux alentours de <strong>S3</strong>.</li>
+                    <li>En dessous de S3, le <strong>filum terminal</strong> se poursuit jusque dans la région coccygienne.</li>
+                  </ul>
+                  
+                  <div class="box box-nb">
+                    <div class="box-title">📝 Rappel anatomique</div>
+                    <p>La moelle épinière se termine bien plus haut que le sac dural, au niveau de <strong>L1/L2</strong>.</p>
+                    <p>La dure-mère est parfois continue avec le périoste qui tapisse la surface extérieure du crâne. Au niveau du rachis, le périoste tapisse les vertèbres.</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="accordion-item open">
+              <div class="accordion-header">D) Arachnoïde</div>
+              <div class="accordion-content">
+                <div class="accordion-body">
+                  <p>L'arachnoïde est située <strong>entre la dure-mère et la pie-mère</strong>.</p>
+                  <ul>
+                    <li>Elle est <strong>accolée</strong> et tapisse la face profonde (interne) de la dure-mère.</li>
+                    <li>Elle est reliée à la pie-mère par un réseau de <strong>trabéculations</strong> (qui ont un aspect de toiles d'araignée, ce qui lui vaut son nom).</li>
+                    <li id="err-arachnoide-scissure"><mark>Par opposition à la pie-mère, l'arachnoïde <strong>reste à la surface du cerveau</strong> contre la dure-mère et ne s'invagine pas au fond des sillons (<strong>à l'exception de la scissure inter-hémisphérique</strong>).</mark></li>
+                  </ul>
+                  
+                  <p>Des <strong>espaces sous-arachnoïdiens</strong> apparaissent alors, situés entre l'arachnoïde et la pie-mère. Ils sont comblés par les trabéculations.</p>
+                  
+                  <div class="box box-nb">
+                    <div class="box-title">📝 NB</div>
+                    <p>L'arachnoïde forme des expansions dans les sinus veineux nommées <strong>villosités arachnoïdiennes</strong>, qui sont responsables de la <strong>résorption du LCS</strong>.</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="accordion-item open">
+              <div class="accordion-header">E) Espaces méningés et Applications Cliniques</div>
+              <div class="accordion-content">
+                <div class="accordion-body">
+                  <p>Les méninges sont continues entre le crâne et le rachis, et limitent trois espaces.</p>
+
+                  <h4>Structure en couches au niveau du crâne (de l'extérieur vers l'intérieur) :</h4>
+                  <ol>
+                    <li><strong>Table externe</strong> du crâne (os compact).</li>
+                    <li><strong>Diploé</strong> : correspond à de l'os spongieux situé entre les deux tables, à l'image d'une <em>« gaufrette »</em>.</li>
+                    <li><strong>Table interne</strong> du crâne (os compact).</li>
+                    <li><strong>Dure-mère</strong> (constituée de deux couches) :
+                      <ul>
+                        <li><em>Une couche externe ou ostéo-périostée</em> : intimement collée à l'os.</li>
+                        <li><em>Une couche interne ou cérébrale</em> : adhérente à l'arachnoïde.</li>
+                      </ul>
+                    </li>
+                    <li><strong>Arachnoïde</strong>.</li>
+                    <li><strong>Pie-mère</strong>.</li>
+                  </ol>
+
+                  <div class="box box-clinical">
+                    <div class="box-title">⚕️ Application clinique du Diploé</div>
+                    <p>L'os spongieux (le diploé) est à l'origine du <strong>saignement lors d'une fracture du crâne</strong>.</p>
+                  </div>
+
+                  <hr>
+
+                  <h4>1. Espace sous-arachnoïdien</h4>
+                  <p id="err-citernes-sous-arachnoidiennes">Situé entre l'arachnoïde et la pie-mère. Cet espace est <strong>large et réel</strong> au niveau du crâne et du rachis, et forme des dilatations nommées <mark><strong>citernes arachnoïdiennes</strong></mark> (il en existe une dizaine au niveau du crâne). <mark>Ces citernes sont des dilatations de l'espace <strong>sous-arachnoïdien</strong> (et non épidural).</mark></p>
+                  
+                  <p><strong>L'espace sous-arachnoïdien contient :</strong></p>
+                  <ul>
+                    <li>Les <strong>vaisseaux corticaux</strong> qui cheminent contre la pie-mère : il s'agit d'une <em>« lame porte-vaisseaux »</em> qui vascularise le SNC grâce à sa superficie importante. Les artères situées en surface vont vasculariser la profondeur du cerveau via les sillons.</li>
+                    <li>Les <strong>trabéculations</strong> qui baignent dans le LCS.</li>
+                    <li>Le <strong>Liquide Cérébro-Spinal (LCS)</strong> :
+                      <ul>
+                        <li>Liquide clair, transparent, sécrété par les plexus choroïdes (expansions de pie-mère).</li>
+                        <li id="c3-plexus-choroide"><mark class="annale">Au niveau des ventricules latéraux et du <strong>troisième ventricule (V3)</strong>, la pie-mère <strong>s'ÉVAGINE</strong> (et non s'invagine) pour former les <strong>plexus choroïdes</strong> (pelote très vascularisée sécrétant le LCS).</mark></li>
+                        <li id="err-lcs-biochimique"><mark>Le LCS joue un rôle <strong>d'amortissement des chocs</strong> (protecteur mécanique), permet l'<strong>élimination des déchets</strong> et l'<strong>apport des nutriments</strong> (biochimique).</mark></li>
+                      </ul>
+                    </li>
+                  </ul>
+                  
+                  <div class="box box-recap">
+                    <div class="box-title">📋 Récapitulatif du trajet du LCS</div>
+                    <p>Sécrétion via plexus choroïdes → Ventricules latéraux → Troisième ventricule (V3) → Quatrième ventricule (V4) → Espace sous-arachnoïdien → Résorption via villosités arachnoïdiennes.</p>
+                  </div>
+                  
+                  <div class="box box-clinical">
+                    <div class="box-title">⚕️ Anévrisme et Hémorragie Sous-Arachnoïdienne (HSA)</div>
+                    <p id="err-anevrisme-hsa">Un <strong>anévrisme</strong> est une dilatation fragilisante d'une paroi artérielle (perte du parallélisme). Le <strong>collet</strong> correspond à la zone qui rattache l'anévrisme à l'artère.</p>
+                    <p><mark>Une rupture de cet anévrisme peut induire une <strong>Hémorragie sous-arachnoïdienne (HSA)</strong></mark> (autrefois appelées hémorragies méningées). <mark>⚠ Pas un hématome extra-dural (celui-ci provient de l'AMM).</mark></p>
+                    <ul>
+                      <li><strong>Signes (Syndrome méningé)</strong> : La présence de sang (ou d'inflammation) induit une contraction réflexe des muscles du tonus. On observe des <strong>céphalées brutales</strong> (le Pr. Destrieux compare l'HSA à un <em>« coup de tonnerre dans un ciel serein »</em>), une photophobie, une raideur de nuque. Peut conduire au coma voire au décès.</li>
+                      <li><strong>Diagnostic (TDM/Scanner)</strong> : Permet de visualiser des zones <strong>hyperdenses qui apparaissent en blanc</strong>, liées à la présence de sang dans les espaces sous-arachnoïdiens.</li>
+                      <li><strong>Angioscanner / Artériographie</strong> : Pour visualiser l'anévrisme. Il faut insérer un cathéter dans une artère (souvent l'<strong>artère fémorale commune au pli de l'aine</strong>, ou l'artère radiale), le faire remonter jusqu'aux vaisseaux intracrâniens et injecter de l'iode (produit de contraste). Des clichés radiographiques suivent sa progression.</li>
+                      <li id="err-embolisation"><strong>Traitements</strong> :
+                        <ul>
+                          <li><mark>Opération : pose d'un <strong>clip</strong> sur le collet (à l'image d'une pince à linge) — nécessite une <strong>craniotomie</strong>.</mark></li>
+                          <li><mark>Traitement <strong>endovasculaire</strong> (par cathéter, sans ouvrir le crâne) : un <strong>coil</strong> (petit ressort qui se roule sur lui-même) est placé dans l'anévrisme pour le boucher = <strong>embolisation</strong>.</mark></li>
+                        </ul>
+                      </li>
+                      <li><strong>Ponction Lombaire (PL)</strong> : Si le scanner ne montre pas d'HSA mais qu'on a un doute clinique. Réalisée en dessous de L1/L2. Si le LCS est de <strong>couleur rouge/rosé</strong>, cela traduit la présence de sang. <em>Attention : cet examen n'est pas réalisé en première intention devant une HSA.</em></li>
+                    </ul>
+                  </div>
+
+                  <hr>
+
+                  <h4>2. Espace extradural (épidural / péridural)</h4>
+                  <p>Situé entre la couche ostéo-périostée de la dure-mère et l'os. NB : le terme "péridural" est utilisé préférentiellement pour le rachis.</p>
+                  <ul>
+                    <li><strong>Au niveau du crâne</strong> : La dure-mère est normalement collée à l'os, cet espace est donc <strong>virtuel</strong>. Il contient tout de même les vaisseaux méningés.</li>
+                    <li id="err-peridurale-epidural"><mark><strong>Au niveau du rachis</strong> : L'espace est <strong>réel</strong>. Il contient du gras (la graisse épidurale, responsable de la mobilité du sac dural) et les plexus veineux épiduraux.</mark> → La péridurale s'arrête ici, AVANT la dure-mère.</li>
+                  </ul>
+
+                  <div class="box box-clinical">
+                    <div class="box-title">⚕️ Hématome extradural</div>
+                    <p>Lors d'une fracture du crâne, une rupture de l'<strong>artère méningée moyenne (AMM)</strong> (qui chemine en extra-dural), d'un sinus veineux ou la fracture elle-même peuvent causer un hématome extradural.</p>
+                    <ul>
+                      <li><strong>Clinique</strong> : Au moment du traumatisme, perte de connaissance initiale → <strong>Intervalle libre</strong> (conscience normale) → Le saignement continu décolle petit-à-petit la dure-mère de l'os et comprime le cerveau → <strong>Coma progressif</strong>.</li>
+                      <li><strong>Imagerie (TDM)</strong> : Prend la forme d'une <strong>lentille biconvexe</strong> (hyperdense au scanner).</li>
+                    </ul>
+                  </div>
+
+                  <hr>
+
+                  <h4>3. Espace sous-dural</h4>
+                  <p id="err-hematome-sous-dural"><mark>Il se forme dans la <strong>couche profonde de la dure-mère</strong>. Les <strong>jonctions serrées</strong> entre l'arachnoïde et la couche interne de la dure-mère empêchent la création d'un espace réel.</mark> L'espace sous-dural est donc <strong>virtuel</strong> au niveau du crâne et du rachis.</p>
+
+                  <div class="box box-clinical">
+                    <div class="box-title">⚕️ Hématome sous-dural</div>
+                    <p>L'espace devient réel en cas de pathologie. Le saignement est souvent <strong>chronique</strong> (ex: chez les personnes âgées), à l'inverse de l'hématome extra-dural aigu après un traumatisme violent.</p>
+                    <ul>
+                      <li><mark>Il apparaît <strong>au sein de la couche interne de la dure-mère</strong> (et non entre arachnoïde et DM) pour former une <strong>lentille biconcave</strong> au TDM.</mark></li>
+                      <li>L'hématome comprime le cerveau et s'étend dans l'espace sous-dural tant que le saignement continue.</li>
+                    </ul>
+                  </div>
+                  
+                  <div class="table-wrapper">
+                    <table>
+                      <thead>
+                        <tr><th>Espace</th><th>Au niveau du Crâne</th><th>Au niveau du Rachis</th></tr>
+                      </thead>
+                      <tbody>
+                        <tr><td><strong>Sous-arachnoïdien</strong></td><td>Réel</td><td>Réel</td></tr>
+                        <tr><td><strong>Extradural</strong></td><td>Virtuel (Hématome biconvexe)</td><td>Réel (Graisse, Anesthésie)</td></tr>
+                        <tr><td><strong>Sous-dural</strong></td><td>Virtuel (Hématome biconcave)</td><td>Virtuel</td></tr>
+                      </tbody>
+                    </table>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <section id="craniennes">
+          <h2>II. Méninges crâniennes</h2>
+
+          <div class="accordion">
+            <div class="accordion-item open">
+              <div class="accordion-header">A) Dure-mère (DM) crânienne</div>
+              <div class="accordion-content">
+                <div class="accordion-body">
+                  <h4>1. Coupe coronale du crâne</h4>
+                  <p>De l'extérieur vers l'intérieur, on observe :</p>
+                  <ul>
+                    <li>Le tissu cutané (contient les bulbes des cheveux).</li>
+                    <li>Le tissu sous-cutané.</li>
+                    <li>La <strong>galéa</strong> : aponévrose sur laquelle s'insèrent les muscles du crâne, qui colle au périoste.</li>
+                    <li>Le <strong>périoste</strong> : tapisse l'ensemble des os.</li>
+                    <li>La dure-mère <strong>ostéo-périostée</strong> (couche externe).</li>
+                    <li>La dure-mère <strong>cérébrale ou encéphalique</strong> (couche interne).</li>
+                  </ul>
+                  <p><em>(Remarque : le "scalp" est constitué des tissus cutané et sous-cutané, de la galéa ainsi que du périoste).</em></p>
+                  
+                  <p><strong>a) Sinus sagittal supérieur et Veines émissaires</strong></p>
+                  <p id="err-sinus-sagittal-intradural">Les deux couches de DM peuvent être accolées ou laisser place à des espaces réels. <mark>Il existe un <strong>large espace inter-dural</strong> sur la ligne médiane entre la faux du cerveau et la voûte crânienne : il contient le <strong>sinus sagittal supérieur</strong>.</mark></p>
+                  <p>Le sinus sagittal supérieur s'expand latéralement pour former des <strong>lacunes latéro-sinusiennes</strong>. Celles-ci communiquent avec les veines sous-cutanées du scalp via des <strong>veines émissaires</strong> (qui relient une veine infra-crânienne à une veine supra-crânienne).</p>
+                  
+                  <div class="box box-clinical">
+                    <div class="box-title">⚕️ Infections et Veines émissaires</div>
+                    <ul>
+                      <li>Une infection des tissus sous-cutanés du crâne peut se transmettre via les veines émissaires jusqu'au sinus sagittal supérieur → <strong>Abcès intra-crânien</strong> ou <strong>thrombophlébite cérébrale</strong>.</li>
+                      <li id="err-mastoidite"><mark>En cas de <strong>mastoïdite</strong> (infection des sinus mastoïdiens), les <strong>veines émissaires</strong> peuvent transmettre l'infection au <strong>sinus sigmoïde</strong> et au sinus latéral.</mark></li>
+                    </ul>
+                  </div>
+                  
+                  <p><strong>b) Cloisons durales</strong></p>
+                  <p id="err-cloisons-durales"><mark>La couche <strong>interne</strong> tapisse imparfaitement la couche externe. Elle forme des replis qui compartimentent la cavité :</mark></p>
+                  <ul>
+                    <li>La <strong>tente du cervelet</strong> : sépare le cervelet des hémisphères cérébraux.</li>
+                    <li>La <strong>faux du cerveau</strong> : sur la ligne médiane, sépare les hémisphères cérébraux entre eux. Au niveau de la faux, l'espace entre les deux couches de DM interne est virtuel.</li>
+                  </ul>
+
+                  <h4>2. Vue supérieure de la base du crâne</h4>
+                  <p><strong>a) Dure-mère externe (ostéo-périostée)</strong></p>
+                  <p id="err-dm-osperiostee-base"><mark>Elle recouvre la <strong>totalité de la base du crâne</strong> (tapisse l'ensemble de la face interne de l'os).</mark> Des reliefs restent visibles :</p>
+                  <ul>
+                    <li>Le bord postérieur du sphénoïde (limite étage antérieur/moyen).</li>
+                    <li>Le processus crista galli.</li>
+                    <li>Le dos de la selle turcique, bordé par des petites cornes : les <strong>processus clinoïdiens antérieurs et postérieurs</strong>.</li>
+                    <li>Le bord supéro-médial du rocher (limite étage moyen/postérieur).</li>
+                    <li>La fissure pétro-occipitale (gouttière accueillant des sinus).</li>
+                    <li>Le canal optique, le foramen épineux, le foramen ovale, le foramen lacerum (et l'ACI), le méat auditif interne et le foramen magnum (où les condyles occipitaux s'articulent avec C1/Atlas).</li>
+                    <li>Les foramens/canaux hypoglosses (passage du nerf XII).</li>
+                  </ul>
+                  
+                  <p><strong>b) Dure-mère interne et Plis pétro-clinoïdiens</strong></p>
+                  <p>La dure-mère interne s'organise autour des plis pétro-clinoïdiens (Le Pr. Destrieux compare ces plis à des <em>« cordes à linge »</em> recouvertes d'un <em>« drap »</em> qui est la lame horizontale) :</p>
+                  <ul id="err-tente-cervelet">
+                    <li><mark><strong>Pli pétro-clinoïdien postérieur</strong> : part du processus clinoïdien postérieur et suit le bord supéro-médial du rocher.</mark></li>
+                    <li><mark><strong>Pli pétro-clinoïdien antérieur</strong> : s'insère sur le processus clinoïdien antérieur et s'étend en arrière. La réunion des plis antérieurs forme l'<strong>incisure tentorielle</strong>.</mark></li>
+                  </ul>
+                  <p><mark>La tente du cervelet s'étend <strong>du pli pétro-clinoïdien antérieur au pli pétro-clinoïdien postérieur</strong>, et se termine sur l'os occipital.</mark></p>
+
+                  <p><strong>c) Comportement de la DM interne selon les étages :</strong></p>
+                  <ul>
+                    <li id="err-tractus-olfactif-visible"><strong>Étage antérieur</strong> (en avant de l'arête sphénoïdale) : la DM cérébrale tapisse la DM externe. <mark>Les foramens ne sont plus visibles. Seuls le <strong>tractus olfactif (I)</strong> et le <strong>canal du nerf optique (II)</strong> restent visibles.</mark></li>
+                    <li><strong>Étage moyen</strong> : la DM interne tapisse la DM externe. Mais en se rapprochant de la ligne médiane, elle remonte et se décolle de la DM externe pour rejoindre le pli pétro-clinoïdien antérieur (un espace se forme).</li>
+                    <li><strong>Étage postérieur</strong> : lorsque la DM interne arrive au bord supéro-médial du rocher, elle se décolle de l'externe et se dédouble. Une lame forme la tente du cervelet, l'autre recouvre le sinus transverse puis l'étage postérieur.</li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+
+            <div class="accordion-item open">
+              <div class="accordion-header">B) Sinus caverneux (Loge para-sellaire)</div>
+              <div class="accordion-content">
+                <div class="accordion-body">
+                  <p>Le sinus caverneux est inclus au sein de la <strong>selle turcique</strong>, de part et d'autre du sinus sphénoïdal.</p>
+
+                  <h4>Architecture du sinus</h4>
+                  <ul>
+                    <li id="err-lame-horizontale"><strong>Toit</strong> : L'incisure de la tente se poursuit en avant par le pli pétro-clinoïdien antérieur. Entre les plis postérieurs et antérieurs, <mark>la DM interne s'horizontalise et forme la <strong>lame horizontale</strong> = toit du sinus caverneux (toit sellaire)</mark>.</li>
+                    <li><strong>Diaphragme sellaire</strong> : Le toit se prolonge médialement par le diaphragme sellaire, qui est percé du <strong>foramen hypophysaire</strong> (qui laisse passer la tige de l'hypophyse).</li>
+                    <li><strong>Couche durale externe</strong> : tapisse la base du crâne et le toit du sinus sphénoïdal.</li>
+                    <li><strong>Couche durale interne</strong> : s'éloigne de l'externe au niveau de la ligne médiane et remonte verticalement (soulevée par les plis).</li>
+                    <li><strong>Espace inter-dural</strong> : vaste espace rempli de sang veineux entre les deux couches de DM.</li>
+                  </ul>
+
+                  <h4>L'Hypophyse</h4>
+                  <p>Glande régulière en forme de <em>« pomme aplatie »</em>. Elle est contenue au sein du <strong>sac dural hypophysaire</strong> (c'est comme si l'hypophyse descendait dans le sinus en repoussant le feuillet interne vers le bas). Elle est accompagnée des artères carotides internes et des sinus caverneux.</p>
+
+                  <h4>Contenu traversant le toit du sinus caverneux</h4>
+                  <ul>
+                    <li>L'<strong>Artère Carotide Interne (ACI)</strong> : elle est <strong>intra-caverneuse</strong> au niveau de sa portion horizontale, et devient supra-clinoïdienne en quittant la partie antérieure du sinus.</li>
+                    <li>Le <strong>nerf oculomoteur (III)</strong>.</li>
+                    <li>Le <strong>nerf trochléaire (IV)</strong>.</li>
+                    <li>Le <strong>nerf trijumeau (V)</strong> (qui chemine dans un dédoublement de la dure-mère) et sa branche le <strong>nerf ophtalmique (V1)</strong> (sensibilité du front).</li>
+                    <li>Des éléments veineux et de nombreux <strong>îlots de matière grasse (adipeux)</strong> qui donnent l'aspect "caverneux" du sinus.</li>
+                  </ul>
+
+                  <h4>Localisation des Nerfs dans la loge</h4>
+                  <p><strong>À l'intérieur du sinus :</strong></p>
+                  <ul>
+                    <li id="err-abducens-aci"><mark>Le <strong>nerf abducens (VI)</strong> chemine <strong>contre l'ACI</strong> au <strong>centre du sinus</strong> (il n'appartient donc <strong>pas</strong> à la paroi latérale, contrairement aux nerfs III, IV, V1).</mark></li>
+                  </ul>
+                  <p><strong>Dans la paroi latérale</strong> (de haut en bas) :</p>
+                  <ol>
+                    <li>En haut : <strong>nerf oculomoteur (III)</strong>.</li>
+                    <li>En dessous : <strong>nerf trochléaire (IV)</strong>.</li>
+                    <li>En bas : <strong>nerf ophtalmique (V1)</strong>.</li>
+                  </ol>
+                  
+                  <div class="box box-nb">
+                    <div class="box-title">📝 Limite inférieure</div>
+                    <p>La limite inférieure du sinus caverneux est par définition le bord supérieur du <strong>nerf maxillaire (V2)</strong>. V2 ne fait donc <strong>pas</strong> partie du sinus caverneux.</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="accordion-item open">
+              <div class="accordion-header">C) Drainage veineux crânien</div>
+              <div class="accordion-content">
+                <div class="accordion-body">
+                  <p>Le sang veineux est drainé par les sinus de la dure-mère qui convergent tous in fine vers la veine jugulaire interne.</p>
+                  
+                  <div class="tree">
+                    <div class="tree-node tree-root expanded">
+                      <span class="tree-label expandable">Système de drainage veineux central</span>
+                      <div class="tree-children">
+                        <div class="tree-node expanded">
+                          <span class="tree-label expandable"><strong>Sinus sagittal supérieur</strong></span>
+                          <div class="tree-children">
+                            <div class="tree-node"><span class="tree-label">↓ Descend jusqu'au niveau occipital et se draine dans le Confluent postérieur des sinus</span></div>
+                          </div>
+                        </div>
+                        <div class="tree-node expanded">
+                          <span class="tree-label expandable"><strong>Sinus droit</strong> (reçoit la Grande veine cérébrale drainant les veines cérébrales internes)</span>
+                          <div class="tree-children">
+                            <div class="tree-node"><span class="tree-label">↓ Se jette dans le Confluent postérieur des sinus</span></div>
+                          </div>
+                        </div>
+                        <div class="tree-node expanded" id="err-confluent-tente">
+                          <span class="tree-label expandable"><mark><strong>Confluent postérieur des sinus</strong> (au niveau de l'insertion occipitale de la tente du cervelet)</mark></span>
+                          <div class="tree-children">
+                            <div class="tree-node expanded" id="ecb-transverse-sigmoide">
+                              <span class="tree-label expandable"><mark class="annale">↓ Se draine dans les <strong>Sinus transverses</strong> (Droit et Gauche, insérés sur la tente du cervelet)</mark></span>
+                              <div class="tree-children">
+                                <div class="tree-node expanded" id="err-sigmoide-fissure">
+                                  <span class="tree-label expandable"><mark class="annale">↓ Deviennent les <strong>Sinus sigmoïdes</strong> (au niveau de la <mark>fissure pétro-occipitale</mark>)</mark></span>
+                                  <div class="tree-children">
+                                    <div class="tree-node"><span class="tree-label">↓ Foramen jugulaire → <strong>Veine jugulaire interne</strong></span></div>
+                                  </div>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="tree-node"><span class="tree-label"><strong>Sinus pétreux inférieur</strong> (suit la suture os pétreux/basi-occipital) → Foramen jugulaire → Veine jugulaire interne</span></div>
+                        <div class="tree-node" id="err-sinus-petreux-sup"><span class="tree-label"><mark><strong>Sinus pétreux supérieur</strong> (chemine sur le bord supérieur du rocher)</mark></span></div>
+                      </div>
+                    </div>
+                  </div>
+                  
+                  <div class="box box-nb">
+                    <div class="box-title">📝 NB : Terminologie et Localisations</div>
+                    <ul>
+                      <li>La réunion du sinus sigmoïde et du sinus transverse forme le <strong>Sinus latéral</strong>.</li>
+                      <li>Le Pr. Destrieux considère <strong>"Sinus latéral"</strong> et <strong>"Sinus pétro-supérieur"</strong> comme des termes équivalents.</li>
+                      <li>Le sinus sagittal inférieur (plus petit) suit le plan inférieur de la faux.</li>
+                      <li>Le <strong>sinus droit</strong> est le seul limité <em>uniquement par deux feuillets de dure-mère interne</em> (réunion des hémi-tentes et de la faux).</li>
+                      <li>Les autres (sagittal sup, transverses, sigmoïdes, pétreux, confluent) sont situés <em>entre la DM externe et la DM interne</em>.</li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="accordion-item open">
+              <div class="accordion-header">D) Cloisons durales, Compartiments et Engagements</div>
+              <div class="accordion-content">
+                <div class="accordion-body">
+                  <h4>1. Les cloisons durales</h4>
+                  <ul>
+                    <li><strong>Faux du cerveau</strong> : Lame sagittale médiane (formée par la DM interne) séparant les hémisphères cérébraux. Elle s'insère en avant sur le <strong>processus crista galli</strong> et en arrière sur les hémi-tentes du cervelet. Un large orifice à la partie antérieure lui donne sa forme <strong>falciforme</strong>. À la racine de la faux se trouve le <em>sinus sagittal supérieur</em>.</li>
+                    <li id="c3-tente-sinus-lateral"><mark class="annale"><strong>Tente du cervelet</strong> : Sépare le cervelet (en bas) des hémisphères cérébraux (en haut). S'insère le long du <strong>sinus latéral</strong> (= sinus transverse, partie horizontale) — et NON le sinus sigmoïde (partie verticale en dessous).</mark> Limite un orifice appelé l'<strong>incisure tentorielle</strong> (s'insérant sur les clinoïdes antérieures). L'incisure tentorielle laisse passer le <strong>tronc cérébral</strong> (le mésencéphale passe dans l'incisure, puis dans la fosse postérieure, et se termine au foramen magnum). Médialement, la tente est ascendante et fusionne avec la faux du cerveau.</li>
+                  </ul>
+                  
+                  <h4>2. Compartiments crâniens</h4>
+                  <p>Ces cloisons délimitent <strong>3 compartiments inextensibles</strong> :</p>
+                  <ul>
+                    <li>Le compartiment <strong>sous-tentoriel</strong>.</li>
+                    <li>Le compartiment <strong>sus-tentoriel droit</strong>.</li>
+                    <li>Le compartiment <strong>sus-tentoriel gauche</strong>.</li>
+                  </ul>
+                  <p>Une communication se fait entre ces compartiments via l'incisure tentorielle et le bord libre de la faux, accompagnée de gradients de pression.</p>
+                  
+                  <div class="box box-clinical">
+                    <div class="box-title">⚕️ Hypertension intracrânienne (HIC) et Engagements cérébraux</div>
+                    <p>Toute augmentation de volume (tumeur, hématome) dans un de ces compartiments inextensibles met la dure-mère en tension → <strong>Hypertension intracrânienne (HIC)</strong> avec <strong>Céphalées intenses</strong>.</p>
+                    <p>Un gradient de pression se forme et déplace le tissu cérébral d'une zone de haute pression vers une zone de basse pression = <strong>Effet de masse</strong>. Ce tissu s'engage dans les orifices : ce sont les <strong>engagements</strong>.</p>
+                    
+                    <p><strong>Types d'engagements :</strong></p>
+                    <ul>
+                      <li id="err-engagement-sous-falcoriel"><mark><strong>Engagement sous-falcoriel</strong> : le parenchyme passe d'un hémisphère à l'autre sous la faux (<strong>sans réelle conséquence clinique</strong>).</mark></li>
+                      <li><strong>Engagement sous-tentoriel</strong> : passage sous la tente du cervelet.</li>
+                      <li id="err-engagement-temporal"><mark><strong>Engagement temporal</strong> : le lobe temporal s'engage dans l'incisure tentorielle. Il <strong>comprime le tronc cérébral et le nerf oculomoteur (III)</strong> (qui sort du tronc cérébral et franchit la tente du cervelet — responsable de l'oculomotricité, élévation de la paupière, contraction de la pupille).</mark> Conséquences :
+                        <ul>
+                          <li><mark><strong>Mydriase</strong> (dilatation pupillaire).</mark></li>
+                          <li><mark><strong>Ptosis</strong> (chute de la paupière).</mark></li>
+                          <li><strong>Hémiplégie controlatérale</strong> (compression de la voie motrice).</li>
+                          <li><strong>Coma</strong> et modifications du rythme cardiaque et de la respiration (car le tronc cérébral est la structure de l'éveil).</li>
+                          <li><strong>Décès en quelques heures</strong> → Prise en charge chirurgicale très urgente.</li>
+                        </ul>
+                      </li>
+                      <li><strong>Engagement occipital (ou tonsillaire)</strong> : la partie la plus basse des hémisphères cérébelleux s'engage dans le foramen magnum, comprimant mortellement le tronc cérébral.</li>
+                    </ul>
+                    
+                    <p><strong>⚠️ CONTRE-INDICATION FORMELLE :</strong> Il est <strong>formellement interdit</strong> de réaliser une ponction lombaire si un engagement est suspecté ! La PL diminue la pression rachidienne en bas, ce qui aspire le cerveau vers le bas et <strong>majore le gradient et l'engagement mortel</strong>. <em>Toute HIC nécessite une imagerie AVANT une éventuelle PL.</em></p>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="accordion-item open">
+              <div class="accordion-header">E) Pie-mère, LCS et Hydrocéphalie</div>
+              <div class="accordion-content">
+                <div class="accordion-body">
+                  <h4>1. Généralités et Plexus choroïdes</h4>
+                  <p>La pie-mère est la méninge la plus profonde. Elle tapisse le SNC (s'invagine au fond des sillons), le tronc cérébral, et s'immisce entre le fornix et le V3. Elle prolifère au sein des ventricules pour former les <strong>plexus choroïdes</strong>.</p>
+                  <ul>
+                    <li>Les plexus se développent notamment dans la corne temporale, au-dessus de l'hippocampe.</li>
+                    <li>Ils sont responsables de la <strong>sécrétion du LCS</strong> (à hauteur d'environ <strong>250cc par jour</strong>).</li>
+                  </ul>
+                  
+                  <h4>2. Granulations arachnoïdiennes et Résorption</h4>
+                  <p id="err-granulations-sinus-sagittal"><mark>Les <strong>granulations arachnoïdiennes</strong> correspondent à des expansions de l'arachnoïde présentes principalement dans le <strong>sinus sagittal supérieur</strong> (ce sont des villosités arachnoïdiennes en paquets).</mark></p>
+                  <p>Le LCS présent dans l'espace sous-arachnoïdien s'échappe par ces granulations pour être récupéré par le système veineux. C'est un <strong>recyclage du LCS</strong> vers la circulation veineuse.</p>
+                  
+                  <div class="box box-clinical">
+                    <div class="box-title">⚕️ Hydrocéphalie à pression normale (HPN)</div>
+                    <p id="c3-hydrocephalie"><mark class="annale">L'<strong>hydrocéphalie</strong> est causée par une <strong>DILATATION</strong> (et non atrophie) des ventricules cérébraux, due à une production excessive ou une mauvaise résorption du LCS.</mark> Forme chronique de l'adulte (HPN). Elle peut faire suite à une HSA ou une méningite, qui abîment le système : les patients <strong>résorbent mal le LCS</strong> en raison de l'atteinte nerveuse.</p>
+                    <p><strong>Triade typique du diagnostic :</strong></p>
+                    <ol>
+                      <li><strong>Marche à petits pas</strong></li>
+                      <li><strong>Troubles urinaires</strong></li>
+                      <li><strong>Troubles des fonctions supérieures</strong></li>
+                    </ol>
+                    <p><strong>Traitement</strong> : on réalise une ponction lombaire (soustraction de LCS pour baisser la pression). Si l'état s'améliore, on met en place une <strong>dérivation ventriculo-péritonéale</strong> (système drainant le LCS directement du cerveau vers le péritoine).</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <section id="rachis">
+          <h2>III. Méninges du rachis</h2>
+
+          <p>L'organisation des méninges du rachis est moins complexe que celle des méninges du crâne.</p>
+
+          <div class="accordion">
+            <div class="accordion-item open">
+              <div class="accordion-header">A) Dure-mère rachidienne et Espace épidural</div>
+              <div class="accordion-content">
+                <div class="accordion-body">
+                  <p>Au niveau du rachis, le feuillet dural externe <strong>disparaît</strong> (il s'arrête au niveau du foramen magnum). Il est remplacé par le <strong>périoste</strong> tapissant les vertèbres et le canal vertébral.</p>
+                  <p>Le feuillet dural interne constitue à lui seul le <strong>sac dural</strong> qui forme un fourreau autour de la moelle épinière et de la queue de cheval.</p>
+                  
+                  <h4>1. Espace épidural (extradural)</h4>
+                  <p>L'espace épidural est <strong>très large</strong>. Situé entre le périoste et le sac dural, il contient :</p>
+                  <ul>
+                    <li>De la <strong>graisse épidurale</strong>.</li>
+                    <li>Des <strong>plexus veineux</strong>.</li>
+                  </ul>
+                  
+                  <p>Repères de contenu :</p>
+                  <ul>
+                    <li>Au-dessus de C1 : le tronc cérébral.</li>
+                    <li>Au-dessus de L1/L2 : la moelle épinière.</li>
+                    <li id="err-fourreau-s2">En-dessous de <strong>L1/L2</strong> : la moelle épinière s'arrête, elle est poursuivie par les nerfs de la <strong>queue de cheval</strong>. <mark>Le <strong>fourreau dural</strong>, lui, se poursuit jusqu'en <strong>S2</strong> (± S3).</mark></li>
+                  </ul>
+                  <p><em>Rappel : à chaque niveau vertébral, une paire de nerfs rachidiens entourée de gaine durale quitte le canal par les foramens intervertébraux.</em></p>
+                  
+                  <div class="box box-nb">
+                    <div class="box-title">📝 Ligaments rachidiens</div>
+                    <ul>
+                      <li>Les ligaments inter-épineux se situent autour du processus épineux.</li>
+                      <li>Le <strong>ligament jaune</strong>, situé vers l'avant, a une forme de "V" et s'insère sur les lames vertébrales.</li>
+                      <li>Le ligament vertébral postérieur tapisse les corps vertébraux.</li>
+                    </ul>
+                  </div>
+                  
+                  <h4>2. Anesthésie péridurale</h4>
+                  <p>Du fait de la largeur de l'espace épidural, on peut y positionner un cathéter pour injecter un anesthésiant. L'anesthésiste <strong>traverse le ligament jaune et s'arrête avant la dure-mère</strong> (afin d'éviter l'écoulement de LCS).</p>
+                  <p>L'anesthésie péridurale permet de faire disparaître la douleur <strong>tout en conservant la motricité</strong>. (Ex: utilisée lors des accouchements, permet à la patiente de conserver la capacité à réaliser des efforts de poussée).</p>
+                </div>
+              </div>
+            </div>
+
+            <div class="accordion-item">
+              <div class="accordion-header">B) Pie-mère rachidienne</div>
+              <div class="accordion-content">
+                <div class="accordion-body">
+                  <p>La pie-mère tapisse différentes sections du fourreau dural, comme les racines des nerfs rachidiens.</p>
+                </div>
+              </div>
+            </div>
+
+            <div class="accordion-item open">
+              <div class="accordion-header">C) Arachnoïde et Interventions (PL et Rachianesthésie)</div>
+              <div class="accordion-content">
+                <div class="accordion-body">
+                  <h4>1. Ponction Lombaire (PL)</h4>
+                  <p>La PL permet l'analyse du LCS présent dans l'<strong>espace sous-arachnoïdien</strong>. Elle baigne la totalité du SNC.</p>
+                  
+                  <p><strong>Indications et Analyse :</strong></p>
+                  <ul>
+                    <li>Diagnostic de méningites bactériennes ou maladies inflammatoires (lymphomes).</li>
+                    <li><strong>Bactériologie / Mise en culture</strong>.</li>
+                    <li><strong>Biochimie</strong> : on recherche une <strong>hypoglycorachie</strong> (diminution du taux de glucose, signe de méningite bactérienne) et une hausse des protéines.</li>
+                    <li><strong>Cytologie</strong> : observation des cellules. Un taux élevé de globules blancs est signe d'infection. L'analyse des globules rouges (hématies) démontre un signe traumatique ou d'HSA.</li>
+                    <li>Analyse des immunoglobulines.</li>
+                  </ul>
+                  
+                  <div class="box box-clinical">
+                    <div class="box-title">⚕️ Le Test des 3 tubes (PL Traumatique vs HSA)</div>
+                    <p>Le Pr. Destrieux signale l'importance de les différencier :</p>
+                    <ul id="err-pl-traumatique">
+                      <li><mark><strong>PL Traumatique</strong> : le médecin a touché accidentellement le plexus veineux épidural → hausse des hématies. On observe un <strong>éclaircissement progressif du LCS au fil des heures</strong> (et des tubes successifs).</mark></li>
+                      <li><mark><strong>Hémorragie sous-arachnoïdienne (HSA)</strong> : la coloration du LCS <strong>reste rosée ou rouge uniforme</strong> (signe d'une vraie HSA).</mark></li>
+                    </ul>
+                  </div>
+
+                  <p><strong>Technique de la PL :</strong></p>
+                  <ul>
+                    <li><strong>Lieu</strong> : dans la région lombaire basse (en général <strong>L4/L5</strong> ou <strong>L5/S1</strong>), repérable en prenant pour repère les deux <strong>crêtes iliaques</strong>. On pique là pour éviter de léser la moelle épinière (qui s'arrête en L1/L2).</li>
+                    <li><strong>Position</strong> : patient assis, fléchi légèrement en avant (faire le <strong>dos rond</strong>) pour ouvrir l'espace inter-épineux.</li>
+                    <li><strong>Trajet</strong> : sur la ligne médiane (pour ne pas toucher les nerfs rachidiens latéraux), l'aiguille prend un trajet légèrement ascendant, passe par le <strong>ligament jaune</strong> puis traverse la dure-mère.</li>
+                  </ul>
+                  
+                  <div class="box box-nb">
+                    <div class="box-title">📝 Exception anatomique</div>
+                    <p>Attention chez les personnes avec une malformation de type <strong>moelle attachée</strong> : le filum terminal est très court et la moelle descend jusqu'au sacrum. La PL y est compromise.</p>
+                  </div>
+                  
+                  <h4 id="err-rachianesth">2. Rachianesthésie</h4>
+                  <p><mark>Contrairement à la péridurale, la rachianesthésie se réalise en injectant le produit <strong>dans l'espace sous-arachnoïdien</strong>. Elle induit une <strong>paraplégie transitoire</strong> (abolition de la sensibilité ET de la motricité).</mark></p>
+                  <p>Exemple : opération d'une prothèse de genou chez une personne âgée.</p>
+                  
+                  <div class="box box-recap">
+                    <div class="box-title">📋 Récapitulatif : Anesthésies rachidiennes</div>
+                    <div class="table-wrapper">
+                      <table>
+                        <thead>
+                          <tr><th>Type d'anesthésie</th><th>Espace d'injection</th><th>Abolition de la sensibilité</th><th>Abolition de la motricité</th></tr>
+                        </thead>
+                        <tbody>
+                          <tr><td><strong>Anesthésie péridurale</strong></td><td>Espace épidural (= extradural)</td><td>Oui</td><td><strong>Non</strong></td></tr>
+                          <tr><td><strong>Rachianesthésie</strong></td><td>Espace sous-arachnoïdien</td><td>Oui</td><td><strong>Oui</strong> (Paraplégie)</td></tr>
+                        </tbody>
+                      </table>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+
+      </div>
+    </main>
+  </div>
+
+  <button class="menu-toggle" onclick="document.querySelector('.sidebar').classList.toggle('open')">☰</button>
+  <script src="../app.js"></script>
+</body>
+</html>

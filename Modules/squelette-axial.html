@@ -1,0 +1,733 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Squelette axial - Anatomie</title>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="../styles.css">
+</head>
+<body>
+  <div class="app">
+    <aside class="sidebar">
+      <div class="sidebar-header">
+        <h1>🦴 Anatomie</h1>
+        <p>Cours PASS/LAS - Tours</p>
+      </div>
+      <nav class="sidebar-nav">
+        <div class="nav-group">
+          <div class="nav-group-title">Accueil</div>
+          <div class="nav-group-items">
+            <a href="../index.html" class="nav-item">🏠 Vue d'ensemble</a>
+            <a href="../carnet-erreurs.html" class="nav-item">📕 Carnet d'erreurs</a>
+          </div>
+        </div>
+        <div class="nav-group">
+          <div class="nav-group-title">Ostéologie</div>
+          <div class="nav-group-items">
+            <a href="osteologie-membres.html" class="nav-item">Ostéologie des membres</a>
+            <a href="squelette-axial.html" class="nav-item active">Squelette axial</a>
+          </div>
+        </div>
+      </nav>
+    </aside>
+
+    <main class="main">
+      <header class="header">
+        <button class="sidebar-toggle" title="Masquer/Afficher le menu">☰</button>
+        <div class="breadcrumb">
+          <a href="../index.html">Accueil</a> / Squelette axial
+        </div>
+        <div class="header-actions">
+          <button class="btn-icon" onclick="expandAllAccordions()">⊞</button>
+          <button class="btn-icon" onclick="collapseAllAccordions()">⊟</button>
+          <button class="btn-icon" id="theme-toggle">◐</button>
+        </div>
+      </header>
+
+      <div class="content">
+        <h1>🦴 Squelette axial</h1>
+        <p><strong>Pr. Destrieux</strong> — Poly spé n°2 — Tutorat Santé de Tours 2026 (mise à jour vs 2025).</p>
+
+        <div class="box box-nb">
+          <div class="box-title">🧭 Éléments du squelette axial (rappel 2026)</div>
+          <p id="c3-squelette-axial"><mark class="annale">Le squelette axial est formé du <strong>crâne</strong> (avec <strong>l'orbite</strong>), du <strong>rachis</strong>, de la <strong>cage thoracique</strong> (côtes + sternum) et de l'<strong>os hyoïde</strong>. La <strong>mandibule</strong> fait partie du crâne (viscérocrâne) → elle appartient donc au <strong>squelette axial</strong>.</mark></p>
+        </div>
+
+        <div class="toc">
+          <div class="toc-title">📑 Sommaire</div>
+          <ul class="toc-list">
+            <li><a href="#vertebre">I. Vertèbre fondamentale</a></li>
+            <li><a href="#disque">II. Disque intervertébral</a></li>
+            <li><a href="#nerfs">III. Nerfs rachidiens</a></li>
+            <li><a href="#sacrum">IV. Sacrum</a></li>
+            <li><a href="#cervical">V. Rachis cervical (C1-C2 + Vertèbres cervicales types)</a></li>
+            <li><a href="#hernie">VI. Hernies discales</a></li>
+            <li><a href="#thorax">VII. Cage thoracique & Articulations costo-vertébrales</a></li>
+            <li><a href="#recap-2026">🔄 Récapitulatif 2026</a></li>
+          </ul>
+        </div>
+
+        <section id="vertebre">
+          <h2>I. Vertèbre fondamentale et ses variations</h2>
+          <p>Le rachis forme une série de courbures de haut en bas : Lordose cervicale (7), Cyphose thoracique (12), Lordose lombaire (5), Cyphose sacrée (5).</p>
+
+          <div class="accordion">
+            <div class="accordion-item open">
+              <div class="accordion-header">A) Constitution générale</div>
+              <div class="accordion-content">
+                <div class="accordion-body">
+                  <p>La vertèbre fondamentale est le modèle type. Elle comporte deux grandes parties :</p>
+                  <ul>
+                    <li><span class="term">Corps vertébral</span> : partie antérieure, supporte le poids. Composé d'<strong>os spongieux</strong> au centre et de deux <strong>plateaux vertébraux</strong> (os cortical + cartilage hyalin) formant une amphiarthrose avec les disques.</li>
+                    <li><span class="term">Arc vertébral (arc neural)</span> : partie postérieure. Il forme le <strong>foramen vertébral</strong> dont l'empilement constitue le <strong>canal vertébral</strong> contenant le fourreau dural.</li>
+                  </ul>
+                  
+                  <h4>Détails de l'arc neural :</h4>
+                  <ul>
+                    <li id="err-isthme-pedicule"><mark><span class="term">Pédicules</span> : relient le <strong>corps vertébral</strong> à l'<strong>arc postérieur</strong> (≠ isthme).</mark></li>
+                    <li><span class="term">Lames vertébrales</span> : se rejoignent sur la ligne médiane.</li>
+                    <li><span class="term">Processus épineux</span> : projection postérieure médiane (palpable sous la peau).</li>
+                    <li><span class="term">Processus transverses</span> : projections latérales, orientées en arrière. Lieu d'insertion musculaire.</li>
+                    <li><span class="term">Processus articulaires</span> : supérieurs et inférieurs (4 par vertèbre).</li>
+                    <li><mark><span class="term">Isthme</span> (pars interarticularis) : <strong>zone de fragilité</strong> située entre les processus articulaires <strong>supérieur et inférieur</strong> (≠ pédicule).</mark></li>
+                  </ul>
+
+                  <div class="box box-clinical">
+                    <div class="box-title">⚕️ Fracture de l'isthme</div>
+                    <p>L'isthme est une zone de fragilité. Des contraintes répétées peuvent causer une fracture de fatigue entraînant un glissement de la vertèbre (spondylolisthésis).</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="accordion-item open">
+              <div class="accordion-header">B) Différences Thoraciques / Lombaires</div>
+              <div class="accordion-content">
+                <div class="accordion-body">
+                  <div class="table-wrapper">
+                    <table>
+                      <thead>
+                        <tr><th>Caractéristique</th><th>Vertèbre Thoracique</th><th>Vertèbre Lombaire</th></tr>
+                      </thead>
+                      <tbody>
+                        <tr><td><strong>Corps vertébral</strong></td><td><strong>Pratiquement cylindrique</strong> <em>(2026)</em>, encroûté de cartilage sur ses plateaux, porte des <strong>facettes costales corporéales</strong> sur les faces latérales</td><td>Massif, réniforme (en forme de rein), <strong>encroûté de cartilage</strong></td></tr>
+                        <tr><td><strong>Canal vertébral</strong></td><td><strong>Cylindrique</strong> <em>(2026, anciennement « circulaire »)</em></td><td>Triangulaire (contient la queue de cheval)</td></tr>
+                        <tr><td><strong>Processus épineux</strong></td><td>Effilé, pointu, oblique vers le bas</td><td>Volumineux, massif, horizontal</td></tr>
+                        <tr><td><strong>Processus transverses</strong></td><td>S'articulent avec les côtes (porte la <strong>facette costale transversaire</strong> répondant au <strong>tubercule costal</strong> de la côte <em>sus-jacente</em>)</td><td>Reliquat = <strong>processus costiforme</strong> (plus volumineux) + tubercule accessoire en arrière</td></tr>
+                        <tr><td><strong>Processus Articulaires Supérieurs</strong></td><td>Regardent en haut, en arrière et <strong>latéralement</strong></td><td>Regardent en haut, en arrière et <strong>médialement</strong></td></tr>
+                        <tr><td><strong>Processus Articulaires Inférieurs</strong></td><td>Regardent en bas, en avant et <strong>médialement</strong></td><td>Regardent en bas, en avant et <strong>latéralement</strong></td></tr>
+                      </tbody>
+                    </table>
+                  </div>
+                  
+                  <div class="box box-nb">
+                    <div class="box-title">📝 Le trépied rachidien</div>
+                    <p>L'articulation entre deux vertèbres se fait sur 3 points : le corps vertébral (en avant) et les deux processus articulaires (en arrière). Cela forme un trépied qui limite les mouvements de rotation excessifs.</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <section id="disque">
+          <h2>II. Disque intervertébral et mécanique</h2>
+
+          <div class="accordion">
+            <div class="accordion-item open">
+              <div class="accordion-header">A) Structure et Fonctionnement</div>
+              <div class="accordion-content">
+                <div class="accordion-body">
+                  <p>Les disques intervertébraux relient les plateaux vertébraux (fibrocartilage). Ils agissent comme une balance ou un pivot.</p>
+                  <ul>
+                    <li id="ann25-nucleus-rotation"><mark class="annale"><span class="term">Noyau pulpeux</span> (nucleus pulposus) : centre gélatineux, reliquat de la <strong>chorde</strong> <em>(terme retenu en 2026 — anciennement « notochorde »)</em>. Agit comme une éponge (se gorge d'eau et amortit les pressions). <strong>L'axe de rotation lors des mouvements de flexion-extension du rachis lombaire passe précisément au niveau du nucleus pulposus</strong> (il constitue le pivot du disque).</mark></li>
+                    <li><span class="term">Anneau fibreux</span> (annulus fibrosus) : ceinture de maintien formée de fibres disposées en pelures d'oignon. Limite l'expansion du noyau.</li>
+                  </ul>
+
+                  <div class="box box-nb">
+                    <div class="box-title">📝 La chorde embryonnaire <em>(précision 2026)</em></div>
+                    <p>La <strong>chorde</strong> est une structure embryonnaire axiale qui induit la formation du rachis. À l'âge adulte, il n'en persiste que le <strong>noyau pulpeux</strong> de chaque disque intervertébral (reliquat chordal gélatineux).</p>
+                  </div>
+
+                  <div class="box box-nb">
+                    <div class="box-title">📝 Variation de taille au cours de la journée</div>
+                    <p>Le disque se comprime dans la journée sous le poids du corps (perte de quelques centimètres) et se regonfle la nuit lorsque le noyau pulpeux se réhydrate.<br>
+                    <em>Précision 2026 :</em> <strong>Lorsque le disque se comprime, les deux vertèbres adjacentes se rapprochent</strong> — ce qui peut rétrécir le foramen intervertébral et favoriser une compression radiculaire.</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="accordion-item open">
+              <div class="accordion-header">B) Systèmes de protection du rachis</div>
+              <div class="accordion-content">
+                <div class="accordion-body">
+                  <p>Le poids du corps s'exerce en avant et a tendance à faciliter la flexion du rachis, ce qui écrase le disque. Trois systèmes compensent cela :</p>
+                  <div class="table-wrapper">
+                    <table>
+                      <thead>
+                        <tr><th>Structure</th><th>Type</th><th>Rôle et Mécanisme</th></tr>
+                      </thead>
+                      <tbody>
+                        <tr><td><strong>Disque intervertébral</strong></td><td>Passif</td><td>Amortisseur en avant. Encaisse la compression.</td></tr>
+                        <tr><td><strong>Ligaments inter-épineux</strong></td><td>Passif</td><td>Agissent comme un ressort à l'arrière. Limitent l'écartement des épineuses (limitent la flexion).</td></tr>
+                        <tr><td><strong>Ligaments supra-épineux</strong> <em>(ajout 2026)</em></td><td>Passif</td><td>Courent sur les sommets des processus épineux. Renforcent la limitation de la flexion en doublant les inter-épineux.</td></tr>
+                        <tr><td><strong>Muscles vertébraux</strong></td><td><strong>Actif</strong></td><td>S'accrochent sur les processus. Leur contraction évite la compression avant et soulage le corps vertébral. La contraction du <strong>diaphragme</strong> <em>(précisée en 2026)</em> participe également à la stabilisation via la pression intra-abdominale.</td></tr>
+                      </tbody>
+                    </table>
+                  </div>
+
+                  <div class="box box-clinical">
+                    <div class="box-title">⚕️ Harmonie des courbures rachidiennes <em>(nouveauté 2026)</em></div>
+                    <p>Les courbures sagittales (lordose cervicale, cyphose thoracique, lordose lombaire, cyphose sacrée) doivent être <strong>harmonieuses</strong> pour répartir correctement les contraintes. Une rupture d'harmonie (hyper-cyphose, rectitude lombaire, ...) concentre les contraintes sur certains étages et provoque des <strong>lombalgies</strong> chroniques.</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <section id="nerfs">
+          <h2>III. Canal et Foramens</h2>
+
+          <div class="accordion">
+            <div class="accordion-item open">
+              <div class="accordion-header">A) Contenu du Canal Vertébral</div>
+              <div class="accordion-content">
+                <div class="accordion-body">
+                  <p>L'empilement des <strong>foramens vertébraux</strong> forme le <strong>canal vertébral</strong> qui contient le système nerveux central entouré du <strong>fourreau dural</strong> (dure-mère) :</p>
+                  <ul>
+                    <li><strong>Moelle allongée</strong> : au-dessus de C1 (sort de la base du crâne).</li>
+                    <li><strong>Moelle épinière</strong> : s'étend de C1 jusqu'à <strong>L1-L2</strong> maximum.</li>
+                    <li><strong>Queue de cheval</strong> : racines terminales de la moelle épinière, situées en-dessous de L1-L2 jusqu'à S2.</li>
+                    <li><strong>Filum terminal</strong> : prolonge le sac dural en-dessous de S2 jusqu'au coccyx.</li>
+                  </ul>
+                  
+                  <div class="box box-clinical">
+                    <div class="box-title">⚕️ Ponction lombaire</div>
+                    <p>Le prélèvement de liquide cérébro-spinal s'effectue en-dessous de L1-L2 (souvent L4-L5) pour être sûr de ne pas piquer et léser la moelle épinière.</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="accordion-item open">
+              <div class="accordion-header">B) Foramen intervertébral et Sténoses</div>
+              <div class="accordion-content">
+                <div class="accordion-body">
+                  <p>À chaque niveau vertébral, une paire de nerfs rachidiens sort du fourreau dural via les <strong>foramens intervertébraux</strong> (trous de conjugaison).</p>
+                  <p>Le <span class="term">foramen intervertébral</span> est limité par :</p>
+                  <ul id="ann-foramen-interv">
+                    <li><strong>Haut/bas</strong> : pédicules des vertèbres sus et sous-jacentes</li>
+                    <li><strong>Arrière</strong> : processus articulaires</li>
+                    <li><mark class="annale"><strong>Avant</strong> : corps vertébral (haut) + disque intervertébral (bas)</mark> — donc en bas et ventralement = disque intervertébral.</li>
+                  </ul>
+                  
+                  <div class="box box-clinical">
+                    <div class="box-title">⚕️ Sténoses foraminales</div>
+                    <p>Le foramen est un espace inextensible. Si son diamètre se réduit, le nerf est comprimé :</p>
+                    <ul>
+                      <li><strong>Hernie discale</strong> : le noyau pulpeux s'échappe et vient écraser le nerf.</li>
+                      <li><strong>Arthrose (Ostéophytes / "becs de perroquet")</strong> : une prolifération osseuse chez la personne âgée vient rétrécir le foramen. Peut causer un syndrome du <strong>canal lombaire étroit</strong> (douleurs à la marche intermittente).</li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="accordion-item open">
+              <div class="accordion-header">C) Nomenclature des nerfs rachidiens</div>
+              <div class="accordion-content">
+                <div class="accordion-body">
+                  <div class="table-wrapper">
+                    <table>
+                      <thead>
+                        <tr><th>Niveau</th><th>Règle du nom du nerf</th><th>Exemple</th></tr>
+                      </thead>
+                      <tbody>
+                        <tr id="ann-nerf-cervical">
+                          <td><mark class="annale"><strong>Cervical</strong> (Au-dessus de C7)</mark></td>
+                          <td><mark class="annale">Prend le nom de la vertèbre <strong>SOUS-JACENTE</strong> (= la plus caudale)</mark></td>
+                          <td>Nerf entre C5-C6 → nerf <strong>C6</strong></td>
+                        </tr>
+                        <tr>
+                          <td><strong>Jonction C7-T1</strong></td>
+                          <td>Nerf <strong>C8</strong> (car il n'y a que 7 vertèbres cervicales)</td>
+                          <td>Nerf entre C7-T1 → nerf <strong>C8</strong></td>
+                        </tr>
+                        <tr id="ann-nerf-thoracolombaire">
+                          <td><mark class="annale"><strong>Thoracique, Lombaire, Sacré</strong> (En-dessous de C7)</mark></td>
+                          <td><mark class="annale">Prend le nom de la vertèbre <strong>SUS-JACENTE</strong> (= la plus crâniale)</mark></td>
+                          <td>Nerf entre L4-L5 → nerf <strong>L4</strong><br>Nerf entre S1-S2 → nerf <strong>S1</strong></td>
+                        </tr>
+                      </tbody>
+                    </table>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <section id="sacrum">
+          <h2>IV. Sacrum</h2>
+
+          <div class="accordion">
+            <div class="accordion-item open">
+              <div class="accordion-header">A) Constitution</div>
+              <div class="accordion-content">
+                <div class="accordion-body">
+                  <p>Issu de la fusion des <strong>5 pièces sacrées</strong> (S1-S5), très solide car il transmet le poids du corps aux os coxaux. Forme triangulaire/pyramidale, concave vers l'avant.</p>
+
+                  <ul>
+                    <li><span class="term">Corps du sacrum</span> <em>(précisé en 2026)</em> : on distingue une <strong>base</strong> en haut (large, porte le plateau de S1) et un <strong>apex</strong> en bas (étroit, s'articule avec le coccyx).</li>
+                    <li><span class="term">Promontoire sacré</span> : plateau supérieur de S1, base du sacrum, réniforme, s'articule avec L5.</li>
+                    <li id="err-crete-sacrale"><mark><span class="term">Crête sacrée médiane</span> (ou postérieure) : reliquat des <strong>processus épineux de S1 à S4</strong> fusionnés (<strong>pas S5</strong>).</mark></li>
+                    <li><span class="term">Ailes sacrées</span> : portent à leur face postérieure les <strong>surfaces auriculaires</strong> pour l'articulation sacro-iliaque (avec l'os coxal).</li>
+                    <li><span class="term">Lignes transverses</span> <em>(précision 2026 : au nombre de <strong>4</strong>)</em> et <span class="term">Foramens sacrés</span> : les lignes transverses sont les zones de fusion des 5 pièces. Les foramens (antérieurs et postérieurs) livrent passage aux branches des nerfs sacrés.</li>
+                    <li><span class="term">Coccyx</span> : appendu en bas, ébauches vertébrales (reliquat de la queue).</li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+
+            <div class="accordion-item open">
+              <div class="accordion-header">B) Biomécanique et Contraintes à la jonction L5-S1</div>
+              <div class="accordion-content">
+                <div class="accordion-body">
+                  <p>Le sacrum (S1) est pentu. Le poids du corps a donc tendance à faire <strong>glisser L5 vers l'avant</strong>.</p>
+                  
+                  <p>Le poids s'appliquant sur le disque L5-S1 se décompose en 2 forces :</p>
+                  <ul>
+                    <li><strong>F1 (perpendiculaire)</strong> : comprime le plateau S1 → contraintes transmises au sacrum.</li>
+                    <li><strong>F2 (parallèle)</strong> : composante <strong>luxante</strong> → force de glissement vers l'avant.</li>
+                  </ul>
+                  
+                  <p><strong>Système d'accrochage :</strong> Les processus articulaires inférieurs de L5 (regardent en avant) butent contre les processus articulaires supérieurs de S1 (regardent en arrière) pour bloquer ce glissement.</p>
+                  
+                  <div class="box box-clinical">
+                    <div class="box-title">⚕️ Spondylolisthésis (lyse isthmique)</div>
+                    <p>L'isthme de L5 peut céder (fracture de fatigue due au cisaillement). Si l'isthme casse, la butée arrière disparaît et <strong>L5 glisse en avant</strong> avec le disque. Cela cause de fortes lombalgies par compression nerveuse et compensation musculaire.<br>
+                    <em>NB 2026 : le traitement par arthrodèse n'est <strong>pas dit cette année</strong>.</em></p>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="accordion-item open">
+              <div class="accordion-header">C) Récapitulatif des processus articulaires par niveau <em>(nouveauté 2026)</em></div>
+              <div class="accordion-content">
+                <div class="accordion-body">
+                  <p>L'orientation des processus articulaires conditionne les mouvements autorisés à chaque étage rachidien.</p>
+                  <div class="table-wrapper">
+                    <table>
+                      <thead>
+                        <tr><th>Niveau</th><th>Processus Articulaires Supérieurs</th><th>Processus Articulaires Inférieurs</th><th>Mouvements privilégiés</th></tr>
+                      </thead>
+                      <tbody>
+                        <tr id="err-articulaires-cervicaux"><td><strong>Cervical</strong> (C3-C7)</td><td><mark>Regardent en <strong>haut et en arrière</strong> (quasi horizontaux — <strong>sans composante médiale/latérale marquée</strong>)</mark></td><td>Regardent en bas et en avant</td><td>Grande mobilité (flexion-extension, rotation, inclinaison)</td></tr>
+                        <tr><td><strong>Thoracique</strong></td><td>Regardent en haut, en arrière et <strong>latéralement</strong></td><td>Regardent en bas, en avant et <strong>médialement</strong></td><td>Rotation possible, flexion limitée par les côtes</td></tr>
+                        <tr><td><strong>Lombaire</strong></td><td>Regardent en haut, en arrière et <strong>médialement</strong></td><td>Regardent en bas, en avant et <strong>latéralement</strong></td><td>Flexion/extension majeures ; rotation très limitée</td></tr>
+                        <tr><td><strong>Sacré</strong> (S1)</td><td>Regardent en arrière (butée pour L5)</td><td>Fusionnés (sacrum = bloc)</td><td>Pas de mouvement intra-sacré — rôle de verrou pour L5</td></tr>
+                      </tbody>
+                    </table>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <section id="cervical">
+          <h2>V. Rachis cervical — C1 (Atlas) et C2 (Axis)</h2>
+          
+          <p>Le rachis cervical (sauf C1/C2) s'organise en <strong>3 colonnes</strong> de profil : les corps vertébraux (avant), les processus articulaires (milieu), et les processus épineux bifides (arrière).</p>
+
+          <div class="box box-mnemonic">
+            <div class="box-title">💡 Mnémotechnique</div>
+            <p><strong>Atlas</strong> arrive en premier dans le dictionnaire → <strong>C1</strong><br>
+            <strong>Axis</strong> arrive en second → <strong>C2</strong><br>
+            Atlas = le géant qui porte le monde sur ses épaules (C1 porte le crâne).</p>
+          </div>
+
+          <div class="accordion">
+            <div class="accordion-item open">
+              <div class="accordion-header">A) C2 — Axis</div>
+              <div class="accordion-content">
+                <div class="accordion-body">
+                  <ul>
+                    <li><span class="term">Processus odontoïde</span> (dent) : expansion osseuse volumineuse sur le corps de C2, dirigée vers le haut. Il sert de <strong>pivot pour la ROTATION</strong> de la tête.</li>
+                    <li>Processus épineux volumineux et dirigé vers l'arrière.</li>
+                    <li id="err-c2-plan-odontoide">Processus articulaires supérieurs : <mark>déjetés vers l'avant, dans le <strong>même plan que le processus odontoïde</strong></mark>, s'articulent avec les masses latérales de C1 (le Pr. Destrieux parle de "capture" de C1 par C2).</li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+
+            <div class="accordion-item open">
+              <div class="accordion-header">B) C1 — Atlas</div>
+              <div class="accordion-content">
+                <div class="accordion-body">
+                  <p>L'Atlas est un simple anneau qui tourne autour de la dent de C2.</p>
+
+                  <ul>
+                    <li><span class="term">Masses latérales</span> :
+                      <ul>
+                        <li><strong>Facette</strong> supérieure <em>(terme 2026, anciennement « face »)</em> : s'articule avec les <strong>condyles occipitaux</strong> de la base du crâne → permet la FLEXION / EXTENSION de la tête (Articulation Occipito-C1).</li>
+                        <li><strong>Facette</strong> inférieure : s'articule avec C2 → permet la ROTATION (Articulation C1-C2).</li>
+                      </ul>
+                    </li>
+                    <li><span class="term">Arc ventral</span> <em>(terme 2026, anciennement « arc antérieur »)</em> : court, entoure le processus odontoïde en avant.</li>
+                    <li><span class="term">Arc dorsal</span> <em>(terme 2026, anciennement « arc postérieur »)</em> : plus large.</li>
+                  </ul>
+
+                  <div class="box box-nb">
+                    <div class="box-title">📝 NB</div>
+                    <p>C1 n'a <strong>PAS de processus épineux</strong> ni de corps vertébral classique.</p>
+                  </div>
+
+                  <div class="box box-nb">
+                    <div class="box-title">🚫 Non-dit en 2026</div>
+                    <p id="err-foramen-transversaire-c2">Les <strong>foramens transversaires de C1 et C2</strong> ne sont <strong>pas au programme 2026</strong>. <mark>À retenir : les foramens transversaires de <strong>C2</strong> sont situés <strong>en arrière</strong> du processus odontoïde.</mark></p>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="accordion-item open">
+              <div class="accordion-header">C) Vertèbres cervicales types — Schéma 5 <em>(nouveauté 2026)</em></div>
+              <div class="accordion-content">
+                <div class="accordion-body">
+                  <p>Les vertèbres cervicales <strong>C3 à C7</strong> présentent des caractéristiques morphologiques spécifiques, ajoutées au programme 2026 :</p>
+                  <ul>
+                    <li><span class="term">Uncus (processus unciformes)</span> : petites saillies latérales sur les bords supérieurs du corps vertébral, formant les <strong>articulations uncovertébrales</strong> (de Luschka). Elles verrouillent latéralement le rachis cervical.</li>
+                    <li><span class="term">Processus transverses</span> : courts, en forme de <strong>« tuile romane »</strong> (gouttière) portant :
+                      <ul>
+                        <li>un <strong>tubercule antérieur</strong> et un <strong>tubercule postérieur</strong> à leur extrémité,</li>
+                        <li id="ann24-art-vertebrale"><mark class="annale">un <strong>foramen transversaire</strong> livrant passage à l'<strong>artère vertébrale</strong> (à partir de <strong>C6</strong>).</mark></li>
+                      </ul>
+                    </li>
+                    <li><span class="term">Processus épineux</span> : <strong>bifides</strong> (sauf C7 qui est massif et unique, dit « vertèbre proéminente »).</li>
+                    <li><span class="term">Foramen vertébral</span> : triangulaire, large (contient le renflement cervical de la moelle).</li>
+                  </ul>
+
+                  <div class="box box-clinical">
+                    <div class="box-title">⚕️ Lésions cervicales : tétraparésie / tétraplégie <em>(nouveauté 2026)</em></div>
+                    <p>Une atteinte médullaire au niveau cervical (au-dessus de T1) retentit sur les 4 membres :</p>
+                    <ul>
+                      <li><strong>Tétraparésie</strong> : faiblesse des 4 membres (atteinte partielle).</li>
+                      <li><strong>Tétraplégie</strong> : paralysie complète des 4 membres (section complète).</li>
+                    </ul>
+                    <p>Plus la lésion est haute, plus le déficit est sévère (risque d'atteinte phrénique en C3-C5 → détresse respiratoire).</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="accordion-item">
+              <div class="accordion-header">D) L'Artère vertébrale — 🚫 Non-dit en 2026</div>
+              <div class="accordion-content">
+                <div class="accordion-body">
+                  <div class="box box-nb">
+                    <div class="box-title">🚫 Section retirée du programme 2026</div>
+                    <p>La section détaillée sur l'<strong>artère vertébrale</strong> (trajet, boucles, origine) est <strong>non-dite cette année</strong>. Seule reste la mention de son passage dans le foramen transversaire à partir de C6 (dans le contexte des vertèbres cervicales types). Contenu conservé ci-dessous à titre de référence.</p>
+                  </div>
+                  <p><em>(Référence — non au programme 2026)</em> Les processus transverses cervicaux forment un hamac contenant un trou : le <strong>foramen transversaire</strong>. Il livre passage à l'artère vertébrale (et le nerf rachidien sort en arrière d'elle).</p>
+                  <ul>
+                    <li>L'artère vertébrale naît de l'artère <strong>subclavière</strong>.</li>
+                    <li>Elle pénètre généralement dans les foramens transversaires à partir de <strong>C6</strong> (très rare en C7).</li>
+                    <li>Elle fait <strong>2 boucles (coudes)</strong> au niveau cervical haut pour éviter d'être étirée ou pincée :
+                      <ul>
+                        <li>Boucle C1-C2 : donne de la marge (flexibilité) lors de la rotation de la tête.</li>
+                        <li>Boucle occipito-C1 : donne de la marge pour la flexion/extension.</li>
+                      </ul>
+                    </li>
+                    <li>Elle entre ensuite dans le crâne par le foramen magnum pour vasculariser la fosse postérieure, le cervelet et le tronc cérébral.</li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <section id="hernie">
+          <h2>VI. Hernies discales lombaires</h2>
+
+          <div class="accordion">
+            <div class="accordion-item open">
+              <div class="accordion-header">A) Mécanisme et Types</div>
+              <div class="accordion-content">
+                <div class="accordion-body">
+                  <p>Usure/fissure de l'anneau fibreux → le <strong>noyau pulpeux s'échappe</strong> postérieurement → compression nerveuse.</p>
+                  
+                  <div class="box box-clinical">
+                    <div class="box-title">⚕️ Syndrome de la queue de cheval</div>
+                    <p>Si la hernie est énorme et centrale, elle comprime la totalité du fourreau dural et tous les nerfs de la queue de cheval. C'est une urgence causant une <strong>paraplégie</strong> (si sous L1).</p>
+                  </div>
+                  
+                  <h4>Les 2 grands types de hernies radiculaires :</h4>
+                  <ol>
+                    <li><strong>Hernie FORAMINALE</strong> (très latérale) : Comprime le nerf qui est en train de <strong>sortir par le foramen</strong> à cet étage (donc le nerf correspondant à la vertèbre sus-jacente).</li>
+                    <li><strong>Hernie POSTÉRO-LATÉRALE</strong> (un peu plus médiale) : Comprime le nerf qui <strong>naît</strong> à cet étage et s'apprête à descendre vers le foramen du dessous (donc le nerf correspondant à la vertèbre sous-jacente).</li>
+                  </ol>
+                </div>
+              </div>
+            </div>
+
+            <div class="accordion-item open">
+              <div class="accordion-header">B) Tableau de Diagnostic Clinique (À savoir par cœur !)</div>
+              <div class="accordion-content">
+                <div class="accordion-body">
+                  <div class="table-wrapper">
+                    <table>
+                      <thead>
+                        <tr><th>Niveau de la hernie</th><th>Si hernie FORAMINALE</th><th>Si hernie POSTÉRO-LATÉRALE</th></tr>
+                      </thead>
+                      <tbody>
+                        <tr><td><strong>Entre L4 et L5</strong></td><td>Comprime le <strong>Nerf L4</strong></td><td>Comprime le <strong>Nerf L5</strong></td></tr>
+                        <tr><td><strong>Entre L5 et S1</strong></td><td>Comprime le <strong>Nerf L5</strong></td><td>Comprime le <strong>Nerf S1</strong></td></tr>
+                      </tbody>
+                    </table>
+                  </div>
+                  
+                  <div class="box box-recap">
+                    <div class="box-title">📋 Topographie des douleurs et Dermatomes — Récapitulatif simplifié 2026</div>
+                    <div class="table-wrapper">
+                      <table>
+                        <thead>
+                          <tr><th>Nerf comprimé</th><th>Territoire douloureux principal <em>(version 2026 — version courte)</em></th><th>Nom clinique</th></tr>
+                        </thead>
+                        <tbody>
+                          <tr id="c3-l4-territoire"><td><mark class="annale"><strong>L4</strong></mark></td><td><mark class="annale">Face <strong>antérieure de la cuisse</strong> (antéro-médiale du membre inférieur)</mark></td><td><mark class="annale"><strong>Cruralgie</strong></mark></td></tr>
+                          <tr><td><strong>L5</strong></td><td>Face <strong>latérale</strong> du membre inférieur (jambe) → dos du pied → gros orteil</td><td><strong>Sciatique L5</strong></td></tr>
+                          <tr><td><strong>S1</strong></td><td>Face <strong>postérieure du mollet</strong> → plante du pied → 5e orteil</td><td><strong>Sciatique S1</strong></td></tr>
+                        </tbody>
+                      </table>
+                    </div>
+                    <p><em>NB 2026 :</em> le détail fin des dermatomes (trajets étendus cuisse + jambe + pied) est <strong>non-dit cette année</strong>. La version courte ci-dessus suffit pour l'examen : mollet postérieur (S1), latéral (L5), antéro-médial (L4).</p>
+                  </div>
+
+                  <div class="box box-nb">
+                    <div class="box-title">📝 Déduction clinique</div>
+                    <p>Un patient avec une <strong>Sciatique L5</strong> peut avoir, au choix :<br>
+                    - Soit une hernie <strong>postéro-latérale en L4-L5</strong><br>
+                    - Soit une hernie <strong>foraminale en L5-S1</strong><br>
+                    L'examen clinique et l'IRM permettront de trancher.</p>
+                  </div>
+
+                  <div class="box box-clinical">
+                    <div class="box-title">⚕️ Manque de concordance clinique : L4 vs hernie S1 <em>(nouveauté 2026)</em></div>
+                    <p>La douleur sur le territoire <strong>L4</strong> (face antéro-médiale) n'est <strong>jamais</strong> due à une hernie en L5-S1 (aucun nerf L4 ne sort à cet étage). Inversement, une hernie postéro-latérale en L5-S1 touche le nerf <strong>S1</strong> (mollet postérieur), <strong>pas</strong> le nerf L4.</p>
+                    <p><strong>Règle :</strong> si les douleurs ne concordent pas avec l'étage hernié à l'imagerie, il faut chercher une autre cause (tumeur, sténose foraminale à un autre niveau, atteinte extra-rachidienne...).</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <section id="thorax">
+          <h2>VII. Cage thoracique & Articulations costo-vertébrales</h2>
+
+          <p>La cage thoracique est une armature rigide. Elle est limitée par le sternum en avant, le rachis en arrière, les côtes latéralement et le diaphragme en bas. Il n'y a pas de limite supérieure propre.</p>
+
+          <div class="box box-mnemonic">
+            <div class="box-title">💡 Métaphore du Pr. Destrieux <em>(2026)</em></div>
+            <p>La cage thoracique fonctionne comme un <strong>soufflet de feu de bois</strong> : à chaque inspiration, les côtes se relèvent et se déplacent latéralement, gonflant le thorax comme on écarte les deux branches d'un soufflet pour y faire entrer l'air. À l'expiration, elles retombent et chassent l'air.</p>
+          </div>
+
+          <div class="box box-nb">
+            <div class="box-title">🚫 Non-dit en 2026</div>
+            <p>Le détail du <strong>rôle mécanique et respiratoire</strong> de la cage thoracique (mobilité costo-vertébrale, axes de rotation, mouvements en bras de pompe / anse de seau chiffrés) n'est <strong>que partiellement abordé</strong> cette année — seules la métaphore du soufflet et le schéma global du volet costal (ci-dessous) sont explicitement au programme 2026.</p>
+          </div>
+
+          <div class="accordion">
+            <div class="accordion-item">
+              <div class="accordion-header">A) Sternum</div>
+              <div class="accordion-content">
+                <div class="accordion-body">
+                  <p id="ann25-sternum-incisures">Os plat situé <strong>sur la ligne médiane</strong> <em>(précision 2026)</em>, en 3 parties de haut en bas. <mark class="annale">Au total : <strong>17 incisures</strong> = 1 jugulaire + 2 claviculaires + 14 costales (7 paires, côtes 1–7).</mark></p>
+                  <ul>
+                    <li><span class="term">Manubrium sternal</span> (1/3 sup. / la poignée du glaive) : porte l'incisure jugulaire (sans cartilage), les <strong>incisures claviculaires au nombre de deux</strong> <em>(précision 2026)</em>, et les incisures costales n°1 et la moitié de la n°2.</li>
+                    <li><span class="term">Corps sternal</span> (2/3 inf.) : porte l'autre moitié de l'incisure costale n°2, puis les incisures costales 3 à 7.</li>
+                    <li><span class="term">Processus xiphoïde</span> : pointe terminale.</li>
+                  </ul>
+
+                  <h4>Repères vertébraux sternaux</h4>
+                  <div class="table-wrapper">
+                    <table>
+                      <thead>
+                        <tr><th>Repère sternal</th><th>Projection sur la vertèbre</th></tr>
+                      </thead>
+                      <tbody>
+                        <tr><td>Incisure jugulaire</td><td><strong>T2</strong></td></tr>
+                        <tr><td>Angle sternal (jonction manubrium/corps, orienté en arrière)</td><td><strong>T4</strong></td></tr>
+                        <tr><td>Processus xiphoïde</td><td><strong>T10</strong></td></tr>
+                      </tbody>
+                    </table>
+                  </div>
+
+                  <div class="box box-clinical">
+                    <div class="box-title">⚕️ Ponction sternale — Myélogramme <em>(précisé 2026)</em></div>
+                    <p>Le sternum contient de l'os spongieux très riche en moelle osseuse. Un trocart permet de franchir la corticale pour aspirer la moelle et réaliser un <strong>myélogramme</strong> : étude des lignées sanguines (érythrocytes, leucocytes, plaquettes).</p>
+                    <p><strong>Indications principales</strong> (précisées en 2026) :</p>
+                    <ul>
+                      <li><strong>Anémie par défaut de production</strong> (moelle pauvre, aplasie, carences) — déficit quantitatif.</li>
+                      <li><strong>Anémie par perte</strong> (hémorragie chronique, hémolyse) — vérification de la réponse médullaire.</li>
+                      <li>Recherche d'hémopathies malignes (leucémies, myélome).</li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="accordion-item open">
+              <div class="accordion-header">B) Rachis thoracique (rappel 2026) & Articulations costo-rachidiennes</div>
+              <div class="accordion-content">
+                <div class="accordion-body">
+                  <div class="box box-nb">
+                    <div class="box-title">📝 Rappel 2026 — Processus transverses lombaires (L1-L4)</div>
+                    <p>Même si on traite ici le rachis thoracique, le Pr. Destrieux rappelle en 2026 que les <strong>processus transverses lombaires de L1 à L4 sont en fait des processus costiformes</strong> (reliquats costaux), accompagnés d'un <strong>tubercule accessoire</strong> en arrière, vestige du vrai processus transverse.</p>
+                  </div>
+
+                  <p>Les côtes s'articulent intimement avec le rachis dorsal. Pour les côtes standard (de la 2ème à la 10ème), l'attache se fait sur <strong>3 points précis (3 facettes articulaires)</strong>, car la côte s'accroche à cheval sur deux vertèbres.</p>
+
+                  <h4>Structure de l'extrémité postérieure d'une côte <em>(détaillée en 2026)</em> :</h4>
+                  <ul>
+                    <li><strong>La Tête</strong> : possède 2 <strong>facettes corporéales</strong> (une supérieure + une inférieure) séparées par une crête.</li>
+                    <li><strong>Le Col</strong> : zone rétrécie reliant la tête au corps.</li>
+                    <li><strong>Le Tubercule costal</strong> <em>(détaillé en 2026)</em> : situé en arrière, à la jonction col/corps. Il porte la <strong>surface transversaire</strong> (ou facette articulaire costale transversaire) qui répond au processus transverse de la vertèbre sous-jacente.</li>
+                  </ul>
+
+                  <div class="box box-recap">
+                    <div class="box-title">📋 Règle d'or de l'articulation d'une côte type (ex: la 3ème côte)</div>
+                    <p>La côte N prend le nom de la vertèbre située <strong>SOUS</strong> elle (la côte s'appuie sur le bord supérieur de sa propre vertèbre N et sur le bord inférieur de la vertèbre d'au-dessus N-1).</p>
+                    <ol>
+                      <li>La <strong>facette corporéale SUPÉRIEURE</strong> de la tête costale s'articule avec la <strong>facette costale INFÉRIEURE de la vertèbre sus-jacente</strong> (ex: T2).</li>
+                      <li>La <strong>facette corporéale INFÉRIEURE</strong> de la tête costale s'articule avec la <strong>facette costale SUPÉRIEURE de la vertèbre sous-jacente</strong> (ex: T3).</li>
+                      <li>La <strong>surface transversaire</strong> du tubercule costal s'articule avec la <strong>facette costale transversaire de la vertèbre sous-jacente</strong> (ex: processus transverse de T3).</li>
+                    </ol>
+                    <p><em>Conclusion : Il y a donc 6 facettes articulaires costales sur une vertèbre thoracique classique (2 supérieures, 2 inférieures, 2 transversaires).</em></p>
+                  </div>
+
+                  <h4>Les Exceptions Costales</h4>
+                  <ul>
+                    <li id="ann-premiere-cote"><mark class="annale"><strong>1ère côte</strong> : Très courte et plate. S'articule uniquement avec <strong>T1</strong> — en arrière avec le <strong>corps vertébral</strong> ET le <strong>processus transverse</strong> de T1.</mark></li>
+                    <li><strong>11ème et 12ème côtes</strong> : S'articulent uniquement avec le corps de leur vertèbre respective (<strong>T11</strong> et <strong>T12</strong>).</li>
+                  </ul>
+
+                  <div class="box box-nb">
+                    <div class="box-title">📝 NB 3 — 11e et 12e côtes <em>(précisé 2026)</em></div>
+                    <p>Puisque les 11e et 12e côtes ne s'articulent qu'avec le corps de leur vertèbre, <strong>il n'y a pas de facettes costales transversaires</strong> sur T11 et T12. Leur processus transverse porte uniquement des insertions musculaires.</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="accordion-item open">
+              <div class="accordion-header">C) Le corps costal et la classification des côtes</div>
+              <div class="accordion-content">
+                <div class="accordion-body">
+                  <p>Le corps d'une côte est incurvé avec une concavité tournée en dedans (vers les poumons). En cheminant vers l'avant, la côte effectue un mouvement de <strong>torsion sur elle-même</strong> : sa face latérale (externe) en arrière devient sa face supérieure en avant.</p>
+
+                  <h4>Classification des côtes (rapport au sternum) :</h4>
+                  <p>Les côtes ne touchent jamais directement l'os sternal : il y a toujours interposition de <strong>cartilage hyalin</strong>.</p>
+                  
+                  <div class="table-wrapper">
+                    <table>
+                      <thead>
+                        <tr><th>Type</th><th>Paires de Côtes</th><th>Mode d'attache au sternum</th></tr>
+                      </thead>
+                      <tbody>
+                        <tr><td><strong>Vraies côtes</strong></td><td><strong>1 à 7</strong></td><td>Possèdent leur propre cartilage individuel s'insérant dans une incisure sternale.</td></tr>
+                        <tr><td><strong>Fausses côtes</strong></td><td><strong>8, 9 et 10</strong></td><td>Leur cartilage se fusionne avec celui de la côte située au-dessus pour former un massif cartilagineux commun (qui remonte jusqu'à la 7ème côte).</td></tr>
+                        <tr><td><strong>Côtes flottantes</strong></td><td><strong>11 et 12</strong></td><td>Ne rejoignent jamais le sternum. Extrémités libres terminées par un petit capuchon de cartilage hyalin dans les muscles.</td></tr>
+                      </tbody>
+                    </table>
+                  </div>
+                  
+                  <div class="box box-clinical">
+                    <div class="box-title">⚕️ Traumatologie Thoracique (détaillée en 2026)</div>
+                    <ul>
+                      <li><strong>Fracture de côte isolée</strong> : Douleur vive mais sans grande gravité. On donne des antalgiques (on ne bande plus le thorax pour éviter d'empêcher la respiration).</li>
+                      <li><strong>Volet costal (fractures multiples — au moins deux points de rupture sur plusieurs côtes adjacentes)</strong> : Un segment entier de la paroi se détache. Il adopte une <strong>respiration paradoxale</strong> :
+                        <ul>
+                          <li><strong>À l'inspiration :</strong> le diaphragme descend et crée une dépression intrathoracique → le volet, désolidarisé, est <strong>aspiré vers l'intérieur</strong> (au lieu d'accompagner le soulèvement de la cage).</li>
+                          <li><strong>À l'expiration :</strong> la pression intrathoracique remonte → le volet est <strong>repoussé vers l'extérieur</strong>.</li>
+                        </ul>
+                        Résultat : la ventilation du poumon sous-jacent devient très <strong>inefficace</strong> (l'air circule entre les deux poumons plutôt qu'avec l'extérieur), la respiration est extrêmement douloureuse, risque de détresse respiratoire aiguë → prise en charge urgente (analgésie, ventilation mécanique parfois nécessaire).</li>
+                      <li><strong>Cyphoscoliose sévère</strong> <em>(précisée 2026)</em> : déformation combinant cyphose (dans le plan sagittal) et scoliose (dans le plan frontal). Elle déforme le squelette thoracique, comprime les poumons et peut conduire à une <strong>insuffisance respiratoire restrictive</strong>.</li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <section id="recap-2026">
+          <h2>🔄 Récapitulatif de la mise à jour 2026</h2>
+
+          <div class="box box-recap">
+            <div class="box-title">📊 Comparaison des versions 2025 vs 2026</div>
+            <p>Contrairement au cours sur les <em>membres</em> (identique entre les deux années), le cours sur le <strong>squelette axial</strong> a reçu de nombreux ajouts, précisions et retraits en 2026. Les listes ci-dessous les résument de façon exhaustive.</p>
+          </div>
+
+          <div class="box box-nb">
+            <div class="box-title">🆕 Nouveau au programme 2026</div>
+            <ul>
+              <li><strong>Section D) Vertèbres cervicales types (Schéma 5)</strong> : entièrement nouvelle. Uncus / processus unciformes, processus transverses en « tuile romane » avec tubercules antérieur et postérieur, foramen transversaire livrant passage à l'artère vertébrale à partir de C6, processus épineux bifides (sauf C7).</li>
+              <li>Ajout de <strong>« l'orbite »</strong> dans la liste des éléments du squelette axial.</li>
+              <li><strong>Os hyoïde</strong> n'est plus marqué « non-dit » — il est explicitement décrit comme os du squelette axial suspendu dans les parties molles du cou.</li>
+              <li>Précision sur la <strong>contraction du diaphragme</strong> comme élément de stabilisation active du rachis.</li>
+              <li>Nouvelle application clinique : <strong>harmonie des courbures rachidiennes</strong> — rupture d'harmonie = lombalgies chroniques.</li>
+              <li>Corps de la vertèbre thoracique décrit comme <strong>« pratiquement cylindrique »</strong> (vs « hémi-cylindrique » en 2025).</li>
+              <li>Canal vertébral thoracique décrit comme <strong>« cylindrique »</strong> (vs « circulaire »).</li>
+              <li>Précision que la <strong>facette costale transversaire</strong> répond au tubercule costal de la côte <em>sus-jacente</em>.</li>
+              <li>Vertèbre lombaire : <strong>encroûtée de cartilage</strong>, processus transverse (costiforme) <strong>plus volumineux</strong>.</li>
+              <li>Terme <strong>« chorde »</strong> adopté à la place de « notochorde ». Note explicative ajoutée sur la chorde embryonnaire et son reliquat = noyau pulpeux.</li>
+              <li><strong>Ligaments supra-épineux</strong> ajoutés au tableau passif/actif de protection du rachis.</li>
+              <li>Précision : <strong>« Lorsque le disque se comprime, les deux vertèbres se rapprochent »</strong> — conséquence sur le foramen intervertébral.</li>
+              <li>Sacrum : ajout des notions de <strong>corps (base/apex)</strong> et précision sur les <strong>4 lignes transverses</strong>.</li>
+              <li>Nouveau <strong>tableau récapitulatif des processus articulaires par niveau</strong> (cervical / thoracique / lombaire / sacré).</li>
+              <li>C1 : termes <strong>« facettes »</strong> (vs « faces »), <strong>arc ventral / arc dorsal</strong> (vs « antérieur / postérieur »).</li>
+              <li>Nouvelle application clinique : <strong>tétraparésie vs tétraplégie</strong> pour les lésions cervicales (avec risque phrénique C3-C5).</li>
+              <li>Sternum : situé <strong>« sur la ligne médiane »</strong>, incisures claviculaires <strong>« au nombre de deux »</strong>.</li>
+              <li>Ponction sternale détaillée comme <strong>myélogramme</strong>, avec indications : anémie par défaut de production, anémie par perte, hémopathies.</li>
+              <li>Rappel dans la section thoracique : les processus transverses <strong>L1-L4 = processus costiformes</strong> + tubercule accessoire.</li>
+              <li>Côtes : détail anatomique précisé — <strong>tubercule costal</strong> portant la <strong>surface transversaire</strong>, <strong>facettes corporéales</strong> sur la tête.</li>
+              <li>Métaphore du Pr. Destrieux : cage thoracique = <strong>soufflet pour feu de bois</strong>.</li>
+              <li><strong>Cyphoscoliose</strong> introduite comme pathologie restrictive.</li>
+              <li>Volet costal <strong>détaillé</strong> : deux points de rupture, respiration paradoxale inspiratoire ET expiratoire, ventilation inefficace.</li>
+              <li>NB 3 ajouté : pas de facettes transversaires sur T11/T12 (conséquence du point d'attache costal unique).</li>
+              <li>Nouveau <strong>récapitulatif simplifié des douleurs S1 / L5 / L4</strong> (mollet postérieur / latéral / antéro-médial).</li>
+              <li>Nouvelle application clinique : <strong>manque de concordance L4 vs hernie S1</strong> — règle de vigilance diagnostique.</li>
+            </ul>
+          </div>
+
+          <div class="box box-nb">
+            <div class="box-title">❌ Plus au programme en 2026 (non-dit cette année)</div>
+            <ul>
+              <li><strong>Foramens transversaires de C1 et C2</strong> — explicitement non-dits cette année.</li>
+              <li><strong>Section détaillée sur l'artère vertébrale</strong> (trajet, origine subclavière, boucles C1-C2 et occipito-C1, entrée par le foramen magnum) — conservée dans le cours à titre de référence, mais <strong>non au programme 2026</strong>.</li>
+              <li>Topographies fines et étendues des <strong>dermatomes L4/L5/S1</strong> (trajet détaillé cuisse + jambe + pied) — remplacées par la version courte (mollet postérieur / latéral / antéro-médial).</li>
+              <li>Détail complet du <strong>rôle mécanique et respiratoire</strong> de la cage thoracique (mouvements chiffrés en bras de pompe / anse de seau) — seulement <strong>partiellement abordé</strong> via la métaphore du soufflet.</li>
+              <li>Traitement du spondylolisthésis par <strong>arthrodèse / ostéosynthèse</strong> — non-dit cette année.</li>
+            </ul>
+          </div>
+
+          <div class="box box-mnemonic">
+            <div class="box-title">💡 En pratique pour réviser</div>
+            <p>Les éléments marqués <em>« (2026) »</em>, <em>« nouveauté 2026 »</em> ou <em>« précisé en 2026 »</em> dans les différentes sections ci-dessus sont les points ajoutés par la version 2026. Les encadrés 🚫 <strong>Non-dit en 2026</strong> signalent les retraits : le contenu y reste à titre de référence mais n'est pas attendu à l'examen.</p>
+          </div>
+        </section>
+
+      </div>
+    </main>
+  </div>
+
+  <button class="menu-toggle" onclick="document.querySelector('.sidebar').classList.toggle('open')">☰</button>
+  <script src="../app.js"></script>
+</body>
+</html>
